@@ -1,32 +1,23 @@
 {
-  "name": "clear-current-portal",
+  "name": "clear-current-monorepo",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "lucide-react": "^1.7.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router-dom": "^7.14.0",
-    "recharts": "^3.8.1",
-    "tailwindcss": "^4.2.2"
+    "dev:portal": "npm run dev -w @clear-current/portal",
+    "dev:website": "npm run dev -w @clear-current/website",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test -w @clear-current/portal",
+    "test:watch": "npm run test:watch -w @clear-current/portal",
+    "test:coverage": "npm run test:coverage -w @clear-current/portal",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "npm run typecheck -w @clear-current/portal",
+    "preview:portal": "npm run preview -w @clear-current/portal"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "vite": "^8.0.1"
+    "prettier": "^3.8.1"
   }
 }

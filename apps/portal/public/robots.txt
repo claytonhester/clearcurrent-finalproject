@@ -1,0 +1,8 @@
+# Default: do not index (client deliverable; treat URL as non-public unless you choose otherwise).
+# To allow indexing, replace with:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://YOUR-PRODUCTION-DOMAIN/sitemap.xml
+
+User-agent: *
+Disallow: /

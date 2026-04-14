@@ -1,69 +1,73 @@
-# Clear Current — GTM Intelligence Portal
+# Clear Current — monorepo
 
-Static **React + Vite** site for the Clear Current Technologies GTM Intelligence Report: executive summary, engagement triggers, seasonal calendar, user journey maps, opportunity heatmap, product module recommendations, and optional bonus deliverables. Content is driven from `src/data/`; navigation from `src/navConfig.js`.
+This repository contains two apps:
+
+| App                         | Path                           | Stack                | Purpose                                                                                                    |
+| --------------------------- | ------------------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **GTM Intelligence Portal** | [`apps/portal`](apps/portal)   | React + Vite         | Client deliverable presentation (executive summary, triggers, calendar, journeys, heatmap, modules, bonus) |
+| **Public website**          | [`apps/website`](apps/website) | Next.js (App Router) | Future marketing / public site (scaffold; separate UI from the portal)                                     |
 
 ## Requirements
 
 - **Node.js** 20+ (CI uses Node 22)
 
-## Commands
+## Commands (repo root)
 
-| Command                | Description                         |
-| ---------------------- | ----------------------------------- |
-| `npm install`          | Install dependencies                |
-| `npm run dev`          | Local dev server (Vite)             |
-| `npm run build`        | Production build → `dist/`          |
-| `npm run preview`      | Serve `dist/` (test SPA deep links) |
-| `npm run lint`         | ESLint                              |
-| `npm run format`       | Prettier write                      |
-| `npm run format:check` | Prettier check (CI)                 |
-| `npm run test`         | Vitest (once)                       |
-| `npm run test:watch`   | Vitest watch                        |
-| `npm run typecheck`    | `tsc --noEmit` (JS + TS tooling)    |
+Install once from the repository root (npm workspaces):
 
-## Environment variables
+```bash
+npm install
+```
 
-Copy [`.env.example`](.env.example) to `.env.local` for local use. On **Vercel**, set the same keys under Project → Settings → Environment Variables.
+| Command                  | Description                                 |
+| ------------------------ | ------------------------------------------- |
+| `npm run dev:portal`     | Vite dev server for the portal              |
+| `npm run dev:website`    | Next.js dev server for the public site      |
+| `npm run build`          | Production build for **all** workspaces     |
+| `npm run lint`           | ESLint in each app                          |
+| `npm run format`         | Prettier write                              |
+| `npm run format:check`   | Prettier check (CI)                         |
+| `npm run test`           | Vitest for the portal                       |
+| `npm run typecheck`      | `tsc --noEmit` for the portal               |
+| `npm run preview:portal` | Preview the portal `dist/` (SPA deep links) |
 
-| Variable                | Required | Purpose                                                                                                                                          |
-| ----------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `VITE_SITE_URL`         | No       | Production origin **without trailing slash** (e.g. `https://your-app.vercel.app`). Injected at **build** into `og:url`, `og:image`, `canonical`. |
-| `VITE_PLAUSIBLE_DOMAIN` | No       | Plausible [domain](https://plausible.io) (hostname only). Enables [`Analytics.jsx`](src/components/Analytics.jsx). CSP already allows Plausible. |
+Portal-only scripts are also available via `npm run <script> -w @clear-current/portal` after `cd apps/portal` if you prefer.
 
-If `VITE_SITE_URL` is unset, Open Graph image stays **relative** (`/og-image.svg`) and the `og:url` meta tag is omitted.
+## Portal — environment variables
+
+Copy [`apps/portal/.env.example`](apps/portal/.env.example) to `apps/portal/.env.local` for local use. On **Vercel**, set the same keys on the **portal** project (root directory `apps/portal`).
+
+| Variable                | Required | Purpose                                                                                                     |
+| ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
+| `VITE_SITE_URL`         | No       | Production origin **without trailing slash**. Injected at **build** into `og:url`, `og:image`, `canonical`. |
+| `VITE_PLAUSIBLE_DOMAIN` | No       | Plausible hostname. CSP in [`apps/portal/vercel.json`](apps/portal/vercel.json) allows Plausible.           |
+
+If `VITE_SITE_URL` is unset, Open Graph image stays relative (`/og-image.svg`) and the `og:url` meta tag is omitted.
 
 ## Deployment (Vercel)
 
-1. Connect the GitHub repo to [Vercel](https://vercel.com).
-2. Framework preset: **Vite**. Build: `npm run build`. Output: **`dist`**.
-3. Set **`VITE_SITE_URL`** to your production URL for best link previews.
-4. Production branch: `main` (or your default).
-5. [vercel.json](vercel.json) includes SPA rewrites and security headers.
+Use **two Vercel projects** pointing at the same repo with different **Root Directory** settings:
 
-## SEO & indexing
+1. **Portal** — Root Directory: `apps/portal`. Framework: **Vite**. Output: **`dist`**. Build: `npm run build` (default when Vercel runs from that directory). [`apps/portal/vercel.json`](apps/portal/vercel.json) has SPA rewrites and security headers.
+2. **Website** — Root Directory: `apps/website`. Framework: **Next.js**. Build: `npm run build` (Next on Vercel is auto-detected).
 
-- [public/robots.txt](public/robots.txt) defaults to **`Disallow: /`** (no indexing)—appropriate for a semi-private client deliverable. Edit if you want the site public.
-- [public/sitemap.xml](public/sitemap.xml) is a **template**: replace `SITE_URL` with your real host when you open indexing.
+Set `VITE_SITE_URL` (and optional Plausible) only on the portal project.
+
+## SEO & indexing (portal)
+
+- [`apps/portal/public/robots.txt`](apps/portal/public/robots.txt) defaults to **`Disallow: /`** for a semi-private deliverable.
+- [`apps/portal/public/sitemap.xml`](apps/portal/public/sitemap.xml) is a template: replace `SITE_URL` when opening indexing.
 
 ## Planning & documentation
 
-- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — what we built: stack, routes, `src/data/` layout, operations.
-- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — launch checklist, stakeholder questions, and content still to finalize in data files.
-- [docs/planning/README.md](docs/planning/README.md) — short index of the two docs above.
-
-## Presentation checklist (before go-live)
-
-- [ ] Confirm **production URL** loads over HTTPS.
-- [ ] Set **`VITE_SITE_URL`** on Vercel and redeploy so OG tags use absolute URLs.
-- [ ] Smoke test in **Chrome** (and Safari if available): all sidebar routes, refresh on a deep link (e.g. `/heatmap`).
-- [ ] **Projector / screen:** verify legibility at **1080p** from the back of the room; bump browser zoom if needed.
-- [ ] Replace any remaining `status: "placeholder"` content in `src/data/` with **`"final"`** after stakeholder sign-off ([CONTRIBUTING.md](CONTRIBUTING.md)). Full list: **[REMAINING.md](docs/planning/REMAINING.md)**.
+- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — stack, routes, data layout.
+- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — launch checklist and open content.
+- [docs/planning/README.md](docs/planning/README.md) — index.
 
 ## Security note
 
-There is **no backend**. All research copy in `src/data/` ships in the public JS bundle—treat the deployed URL as **public** unless you add access control elsewhere.
+There is **no backend** in the portal. Research copy in `apps/portal/src/data/` ships in the public JS bundle—treat the deployed portal URL as **public** unless you add access control elsewhere.
 
 ## License
 
 See [LICENSE](LICENSE). Private / internal to the engagement unless Clear Current publishes otherwise.
-# clearcurrent-finalproject
