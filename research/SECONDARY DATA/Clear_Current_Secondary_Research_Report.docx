@@ -1,0 +1,495 @@
+| **CLEAR CURRENT TECHNOLOGIES** **Secondary Research Report** Commercial Energy Management SaaS Market Intelligence, Competitive Analysis & Source Verification Prepared by: CDL MBA Consulting Team  │  April 2026 Team: Clayton Hester, Jason Wisnieski, Adam Case, Victor Pan Sponsor: John Reuter (CEO) & Dan Schreiber (CPO), Clear Current Technologies |
+| --- |
+
+This document consolidates all secondary research conducted by the CDL MBA Consulting Team in support of the Clear Current Technologies GTM engagement. Research was collected across three distinct sessions using Perplexity Deep Research, TAMU library databases (IBISWorld, ABI/Inform, Orbis), EIA government data, and direct web sourcing. A fourth session independently verified the credibility of key statistics. This report is organized into ten thematic sections and includes a source credibility audit, a safe-to-use statistics reference, and a deliverable mapping guide.
+
+| **$241B** U.S. Commercial Energy Spend 2024 | **$14.2B** EMS Software Market (2025) | **9.6%** Market CAGR Through 2032 | **4%** BEMS Adoption (EIA CBECS) | **660+** District Energy Systems (U.S.) |
+| --- | --- | --- | --- | --- |
+
+| **01** | **Research Methodology ****&**** Source Overview** |
+| --- | --- |
+
+## **Research Sessions**
+
+Secondary research was conducted across three structured sessions over the course of the project engagement, supplemented by a dedicated source verification session.
+
+| **Session** | **Method** | **Primary Sources** | **Focus Areas** |
+| --- | --- | --- | --- |
+| Session 1 | Perplexity Deep Research | EIA, EPA, IBISWorld, Verdantix | Market sizing, buyer behavior, billing errors, AMI, higher ed, buying cycles |
+| Session 2 | Perplexity Deep Research (expanded) | G2, Capterra, Crunchbase, vendor sites, regulatory filings | Competitive landscape deep dive, EnergyCAP reviews, AI-native competitors, district energy |
+| Session 3 | Perplexity Claim Verification | FERC, state PUCs, Harvard Law, EIA CBECS, EPA ENERGY STAR | Independent verification of six key statistics; conflict-of-interest audit |
+| Database Research | TAMU Library (IBISWorld, ABI/Inform, Orbis) | IBISWorld, Orbis/Moody's, ProQuest | Industry surveys, company benchmarking, facilities staffing data |
+
+## **Databases ****&**** Sources Used**
+
+- IBISWorld via TAMU Library — Industry surveys, market sizing, company benchmarking
+
+- ABI/Inform Trade & Industry via TAMU — Trade journal articles on facilities staffing and maintenance
+
+- Orbis (Moody's Analytics) via TAMU — Company financial profiles for EnergyCAP and Trane Technologies
+
+- EIA CBECS 2018 — Commercial Buildings Energy Consumption Survey; the gold standard for commercial building energy data
+
+- EIA Monthly Energy Review (March 2026) — Current energy pricing and consumption statistics
+
+- EPA ENERGY STAR — Portfolio Manager adoption data, K-12 energy spending benchmarks
+
+- FERC / State PUCs — Documented billing error enforcement actions
+
+- Verdantix Green Quadrant 2023 — Independent competitive assessment of 15 EMS vendors
+
+- EnergyCAP State of Utilities 2026 — Annual survey of energy and sustainability professionals
+
+- G2 / Capterra — 132 verified user reviews of EnergyCAP used for competitive weakness documentation
+
+- Crunchbase / Press releases — Competitor funding and valuation data (Arcadia, Verse, iem)
+
+| **02** | **Market Sizing ****&**** Growth** |
+| --- | --- |
+
+## **Total Addressable Market**
+
+The commercial energy management software market is defined differently depending on scope. The table below captures the range of estimates and their most appropriate use for Clear Current's positioning.
+
+| **Market Definition** | **2024/2025 Value** | **2030–2033 Projection** | **CAGR** | **Relevance to Clear Current** |
+| --- | --- | --- | --- | --- |
+| U.S. Energy Management Systems (all) | $14.2B (2025) | $27.0B (2032) | ~9.6% | Broadest TAM — use for market context |
+| Global Building EMS (software + hardware) | $10.3B (2024) | $20.8B (2030) | 12.6% | Too broad — includes hardware |
+| Facility Energy Management Software (software-only) | $7.0B (2025) | $12.5B (2033) | 10.2% | Best TAM proxy for Clear Current |
+| Energy Procurement Software (PPA/contract) | $1.62B (2024) | $4.15B (2033) | 11.2% | Direct sub-segment for PPA module |
+| North America EMS (all) | $15.3B (2025) | — | ~15% | Regional reference only |
+
+| **SAM** | Scoping to mid-to-large U.S. commercial organizations with active energy management needs, multiple utility accounts, and sustainability obligations: ~$2.5–3.5 billion today, growing toward $5–6 billion by 2030 (40.6% commercial share of North America EMS revenue, Mordor Intelligence). |
+| --- | --- |
+
+## **Commercial Energy Spend — The Underlying Market**
+
+The foundational number anchoring all market opportunity is the total energy expenditure by U.S. commercial buildings. This figure establishes the universe of spend that Clear Current's platform addresses.
+
+| **Data Point** | **Figure** | **Source** | **Credibility** |
+| --- | --- | --- | --- |
+| U.S. commercial energy spend (2018) | $142 billion | EIA CBECS 2018 | HIGH — government survey |
+| U.S. commercial energy spend (2024 est.) | $200–241 billion | EIA baseline + price adjustment | MEDIUM — derived projection |
+| Commercial buildings | 5.9 million | EIA CBECS 2018 | HIGH |
+| Commercial floorspace | 96–97 billion sq ft | EIA CBECS 2018 | HIGH |
+| Average energy cost per building | $23,900/year | EIA CBECS 2018 | HIGH |
+| Electricity share of energy spend | 84% ($119B) | EIA CBECS 2018 | HIGH |
+| Large buildings (>100K sq ft) | 2% of buildings, 33%+ of energy | EIA CBECS 2018 | HIGH |
+
+## **Key Market Growth Drivers**
+
+- Rising energy costs — 6%+ YoY increases in 2025; projected 25% electricity price increase by 2030
+
+- ESG and sustainability mandates — California SB 253/261, EU CSRD (affecting U.S. multinationals), ISSB standards forcing investment-grade energy disclosures
+
+- AMI proliferation — 136.9 million smart meters (~82% of U.S. electric meters as of 2024) generating interval data that legacy spreadsheet workflows cannot process
+
+- AI integration — Verdantix 2023 Green Quadrant found all 15 leading vendors actively incorporating AI; buyers requesting predictive analytics and automated anomaly detection
+
+- Inflation Reduction Act — $369 billion earmarked for climate initiatives, creating incentives for commercial energy management investment
+
+| **03** | **Vertical Market Breakdown ****&**** Energy Spend** |
+| --- | --- |
+
+The following verticals represent the highest-priority targets for energy management software based on energy spend concentration and Clear Current's interview findings.
+
+| **Vertical** | **Annual U.S. Energy Spend** | **# of Buildings/Sites** | **Key Pain Points** | **Clear Current Fit** |
+| --- | --- | --- | --- | --- |
+| Manufacturing | $236B+ (EIA MECS) | ~350,000 sites | Process optimization, demand charges, regulatory compliance | Secondary — complex load profiles |
+| Commercial Real Estate | ~$32B (est.) | ~900,000 properties | Portfolio benchmarking, tenant billing, ESG/GRESB reporting | High — multi-site complexity |
+| Healthcare | $8–12B (est.) | ~900,000 buildings | 24/7 operations, district energy, 2.5x energy intensity vs. offices | Very High — district energy complexity |
+| Higher Education | $8–11B (derived) | ~4,700 institutions | Campus chargeback, district energy, federal grant cost allocation | Very High — primary beachhead |
+| Retail | ~$20B (est.) | ~657,000 buildings | Multi-location cost variability, refrigeration load management | Medium — multi-site opportunity |
+| K-12 Education | $8B+ (EPA ENERGY STAR) | ~130,000 schools | Aging infrastructure, budget constraints, limited staff | Medium — volume play |
+
+| **FINDING** | Higher education and healthcare represent the strongest near-term beachhead for Clear Current. Both feature district energy complexity, campus chargeback requirements, a dominant but aging incumbent (EnergyCAP), and high energy spend concentration in a manageable number of accounts. |
+| --- | --- |
+
+| **04** | **Buyer Behavior ****&**** Personas** |
+| --- | --- |
+
+## **How Commercial Organizations Staff Energy Management**
+
+The staffing model for energy management varies sharply by organization size and type. This divide defines the market opportunity for Clear Current.
+
+| **Org Type** | **Staffing Model** | **Energy Management Sophistication** | **Software Budget Authority** |
+| --- | --- | --- | --- |
+| Large public university | Dedicated energy manager + utilities team | High — CEM certified, district energy expertise | Director of Utilities; VP Facilities |
+| Large hospital/health system | Facilities director + energy engineer | High — 24/7 critical load management | VP Facilities or CFO |
+| Fortune 500 corporate | VP Sustainability or ESG team | Medium-High — ESG reporting-driven | Chief Sustainability Officer or CFO |
+| Mid-market multi-site operator | Facilities manager (secondary responsibility) | Low-Medium — reactive, spreadsheet-based | VP Operations; CFO approval for >$15K |
+| Small commercial (<10 locations) | Owner or office manager | Low — pays bills, no analysis | Owner-operator |
+
+## **Key Staffing Statistics**
+
+- Only 10% of organizations rely on a single person for energy management (EnergyCAP State of Utilities 2026)
+
+- 64% of FM employers report difficulty finding technically skilled candidates (McMorrow Reports 2023)
+
+- 66% of facility managers cite staffing and retention as their top challenge in 2023
+
+- 76% of energy professionals expect utility budgets to increase YoY in 2026 (EnergyCAP)
+
+- 69% say controlling/reducing utility spend is their #1 goal (EnergyCAP)
+
+- 30%+ of facility and maintenance managers report difficulty finding skilled staff (Limble/Manufacturing.net 2021)
+
+## **The Fake Energy Manager Persona**
+
+| **KEY INSIGHT** | Primary interview research with Don Johnson (Trane Technologies) confirmed a critical buyer persona gap: many organizations carry someone with the 'Energy Manager' title who is functionally a facilities scheduler — not an energy analyst. This person has the title, is expected to perform analysis, but lacks the tools and expertise. Clear Current's emotional sell to this persona is professional credibility: 'a tool that quietly makes them competent.' |
+| --- | --- |
+
+## **Pain Points — Research Confirmed**
+
+The following pain points were consistently identified across primary interviews and secondary research:
+
+| **Pain Point** | **Primary Interview Evidence** | **Secondary Research Evidence** |
+| --- | --- | --- |
+| Manual utility bill processing | Texas State: 'our system of gathering data and putting it into our database is also a little wonky' | Real estate portfolios process 10,000+ invoices annually in spreadsheets |
+| Billing error detection failure | Texas State: 'We had a weird multiplier happen in one of our bills. That's why you keep auditing' | FERC audit found $108M mischarged at FirstEnergy; RI PUC found 83% of flagged exceptions sent anyway |
+| Demand charge complexity | Texas State: 'demand and the information about our usage' — ops vs. finance tension | NREL: 1,000 kW peak at 80% ratchet = $144K/year locked in regardless of winter demand |
+| Rate classification errors | Don Johnson: customers often don't know what rate structure they're on | Arcadia manually reviews 20% of 500,000+ meter-tariff assignments for errors |
+| Campus chargeback complexity | Texas State: competing priorities between utility ops and finance teams | EnergyCAP users: 'chargebacks and splits are hard to understand' |
+| ESG reporting bottleneck | Andi Ault (UT Austin): budget submitted before knowing final utility rates | 76% of real estate executives plan to increase sustainability management spend (Verdantix 2025) |
+| Reactive rather than proactive management | Phil Combs (Trane): 'a lot of clients unfortunately are firefighting' | EnergyCAP users report needing a system that pushes alerts proactively |
+| IT/Security as buying gate | Phil Combs: 'You've got guys like me that would love to use this, and then you have IT... it's like no, no, no' | No independent secondary data available — research gap |
+
+| **05** | **Utility Billing Errors — Evidence ****&**** Credibility** |
+| --- | --- |
+
+## **The Core Value Proposition — What the Evidence Actually Says**
+
+The billing error opportunity is Clear Current's lead value proposition. However, the most commonly cited statistics come from biased sources. This section documents both the verified evidence and the appropriate way to frame it in presentations.
+
+| **CAUTION** | '80% of businesses overpay on utility bills' — DO NOT USE. Source is nationalutilitiesrefund.com, a company that profits from finding billing errors. The stat describes their own opt-in client base, not a representative commercial population. It has no independent citation. |
+| --- | --- |
+
+## **Credible, Independently Verified Billing Error Evidence**
+
+**Government ****&**** Regulatory Enforcement**
+
+- FERC (2022): Audit found FirstEnergy subsidiaries 'may have mischarged customers' by misclassifying $108 million in corporate overhead as recoverable costs — subsequently upheld by the Public Utilities Commission of Ohio in 2024
+
+- Rhode Island PUC: Ordered independent audit of Rhode Island Energy's billing systems after finding 83% of bills internally flagged for issues were sent to customers anyway
+
+- Pennsylvania PUC: Opened formal investigation into PPL Electric Utilities billing accuracy following reports of bills 30–50% above expected amounts
+
+**Academic ****&**** Legal Research**
+
+- Harvard Law School (2025): Peer-reviewed paper confirms structural information asymmetry between utilities and ratepayers — utilities generate the information regulators use to set rates, creating persistent conditions for billing and rate errors. Independent audits (not regulatory proceedings) are how most mischarged costs are discovered.
+
+**Industry Data (Moderate Conflict of Interest — Use Directionally)**
+
+- 360 Energy: 'Nearly 30% of our 360 Energy clients face billing errors annually' — More conservative than the 80% claim; reflects an active auditing client base but is directionally usable
+
+- Arcadia: Manually reviews approximately 20% of 500,000+ meter-tariff assignments for accuracy issues — suggests systemic tariff complexity producing errors at scale
+
+**Documented Error Categories**
+
+| **Error Type** | **Description** | **Real-World Example** |
+| --- | --- | --- |
+| Rate misclassification | Customer placed on wrong tariff schedule for months or years | Arcadia flags 20% of commercial meter-tariff assignments for review |
+| Demand charge / ratchet errors | Peak demand recorded incorrectly; ratchet clause compounds error | 1,000 kW summer peak at 80% ratchet = $144K/year locked in — even if winter demand is 300 kW |
+| Meter multiplier errors | CT multiplier applied incorrectly, compounding for years | Texas State: 'We had a weird multiplier happen in one of our bills' |
+| Overlapping billing cycles | During supplier switches, customer billed twice for same period | Common in deregulated markets during competitive supplier transitions |
+| Tax and rider assessment errors | Incorrect tax rates, renewable energy riders, or power factor penalties applied | Complex tax jurisdictions create frequent misapplication |
+| Contract clause violations | Supplier reopening settled contracts and adding charges not in original agreement | LinkedIn post from energy consultant: energy suppliers reopening contracts with new charges |
+
+| **RECOMMENDED FRAMING** | Instead of '80% overpay,' say: 'Federal and state regulatory enforcement actions — including a $108M mischarged amount at a single Ohio utility confirmed by FERC in 2022 — confirm that commercial utility billing errors are real, material, and structurally persistent. Harvard Law School's 2025 analysis identifies the information asymmetry between utilities and ratepayers as a root cause that independent auditing tools are uniquely positioned to address.' |
+| --- | --- |
+
+| **06** | **Competitive Landscape** |
+| --- | --- |
+
+## **Market Overview**
+
+The Verdantix Green Quadrant: Energy Management Software 2023 — the most authoritative independent benchmark — assessed 15 vendors across product capability and market momentum. Leaders Quadrant: Bueno, EnergyCAP, Honeywell, Johnson Controls, MRI Software, Schneider Electric, Siemens, and Spacewell. AI-native challengers including Arcadia, WatchWire, Gridium, and Nectar are growing rapidly outside the traditional EMS category.
+
+## **Competitive Positioning Map**
+
+| **Vendor** | **Primary Segment** | **Billing Audit Depth** | **AI / Analytics** | **Pricing Model** | **Mid-Market Accessible** | **Campus Chargeback** |
+| --- | --- | --- | --- | --- | --- | --- |
+| EnergyCAP | Higher Ed, Gov't | High | Moderate | $40–52/meter/yr | Partial | Yes (complex UX) |
+| Schneider Resource Advisor+ | Large Enterprise | Moderate | High (Sera AI) | Enterprise custom | No | No |
+| Siemens Building X / Navigator | Industrial, Large Comm. | Low | Moderate (ML) | Per meter (min 10) | No | No |
+| Johnson Controls OpenBlue | Healthcare, Education | Low | Moderate | Hardware/ESPC | No | No |
+| Arcadia | Enterprise, ESG | Very High | High (growing) | SaaS + services | Emerging | No |
+| Verse ('Aria') | Energy Procurement | None | High | SaaS | Yes | No |
+| Gridium | Comm. Real Estate | Moderate | Moderate | $470–833/month | Yes | No |
+| Nectar (YC-backed) | SMB to Mid-Market | Moderate | High | SaaS | Yes | No |
+| Clear Current (target) | Mid-to-Large Comm. | TARGET: Very High | TARGET: High | SaaS | TARGET: Yes | TARGET: Yes |
+
+## **Incumbent Competitors — Detailed Profiles**
+
+**EnergyCAP — Primary Incumbent**
+
+- Founded: 1980 (State College, PA). CEO: Shawn Lankton. PE-backed by Resurgens Technology Partners (2021). Revenue: ~$21.5M (2025, Orbis/Cortera). Employees: 90.
+
+- Target: Higher education (19% of users), government (19%), large commercial — organizations with 100–1,000+ meters
+
+- Market position: Named Market Leader in FeaturedCustomers Summer 2024; Info-Tech Champion 2025. 10,000+ customers. '40+ years helping clients succeed.'
+
+- Pricing: Express $4,000/year (~$40/meter, 100 meters); Enterprise $13,000/year (~$52/meter, 250 meters); implementation fees $5,000–$100,000+
+
+- Strengths: Deep utility bill accounting; meter hierarchy management; campus chargeback; ENERGY STAR integration; carbon accounting add-ons; 40-year installed base
+
+Verified weaknesses from 132 G2/Capterra user reviews (4.7/5 overall — high satisfaction but consistent UX frustrations):
+
+- 'Hundreds of reports whose names or descriptions don't always help. And the more reports that are added, the more the waters are muddied'
+
+- 'The chargebacks and splits are hard to understand. I tried to use the help, but it is lacking details'
+
+- 'Outdated, un-intuitive, glorified spreadsheet' — actual review title on Capterra
+
+- 'Recommendations for upgrades/improvements to reports tend to come back as a very simple: We can't do that'
+
+- Non-January fiscal year creates confusion: 'Actually misleading for reporting'
+
+- Long-tenured users remain undertrained: 'I have been using EnergyCAP for 8 years and I know there are plenty of ways to use the system but I just don't know how'
+
+- Implementation is time-intensive; spotty data with gaps; limited mobile experience
+
+**Arcadia — Primary AI-Native Competitor (HIGH THREAT)**
+
+- Funding: $649M total raised; $1.5B valuation (unicorn). ~$270M estimated ARR. 300+ enterprise customers including Ford.
+
+- Strategic pivot: January 2025 launch of Arcadia Enterprise Solutions — directly targeting utility bill management, energy procurement advisory, and supply management. This is the same use case as Clear Current.
+
+- Data moat: Acquired Urjanet 2022 — now covers 95%+ of U.S. utility accounts. 99% energy cost accuracy claim. Automated 500,000+ meter-tariff assignments.
+
+- Key gap: Built as B2B data infrastructure, not purpose-built for energy manager UX. Enterprise direct-sales motion still maturing post-pivot. No campus chargeback focus. No higher ed vertical depth.
+
+**Schneider Electric Resource Advisor+ — Incumbent Accelerating**
+
+- January 2026 launch of Resource Advisor+ with AI agent 'Sera' — orchestrates sub-agents across carbon tracking, ESG reporting, and energy procurement
+
+- Oriented toward ESG compliance for large multinationals; not billing accuracy focused. Requires Schneider hardware ecosystem for full value. IDC and Verdantix Leader.
+
+**Siemens Building X / Navigator**
+
+- Hardware-first company — subscription by meter, minimum 10 meters. ML-based anomaly detection but no tariff intelligence or billing audit capability.
+
+- User sentiment: Reddit/r/BuildingAutomation: 'I have literally heard not a single person who likes Desigo' — referring to Siemens' building management platform.
+
+**Johnson Controls OpenBlue**
+
+- ~$23B revenue; record $12B services backlog in FY2024. Strong in healthcare and education but hardware/ESPC contract model, not SaaS.
+
+- Energy layer exists but no utility bill auditing capability.
+
+**AI-Native Emerging Players**
+
+- Verse Inc. — AI platform 'Aria' for energy procurement, PPA management, and risk modeling. 'Built by energy buyers for energy buyers.' Upstream from billing audit. Potential partner rather than direct competitor.
+
+- iem — Raised $75M Series B in February 2026 to scale AI-native energy transaction infrastructure. Focused on energy markets automation.
+
+- Nectar (YC-backed) — 'The modern AI energy management platform.' Targets facility managers and ESG teams. SaaS, mid-market accessible. No campus focus.
+
+- Gridium — Energy-management-as-a-service for commercial real estate. $470–833/month. Hardware-free subscription. AI diagnostics.
+
+## **Clear Current****'****s Competitive Gap — The Positioning Thesis**
+
+| **OPPORTUNITY** | No single vendor currently combines: (1) Billing audit depth — EnergyCAP's core, but aging UX. (2) Tariff optimization at scale — Arcadia strong, but no campus focus. (3) PPA/contract management — Verse strong, but no billing audit. (4) Campus chargeback intelligence — EnergyCAP only, with documented UX failures. (5) AI-native interface — none of the incumbents. Clear Current is the only platform positioned to do all five. |
+| --- | --- |
+
+| **07** | **Advanced Metering Infrastructure (AMI)** |
+| --- | --- |
+
+## **U.S. Smart Meter Adoption**
+
+| **Metric** | **Figure** | **Source** |
+| --- | --- | --- |
+| Total U.S. smart meters installed (2024) | 136.9 million (~82% of electric meters) | EIA / IOT Analytics |
+| Projected penetration by 2030 | ~91% of all U.S. electric meters | IOT Analytics |
+| Residential share of AMI installations | ~88% of all U.S. AMI | EIA CBECS / AMR |
+| Commercial sub-metering penetration (2018) | ~10% of commercial buildings | EIA CBECS 2018 |
+| Commercial smart meter market size (2023) | $5.2B | GM Insights |
+| Commercial AMI CAGR through 2031 | 12.92% | AMR Research |
+| AMI market total (2024) | $4.5B, projected $9.0B | Yahoo Finance / AMR |
+| AMI 2.0 data frequency | 96+ readings/day per meter at leading utilities | Utility Analytics Institute |
+
+| **CRITICAL NUANCE** | The 82% smart meter headline is heavily skewed by residential installations. Commercial sub-metering was only ~10% as of 2018 (EIA CBECS). The commercial/industrial AMI segment is growing fastest (12.92% CAGR) but starts from a low base. This means most commercial customers still receive monthly billing reads — exactly the limitation that makes AI-powered billing audit software valuable today, and interval data analytics the near-term product evolution. |
+| --- | --- |
+
+## **What Interval Data Enables for Commercial Customers**
+
+| **Capability** | **Monthly-Only Billing Data** | **With 5/15-Minute Interval Data** |
+| --- | --- | --- |
+| Demand charge analysis | See total monthly peak demand | Identify which 15-min window set the peak; model demand reduction scenarios |
+| Time-of-use optimization | Limited to bill totals | Map consumption to on-peak vs. off-peak; model rate switching |
+| Fault detection | Discover anomalies 30+ days late | Detect equipment malfunction or occupancy violations in near-real time |
+| Load shaping | Reactive only | Proactive — shift loads before peak window to avoid demand charge ratchets |
+| Benchmarking | Building-vs-building comparisons | Hour-by-hour benchmarking with weather normalization |
+| PPA/contract optimization | Limited | Model actual consumption profiles against alternative rate structures |
+
+| **08** | **Higher Education Energy Market** |
+| --- | --- |
+
+## **Market Scale**
+
+| **Metric** | **Figure** | **Source** |
+| --- | --- | --- |
+| Education sector energy (K-12 + higher ed combined) | 854 TBtu in 2018 = 13% of all commercial energy | EIA CBECS 2018 |
+| K-12 annual energy spend | $8B+ | EPA ENERGY STAR |
+| Higher education annual energy spend (derived) | $8–11B | Derived from EIA CBECS + EPA K-12 baseline |
+| Energy as % of university operating budget | 5–10% | DOE / practitioner estimates |
+| Campus electricity cost benchmark | ~$1.10/sq ft/year | Xcel Energy data |
+| Campus natural gas cost benchmark | ~$0.18/sq ft/year | Xcel Energy data |
+| Buildings with 30–40 year old infrastructure | ~75% of campus facilities | DOE estimates |
+| Energy wasted due to equipment drift | 40%+ of campus energy | DOE / NREL research |
+| EUI for research-intensive universities | ~115–130 kBtu/sq ft/yr | CBECS / DOE benchmarks |
+| U.S. district energy systems | 660+ systems serving 5.5B sq ft heated, 1.9B sq ft cooled | IDEA / district energy associations |
+
+## **District Energy — The Complexity Driver**
+
+District energy systems are the defining characteristic of university and hospital energy management. Understanding them is essential to understanding Clear Current's opportunity in higher education.
+
+- Central plants produce steam and chilled water and distribute to hundreds of buildings via a buried pipe network
+
+- Buildings don't receive vendor utility bills — the university becomes the 'local energy vendor' for its own departments
+
+- Cost allocation requires percentage splits, formulas, and loss/remainder calculations that cannot be reduced to simple per-kWh billing
+
+- Reimbursable facilities (athletics, dining, dorms, research) must pay market-rate internal bills requiring accurate metering
+
+- Federal research grants require documented, auditable cost allocation — adding compliance complexity
+
+- More than 20% of hospital buildings use district heating systems (PMC 2023)
+
+- Hospitals consume ~9% of total U.S. commercial building energy while occupying only 4% of floorspace — 2.5x more energy per sq ft than office buildings
+
+| **IMPLICATION** | EnergyCAP's campus chargeback capability is what keeps university customers in their platform despite UX frustrations. No AI-native competitor offers this capability. Building campus chargeback with a better-designed UX would create a defensible competitive moat. |
+| --- | --- |
+
+## **Typical University Energy Management Stack**
+
+Based on EnergyCAP customer profiles and industry analysis:
+
+- Utility bill management platform (EnergyCAP dominant) — ingests invoices, validates bills, allocates costs via chargeback
+
+- Building Automation System (BAS) — multiple legacy systems coexist; 'a virtual museum of building automation systems' (University of Arizona energy manager)
+
+- Interval data platform — at institutions with AMI deployment; enables load profile analysis
+
+- ENERGY STAR Portfolio Manager — benchmarking against EPA standards
+
+- Custom spreadsheets — still prevalent for specific chargeback calculations and custom reporting
+
+| **09** | **Engagement Triggers ****&**** Buying Cycles** |
+| --- | --- |
+
+## **Trigger Hierarchy**
+
+| **Tier** | **Trigger Event** | **Conversion Probability** | **Primary Research Evidence** | **Secondary Research Evidence** |
+| --- | --- | --- | --- | --- |
+| Tier 1 | Energy contract expiration (9–12 months out) | Highest | Don Johnson: 'How does energy procurement hit their calendar?' | LevelTen 2025: 68% of procurement teams feel urgency to act on energy supply decisions |
+| Tier 1 | Bill shock / unexpected rate increase | Highest | Texas State: discovered multiplier error during routine review | EnergyCAP SoU 2026: 76% expect utility budgets to increase |
+| Tier 1 | New energy manager or sustainability hire | High | Andee Chamberlain at Texas State — brought in new analytical approach | New hires begin with software evaluation as first priority |
+| Tier 2 | ESG reporting mandate / compliance deadline | High | Andi Ault (UT Austin): budget submitted before knowing final utility rates | CSRD Wave 2 expanding to 2028; SB 253 Scope 3 requirements by 2026–27 |
+| Tier 2 | New building or portfolio expansion | Medium-High | Don Johnson: multi-site customers managing across locations | Building acquisition creates natural meter onboarding need |
+| Tier 2 | Local benchmarking ordinance (NYC LL97, CA AB1103) | Medium-High | Not covered in primary interviews | NYC LL97 carbon caps create strong NYC CRE demand |
+| Tier 3 | Legacy software EOL / dissatisfaction | Medium | EnergyCAP users expressing frustration in reviews | EnergyCAP Flash-to-HTML5 migration disrupted existing users |
+| Tier 3 | Failed manual audit | Medium | Phil Combs: clients discover errors one-time through consultant | Organizations finding overcharges via manual audit seek systematic software |
+| Tier 3 | New CFO engagement | Opportunistic | Texas State: finance vs. ops data tension | Finance executives discovering energy = 5–10% of OpEx with spreadsheet management |
+
+## **Seasonal Buying Calendar**
+
+| **Vertical** | **Q1 (Jan–Mar)** | **Q2 (Apr–Jun)** | **Q3 (Jul–Sep)** | **Q4 (Oct–Dec)** |
+| --- | --- | --- | --- | --- |
+| Higher Education (FY July 1) | Budget proposals submitted; committee review. Must be on radar by February. | Final approvals, RFP issuance; contract execution | Implementation begins ahead of fall semester | Strategic planning, early vendor evaluations, awareness phase |
+| State/Local Government (FY July 1 or Oct 1) | Budget planning for next FY | RFP issuance and vendor selection | End-of-fiscal-year spending surge (deploy remaining budget) | Budget proposals for next FY |
+| Corporate (FY Jan 1) | New year implementations; new budget authority triggers new investments | Sustainability report completion drives software evaluations | Budget planning season; software evaluations for next-year budget | Budget finalization; final purchase decisions |
+| Healthcare | Annual sustainability report drives Q1 data crunches | Software evaluations following annual report | Facilities planning cycle | Capital budget season; board-level ESG commitments |
+| ESG/Reporting-Driven | Annual sustainability report exposes data quality gaps | New fiscal year software evaluations begin | Software implementations for following year | ESG commitment announcements; compliance deadline prep |
+
+| **KEY SIGNAL** | EnergyCAP's State of Utilities 2026 survey: 76% of energy and sustainability professionals expect utility budgets to increase YoY. 69% say controlling/reducing utility spend is their #1 goal. This creates a structural buying environment with active, motivated buyers — the highest-quality demand signal available in market research. |
+| --- | --- |
+
+| **10** | **Source Credibility Audit ****&**** Recommended Substitutions** |
+| --- | --- |
+
+This section documents the outcome of an independent claim verification session (Research Session 3). Each statistic was evaluated for source credibility, conflict of interest, and whether an independent corroborating source was available.
+
+| **Claim** | **Original Source** | **Credibility** | **Conflict of Interest?** | **Action** |
+| --- | --- | --- | --- | --- |
+| '80% of businesses overpay on utilities' | nationalutilitiesrefund.com | LOW | Severe — vendor profits from finding errors | DO NOT USE — substitute with FERC/PUC enforcement examples |
+| '$241B commercial energy spend 2024' | Derived from EIA 2018 + price adjustment | MEDIUM | None — EIA is government | USE WITH QUALIFICATION — label as price-adjusted estimate |
+| '98% rate energy efficiency as important; 9% use software' | GridPoint 2023 vendor survey | LOW | Significant — GridPoint sells EMS | REPLACE — use EIA 4% BEMS; EPA 25% Portfolio Manager |
+| '5–15% of bills contain errors' | 360 Energy, National Utility Refund, Conservice | LOW precision / MEDIUM directional | All three profit from finding errors | USE DIRECTIONALLY — attribute as industry auditor estimate; support with FERC/PUC evidence |
+| 'Universities spend $6B on energy' | Misattributed / outdated figure | INCORRECT | None — just wrong | CORRECT: K-12 = $8B+ (EPA); Higher Ed = $8–11B (derived) |
+| 'Only 9% of companies use energy management software' | GridPoint 2023 vendor survey | LOW | Same conflict as above | REPLACE — use EIA 4% BEMS; EPA 25% Portfolio Manager |
+
+## **Safe-to-Use Statistics — Government ****&**** Independent Sources Only**
+
+The following statistics can be used in presentations, deliverables, and investor materials without qualification:
+
+| **Statistic** | **Figure** | **Source** | **Credibility** |
+| --- | --- | --- | --- |
+| U.S. commercial energy spend (2018) | $142 billion | EIA CBECS 2018 | HIGH |
+| Commercial buildings | 5.9 million; 96B sq ft | EIA CBECS 2018 | HIGH |
+| BEMS penetration | 4% of commercial buildings | EIA CBECS 2018 | HIGH |
+| Commercial sub-metering (2018) | ~10% of buildings | EIA CBECS 2018 | HIGH |
+| ENERGY STAR Portfolio Manager coverage | 25% of commercial floorspace (330,000+ buildings) | EPA 2023 | HIGH |
+| K-12 annual energy spend | $8B+ | EPA ENERGY STAR | HIGH |
+| Education sector energy (2018) | 854 TBtu = 13% of commercial energy | EIA CBECS 2018 | HIGH |
+| Smart meters installed (2024) | 136.9M = ~82% of U.S. electric meters | EIA / IOT Analytics | HIGH |
+| FirstEnergy mischarged amount (FERC 2022) | $108 million | FERC audit, confirmed by Ohio PUC 2024 | HIGH |
+| RI Energy billing exception passthrough rate | 83% of flagged bills sent anyway | Rhode Island PUC audit | HIGH |
+| Demand charge ratchet example (NREL) | 1,000 kW peak × 80% ratchet × $15/kW = $144K/year locked in | NREL / DOE | HIGH |
+| EnergyCAP pricing (public) | Express: $4K/yr; Enterprise: $13K/yr; Implementation: $5K–$100K+ | EnergyCAP website / G2 | HIGH |
+| Arcadia funding | $649M total raised; $1.5B valuation | Crunchbase / press releases | HIGH |
+| District energy systems in U.S. | 660+ systems, 5.5B sq ft heated | IDEA / district energy associations | HIGH |
+| Facility management software market | $3.1B by 2026 at 7.5% CAGR | IBISWorld | MEDIUM-HIGH |
+| BI/Energy analytics software market | $39.9B by 2030 at 3.5% CAGR | IBISWorld AI Overview | MEDIUM |
+| EnergyCAP budget increase signal | 76% expect utility budgets to increase YoY | EnergyCAP State of Utilities 2026 | MEDIUM — vendor survey but transparent methodology |
+| Demand charge as % of commercial bills | 30–70% of total commercial utility bill | DOE / NREL practitioner data | MEDIUM-HIGH |
+
+| **11** | **Deliverable Mapping — Research to Output** |
+| --- | --- |
+
+This section maps every research finding to the specific project deliverable it supports. Use this as a reference when building each output.
+
+| **Deliverable** | **Primary Research Sections to Pull From** | **Key Statistics** | **Key Qualitative Evidence** |
+| --- | --- | --- | --- |
+| Engagement Trigger Map | Section 9 (Triggers & Buying Cycles) | 76% expect budget increase; 68% feel urgency on energy supply decisions; 69% say cost reduction is #1 goal | Phil Combs: 'clients are firefighting'; Don Johnson: reactive buyer pattern; Phil: bill shock as entry point |
+| Seasonal Energy Management Calendar | Section 9 (Seasonal Buying Calendar) | Higher ed: Feb budget deadline; Corporate: Q3-Q4 budget season; Gov: Sep 30 FY end | EnergyCAP State of Utilities 2026 annual cycle; Andee Chamberlain budget submission timing |
+| User Journey Maps | Sections 4 (Personas), 5 (Billing Errors), 8 (Higher Ed) | 4% BEMS adoption; $23,900 avg energy cost per building; 10,000 invoices/year for large portfolios | Texas State dual-audience tension; Andi Ault finance persona; Don Johnson Fake Energy Manager |
+| Opportunity Heatmap | Sections 2 (Market), 3 (Verticals), 6 (Competitive Gap), 5 (Billing Errors) | $142B commercial spend; $7B software TAM; 4% BEMS adoption gap; 660+ district energy systems | Marc Spieler GTM tracks; Competitive gap across billing/tariff/PPA/chargeback/AI |
+| Product Module Recommendations | Section 6 (Competitive), Section 5 (Billing Errors), Section 7 (AMI) | EnergyCAP review language; Arcadia 20% meter-tariff review rate; NREL ratchet math; $108M FERC error | Phil Combs desired query list; Texas State anomaly detection need; Andi Ault report automation |
+| Final Presentation | All sections; synthesize across primary + secondary | Market sizing from Section 2; competitive map from Section 6; credible stats from Section 10 | Fake Energy Manager persona; billing error regulatory evidence; competitive gap thesis |
+
+## **Research Gaps — Areas Not Covered**
+
+The following gaps remain in the secondary research and represent areas where additional primary interviews or targeted research would strengthen the analysis:
+
+- Commercial Real Estate buyer voice — no primary or secondary research representing how a CRE property manager or VP of Real Estate evaluates energy software
+
+- Willingness to pay / pricing benchmarks — no data on what mid-market organizations actually budget for energy management software or what approval thresholds look like
+
+- IT/security as a buying gate — Phil Combs flagged this as a real adoption barrier but no independent secondary data documents how frequently IT blocks purchases or what compliance certifications accelerate approval
+
+- Churn and retention benchmarks for energy management SaaS — no category-specific data
+
+- Documented Clear Current customer proof point — Marc Spieler identified this as the single most critical missing sales asset; no published case study of an error found, disputed, and credit issued
+
+- Utility-side market — Marc Spieler identified selling to utilities (not just enterprise buyers) as a potential second market; zero secondary research on this angle
+
+| **12** | **Strategic Implications for Clear Current** |
+| --- | --- |
+
+## **Market Entry Recommendations — Research-Backed**
+
+The following recommendations are drawn directly from the convergence of primary interview findings and secondary research:
+
+| **Recommendation** | **Research Basis** | **Urgency** |
+| --- | --- | --- |
+| Lead with billing audit as the entry value prop — create immediate, quantifiable ROI before software commitment | Regulatory evidence (FERC $108M, RI PUC 83%); Marc Spieler's proof requirement; Phil Combs' client reactive pattern | Immediate |
+| Target higher education as initial beachhead vertical | EnergyCAP weakness concentration in this segment; campus chargeback gap; Andee Chamberlain / Andi Ault primary research; $8–11B spend | Immediate |
+| Build campus chargeback as a differentiated, well-designed platform capability (not a bolt-on) | No AI-native competitor offers this; EnergyCAP's most important feature with its worst UX; required for higher ed moat | Near-term (6–12 months) |
+| Develop the Arcadia competitive response now | Arcadia's January 2025 enterprise pivot + $649M funding makes it the clearest direct threat; window is narrowing | Immediate |
+| Build a documented error recovery case study from existing pilots | Marc Spieler: 'The concept's great. The question is, how often are these bills wrong?' — investors will ask this; no published proof point exists | Immediate — pre-fundraise priority |
+| Position ahead of ESG reporting deadlines (CSRD Wave 2, California SB 253) | Andi Ault: budget submitted before knowing final rates; Verdantix: 85% of real estate executives increasing sustainability spend | 18-month window |
+| Pursue ERP/billing software licensing strategy as parallel distribution channel | Marc Spieler: 'embed it into somebody else's billing thing... you just have to sell to QuickBooks and QuickBooks sells to everybody else' | Medium-term |
+| Apply to NVIDIA Inception program if NVIDIA GPU infrastructure is in the stack | Marc Spieler: free, no equity, VC introductions, enterprise matchmaking — 'a no-brainer' | Near-term (quick win) |
+
+*This document was compiled by the CDL MBA Consulting Team (Clayton Hester, Jason Wisnieski, Adam Case, Victor Pan) in support of the Clear Current Technologies CDL engagement (March–April 2026). Research was conducted using TAMU Library databases, Perplexity Deep Research, EIA government data, and direct sourcing. All statistics have been credibility-rated. Statistics marked HIGH-credibility are government or independent sources; MEDIUM-credibility statistics are from reputable trade sources; LOW-credibility statistics have been flagged for replacement. Do not use LOW-credibility statistics in investor or customer-facing materials without substitution.*

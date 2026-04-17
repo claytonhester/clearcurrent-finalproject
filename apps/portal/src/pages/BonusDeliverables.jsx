@@ -20,7 +20,7 @@ export function BonusDeliverables() {
                 {s.title}
                 <PlaceholderBadge status={s.status} />
               </h3>
-              <p className="mt-2 text-sm leading-relaxed">{s.body}</p>
+              <div className="mt-2 whitespace-pre-line text-sm leading-relaxed">{s.body}</div>
             </article>
           ))}
         </div>

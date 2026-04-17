@@ -1,0 +1,195 @@
+**Interview Summary**
+
+Don Johnson | Trane Technologies
+
+CEM, Sr. Account Manager - Pacific Southwest, Commercial HVAC Americas
+
+Conducted by Clayton Hester & Victor Pan | March 2026
+
+| **Why This Interview Matters** Don Johnson is a rare find: a Certified Energy Manager who has worked on both sides of the meter. He spent 9 years at El Paso Electric as the commercial key account rep for their largest customers, overseeing energy efficiency programs. He has also spent nearly 20 years on the solutions side at Carrier, Johnson Controls, and now Trane. His perspective bridges the gap between how utilities bill, how customers (mis)understand their bills, and how energy solutions providers sell into that confusion. This interview produced actionable intelligence on product features, competitive positioning, and go-to-market strategy. |
+| --- |
+
+# **1. Interviewee Profile**
+
+| **Field** | Detail |
+| --- | --- |
+| **Name** | Don Johnson |
+| **Title** | CEM, Sr. Account Manager - Pacific Southwest |
+| **Company** | Trane Technologies (Commercial HVAC Americas) |
+| **Location** | 1405 Vanderbilt Dr., El Paso, TX 79935 |
+| **Licenses** | TX: TACLA027340C │ NM: 352815 |
+| **Certification** | Certified Energy Manager (CEM), Association of Energy Engineers |
+| **Tenure at Trane** | ~2 years |
+| **Prior Experience** | El Paso Electric (~9 yrs) │ Johnson Controls (~7-8 yrs) │ Carrier (~11 yrs) |
+| **Key Clients** | UTEP, NMSU, Western NM Univ., Las Cruces Public Schools, City of Las Cruces, hospitals, industrial |
+
+At El Paso Electric, Don served as the commercial key account representative for their largest customers and oversaw commercial energy efficiency programs for approximately five years. He would profile customer energy use, meet with them to review those profiles, and offer solutions to reduce consumption. This utility-side experience gives him a uniquely informed perspective on how bills are constructed, where errors hide, and what customers actually understand about their own energy spend.
+
+# **2. Trane Technologies - Company ****&**** Digital Strategy**
+
+Trane Technologies has been in business for 113 years and is assembling a full digital services platform through a series of strategic acquisitions. Don emphasized that even Trane's own offerings are evolving rapidly as AI changes the landscape.
+
+## **Trane's Digital Stack**
+
+| **Platform** | **Function** | **Relevance to Clear Current** |
+| --- | --- | --- |
+| **Brainbox AI** | AI-powered building controls optimization; works with any controls system, not just Trane's | Adjacent, not competitive. Brainbox optimizes how buildings use energy; Clear Current analyzes how customers are billed for it. |
+| **Nuvolo** | Asset management platform for tracking physical equipment lifecycle and maintenance | Non-overlapping. Equipment management vs. billing intelligence. |
+| **Trane Ensemble** | Enterprise software aggregating multiple buildings into a single access point | Complementary. Ensemble unifies building operations; Clear Current could unify billing across those same sites. |
+| **Trane Cloud** | New cloud platform unifying controls, AI, asset management, and multi-building visibility | Potential integration target. Clear Current's billing insights could feed into this unified view. |
+| **Liquid Cooling Tech** | Recent acquisition targeting data center market (Meta, Jupiter facilities in El Paso) | Market signal. Data centers are a massive, growing energy consumer vertical. |
+
+| **Key Takeaway for Clear Current** Trane is building building operations intelligence (how equipment runs). Clear Current is building billing and procurement intelligence (how customers get charged). These are complementary, not competitive. Don's enthusiasm about the concept of AI-driven billing analysis - rather than any defensiveness - is a strong signal that a partnership or channel play could exist. |
+| --- |
+
+# **3. Key Interview Findings**
+
+## **3.1 Most Customers Are Reactive, Not Proactive**
+
+When asked what customers are looking for from Trane, Don emphasized that the majority of his clients operate reactively. They have significant deferred maintenance, lack manpower and budget, and only call when something breaks. This pattern holds even in industries where you would expect sophisticated operations.
+
+*"**Most of the customers, believe it or not, are still reactive on the maintenance side of things. I still run into a lot of customers who have a lot of deferred maintenance. They just don't have the manpower... they can't get the funding or the budgeting to really do really good maintenance on their equipment.**"*
+
+*"**We run into a lot of customers like that - customers that you wouldn't think were operating like that - like hospitals, but they do.**"*
+
+**Implication for Clear Current: **This validates the "Spot Errors" capability as the right lead entry point. These organizations are not looking for optimization - they need someone to tell them what is already wrong. The fastest path to a customer is: "You get bills? You think they're right? We can show you what's wrong."
+
+## **3.2 The ****"****Fake Energy Manager****"**** Problem**
+
+Don confirmed that many organizations with someone carrying the energy manager title do not actually have anyone doing energy analysis. The person with that title is often just operating the building control system and doing scheduling - they are functionally a facilities director.
+
+*"**Even some of these school districts, they have someone with the energy manager title. But really all they're doing - all they really are - is someone who's operating their building control system, they're doing scheduling. They're not really analyzing energy use.**"*
+
+**Implication for Clear Current: **Dan's UX design assumes a spectrum from "energy expert" to "CFO layman." The reality Don described is a large middle category: someone who carries the title, is expected to know, but doesn't actually have the analytical skills. That person would benefit enormously from a tool that quietly makes them competent. This is a different emotional sell than either the expert or CFO path - it's about professional credibility.
+
+## **3.3 Bills Alone Have Limited Data - But AMI Is Changing That**
+
+Drawing on his nine years at El Paso Electric, Don explained the fundamental limitation of working from bill statements alone: they only show totals and tiered charge summaries, not granular usage profiles. However, he noted that utilities are actively rolling out AMI (Advanced Metering Infrastructure) meters that capture data at 5-minute intervals, which dramatically expands what can be analyzed.
+
+*"**On a bill it's just a statement, but you don't have that data of how they're using the energy 24/7 throughout the day. But it's getting better - now they're installing the new meters, the AMI type meters, where a customer can go in and see how they use their energy throughout a day, where their peaks are, what's affecting their peaks.**"*
+
+**Implication for Clear Current: **Invoice PDF analysis is the right starting point, but interval data from AMI meters is the next data frontier. If Clear Current can ingest 5-minute interval data alongside billing documents, the analysis capability expands significantly: pinpointing which equipment caused demand spikes, identifying optimal rate switches, validating solar ROI calculations.
+
+## **3.4 Rate Complexity Is a Massive Pain Point**
+
+Don described multiple layers of rate complexity that customers either do not understand or cannot analyze without expert help. This emerged as one of the richest areas of the interview.
+
+**Tiered Rates ****&**** Time-of-Use Confusion**
+
+Customers often do not even understand the rate structure they are on. Tiered rates are complicated, and utilities are moving toward time-of-use rates designed around generation peak demand. Don noted that the peak demand profile is shifting due to electrification and EV charging - what used to peak at 2pm is now moving to 4-5pm.
+
+**Demand Ratchets**
+
+Don walked through a specific mechanism where summer peak demand (June through September) sets a 75% floor for the remaining eight months of the year. A customer who peaks at 1,000 kW in July pays a minimum of 750 kW demand charges for the rest of the year, even if actual demand drops to 500 kW.
+
+*"**When you get out of those months, your minimum demand charge is going to be 75%. So it'd be 750 kilowatts for the rest of the year. Even if you only use 500 kilowatts, you're going to pay 750 kilowatts on your ratchet.**"*
+
+**Rate Class Boundaries**
+
+Don described customers who are near the threshold between rate classes - for example, the 600 kW boundary between general service and large power service at El Paso Electric. Crossing that threshold by even a small amount triggers significantly higher demand charges for consecutive months. Controls-based demand limiting can keep customers below these thresholds and save thousands of dollars.
+
+**Implication for Clear Current: **These are exactly the patterns Clear Current's AI should detect automatically. Specific alert types to consider: "You are 15 kW from dropping to a cheaper rate class," "Your summer peak set a ratchet that is costing you $X/month for the next 8 months," and "Switching to a time-of-use rate would save you $X based on your usage profile."
+
+## **3.5 Power Factor Penalties - A Quick-Win Feature**
+
+When asked what an AI-powered energy management platform should prioritize, Don's first and most emphatic recommendation was power factor analysis.
+
+*"**I don't know if they're looking at power factor, but that should be something they'd be looking at because all the utilities now are penalizing for low power factor. And power factor correction is usually a pretty quick return on investment - within a couple years.**"*
+
+**Implication for Clear Current: **If Clear Current can flag power factor penalties from bill data and quantify the ROI of correction (cap banks), that is a concrete, dollar-quantifiable recommendation that builds trust fast. This could be a differentiating alert that competitors are not surfacing.
+
+## **3.6 Third-Party Energy Management Firms Are the Real Incumbent**
+
+Don described large multi-site customers (auto parts chains, food chains, Home Depot-scale organizations) that already use third-party energy management companies to oversee and analyze usage. These firms monitor rates, extract bill data, and interface with the utility on the customer's behalf. They have data extraction software, but Don did not believe any of them had an AI layer that could intuitively deliver insights.
+
+*"**Some of these places were already using third party energy management companies to kind of oversee and analyze their energy usage... they had the data extraction software as well... but I don't know if they had a tool where you would actually use that data with AI to automatically or intuitively deliver information.**"*
+
+**Implication for Clear Current: **The competitive landscape is not just EnergyCAP and Arcadia. Clear Current is also competing against a fragmented industry of outsourced energy management consultants. The positioning opportunity: "We replace or supercharge your third-party energy management company."
+
+# **4. How Don Would Use the Product**
+
+When asked how he would want to interact with an AI-powered energy management tool, Don became visibly engaged. His wish list was specific and practical, centered on speed of insight delivery.
+
+## **4.1 Desired Functions ****&**** Queries**
+
+- **"****Generate me an energy profile for this customer****"**** **- for any time period: a specific month, a full year, or a custom range
+
+- **"****Pinpoint when this customer had their highest peak demand****"**** **- identify anomalies and spikes across billing history
+
+- **"****What month was this customer using the most kilowatt hours?****"**** **- comparative analysis across time periods
+
+- **Peak vs. off-peak usage comparison **- understanding where costs are driven by timing vs. volume
+
+- **Solar feasibility analysis **- determining how much energy is used during peak solar production hours, calculating cost avoidance, and figuring out payback/ROI for solar installations
+
+## **4.2 What Matters Most to Him**
+
+*"**Anything to save me time and help me to help a customer and move on to the next job so I can sell somebody something else.**"*
+
+Don's primary value driver is speed. He has the expertise to do manual energy analysis but lacks the time because he is juggling multiple customers across two states. The product's value to someone like Don is not education - it is acceleration. He knows what questions to ask; he needs answers faster.
+
+## **4.3 Dashboard ****&**** Presentation Value**
+
+Don also emphasized the importance of how information is presented, particularly for non-expert audiences.
+
+*"**I think also important is maybe the dashboards. Putting together, having the information put together in one place... something that's easy to read and understand not for the energy expert, but for the energy expert to explain it to the end user so that they could understand it without flipping through a bunch of pages and being overwhelmed.**"*
+
+**Key Insight: **Don frames the dashboard as a communication tool, not just an analytical tool. He wants something he can put in front of a customer to explain their situation clearly. This aligns with Dan's "Push to User" dashboard layer in the UX architecture - but adds the nuance that the audience for the dashboard may be the energy expert's customer, not just the expert themselves.
+
+# **5. Additional Ideas ****&**** Insights from Don**
+
+## **5.1 The KWH Relationship**
+
+Don provided a useful framing for how to think about bill reduction: KWH represents roughly 60% or more of a bill, and KWH is simply a byproduct of KW (how long you are using power). If you reduce KW, you reduce not just KWH charges but also fuel charges, energy efficiency recovery charges, and virtually everything on the bill except the customer service charge. This framing could inform how Clear Current presents savings opportunities - lead with KW reduction as the lever that moves everything else.
+
+## **5.2 Electrification Is Shifting Peak Demand**
+
+Don noted that the traditional peak demand window (roughly noon to 2pm) is shifting later in the day (4-5pm) due to EV charging and building electrification trends. Utilities are beginning to adjust their peak demand charge windows accordingly. Clear Current should account for this shift when analyzing time-of-use rate optimization and flagging peak demand risks.
+
+## **5.3 The Solutions Provider as a User Persona**
+
+Don represents a user type that Clear Current may not have fully mapped: the energy solutions provider. He is not an energy buyer or seller. He is a middleman who needs quick energy intelligence to build proposals and close deals. He described the value proposition in his own terms:
+
+*"**It's easier to talk to a customer who has knowledge about their own use and you can come up with quicker solutions with that understanding than having to start from scratch.**"*
+
+If Clear Current's platform could give someone like Don a pre-built customer energy profile before he walks into a sales meeting, that is a channel partnership opportunity. Trane reps become both users and referral sources.
+
+## **5.4 Networking Leads**
+
+Don provided three professional association leads for both interview outreach and future customer acquisition:
+
+- **TEMA (Texas Energy Managers Association) **- chapters throughout Texas; members are energy managers from school districts, universities, community colleges, and counties, plus industry members. They offer courses and professional development hours for certifications.
+
+- **AEE (Association of Energy Engineers) **- national organization with many local chapters; energy-focused; Don holds his CEM certification through this organization.
+
+- **ASHRAE **- primarily HVAC, heating, ventilation, and refrigeration focused, but has a significant energy component.
+
+## **5.5 Don's Interest in AI Energy Management**
+
+Don expressed genuine interest in the concept of an AI-powered energy management platform. He asked detailed follow-up questions about how such a tool would collect data, whether it would go beyond bills to include survey meter data, and when something like this might be available on the market. He also offered to connect the team with people in his network who could provide additional perspective. His engagement level suggests strong market demand from the solutions provider side of the industry.
+
+# **6. Strategic Recommendations for Dan ****&**** John**
+
+| **Recommendation 1: Add Demand Ratchet ****&**** Rate Boundary Alerts** Don's detailed walkthrough of demand ratchets and rate class thresholds represents a specific, high-value alert type that Clear Current should prioritize. These are detectable from bill data alone, produce quantifiable savings, and give customers an immediate reason to trust the platform. |
+| --- |
+
+| **Recommendation 2: Consider Power Factor as a Quick-Win Feature** If power factor penalties appear on utility bills (and they increasingly do), flagging them with an estimated ROI for correction is a fast way to build credibility with new customers. Don called this out as his first recommendation unprompted. |
+| --- |
+
+| **Recommendation 3: Explore the Solutions Provider Channel** Don represents a large, underserved user persona: the energy solutions rep who needs customer energy intelligence to sell more effectively. A partnership or channel program with companies like Trane, Carrier, or Johnson Controls could give Clear Current access to thousands of enterprise energy decision-makers through a trusted existing relationship. |
+| --- |
+
+| **Recommendation 4: Position Against Third-Party Consultants, Not Just Software** The real incumbent for large multi-site customers is not a software platform - it is a third-party energy management firm. Clear Current's messaging should address this directly: "We do what your energy consultant does, faster, cheaper, and with AI that never sleeps." |
+| --- |
+
+| **Recommendation 5: Plan for AMI Interval Data Ingestion** Bill PDFs are the right starting point, but the next wave of value comes from ingesting AMI meter data (5-minute intervals). This unlocks equipment-level diagnosis, optimal rate switching analysis, and predictive demand management. Consider this for the product roadmap. |
+| --- |
+
+| **Recommendation 6: Engage TEMA for Both Interviews and GTM** The Texas Energy Managers Association is a concentrated network of exactly the buyers Clear Current is targeting: public-sector energy managers at school districts, universities, and municipal organizations. This is a high-leverage outreach channel for both research interviews and future customer acquisition. |
+| --- |
+
+Prepared by Clayton Hester | CDL MBA Consulting Team
+
+Team: Clayton Hester, Adam Case, Jason Wisnieski, Victor Pan
+
+Clear Current Technologies | Dan Schreiber (CPO) & John Reuter (CEO)

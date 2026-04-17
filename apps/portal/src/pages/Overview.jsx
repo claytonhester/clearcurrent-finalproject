@@ -168,7 +168,17 @@ export function Overview() {
                   <p className="text-sm text-cc-mid-gray">{p.title}</p>
                   <p className="text-xs text-cc-dark-text">{p.company}</p>
                 </div>
-                <p className="shrink-0 text-xs font-medium text-cc-mid-gray">{p.date}</p>
+                {p.logoSrc ? (
+                  <img
+                    src={p.logoSrc}
+                    alt=""
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 shrink-0 rounded-lg border border-cc-mid-gray/15 bg-cc-white object-contain p-1"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : null}
               </div>
             )
           })}
