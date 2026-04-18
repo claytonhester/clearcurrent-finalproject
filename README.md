@@ -44,6 +44,8 @@ Copy [`apps/final-presentation/.env.example`](apps/final-presentation/.env.examp
 
 ## Deployment (Vercel)
 
+See **[VERCEL.md](VERCEL.md)** for Root Directory cheat sheet if a deploy fails (“`apps/portal` does not exist” → use **`apps/final-presentation`**).
+
 Use **two Vercel projects** pointing at the same repo with different **Root Directory** settings:
 
 1. **Portal** — Root Directory: **`apps/final-presentation`**. Framework: **Vite**. Output: **`dist`**. [`apps/final-presentation/vercel.json`](apps/final-presentation/vercel.json) has SPA rewrites and security headers.
