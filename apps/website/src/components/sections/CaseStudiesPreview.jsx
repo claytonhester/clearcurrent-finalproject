@@ -28,7 +28,7 @@ export default function CaseStudiesPreview() {
             <div>
               <SectionLabel>Case Studies</SectionLabel>
               <h2 className="mt-4 text-4xl md:text-[52px] leading-[1.1] tracking-[-0.02em] text-white">
-                Proven with real <span className="text-white/40">portfolios</span>
+                Grounded in <span className="text-white/40">operator research</span>
               </h2>
             </div>
             <Link
@@ -62,6 +62,7 @@ export default function CaseStudiesPreview() {
                         prefix={stat.prefix}
                         suffix={stat.suffix}
                         label={stat.label}
+                        decimals={stat.decimals ?? 0}
                         numberClassName="text-[var(--gold)] text-3xl"
                         labelClassName="text-white/30"
                         className="items-start"
@@ -122,6 +123,7 @@ export default function CaseStudiesPreview() {
                       prefix={cs.stats[0].prefix}
                       suffix={cs.stats[0].suffix}
                       label={cs.stats[0].label}
+                      decimals={cs.stats[0].decimals ?? 0}
                       numberClassName="text-[var(--gold)] text-2xl"
                       labelClassName="text-white/25 text-[11px]"
                       className="items-start"

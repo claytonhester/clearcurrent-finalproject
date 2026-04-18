@@ -2,10 +2,10 @@
 
 This repository contains two apps:
 
-| App                         | Path                           | Stack                | Purpose                                                                                                    |
-| --------------------------- | ------------------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **GTM Intelligence Portal** | [`apps/portal`](apps/portal)   | React + Vite         | Client deliverable presentation (executive summary, triggers, calendar, journeys, heatmap, modules, bonus) |
-| **Public website**          | [`apps/website`](apps/website) | Next.js (App Router) | Future marketing / public site (scaffold; separate UI from the portal)                                     |
+| App                    | Path                                                 | Stack                | Purpose                                                                                  |
+| ---------------------- | ---------------------------------------------------- | -------------------- | ---------------------------------------------------------------------------------------- |
+| **Final presentation** | [`apps/final-presentation`](apps/final-presentation) | React + Vite + TS    | Confidential executive deliverables (Decision Brief + D1–D8), appendix, traceable quotes |
+| **Public website**     | [`apps/website`](apps/website)                       | Next.js (App Router) | Marketing / public site scaffold (separate UI from the briefing portal)                  |
 
 ## Requirements
 
@@ -19,54 +19,48 @@ Install once from the repository root (npm workspaces):
 npm install
 ```
 
-| Command                  | Description                                 |
-| ------------------------ | ------------------------------------------- |
-| `npm run dev:portal`     | Vite dev server for the portal              |
-| `npm run dev:website`    | Next.js dev server for the public site      |
-| `npm run build`          | Production build for **all** workspaces     |
-| `npm run lint`           | ESLint in each app                          |
-| `npm run format`         | Prettier write                              |
-| `npm run format:check`   | Prettier check (CI)                         |
-| `npm run test`           | Vitest for the portal                       |
-| `npm run typecheck`      | `tsc --noEmit` for the portal               |
-| `npm run preview:portal` | Preview the portal `dist/` (SPA deep links) |
+| Command                  | Description                                                 |
+| ------------------------ | ----------------------------------------------------------- |
+| `npm run dev:portal`     | Vite dev server for **`@clear-current/final-presentation`** |
+| `npm run dev:website`    | Next.js dev server for the public site                      |
+| `npm run build`          | Production build for **all** workspaces                     |
+| `npm run lint`           | ESLint in each app                                          |
+| `npm run format`         | Prettier write                                              |
+| `npm run format:check`   | Prettier check (CI)                                         |
+| `npm run test`           | Vitest for **`@clear-current/final-presentation`**          |
+| `npm run typecheck`      | `tsc --noEmit` for **`@clear-current/final-presentation`**  |
+| `npm run preview:portal` | Preview final-presentation production build (`dist/`)       |
 
-Portal-only scripts are also available via `npm run <script> -w @clear-current/portal` after `cd apps/portal` if you prefer.
+Workspace-only commands: `npm run dev -w @clear-current/final-presentation`, etc.
 
 ## Portal — environment variables
 
-Copy [`apps/portal/.env.example`](apps/portal/.env.example) to `apps/portal/.env.local` for local use. On **Vercel**, set the same keys on the **portal** project (root directory `apps/portal`).
+Copy [`apps/final-presentation/.env.example`](apps/final-presentation/.env.example) to `apps/final-presentation/.env.local` for local builds. On **Vercel**, set the same keys on the portal project (**Root Directory:** `apps/final-presentation`).
 
-| Variable                | Required | Purpose                                                                                                     |
-| ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
-| `VITE_SITE_URL`         | No       | Production origin **without trailing slash**. Injected at **build** into `og:url`, `og:image`, `canonical`. |
-| `VITE_PLAUSIBLE_DOMAIN` | No       | Plausible hostname. CSP in [`apps/portal/vercel.json`](apps/portal/vercel.json) allows Plausible.           |
-
-If `VITE_SITE_URL` is unset, Open Graph image stays relative (`/og-image.svg`) and the `og:url` meta tag is omitted.
+| Variable                | Required | Purpose                                                                                                                        |
+| ----------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `VITE_SITE_URL`         | No       | Production origin **without trailing slash**. Injected at **build** into `og:url`, `og:image`, `canonical` where configured.   |
+| `VITE_PLAUSIBLE_DOMAIN` | No       | Plausible hostname. CSP in [`apps/final-presentation/vercel.json`](apps/final-presentation/vercel.json) allows `plausible.io`. |
 
 ## Deployment (Vercel)
 
 Use **two Vercel projects** pointing at the same repo with different **Root Directory** settings:
 
-1. **Portal** — Root Directory: `apps/portal`. Framework: **Vite**. Output: **`dist`**. Build: `npm run build` (default when Vercel runs from that directory). [`apps/portal/vercel.json`](apps/portal/vercel.json) has SPA rewrites and security headers.
-2. **Website** — Root Directory: `apps/website`. Framework: **Next.js**. Build: `npm run build` (Next on Vercel is auto-detected).
+1. **Portal** — Root Directory: **`apps/final-presentation`**. Framework: **Vite**. Output: **`dist`**. [`apps/final-presentation/vercel.json`](apps/final-presentation/vercel.json) has SPA rewrites and security headers.
+2. **Website** — Root Directory: `apps/website`. Framework: **Next.js**.
 
-Set `VITE_SITE_URL` (and optional Plausible) only on the portal project.
-
-## SEO & indexing (portal)
-
-- [`apps/portal/public/robots.txt`](apps/portal/public/robots.txt) defaults to **`Disallow: /`** for a semi-private deliverable.
-- [`apps/portal/public/sitemap.xml`](apps/portal/public/sitemap.xml) is a template: replace `SITE_URL` when opening indexing.
+Set `VITE_SITE_URL` (and optional Plausible) on the portal project.
 
 ## Planning & documentation
 
-- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — stack, routes, data layout.
-- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — launch checklist and open content.
+- **[apps/final-presentation/README.md](apps/final-presentation/README.md)** — architecture, content layout, tests.
+- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — what shipped (final presentation app).
+- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — launch / content checklist.
 - [docs/planning/README.md](docs/planning/README.md) — index.
 
 ## Security note
 
-There is **no backend** in the portal. Research copy in `apps/portal/src/data/` ships in the public JS bundle—treat the deployed portal URL as **public** unless you add access control elsewhere.
+There is **no backend** in the portal. Curated copy in `apps/final-presentation/src/content/` ships in the public JS bundle—treat the deployed URL as **public** unless you add access control elsewhere.
 
 ## License
 

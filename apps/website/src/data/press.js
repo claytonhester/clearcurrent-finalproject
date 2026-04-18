@@ -1,14 +1,12 @@
-// TODO: confirm with John/Dan — real press coverage URLs
 export const pressItems = [
   {
     publication: 'Business Wire',
     headline:
-      'Clear Current Technologies Raises $4.275M Seed Round to Bring AI to Enterprise Energy Management',
+      'Clear Current Raises $4M+ to Launch First AI-Powered Virtual Energy Manager for Enterprises',
     date: 'May 2025',
-    url: '#', // TODO: real URL
+    url: 'https://www.businesswire.com/news/home/20250527556955/en/Clear-Current-Raises-%244M-to-Launch-First-AI-Powered-Virtual-Energy-Manager-for-Enterprises',
   },
-  // TODO: add CDL-Texas mention and other coverage when available
 ]
 
-// Fallback: show investors if fewer than 3 press items at launch
-export const showInvestorFallback = pressItems.length < 3
+/** Show investor grid only when there is no press to link to. */
+export const showInvestorFallback = pressItems.length === 0

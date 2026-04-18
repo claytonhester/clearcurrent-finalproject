@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "generated_at": "2026-04-17T12:00:00Z",
+  "quotes": [
+    {
+      "id": "example-buyer-quote",
+      "text": "Example verbatim line from transcript.",
+      "speaker": "Example Person",
+      "role": "Director",
+      "org": "Example Org",
+      "sourceId": "cc-example-org",
+      "quoteBankSection": "billing-anomalies",
+      "attribution": "full",
+      "context": "Asked about prior month variance."
+    }
+  ],
+  "sources_to_add": [],
+  "warnings": []
+}

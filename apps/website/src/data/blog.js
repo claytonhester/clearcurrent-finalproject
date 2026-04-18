@@ -1,4 +1,4 @@
-// TODO: replace with real blog content or CMS integration
+// Editorial posts; align claims with synthesis / verification memos before wider distribution.
 export const blogPosts = [
   {
     slug: 'enterprise-energy-bills-wrong',
@@ -8,6 +8,8 @@ export const blogPosts = [
       "The average enterprise utility bill contains errors that persist for months. Here's why — and what the real cost of inaction looks like.",
     date: 'April 2026',
     body: `Every month, enterprises across the country receive utility bills that contain errors. Not edge cases. Not rounding discrepancies. Real, material billing errors that cost organizations thousands — sometimes tens of thousands — of dollars per month.
+
+Regulators have documented how severe the delivery problem can be: Rhode Island’s Public Utilities Commission, in a major utility enforcement review, found that 83% of bills the utility itself had flagged as problematic were still mailed to customers. That is not a rounding issue — it is a systems and incentives problem downstream of the meter.
 
 The industry data is striking. Studies consistently show that between 15% and 20% of enterprise utility bills contain errors of some kind. Some are small — a misapplied late fee, a rounding issue on a tax calculation. But many are significant: wrong rate classes, incorrect demand charge multipliers, fees that should have been removed after a contract renegotiation, meters billed to the wrong account.
 

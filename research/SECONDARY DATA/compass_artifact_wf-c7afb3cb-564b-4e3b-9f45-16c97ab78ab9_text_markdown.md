@@ -30,7 +30,8 @@
 **Source quality flags:** Wawa data is 2008-era. Approval thresholds synthesized across SaaS procurement vendor blogs (directional, not survey-validated). "7.5% savings" and "1M errors flagged" are EnergyCAP marketing claims, not independently verified. No authoritative survey publishes "energy FTE per 100 locations" for QSR/c-store.
 
 ### So what for Clear Current
-The ICP is a **VP of Operations or Director of Facilities at a 150–400 location operator** (QSR, casual dining, c-store, fitness, small hotel groups) currently stitching together spreadsheets, AP clerks, and a legacy bill-audit consultant — below the ~1,000-unit threshold where a dedicated Energy Manager is justified. The three sharpest triggers — **double-digit rate shock, M&A-driven portfolio chaos, and new ESG/finance mandates** — push decisions into the **$15–75K ARR VP/CFO band**, below board scrutiny. Position against the *status quo* (spreadsheets + Cass/ENGIE/SpyGlass outsourcing) with a land wedge of "bill-shock prevention + GL-coded ERP-ready data" — not head-on against EnergyCAP in its entrenched government/education/healthcare base.
+
+The ICP is a **VP of Operations or Director of Facilities at a 150–400 location operator** (QSR, casual dining, c-store, fitness, small hotel groups) currently stitching together spreadsheets, AP clerks, and a legacy bill-audit consultant — below the ~1,000-unit threshold where a dedicated Energy Manager is justified. The three sharpest triggers — **double-digit rate shock, M&A-driven portfolio chaos, and new ESG/finance mandates** — push decisions into the **$15–75K ARR VP/CFO band**, below board scrutiny. Position against the _status quo_ (spreadsheets + Cass/ENGIE/SpyGlass outsourcing) with a land wedge of "bill-shock prevention + GL-coded ERP-ready data" — not head-on against EnergyCAP in its entrenched government/education/healthcare base.
 
 ---
 
@@ -57,6 +58,7 @@ The ICP is a **VP of Operations or Director of Facilities at a 150–400 locatio
 **Flags:** Energize's climate benchmarks are ~3 years old but still authoritative. ICONIQ's 515% top-quartile growth is AI-skewed — traditional top-quartile is closer to 150–200%. Proptech numbers from Qubit/Ellty are database-derived, not primary publications.
 
 ### So what for Clear Current
+
 Clear Current should privately target **$500K–$1M ARR, 3–5 referenceable enterprise logos, 90%+ GRR, 110%+ trending NRR, and burn multiple <1.5x** to credibly reach Series A in 12–18 months at the $1.5–2M median bar — but pitch against the **Energize climate-SaaS benchmark set** (70% YoY growth, 60–80% GM, <5% growth decay), not T2D3. The highest-leverage metrics to overperform on are **NRR (target 115%+), CAC Payback (<18mo despite enterprise ACVs), and GRR (95%+)** — these three drive the most variance in 2025 Series A valuations. Preempt the three deal-killers: **no customer >15% of ARR, zero services revenue bundled into ARR, subscription GM above 60%**.
 
 ---
@@ -74,6 +76,7 @@ Clear Current should privately target **$500K–$1M ARR, 3–5 referenceable ent
 **Contract terms:** Multi-year is standard. EnergyCAP pricing model is **per meter-year** (~$40–52/meter); WatchWire uses per-account/per-meter with enterprise custom; Gridium roughly **$5,000–$6,000 per facility/year**; EnergyCAP base deployments start ~$5K/yr and scale to $50K+ for large portfolios. Implementation is a separate $5K–$100K+ one-time fee.
 
 **Switch triggers:**
+
 1. **PE-driven price escalation post-acquisition.** Resurgens' roll-up thesis at EnergyCAP creates predictable pricing pressure at renewal — a standard PE SaaS playbook.
 2. **Version EOL / forced cloud migration.** EnergyCAP's transition from legacy on-prem (EnergyCAP 7) to cloud UtilityManagement created re-implementation pain for a portion of the base.
 3. **Feature gaps in AI/billing error detection.** Parsepoint explicitly notes EnergyCAP lacks built-in OCR — "teams either enter data manually or purchase a separate OCR tool and build an integration."
@@ -87,6 +90,7 @@ Clear Current should privately target **$500K–$1M ARR, 3–5 referenceable ent
 **Flags:** No public NRR/GRR for energy SaaS vendors — triangulated from review counts, vendor claims, and category norms. "Resolute" reference in the task brief was incorrect — **Resurgens** is the correct investor.
 
 ### So what for Clear Current
+
 The displacement motion against EnergyCAP is strongest at **100–400 site mid-market operators** where EnergyCAP's per-meter pricing math breaks down, its lack of native OCR forces bolt-on spend, and Resurgens' roll-up/re-pricing thesis creates renewal-window openings. Position on three wedges: **(1) AI-native billing-error detection replaces the EnergyCAP + separate OCR + audit-consultant stack; (2) cloud-native shortens implementation from "months" to weeks; (3) transparent all-in pricing under $75K ARR versus opaque per-meter escalators.** The highest-probability switch window is **12–18 months after a PE re-pricing event or forced cloud migration** — build a renewal-cohort monitoring capability into demand generation.
 
 ---
@@ -101,21 +105,22 @@ The displacement motion against EnergyCAP is strongest at **100–400 site mid-m
 
 **Major players in the bill-pay / utility expense management ecosystem:**
 
-| Vendor | Position | Scale |
-|---|---|---|
-| **Cass Information Systems (CASS)** | Publicly traded; St. Louis; largest U.S. transport + facility/utility bill processor | **~$90B annual payments volume; ~50M invoices/yr; ~$130M TTM fee revenue; 1,027 FTE**; acquired AcuAudit Q4 2024; facility dollar volume ~$5–6B/qtr with **+23–26% YoY growth** in 2024 |
-| **ENGIE Impact** | Enterprise outsourced (software + managed service) | 900+ multi-site clients; 25%+ F500 |
-| **Schneider Electric EcoStruxure Resource Advisor/RA+** | Bundled with energy procurement; launched agentic AI "Sera" in 2025 | **Processes 39M+ utility bills/year**; ~400 AI professionals globally |
-| **Arcadia (Arc platform, acquired Urjanet May 2022)** | Largest utility data aggregator — not direct bill-pay but the dominant data-API layer | **>95% of US residential + commercial utility accounts**; 9,500+ utilities in 52 countries; Arcadia valued ~$1.45B |
-| **EnergyCAP** | Utility accounting SaaS + Bill CAPture / Bill Pay / Vendor Mgmt Services | 2,100+ customers |
-| **Vervantis** | Mid-market bill processing for C&I | 1M+ invoices/yr; $3B+ managed |
-| **RealPage Utility Management** | Multifamily-focused | 2.2M+ submetered devices across 4,000+ properties |
-| **Yardi Energy Suite** | Bundled with Voyager property mgmt | Multifamily/CRE |
-| **Paymentus (PAY)** | B2C utility payment platform | 20+ years in utility; 450+ integrations |
+| Vendor                                                  | Position                                                                              | Scale                                                                                                                                                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cass Information Systems (CASS)**                     | Publicly traded; St. Louis; largest U.S. transport + facility/utility bill processor  | **~$90B annual payments volume; ~50M invoices/yr; ~$130M TTM fee revenue; 1,027 FTE**; acquired AcuAudit Q4 2024; facility dollar volume ~$5–6B/qtr with **+23–26% YoY growth** in 2024 |
+| **ENGIE Impact**                                        | Enterprise outsourced (software + managed service)                                    | 900+ multi-site clients; 25%+ F500                                                                                                                                                      |
+| **Schneider Electric EcoStruxure Resource Advisor/RA+** | Bundled with energy procurement; launched agentic AI "Sera" in 2025                   | **Processes 39M+ utility bills/year**; ~400 AI professionals globally                                                                                                                   |
+| **Arcadia (Arc platform, acquired Urjanet May 2022)**   | Largest utility data aggregator — not direct bill-pay but the dominant data-API layer | **>95% of US residential + commercial utility accounts**; 9,500+ utilities in 52 countries; Arcadia valued ~$1.45B                                                                      |
+| **EnergyCAP**                                           | Utility accounting SaaS + Bill CAPture / Bill Pay / Vendor Mgmt Services              | 2,100+ customers                                                                                                                                                                        |
+| **Vervantis**                                           | Mid-market bill processing for C&I                                                    | 1M+ invoices/yr; $3B+ managed                                                                                                                                                           |
+| **RealPage Utility Management**                         | Multifamily-focused                                                                   | 2.2M+ submetered devices across 4,000+ properties                                                                                                                                       |
+| **Yardi Energy Suite**                                  | Bundled with Voyager property mgmt                                                    | Multifamily/CRE                                                                                                                                                                         |
+| **Paymentus (PAY)**                                     | B2C utility payment platform                                                          | 20+ years in utility; 450+ integrations                                                                                                                                                 |
 
 Additional niche players: Cost Control Associates, UMC Solutions (EnergyCAP dealer), Commercial Water & Energy, Spring Global, SpyGlass Group.
 
 **Market size** (wide variance; source methodologies differ):
+
 - Market Research Future: **$2.89B (2024) → $6.86B (2035), 8.18% CAGR**
 - Zion Market Research: $5.83B (2023) → $12.41B (2032), 7.8% CAGR
 - Verified Market Reports: $1.2B (2024) → $2.5B (2033), 8.9% CAGR
@@ -126,6 +131,7 @@ North America holds ~38% share. **Treat these as directional ranges, not authori
 **Key 2024–26 trends:** AI-integrated bill audit (Schneider RA+, EnergyCAP Watts AI, Vervantis, Oracle Opower); carbon/ESG reporting as primary demand driver; consolidation (Arcadia/Urjanet 2022, Cass/AcuAudit 2024); post-American Water Works ransomware (Oct 2024, 14M customers, 6-week disruption) raising cybersecurity concerns; smart-meter rollouts driving data volumes.
 
 **Integration path for Clear Current:** Three options:
+
 1. **Channel partner layer** on top of Cass/ENGIE/Schneider (they provide bill-pay transaction processing; Clear Current provides AI error detection)
 2. **Direct competitor to audit function** within bill-pay bundles (riskier, longer sales cycle)
 3. **API/data partner** to bill-pay vendors who lack AI
@@ -133,6 +139,7 @@ North America holds ~38% share. **Treat these as directional ranges, not authori
 **Sources:** Cass 10-K filings (SEC); ENGIE press releases; Arcadia/Axios; Verdantix; market research firms.
 
 ### So what for Clear Current
+
 The likely "NG Insight" reference is **ENGIE Impact** — a **potential channel partner, not a pure competitor**, since their model is full-service outsourcing where AI billing-error detection would strengthen their audit economics. The cleanest GTM pattern is a **hybrid: compete directly at mid-market 100–400 site operators currently using spreadsheets or EnergyCAP, while pursuing API/data-partnership with Cass (50M invoices/yr) and Schneider (39M bills/yr)** — both are bill-pay aggregators whose audit layers are still largely rules-based and would value AI anomaly detection. Avoid ENGIE Impact and Cass as direct replacements; their enterprise customer relationships are too sticky — instead, integrate under them for the top 25% of F500 logos while winning the mid-market directly.
 
 ---
@@ -142,6 +149,7 @@ The likely "NG Insight" reference is **ENGIE Impact** — a **potential channel 
 ### Key findings
 
 **Spend & intensity benchmarks:**
+
 - **U.S. hospital aggregate energy spend: ~$8.3B/year** (DOE); broader healthcare sector 4.1B sq ft spends **>$5B/year** on energy (DOE Better Buildings).
 - **Energy = 1–3% of hospital operating budget**; an estimated **15%+ of profit margin** (DOE Better Buildings). The widely-misquoted "50% of budget" figure is actually ~**50% of the facilities-department budget**, not organization-wide (ASHE/HFM Magazine).
 - **Per-bed**: ~$10,900–$13,611/year electricity+gas (E SOURCE/DOE/EIA).
@@ -153,6 +161,7 @@ The likely "NG Insight" reference is **ENGIE Impact** — a **potential channel 
 **Ownership:** Default is **Facilities/Engineering (Director → VP Facilities → COO or Chief Facilities Officer)**. Exemplars: HCA runs facility mgmt via HealthTrust Supply Chain; Ascension via wholly-owned Medxcel Facilities Management; UPMC has a centralized Energy Management & Engineering Department. **Kaiser Permanente has a Chief Energy Officer + Executive Director of Environmental Stewardship — best-in-class, not typical.** Parkland (Dallas) hired a dedicated in-house energy manager in 2021 for ENERGY STAR certification. Practice Greenhealth 2023 benchmark: **~66% of respondents have appointed someone to lead sustainability at the facility level**; ~90% of top-performing institutions have an executive-level sustainability champion.
 
 **Regulatory/accreditation drivers:**
+
 - **Joint Commission Environment of Care standards**: EC.02.05.01 (utility systems) accounts for ~28% of all EC findings per OXMaint analysis; >65% of 2025-surveyed hospitals received EC citations (flag: vendor-sourced stat).
 - **CMS Conditions of Participation §482.41**: Physical environment compliance tied to Medicare reimbursement — the biggest regulatory stick.
 - **HHS Health Sector Climate Pledge** (launched Earth Day 2022): voluntary but reputationally significant; **143 organizations/960 hospitals signed by Nov 2024**; with federal (VHA, IHS, MHS) >1,200 hospitals (~19% of U.S. hospitals). Targets: 50% Scope 1+2 reduction by 2030, net zero 2050, Scope 3 inventory by end 2024. After 2025 federal admin change, Health Care Without Harm relaunched the **Health Sector CARES Pledge** to preserve the commitment pathway.
@@ -162,6 +171,7 @@ The likely "NG Insight" reference is **ENGIE Impact** — a **potential channel 
 **Tools:** **Brightly (Siemens, formerly Dude Solutions)** dominates healthcare CMMS — built-in ICRA/PCRA/ISLM workflows, Joint Commission compliance binder, 12,000+ clients, $321B in assets managed. **EnergyCAP** explicitly markets a healthcare vertical ($5K entry → $50K+ portfolios); emphasizes the "finance-facilities divide." Nuvolo (ServiceNow-based) for medical equipment/EAM. Accruent for space/lease. FM:Systems, Archibus as IWMS generalists. **Spreadsheets + contingency-fee bill-audit firms (UtiliSave, ENGIE Impact, OEO, Honeydew, Emergent) remain dominant outside the top-50 systems.** Energy analytics / AI-driven optimization is a white space.
 
 **Billing error/overpay benchmarks** (all vendor-marketed; flag heavily):
+
 - UtiliSave (16,000+ properties audited): **overcharges for large institutions average 2.5–10%** of spend; **93% hit rate** on finding mistakes — most credible published figure.
 - EnergyPrint: "~17% of utility invoices contain an error."
 - OEO/National Utilities Refund: "80% of commercial invoices contain errors" — self-serving contingency marketing.
@@ -175,6 +185,7 @@ The likely "NG Insight" reference is **ENGIE Impact** — a **potential channel 
 **Sources:** ENERGY STAR Portfolio Manager PDF; DOE Better Buildings; ASHE; Practice Greenhealth; HHS OCCHE; Joint Commission; Brightly; EnergyCAP healthcare page; Verdantix; UtiliSave.
 
 ### So what for Clear Current
+
 Healthcare is **accessible but contested**: the pain is large and quantifiable (**~$8.3B U.S. hospital energy spend; 1–3% of operating budget; 2.5–10% overpay on large-institution bills; 30–40% EUI gap between median and top quartile hospitals**), and regulatory tailwinds are strong (960+ HHS Pledge hospitals, LL97 at $268/ton, Joint Commission EC.02.05 creating a compliance spine) — but Brightly/Siemens, EnergyCAP, and Nuvolo are entrenched. **ICP**: mid-to-large systems (20–200 facilities, $30–200M energy spend) that (a) signed HHS/CARES Pledge or operate in a BPS jurisdiction, (b) have a sustainability exec + facilities director, and (c) have fragmented utility data across legacy systems — **CommonSpirit, Providence, Advocate Health, NYU Langone, Mass General Brigham** rather than Kaiser (too mature) or small community hospitals (budget-constrained). The dollarized pitch is straightforward: sq ft × $3.78/sf × (3% billing-error recovery + EUI-gap consumption savings) → $2–10M/year identifiable per mid-size system, plus avoided LL97-style penalties — but expect **12–24 month sales cycles** and incumbent displacement as the real challenge.
 
 ---
@@ -185,21 +196,22 @@ Healthcare is **accessible but contested**: the pain is large and quantifiable (
 
 **NYC LL97 exact deadlines and penalties:**
 
-| Date | Obligation |
-|---|---|
-| **May 1, 2025** | First LL97 compliance report due (for CY2024 emissions) — registered design professional-certified |
-| **June 30, 2025** | 60-day grace period end — unpenalized filing window |
-| **Aug 29, 2025** | Extension application deadline ($60 fee) |
-| **Dec 31, 2025** | Extended filing deadline for those granted extension |
-| **May 1, 2026** | CY2025 LL97 report due |
-| **June 30, 2026** | 60-day grace period end for CY2025 report |
-| **Aug 29, 2026** | Extension deadline for CY2025 report |
-| **May 1, 2027** | First LL97 report due for buildings with 1 to <35% rent-regulated units |
-| **May 1, 2036** | First LL97 report due for specific rent-regulated housing pathways |
-| **2030–2034** | Stricter emissions caps (70% of 2018 baseline for nonprofit hospitals) |
-| **2050** | Net-zero requirement |
+| Date              | Obligation                                                                                         |
+| ----------------- | -------------------------------------------------------------------------------------------------- |
+| **May 1, 2025**   | First LL97 compliance report due (for CY2024 emissions) — registered design professional-certified |
+| **June 30, 2025** | 60-day grace period end — unpenalized filing window                                                |
+| **Aug 29, 2025**  | Extension application deadline ($60 fee)                                                           |
+| **Dec 31, 2025**  | Extended filing deadline for those granted extension                                               |
+| **May 1, 2026**   | CY2025 LL97 report due                                                                             |
+| **June 30, 2026** | 60-day grace period end for CY2025 report                                                          |
+| **Aug 29, 2026**  | Extension deadline for CY2025 report                                                               |
+| **May 1, 2027**   | First LL97 report due for buildings with 1 to <35% rent-regulated units                            |
+| **May 1, 2036**   | First LL97 report due for specific rent-regulated housing pathways                                 |
+| **2030–2034**     | Stricter emissions caps (70% of 2018 baseline for nonprofit hospitals)                             |
+| **2050**          | Net-zero requirement                                                                               |
 
 **Fine escalation:**
+
 - **Emissions exceedance: $268/metric ton CO₂e over limit per year** (Class 2 violation)
 - **Late filing: $0.50/sf/month** (applies even during grace period if filing later)
 - **Failure to file: $10,000 plus additional $10,000 for non-compliance**
@@ -214,24 +226,24 @@ Healthcare is **accessible but contested**: the pain is large and quantifiable (
 
 **Other major BPS and CRE reporting deadlines 2025–2026:**
 
-| Jurisdiction | Key 2025–26 Deadline | Penalty |
-|---|---|---|
-| **GRESB 2026** | Submission **July 1, 2026 (23:59 PDT)**; prelim results Sept 1; final Oct 1 | Score impact only (competitive) |
-| **Boston BERDO 2.0** | 2025 emissions compliance began; **Aug 15, 2026 extended reporting deadline**; five-year verification cycles 2026/2031/2036/2041 | $234/MT over limit; $1,000/day for >35K sf non-compliant; $300/day reporting violation (large) / $150/day (small); $1,000–$5,000 for unresolved discrepancies |
-| **Washington DC BEPS** | First compliance cycle ends 2026 | Up to **$10/sf** gross floor area — **$1M exposure for 100,000 sf building** |
-| **Denver Energize Denver** | Annual benchmarking June 1; 30% reduction target by 2030 | **$0.30/kBtu** over threshold |
-| **Washington State Clean Buildings** | **June 1, 2026: Tier 1 compliance deadline** (>50,000 sf commercial) | Up to $5,000 + $1/sf/yr |
-| **Oregon statewide BPS** | Benchmarking began Jan 2025; compliance 2028–2030 | Up to $0.85/sf early-adopter incentive |
-| **Maryland BEPS (Climate Solutions Now Act)** | 2025 benchmarking began; **June 1, 2026 third-party verification of 2025 data**; 2030 compliance | **$230/MT CO₂e** |
-| **Chicago Energy Benchmarking** | Annual reporting | Fines per ordinance |
-| **Seattle BEPS** | Active | GHG-based, tiered |
-| **Philadelphia Building Tune-Ups** | Annual benchmarking + periodic audits | **$300/day late** |
-| **Montgomery County MD BEPS** | Active | Tiered |
-| **St. Louis BEPS** | Active | Tiered |
-| **California AB 802** | Annual benchmarking June 1 (>50K sf) | Enforcement via Energy Commission |
-| **California SB 253/261** | **Effective 2026** for large entities — Scope 1/2/3 reporting | SEC-like attestation required |
-| **SEC Climate Disclosure Rule** | **Stayed / effectively dormant as of April 2026** | TBD |
-| **CDP** | July–August annual submission | Scoring only |
+| Jurisdiction                                  | Key 2025–26 Deadline                                                                                                             | Penalty                                                                                                                                                       |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **GRESB 2026**                                | Submission **July 1, 2026 (23:59 PDT)**; prelim results Sept 1; final Oct 1                                                      | Score impact only (competitive)                                                                                                                               |
+| **Boston BERDO 2.0**                          | 2025 emissions compliance began; **Aug 15, 2026 extended reporting deadline**; five-year verification cycles 2026/2031/2036/2041 | $234/MT over limit; $1,000/day for >35K sf non-compliant; $300/day reporting violation (large) / $150/day (small); $1,000–$5,000 for unresolved discrepancies |
+| **Washington DC BEPS**                        | First compliance cycle ends 2026                                                                                                 | Up to **$10/sf** gross floor area — **$1M exposure for 100,000 sf building**                                                                                  |
+| **Denver Energize Denver**                    | Annual benchmarking June 1; 30% reduction target by 2030                                                                         | **$0.30/kBtu** over threshold                                                                                                                                 |
+| **Washington State Clean Buildings**          | **June 1, 2026: Tier 1 compliance deadline** (>50,000 sf commercial)                                                             | Up to $5,000 + $1/sf/yr                                                                                                                                       |
+| **Oregon statewide BPS**                      | Benchmarking began Jan 2025; compliance 2028–2030                                                                                | Up to $0.85/sf early-adopter incentive                                                                                                                        |
+| **Maryland BEPS (Climate Solutions Now Act)** | 2025 benchmarking began; **June 1, 2026 third-party verification of 2025 data**; 2030 compliance                                 | **$230/MT CO₂e**                                                                                                                                              |
+| **Chicago Energy Benchmarking**               | Annual reporting                                                                                                                 | Fines per ordinance                                                                                                                                           |
+| **Seattle BEPS**                              | Active                                                                                                                           | GHG-based, tiered                                                                                                                                             |
+| **Philadelphia Building Tune-Ups**            | Annual benchmarking + periodic audits                                                                                            | **$300/day late**                                                                                                                                             |
+| **Montgomery County MD BEPS**                 | Active                                                                                                                           | Tiered                                                                                                                                                        |
+| **St. Louis BEPS**                            | Active                                                                                                                           | Tiered                                                                                                                                                        |
+| **California AB 802**                         | Annual benchmarking June 1 (>50K sf)                                                                                             | Enforcement via Energy Commission                                                                                                                             |
+| **California SB 253/261**                     | **Effective 2026** for large entities — Scope 1/2/3 reporting                                                                    | SEC-like attestation required                                                                                                                                 |
+| **SEC Climate Disclosure Rule**               | **Stayed / effectively dormant as of April 2026**                                                                                | TBD                                                                                                                                                           |
+| **CDP**                                       | July–August annual submission                                                                                                    | Scoring only                                                                                                                                                  |
 
 **40+ U.S. cities will have active BPS by end of 2026 (JLL research), up from 13 in early 2024.** JLL reports **penalties increase an average of 82% between first and second compliance periods**.
 
@@ -242,6 +254,7 @@ Healthcare is **accessible but contested**: the pain is large and quantifiable (
 **Source quality:** NYC primary sources (DOB, HPD, Mayor's Office, Urban Green Council) are authoritative. Envigilance/Environ Energy/Deepki/JLL citations are consistent but secondary. Boston BERDO details align across FirstService Residential, Facilities Dive, and Boston.gov.
 
 ### So what for Clear Current
+
 The GTM calendar has three clear annual pressure windows: **Q1 (Jan–Mar) for LL97 RDP engagement and data gathering; Q2 (Apr–Jun) for filing season (LL97 May 1, LL84/LL88 May 1, California AB 802 June 1, WA State Clean Buildings June 1, MD verification June 1, GRESB submission late June)**; and **Q3 (Jul–Aug) for GRESB July 1 and extension deadlines**. Clear Current should time demand generation around **late-February through April** (the panic window when owners realize their utility data is unreliable) and again **June–July** for GRESB participants. Product-wise, **jurisdiction-specific conversion logic (GHG-based vs. EUI-based) and an audit-trail for LL97 RDP-certification defensibility are table-stakes module features** — the $500K false-filing penalty makes data-accuracy attestation a CFO-level value prop, not a facilities-level one.
 
 ---

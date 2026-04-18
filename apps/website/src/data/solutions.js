@@ -21,9 +21,22 @@ export const solutionsData = {
       },
     ],
     stats: [
-      { value: 17, suffix: '%', label: 'average billing error rate' },
-      { value: 47, prefix: '$', suffix: 'M', label: 'in errors identified' },
-      { value: 14, suffix: ' mo', label: 'avg error persistence' },
+      {
+        value: 83,
+        suffix: '%',
+        label: 'problematic bills still mailed (R.I. PUC review)',
+      },
+      {
+        value: 10,
+        prefix: '$',
+        suffix: 'M+',
+        label: 'billing issues flagged in early pilots (internal)',
+      },
+      {
+        value: 23,
+        suffix: '+',
+        label: 'primary operator interviews (2025–26)',
+      },
     ],
     cta: "Ready to find what's hiding in your bills?",
   },
@@ -50,9 +63,18 @@ export const solutionsData = {
       },
     ],
     stats: [
-      { value: 500, suffix: '+', label: 'sites under management' },
-      { value: 1, suffix: ' view', label: 'for your entire portfolio' },
-      { value: 24, suffix: '/7', label: 'continuous monitoring' },
+      {
+        value: 2600,
+        suffix: '+',
+        label: 'sites in one multi-site chain we studied',
+      },
+      {
+        value: 241,
+        prefix: '$',
+        suffix: 'B+',
+        label: 'U.S. commercial building energy spend (est.)',
+      },
+      { value: 24, suffix: '/7', label: 'continuous portfolio monitoring' },
     ],
     cta: 'Ready to see your entire portfolio in one place?',
   },
@@ -79,9 +101,22 @@ export const solutionsData = {
       },
     ],
     stats: [
-      { value: 60, suffix: '%', label: 'faster procurement cycles' },
-      { value: 12, suffix: '%', label: 'avg savings on renewals' },
-      { value: 0, suffix: ' gaps', label: 'in contract handoff' },
+      {
+        value: 2.5,
+        suffix: ' yr',
+        label: 'buyer-reported enterprise software approval (example)',
+        decimals: 1,
+      },
+      {
+        value: 23,
+        suffix: '+',
+        label: 'interviews informing procurement + finance workflows',
+      },
+      {
+        value: 100,
+        suffix: '+',
+        label: 'accounts visible to advisors we interviewed (region)',
+      },
     ],
     cta: 'Ready to streamline your energy procurement?',
   },

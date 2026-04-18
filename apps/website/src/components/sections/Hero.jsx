@@ -273,8 +273,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Stat bar — contained with separators */}
-          {/* TODO: confirm with John/Dan — replace placeholders with real stats */}
+          {/* Stat bar — R.I. PUC + EIA-scale spend + funding (see data/stats.js) */}
           <motion.div
             variants={fadeUp}
             initial="hidden"

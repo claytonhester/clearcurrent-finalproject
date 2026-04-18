@@ -1,61 +1,50 @@
 # Remaining work
 
-Everything below is **content, approvals, and launch** — not new engineering. The site is a **static** frontend: copy and numbers live in plain JavaScript modules under [`apps/portal/src/data/`](../../apps/portal/src/data/). There is **no database**, **no API**, and **no separate schema layer** — edit the data files directly when research is final.
+Everything below is **content, approvals, and launch** for the **`apps/final-presentation`** briefing portal — not new engineering unless noted. Curated copy and quotes live in **`apps/final-presentation/src/content/`** (TypeScript + JS modules). There is **no database** and **no API** for portal content.
 
 ---
 
-## Before the presentation
+## Before the presentation / handoff
 
-- [ ] **Production URL** — Deploy on Vercel (or host of choice), confirm HTTPS, share with John Reuter and Dan Schreiber.
-- [ ] **`VITE_SITE_URL`** — Set on Vercel so Open Graph and canonical URLs are absolute; redeploy.
-- [ ] **Smoke test** — All routes in Chrome (and Safari if you can): click every nav item, refresh on a deep link (e.g. `/heatmap`, `/brief`, `/heatmap#priority-map`).
-- [ ] **CEO brief** — Review [`ceoBrief.js`](../../apps/portal/src/data/ceoBrief.js): decision asks, methodology, limitations, privacy copy; set `status` to `"final"` when approved.
-- [ ] **Search / resume / CSV** — Try **Search** (⌘K / Ctrl+K), **Continue where you left off** on home after visiting another tab, **Export CSV** under chart tables.
-- [ ] **Print** — Use **Print / Save PDF** in the top bar; confirm sidebar is hidden and [`SiteFooter`](../../apps/portal/src/components/layout/SiteFooter.jsx) shows the long privacy line on the printed page.
-- [ ] **Projector** — Check readability at **1080p** from the back of the room; adjust zoom if needed.
-- [ ] **Placeholder → final** — In `apps/portal/src/data/`, change `status: "placeholder"` to `"final"` only where copy is approved (see below).
+- [ ] **Production URL** — Deploy on Vercel (root **`apps/final-presentation`**), confirm HTTPS, share with stakeholders.
+- [ ] **`VITE_SITE_URL`** — Set on Vercel if you need absolute Open Graph / canonical URLs; redeploy after changes.
+- [ ] **Smoke test** — Walk every sidebar item and appendix link; refresh on deep links (e.g. `/calendar`, `/appendix/quotes`).
+- [ ] **Print** — Use **Print** in the top bar; confirm chrome hides and body content paginates sensibly.
+- [ ] **Tests** — `npm run test -w @clear-current/final-presentation` passes locally before go-live.
 
 ---
 
-## Stakeholder decisions & content to lock
+## Content & stakeholder decisions
 
-Answer these so `apps/portal/src/data/` can be updated once without rework:
+Lock these so `src/content/` can be updated once without rework:
 
-1. **Hero date range** — Exact string for the overview hero (e.g. “January – April 2026”) → [`overview.js`](../../apps/portal/src/data/overview.js) `meta.dateRange`.
-2. **Interview roster** — Final names, titles, companies, dates for [`overview.js`](../../apps/portal/src/data/overview.js) `interviewRoster`. Confirm whether stats (**4** interviews, **60+** contacts, **3** personas, **6** deliverables) stay as-is.
-3. **Quotes** — Verbatim approved text for Don Johnson, Andee Chamberlain, Phil Combs (and anyone else) in [`quotes.js`](../../apps/portal/src/data/quotes.js).
-4. **Logo** — Official SVG/PNG for the sidebar, or keep the **text lockup** only.
-5. **GitHub / Vercel** — Repo location and who administers the Vercel project (for handoff).
-6. **Bonus tab** — Will wireframes or AI-flow assets ship before launch? If yes, add images/links in [`bonus.js`](../../apps/portal/src/data/bonus.js) and/or [`BonusDeliverables.jsx`](../../apps/portal/src/pages/BonusDeliverables.jsx).
-7. **Presentation tech** — Target resolution (1080p vs 4K) and browser for a final pass.
-8. **EnergyCAP** — Preferred spelling / trademark (e.g. “EnergyCAP®”) in module differentiation copy → [`productModules.js`](../../apps/portal/src/data/productModules.js).
+1. **Quotes** — Verbatim-approved text and attribution class in [`quotes.ts`](../../apps/final-presentation/src/content/quotes.ts); each quote’s `sourceId` must exist in [`sources.ts`](../../apps/final-presentation/src/content/sources.ts).
+2. **Deliverables** — Narrative edits per page in [`src/content/deliverables/`](../../apps/final-presentation/src/content/deliverables/).
+3. **Interview roster / company cards** — Appendix pages and backing data files under `src/content/` and `src/pages/appendix/`.
+4. **GitHub / Vercel** — Who administers the project and environment variables.
 
-### Research content still editable in data files
+### Where to edit (quick map)
 
-When the team finalizes research, update the matching files (no new “schema” docs needed):
+| Area                          | Location                                                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Quotes & attribution          | [`quotes.ts`](../../apps/final-presentation/src/content/quotes.ts)                                                       |
+| Source registry               | [`sources.ts`](../../apps/final-presentation/src/content/sources.ts)                                                     |
+| Decision Brief + D1–D8 bodies | [`deliverables/*.js`](../../apps/final-presentation/src/content/deliverables/)                                           |
+| Cmd+K search targets          | [`searchIndex.js`](../../apps/final-presentation/src/content/searchIndex.js)                                             |
+| Nav labels & routes           | [`navConfig.js`](../../apps/final-presentation/src/navConfig.js), [`App.jsx`](../../apps/final-presentation/src/App.jsx) |
 
-| Area                                        | File                                                                        |
-| ------------------------------------------- | --------------------------------------------------------------------------- |
-| Triggers (types, copy)                      | [`triggerMap.js`](../../apps/portal/src/data/triggerMap.js)                 |
-| Seasonal calendar months / peaks            | [`seasonalCalendar.js`](../../apps/portal/src/data/seasonalCalendar.js)     |
-| Journey personas and stages                 | [`journeyMaps.js`](../../apps/portal/src/data/journeyMaps.js)               |
-| Heatmap scores and labels                   | [`opportunityHeatmap.js`](../../apps/portal/src/data/opportunityHeatmap.js) |
-| Module narratives                           | [`productModules.js`](../../apps/portal/src/data/productModules.js)         |
-| Executive summary, stats, findings          | [`overview.js`](../../apps/portal/src/data/overview.js)                     |
-| CEO brief (decisions, methodology, privacy) | [`ceoBrief.js`](../../apps/portal/src/data/ceoBrief.js)                     |
-| Search keywords / section index             | [`searchIndex.js`](../../apps/portal/src/data/searchIndex.js)               |
+Research pipeline outputs that feed editorial updates live under **`research/`** — merge into portal content manually after review (see `research/README.md`).
 
 ---
 
 ## Optional later
 
-- **Indexing** — If the site should appear in search engines: edit [`public/robots.txt`](../../apps/portal/public/robots.txt) and replace `SITE_URL` in [`public/sitemap.xml`](../../apps/portal/public/sitemap.xml); set `Allow: /`.
-- **Analytics** — Already wired: set `VITE_PLAUSIBLE_DOMAIN` on Vercel if you use Plausible.
-- **Dependabot PRs** — Review and merge periodically; run `npm audit` after upgrades.
+- **Analytics** — Set `VITE_PLAUSIBLE_DOMAIN` on Vercel if you use Plausible.
+- **Dependabot PRs** — Review periodically; run `npm audit` after upgrades.
 
 ---
 
 ## Reference
 
-- **[DELIVERY.md](./DELIVERY.md)** — What was built and how the app is organized.
-- Original PDF spec (if you still have it): `clear_current_site_spec.md.pdf` — not stored in this repo.
+- **[DELIVERY.md](./DELIVERY.md)** — Stack, routes, operations.
+- **[apps/final-presentation/README.md](../../apps/final-presentation/README.md)** — Architecture and tests.

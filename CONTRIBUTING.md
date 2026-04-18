@@ -2,21 +2,20 @@
 
 ## Where to read first
 
-- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — overview of the shipped app and data layout.
-- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — open items before presentation and content that still needs stakeholder lock-in.
+- **[apps/final-presentation/README.md](apps/final-presentation/README.md)** — briefing portal architecture, traceability tests, content locations.
+- **[docs/planning/DELIVERY.md](docs/planning/DELIVERY.md)** — what shipped and how it is structured.
+- **[docs/planning/REMAINING.md](docs/planning/REMAINING.md)** — open items before presentation and launch.
 
-## Content updates
+## Content updates (briefing portal)
 
-1. **Edit data, not layout** — Narrative, stats, quotes, and chart-friendly series live under `apps/portal/src/data/`. Prefer updating those files so pages stay thin.
-2. **Placeholder vs final** — Entities may include `status: "placeholder"` or `"final"`. Flip to `"final"` only after the stakeholder team approves copy.
-3. **Quotes** — Keep a single source of truth in `apps/portal/src/data/quotes.js`. Reference quotes by `id` from page data.
-4. **Nav order** — Reorder tabs by editing `NAV_ITEMS` in `apps/portal/src/navConfig.js` only.
+1. **Edit content modules, not layout** — Narrative, quotes, and deliverable data live under `apps/final-presentation/src/content/` (`quotes.ts`, `sources.ts`, `deliverables/*.js`, appendix data). Prefer updating those so pages stay thin shells.
+2. **Quotes ↔ sources** — Every quote must reference a valid `sourceId` in `sources.ts`. Run `npm run test -w @clear-current/final-presentation` before opening a PR.
+3. **Navigation order** — Deliverable tabs are defined in `apps/final-presentation/src/navConfig.js`; routes in `apps/final-presentation/src/App.jsx`.
 
 ## Environment & deploy
 
-- **`VITE_SITE_URL`** — Set on the **portal** Vercel project for production builds so Open Graph and canonical URLs are absolute. See [README.md](README.md) and [`apps/portal/.env.example`](apps/portal/.env.example).
-- **Plausible** — Optional; set `VITE_PLAUSIBLE_DOMAIN`. [`apps/portal/vercel.json`](apps/portal/vercel.json) CSP allows `plausible.io`.
-- **`robots.txt` / `sitemap.xml`** — Under `apps/portal/public/`. Defaults discourage indexing; replace `SITE_URL` in `sitemap.xml` and switch `robots.txt` to `Allow: /` if the site should be public.
+- **`VITE_SITE_URL`** — Set on the **final presentation** Vercel project for production builds when you need absolute OG/canonical URLs. See [README.md](README.md) and [`apps/final-presentation/.env.example`](apps/final-presentation/.env.example).
+- **Plausible** — Optional; set `VITE_PLAUSIBLE_DOMAIN`. [`apps/final-presentation/vercel.json`](apps/final-presentation/vercel.json) CSP allows `plausible.io`.
 
 ## Quality gates before a PR
 

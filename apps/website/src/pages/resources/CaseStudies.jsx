@@ -28,14 +28,16 @@ export default function CaseStudies() {
             variants={blurUp}
             className="mt-6 text-4xl md:text-6xl lg:text-[68px] leading-[1.05] tracking-[-0.03em] text-white max-w-[700px]"
           >
-            Real results from <span className="text-[var(--gold)]">real portfolios</span>
+            Research-grounded{' '}
+            <span className="text-[var(--gold)]">portfolio patterns</span>
           </motion.h1>
           <motion.p
             variants={blurUp}
             className="mt-5 text-xl text-white/50 max-w-[520px] leading-[1.7] font-[var(--font-sans)]"
           >
-            See how enterprises across industries are recovering millions in billing
-            errors and gaining visibility they never had before.
+            Composites from 2025–26 primary interviews with universities, health systems,
+            and multi-site operators — anonymized, with traceable public and regulatory
+            context where cited.
           </motion.p>
         </motion.div>
       </section>
@@ -82,6 +84,7 @@ export default function CaseStudies() {
                               prefix={stat.prefix}
                               suffix={stat.suffix}
                               label={stat.label}
+                              decimals={stat.decimals ?? 0}
                               numberClassName="text-[var(--gold)] text-3xl"
                               labelClassName="text-white/40"
                             />

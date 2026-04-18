@@ -1,0 +1,206 @@
+# Interview registry — single source for primary pipeline discovery and portal alignment.
+# Add a new interview: append an entry with globs matching files under Call Transcripts / Interview Summary Documents.
+# portal_source_id must match apps/final-presentation/src/content/sources.ts when publishing to the portal.
+
+metadata:
+  version: 1
+  transcripts_dir: Call Transcripts
+  summaries_dir: Interview Summary Documents
+
+# Quote bank rule (see research/README.md):
+# - outputs/02_quote_bank.md is merged/synthesis master when produced by top-level pipeline
+# - outputs/primary/02_quote_bank.md is Pipeline 1 primary quote extraction
+
+interviews:
+  - id: texas-state
+    portal_source_id: cc-texas-state
+    company_card_id: co-01
+    status: published_portal
+    vertical: higher-ed
+    transcript_glob: 'CC_Research_Texas_State_Transcript*'
+    summary_glob: 'Clear_Current_Interview_Summary_Texas_State.docx'
+    corpus_labels:
+      transcript: 'TX State Transcript'
+      summary: 'TX State Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: ut-austin-finance
+    portal_source_id: cc-ut-austin-finance
+    company_card_id: co-02
+    status: published_portal
+    vertical: higher-ed
+    transcript_glob: 'CC Research - Andi Ault*'
+    summary_glob: 'Clear_Current_Interview_Summary_Andi_Ault*'
+    corpus_labels:
+      transcript: 'Andi Ault Transcript'
+      summary: 'Andi Ault Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: ut-austin-ops
+    portal_source_id: cc-ut-austin-ops
+    company_card_id: co-03
+    status: published_portal
+    vertical: higher-ed
+    transcript_glob: 'CC Research - Troy Nevells*'
+    summary_glob: 'Clear_Current_Interview_Summary_Troy_Nevells*'
+    corpus_labels:
+      transcript: 'Troy Nevels Transcript'
+      summary: 'Troy Nevels Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: medxcel-ascension
+    portal_source_id: cc-medxcel
+    company_card_id: co-04
+    status: published_portal
+    vertical: healthcare
+    transcript_glob: 'CC Research - Scott Czubkowski*'
+    summary_glob: 'Clear_Current_Interview_Summary_Scott_Czubkowski*'
+    corpus_labels:
+      transcript: 'Scott Czubkowski Transcript'
+      summary: 'Scott Czubkowski Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: bon-secours
+    portal_source_id: cc-bon-secours
+    company_card_id: co-05
+    status: published_portal
+    vertical: healthcare
+    transcript_glob: 'CC Research - Ann Walston*'
+    summary_glob: 'Clear_Current_Interview_Summary_Ann_Walston*'
+    corpus_labels:
+      transcript: 'Ann Walston Transcript'
+      summary: 'Ann Walston Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: houston-methodist
+    portal_source_id: cc-houston-methodist
+    company_card_id: co-06
+    status: published_portal
+    vertical: healthcare
+    transcript_glob: 'CC Research - Sean Sevy*'
+    summary_glob: 'Clear_Current_Interview_Summary_Sean_Sevy*'
+    corpus_labels:
+      transcript: 'Sean Sevy Transcript'
+      summary: 'Sean Sevy Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: intermountain
+    portal_source_id: cc-intermountain
+    company_card_id: co-07
+    status: published_portal
+    vertical: healthcare
+    transcript_glob: 'CC Research - Intermountain*'
+    summary_glob: 'Clear_Current_Interview_Summary_Intermountain*'
+    corpus_labels:
+      transcript: 'Intermountain Transcript'
+      summary: 'Intermountain Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: adventhealth
+    portal_source_id: cc-adventhealth
+    company_card_id: co-08
+    status: published_portal
+    vertical: healthcare
+    transcript_glob: 'CC Research, AdventHealth*'
+    summary_glob: 'Clear_Current_Interview_Summary_AdventHealth*'
+    corpus_labels:
+      transcript: 'AdventHealth Transcript'
+      summary: 'AdventHealth Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: panda-roger
+    portal_source_id: cc-panda-goldstein
+    company_card_id: co-09
+    status: published_portal
+    vertical: restaurant-retail
+    transcript_glob: 'CC Research - Roger Goldstein*'
+    summary_glob: 'Clear_Current_Interview_Summary_Roger_Goldstein*'
+    corpus_labels:
+      transcript: 'Roger Goldstein Transcript'
+      summary: 'Roger Goldstein Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: panda-walt
+    portal_source_id: cc-panda-taylor
+    company_card_id: co-10
+    status: published_portal
+    vertical: restaurant-retail
+    transcript_glob: 'CC Research — Walt Taylor*'
+    summary_glob: 'Clear_Current_Interview_Summary_Walt_Taylor*'
+    corpus_labels:
+      transcript: 'Walt Taylor Transcript'
+      summary: 'Walt Taylor Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: hyatt
+    portal_source_id: cc-hyatt
+    company_card_id: co-11
+    status: published_portal
+    vertical: hospitality
+    transcript_glob: ''
+    summary_glob: 'Clear_Current_Interview_Summary_Randy_Dawes*'
+    corpus_labels:
+      transcript: 'Randy Dawes Transcript'
+      summary: 'Randy Dawes Summary'
+    # Legacy ALL_SUMMARIES corpus omitted Hyatt; summaries still used in thematic agents.
+    include_in_all_summaries_corpus: false
+
+  - id: jll
+    portal_source_id: cc-jll
+    company_card_id: co-12
+    status: published_portal
+    vertical: commercial-real-estate
+    transcript_glob: 'CC Research — Jamare Bates*'
+    summary_glob: 'Clear_Current_Interview_Summary_Jamare_Bates*'
+    corpus_labels:
+      transcript: 'Jamare Bates Transcript'
+      summary: 'Jamare Bates Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: nvidia-spieler
+    portal_source_id: cc-nvidia-spieler
+    company_card_id: co-13
+    status: published_portal
+    vertical: channel-advisory
+    transcript_glob: 'CC Research - Marc Spieler*'
+    summary_glob: 'Clear_Current_Interview_Summary_Marc_Spieler*'
+    corpus_labels:
+      transcript: 'Marc Spieler Transcript'
+      summary: 'Marc Spieler Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: engie-zavadsky
+    portal_source_id: cc-engie-zavadsky
+    company_card_id: co-14
+    status: published_portal
+    vertical: channel-advisory
+    transcript_glob: 'CC Research - Adam Zavadsky*'
+    summary_glob: 'Clear_Current_Interview_Summary_Adam_Zavadsky*'
+    corpus_labels:
+      transcript: 'Adam Zavadsky Transcript'
+      summary: 'Adam Zavadsky Summary'
+    include_in_all_summaries_corpus: true
+
+  - id: trane-johnson
+    portal_source_id: cc-trane-johnson
+    company_card_id: co-15
+    status: published_portal
+    vertical: channel-advisory
+    transcript_glob: 'CC_Research_Don_Johnson*'
+    summary_glob: ''
+    corpus_labels:
+      transcript: 'Don Johnson Transcript'
+      summary: 'Don Johnson Summary'
+    include_in_all_summaries_corpus: false
+
+  - id: trane-combs
+    portal_source_id: cc-trane-combs
+    company_card_id: co-16
+    status: published_portal
+    vertical: channel-advisory
+    transcript_glob: ''
+    summary_glob: 'Clear_Current_Interview_Summary_Phil_Combs*'
+    corpus_labels:
+      transcript: 'Phil Combs Transcript'
+      summary: 'Phil Combs Summary'
+    include_in_all_summaries_corpus: true

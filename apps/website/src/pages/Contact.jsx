@@ -205,8 +205,7 @@ export default function Contact() {
               viewport={viewportOptions}
               className="lg:sticky lg:top-32"
             >
-              {/* Quotes */}
-              {/* TODO: confirm with John/Dan — get named quotes with photo, name, title, company */}
+              {/* Quotes — primary research (anonymized attributions) */}
               <div className="flex flex-col gap-5">
                 {testimonials.slice(0, 2).map((t, i) => (
                   <motion.div
@@ -231,6 +230,7 @@ export default function Contact() {
                         </p>
                         <p className="mt-2 text-[13px] text-[var(--gray-600)] font-[var(--font-sans)]">
                           {t.title}
+                          {t.company ? ` · ${t.company}` : ''}
                         </p>
                       </div>
                     </div>

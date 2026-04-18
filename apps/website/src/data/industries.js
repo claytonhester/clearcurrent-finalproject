@@ -33,7 +33,10 @@ export const industriesData = {
         body: 'Create and manage energy RFPs that reflect the unique needs of higher education — from distributed generation to demand response programs to renewable energy credits.',
       },
     ],
-    quote: null, // TODO: get from interview debriefs if available
+    quote: {
+      text: 'I care more about demand and usage… the bill processing folks care more about the bottom line numbers.',
+      attribution: 'Energy & water manager, large public university (primary research)',
+    },
   },
 
   healthcare: {
@@ -70,7 +73,10 @@ export const industriesData = {
         body: 'Consolidate energy data for ESG reporting and evaluate renewable energy procurement options with full cost-benefit analysis.',
       },
     ],
-    quote: null,
+    quote: {
+      text: 'Most customers are still reactive… even hospitals.',
+      attribution: 'Channel advisor with 100+ commercial accounts (primary research)',
+    },
   },
 
   'commercial-real-estate': {
@@ -106,7 +112,10 @@ export const industriesData = {
         body: 'Deliver comprehensive energy audits for target properties during due diligence, identifying cost risks and optimization opportunities before close.',
       },
     ],
-    quote: null,
+    quote: {
+      text: 'Energy decisions live between the engineer in the basement and finance on another coast.',
+      attribution: 'Global head of engineering, hospitality portfolio (primary research)',
+    },
   },
 }
 

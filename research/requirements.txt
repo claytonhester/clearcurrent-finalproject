@@ -1,0 +1,6 @@
+# Python deps for research/ pipelines and tools (install: pip install -r research/requirements.txt)
+anthropic>=0.40.0
+python-dotenv>=1.0.0
+python-docx>=1.1.0
+pdfplumber>=0.11.0
+pyyaml>=6.0.0

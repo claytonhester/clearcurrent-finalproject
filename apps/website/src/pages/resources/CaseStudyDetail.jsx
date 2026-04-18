@@ -178,6 +178,7 @@ export default function CaseStudyDetail() {
                   prefix={stat.prefix}
                   suffix={stat.suffix}
                   label={stat.label}
+                  decimals={stat.decimals ?? 0}
                   numberClassName="text-[var(--gold)] text-4xl md:text-5xl"
                   labelClassName="text-[var(--gray-400)]"
                 />

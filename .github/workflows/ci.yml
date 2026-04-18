@@ -30,7 +30,7 @@ jobs:
       - name: Test
         run: npm run test
 
-      - name: Typecheck portal
+      - name: Typecheck final-presentation
         run: npm run typecheck
 
       - name: Build

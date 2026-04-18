@@ -15,6 +15,9 @@ coverage
 out
 *.local
 
+# Secrets — use root `.env.example` as the template
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -28,3 +31,7 @@ out
 
 # Local agent / IDE caches
 .claude/
+
+# Python
+__pycache__/
+*.py[cod]

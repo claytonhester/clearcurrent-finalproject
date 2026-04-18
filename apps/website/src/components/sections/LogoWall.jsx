@@ -21,7 +21,7 @@ export default function LogoWall() {
               Across industries and scale
             </p>
           </div>
-          {/* TODO: confirm with John/Dan — replace badges with real customer logos when available */}
+          {/* Customer logos ship when brand approvals are in place */}
           <LogoMarquee />
         </div>
       </motion.div>

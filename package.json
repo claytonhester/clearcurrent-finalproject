@@ -5,17 +5,16 @@
     "apps/*"
   ],
   "scripts": {
-    "dev:portal": "npm run dev -w @clear-current/portal",
+    "dev:portal": "npm run dev -w @clear-current/final-presentation",
     "dev:website": "npm run dev -w @clear-current/website",
     "build": "npm run build --workspaces --if-present",
     "lint": "npm run lint --workspaces --if-present",
-    "test": "npm run test -w @clear-current/portal",
-    "test:watch": "npm run test:watch -w @clear-current/portal",
-    "test:coverage": "npm run test:coverage -w @clear-current/portal",
+    "test": "npm run test -w @clear-current/final-presentation",
+    "test:watch": "npm run test:watch -w @clear-current/final-presentation",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "npm run typecheck -w @clear-current/portal",
-    "preview:portal": "npm run preview -w @clear-current/portal"
+    "typecheck": "npm run typecheck -w @clear-current/final-presentation",
+    "preview:portal": "npm run preview -w @clear-current/final-presentation"
   },
   "devDependencies": {
     "prettier": "^3.8.1"

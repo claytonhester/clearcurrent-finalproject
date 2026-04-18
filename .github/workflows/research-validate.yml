@@ -1,0 +1,43 @@
+name: Research registry validate
+
+on:
+  push:
+    paths:
+      - 'research/interviews_registry.yaml'
+      - 'research/Call Transcripts/**'
+      - 'research/Interview Summary Documents/**'
+      - 'research/registry_load.py'
+      - 'research/validate_research.py'
+      - 'research/staging/**'
+  pull_request:
+    paths:
+      - 'research/interviews_registry.yaml'
+      - 'research/Call Transcripts/**'
+      - 'research/Interview Summary Documents/**'
+      - 'research/registry_load.py'
+      - 'research/validate_research.py'
+      - 'research/staging/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PyYAML
+        run: python -m pip install pyyaml
+
+      - name: Validate registry globs
+        run: python research/validate_research.py
+
+      - name: Upload staging folder (review packets / examples)
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-staging
+          path: research/staging/**/*
+          if-no-files-found: warn

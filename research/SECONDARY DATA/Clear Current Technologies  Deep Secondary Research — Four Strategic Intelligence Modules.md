@@ -1,15 +1,16 @@
 # Clear Current Technologies: Deep Secondary Research
+
 ## Four Strategic Intelligence Modules
 
-*Prepared April 2026 | Sources prioritized 2022–2026*
+_Prepared April 2026 | Sources prioritized 2022–2026_
 
-***
+---
 
 ## Executive Summary
 
 This report synthesizes deep secondary research across four strategic areas critical to Clear Current Technologies' product roadmap and go-to-market execution: (1) regulatory intelligence and the rate change notice gap, (2) IT security as an enterprise buying gate, (3) willingness to pay and deal economics, and (4) commercial real estate buyer behavior. Together, these four research streams validate the core business case — commercial energy buyers are chronically underserved by current tools, systematically surprised by rate changes they could have anticipated, blocked from adopting new software by security gatekeepers they can preemptively satisfy, and willing to pay materially for solutions that reduce budget uncertainty and recover billing errors.
 
-***
+---
 
 ## Section 1: Regulatory Intelligence — The Rate Change Notice Gap
 
@@ -45,15 +46,15 @@ EIA projects further increases: U.S. wholesale day-ahead electricity prices rose
 
 The regulatory calendar creates a predictable advance-notice window at each stage:
 
-| Stage | Timing | Public Accessibility |
-|-------|---------|---------------------|
-| Utility files Notice of Intent (some states) | 30-60 days before filing | Yes — formal notice to commission |
-| Utility files rate case application | Day 0 | Yes — docket opened immediately |
-| Staff report/initial analysis | Months 4-5 | Yes — filed in docket |
-| Public hearings | Months 6-8 | Yes — scheduled and noticed publicly |
-| Proposed Decision / ALJ recommendation | Month 7-8 | Yes — filed in docket |
-| Final Commission order | Month 9 (Ohio) to 18+ months (NY) | Yes |
-| Rates effective | After order + notice period | — |
+| Stage                                        | Timing                            | Public Accessibility                 |
+| -------------------------------------------- | --------------------------------- | ------------------------------------ |
+| Utility files Notice of Intent (some states) | 30-60 days before filing          | Yes — formal notice to commission    |
+| Utility files rate case application          | Day 0                             | Yes — docket opened immediately      |
+| Staff report/initial analysis                | Months 4-5                        | Yes — filed in docket                |
+| Public hearings                              | Months 6-8                        | Yes — scheduled and noticed publicly |
+| Proposed Decision / ALJ recommendation       | Month 7-8                         | Yes — filed in docket                |
+| Final Commission order                       | Month 9 (Ohio) to 18+ months (NY) | Yes                                  |
+| Rates effective                              | After order + notice period       | —                                    |
 
 **The entire process is publicly accessible.** Pennsylvania requires utilities to notify customers in billing notices at least 60 days before filing; Ohio makes the docket accessible from filing day and the 275-day clock is public; the PUCT publishes "Notice of Proposed Rate Change" documents that any company can subscribe to. The actionable intelligence gap is not regulatory — it is that no commercial energy software currently aggregates, processes, and translates these filings into facility-level financial impact models.[^5][^8][^28]
 
@@ -69,7 +70,7 @@ The regulatory intelligence opportunity is most acute at universities, where bud
 
 Corporate energy budgets face the same structural problem. Arcadia's report found that the median CAGR of 5.9% is "nearly double the 3% escalator still baked into many corporate budgets" — not because finance teams are negligent, but because they lack facility-level, tariff-specific rate change forecasting. The PJM capacity surge alone creates a $110,000 unbudgeted line-item exposure per MW of commercial load, invisible to any organization using a flat percentage escalator.[^19][^24]
 
-***
+---
 
 ## Section 2: IT/Security as an Enterprise Buying Gate
 
@@ -106,12 +107,12 @@ The healthcare and higher education verticals are the most demanding. Hospitals 
 
 The evidence is clear on prioritization:
 
-| Certification | Enterprise Impact | Cost / Timeline |
-|---------------|------------------|-----------------|
-| SOC 2 Type II | Most universally required; 62% higher win rate; 3.2 months faster sales (Gartner/PwC) [^36] | $20K-$80K total; 6-12 months [^39][^40] |
-| ISO 27001 | Required by many international/global enterprise buyers | Similar cost and timeline; additive to SOC 2 |
-| CSA Certification | 59% of buyers more attracted to CSA-certified software [^33] | Lower cost; signals cloud-specific security maturity |
-| FedRAMP | Required for government customers; not required for commercial CRE/healthcare/higher ed | Very high cost ($1M+); only if targeting federal government |
+| Certification     | Enterprise Impact                                                                           | Cost / Timeline                                             |
+| ----------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| SOC 2 Type II     | Most universally required; 62% higher win rate; 3.2 months faster sales (Gartner/PwC) [^36] | $20K-$80K total; 6-12 months [^39][^40]                     |
+| ISO 27001         | Required by many international/global enterprise buyers                                     | Similar cost and timeline; additive to SOC 2                |
+| CSA Certification | 59% of buyers more attracted to CSA-certified software [^33]                                | Lower cost; signals cloud-specific security maturity        |
+| FedRAMP           | Required for government customers; not required for commercial CRE/healthcare/higher ed     | Very high cost ($1M+); only if targeting federal government |
 
 For Clear Current Technologies targeting commercial energy managers in CRE, healthcare, and higher education, **SOC 2 Type II is the minimum required certification** before institutional enterprise procurement will approve the platform. The investment ($20K-$80K for initial certification for a startup; $35K-$130K annually ongoing) pays back quickly: companies report SOC 2 certification produces $100K+ increase in average deal size and enables 50% faster enterprise sales cycles within the first year.[^41]
 
@@ -128,9 +129,9 @@ The documented best practice for navigating champion/gatekeeper tension in enter
 
 Commercial utility data — billing histories, consumption patterns, demand peaks, contracted rates, PPA terms — is competitively sensitive business information. Energy spend patterns can reveal operational schedules, production volumes, occupancy fluctuations, and strategic facility expansions. At REITs and institutional CRE firms, energy cost data is material to financial reporting and investor disclosure. At universities with federal research grants, energy allocation data intersects with grant accounting.
 
-The sensitivity creates a genuine IT gatekeeper concern that is not irrational. However, it also means that vendors who have *already* demonstrated data governance rigor — through SOC 2 Type II, clear data use policies, and opt-in data sharing — will find that concern becomes a competitive advantage rather than a barrier once documentation is in hand.
+The sensitivity creates a genuine IT gatekeeper concern that is not irrational. However, it also means that vendors who have _already_ demonstrated data governance rigor — through SOC 2 Type II, clear data use policies, and opt-in data sharing — will find that concern becomes a competitive advantage rather than a barrier once documentation is in hand.
 
-***
+---
 
 ## Section 3: Willingness to Pay and Deal Economics
 
@@ -195,6 +196,7 @@ Commercial energy buyers expect demonstrable financial returns from energy manag
 **The SaaS payback calculation for Clear Current's core use case:**
 
 For a mid-market commercial organization with $500,000 in annual utility spend:
+
 - EnergyCAP benchmark: 5% of bills flagged for errors monthly → recovers 1-3% of spend → $5,000-$15,000 annually from billing error recovery alone
 - Rate optimization (moving to better tariff): an additional 2-5% → $10,000-$25,000 annually
 - Total potential recovery: $15,000-$40,000/year
@@ -204,17 +206,17 @@ At $2M in utility spend (a large hospital or mid-sized university), the math is 
 
 ### Sales Cycle Length by Deal Size and Vertical
 
-| Segment | Typical Sales Cycle | Primary Gating Factor |
-|---------|--------------------|-----------------------|
-| Mid-market commercial (50-200 meters) | 60-90 days | IT security review + budget approval |
-| Large enterprise commercial (200-1,000 meters) | 90-180 days | IT security + C-suite sign-off |
-| Large public university | 6-18 months | Formal RFP procurement process |
-| REIT/institutional CRE | 90-180 days | Sustainability director + investor committee |
-| Healthcare system | 90-180 days | IT/security + value analysis committee |
+| Segment                                        | Typical Sales Cycle | Primary Gating Factor                        |
+| ---------------------------------------------- | ------------------- | -------------------------------------------- |
+| Mid-market commercial (50-200 meters)          | 60-90 days          | IT security review + budget approval         |
+| Large enterprise commercial (200-1,000 meters) | 90-180 days         | IT security + C-suite sign-off               |
+| Large public university                        | 6-18 months         | Formal RFP procurement process               |
+| REIT/institutional CRE                         | 90-180 days         | Sustainability director + investor committee |
+| Healthcare system                              | 90-180 days         | IT/security + value analysis committee       |
 
 University RFP timelines are documented: UW System issued RFP in September 2024, set response deadline October 1, 2024 — but the full award, contracting, and implementation cycle extends well beyond the RFP closing date. Budget cycle lock in March means proposals must be in budget before March of the year prior to implementation start.
 
-***
+---
 
 ## Section 4: Commercial Real Estate Buyer Behavior
 
@@ -225,6 +227,7 @@ Large institutional CRE firms approach energy management through a layered struc
 WatchWire by Tango — the leading energy management SaaS specifically designed for institutional CRE — serves 500+ customers in 140+ countries and counts Brookfield as a named customer. Tango is Berkshire Partners-backed, signaling institutional confidence in CRE energy management as a durable software category. The GRESB 2025 Real Estate Assessment attracted 1,002 fund managers submitting 2,382 assessments — this is the global benchmark that institutional CRE firms track their energy performance against, and GRESB data management creates direct demand for energy management platforms.[^65][^66][^47][^45]
 
 Key CRE energy software tools in use:
+
 - **WatchWire by Tango**: Enterprise-grade energy/sustainability data management; deep GRESB reporting integration; primary tool for major REITs and institutional landlords[^65]
 - **Measurabl**: Free tier launched July 2025, onboarded 11,000+ buildings in 4 weeks; targets ESG/sustainability reporting layer; premium products include real-time asset optimization and BEPS compliance[^48]
 - **ENERGY STAR Portfolio Manager**: Free government benchmarking tool; baseline required for LL97 compliance in NYC; ENERGY STAR future uncertain due to federal policy changes, which Measurabl specifically positioned its free tool to address[^67][^48]
@@ -268,6 +271,7 @@ The CRE buying process for energy management software follows a distinct pattern
 **Decision-maker**: CFO or Asset Manager; Investment Committee for multi-million-dollar commitments
 
 **Primary triggers** (in order of frequency and urgency):
+
 1. GRESB reporting cycle (Q3/Q4 deadline urgency)
 2. LL97/BEPS compliance deadlines (annual May reporting)
 3. Portfolio energy cost spikes (rate changes, capacity surcharges)
@@ -288,16 +292,16 @@ Clear Current's AI-powered bill analysis capability directly addresses this pain
 
 ### Competitive Landscape in CRE Energy Management
 
-| Vendor | Primary Positioning | CRE Fit | Key Weakness |
-|--------|--------------------|---------|-----------| 
-| WatchWire by Tango | Enterprise sustainability + energy data; GRESB focus[^65][^45] | Very High | High price; complex; no AI billing error detection |
-| Measurabl | ESG/sustainability reporting; free tier[^48] | High (ESG layer) | Metrics/reporting only; no billing audit or procurement |
-| Gridium | Per-building energy analytics; commercial office[^44] | Medium | Per-building model doesn't scale for large portfolios |
-| ENERGY STAR Portfolio Manager | Free benchmarking[^67] | Baseline only | No billing audit, no rate optimization, uncertain future under current federal policy[^48] |
-| EnergyCAP | Utility bill management; higher ed/government primary[^80] | Medium | Designed for campus environments; not CRE-native |
-| Clear Current (target position) | AI bill audit + rate optimization + regulatory intelligence | High | Unproven; needs SOC 2 |
+| Vendor                          | Primary Positioning                                            | CRE Fit          | Key Weakness                                                                               |
+| ------------------------------- | -------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------ |
+| WatchWire by Tango              | Enterprise sustainability + energy data; GRESB focus[^65][^45] | Very High        | High price; complex; no AI billing error detection                                         |
+| Measurabl                       | ESG/sustainability reporting; free tier[^48]                   | High (ESG layer) | Metrics/reporting only; no billing audit or procurement                                    |
+| Gridium                         | Per-building energy analytics; commercial office[^44]          | Medium           | Per-building model doesn't scale for large portfolios                                      |
+| ENERGY STAR Portfolio Manager   | Free benchmarking[^67]                                         | Baseline only    | No billing audit, no rate optimization, uncertain future under current federal policy[^48] |
+| EnergyCAP                       | Utility bill management; higher ed/government primary[^80]     | Medium           | Designed for campus environments; not CRE-native                                           |
+| Clear Current (target position) | AI bill audit + rate optimization + regulatory intelligence    | High             | Unproven; needs SOC 2                                                                      |
 
-***
+---
 
 ## Cross-Cutting Strategic Implications for Clear Current Technologies
 
@@ -435,7 +439,7 @@ The combination of formal RFP requirements, Board of Trustees approval processes
 
 53. [[PDF] Request for Proposal UK-2466-25 Proposal Due Date - 10/30/24](https://purchasing.uky.edu/sites/default/files/2024-09/uk-2466-25.pdf) - The University of Kentucky (UK) is pleased to present this Request for Proposal (RFP) for qualified ...
 
-54. [Purchase Order Approval Workflow with AI (2025) - Approveit](https://approveit.today/blog/purchase-order-approval-workflow-with-ai-rules-thresholds-templates-(2025)) - Manager → Finance approves $5,001–$25,000 or any request with risk signals (new vendor, off-contract...
+54. [Purchase Order Approval Workflow with AI (2025) - Approveit](<https://approveit.today/blog/purchase-order-approval-workflow-with-ai-rules-thresholds-templates-(2025)>) - Manager → Finance approves $5,001–$25,000 or any request with risk signals (new vendor, off-contract...
 
 55. [The Difference Between A Utility Bill Audit And A Building Energy Audit](https://nationalutilitiesrefund.com/commercial-energy-audits-the-difference-between-a-utility-bill-audit-and-a-building-energy-audit/) - This blog will explore the distinctions between these two types of audits and how they can complemen...
 
@@ -488,4 +492,3 @@ The combination of formal RFP requirements, Board of Trustees approval processes
 79. [NYC Local Law 97: Department of Buildings 2025 Compliance Update](https://www.fsresidential.com/new-york/news-events/articles-and-news/nyc-local-law-97-2025-compliance-update-dob/) - This includes a decarbonization plan that must be submitted by May 1, 2025. To qualify, buildings mu...
 
 80. [EnergyCAP vs WatchWire Comparison 2025 | Features & Reviews](https://www.exafol.com/comparison/energycap-vs-watchwire) - Comprehensive side-by-side comparison of EnergyCAP vs WatchWire including features, integrations, cu...
-

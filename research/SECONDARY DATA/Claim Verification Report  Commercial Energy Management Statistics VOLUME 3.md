@@ -1,26 +1,29 @@
 # Claim Verification Report: Commercial Energy Management Statistics
 
-*Prepared for Clear Current Technologies | April 2026*
+_Prepared for Clear Current Technologies | April 2026_
 
-***
+---
 
 ## Overview
 
 This report independently verifies six statistics used in the Clear Current Technologies market research report. For each claim, it identifies the original source, assesses conflict-of-interest, locates independent corroboration, and provides a credibility rating and usage recommendation.
 
 **Credibility Rating Scale:**
+
 - **High** — Government agency (EIA, EPA, DOE), academic institution, or independent research body with no financial stake in the conclusion
 - **Medium** — Reputable trade press, industry association, or vendor-commissioned survey with transparent methodology
 - **Low** — Vendor-generated marketing claim, self-serving statistic, or unverifiable assertion
 
-***
+---
 
 ## Claim 1: "80% of businesses are overpaying on their utility bills"
 
 ### Source Cited
+
 [nationalutilitiesrefund.com](https://nationalutilitiesrefund.com/why-80-percent-of-businesses-overpay-on-utilities/) — a utility bill auditing company that earns revenue by finding billing errors and collecting contingency fees on recovered overpayments[^1][^2]
 
 ### Conflict of Interest Assessment
+
 **Severe and direct.** National Utilities Refund (NUR) charges no fee unless errors are found, meaning their business model produces revenue only by finding billing problems. The company states: "Over 80% of the invoice audits performed by NUR have contained at least some overcharges and errors." This is equivalent to a pest control company claiming 80% of homes have pest problems. The statistic describes their own client base — companies that were already suspicious enough of their bills to seek an audit — not a representative sample of all commercial organizations.[^3]
 
 The claim appears on multiple NUR web pages but with no citation to any study, government report, public utility commission finding, or academic paper. It is self-generated marketing content.[^2][^1][^3]
@@ -30,6 +33,7 @@ The claim appears on multiple NUR web pages but with no citation to any study, g
 No government agency, academic institution, or public utility commission publishes a comprehensive commercial utility billing error rate. However, independent evidence does corroborate that billing errors are **real, material, and persistent**:
 
 **Regulator-documented cases:**
+
 - A 2022 Federal Energy Regulatory Commission (FERC) audit found that FirstEnergy's Ohio subsidiaries "may have mischarged customers" by misclassifying $108 million in corporate overhead as recoverable costs — a finding subsequently upheld by the Public Utilities Commission of Ohio in 2024[^4]
 - Rhode Island's Public Utilities Commission (PUC) ordered an independent audit of Rhode Island Energy's billing systems after discovering disputes about bill accuracy for state accounts and documenting that "83% of bills that were flagged for issues within their billing system in December were likely sent out anyway"[^5][^6]
 - Pennsylvania PUC opened a formal investigation into PPL Electric Utilities billing accuracy following reports of bills 30–50% above expected amounts[^7]
@@ -38,23 +42,26 @@ No government agency, academic institution, or public utility commission publish
 
 **360 Energy (industry auditor, moderate conflict):** States that "nearly 30% of our 360 Energy clients face billing errors annually". While 360 Energy is not fully independent, this figure is notably more conservative than NUR's 80% claim and focuses on clients already using their services.[^9]
 
-**Why the 80% figure is plausible but unmeasurable:** A figure as high as 80% likely reflects a broad definition of "overpaying" that includes *suboptimal rate classification* (on a technically correct but non-optimal tariff), *demand charge management opportunities* (paying correct charges but on a peak that could have been managed), and *true billing errors* (incorrect charges). Under this broader definition, most commercial organizations probably could reduce their utility costs — but conflating rate optimization opportunity with billing error distorts the claim's meaning.
+**Why the 80% figure is plausible but unmeasurable:** A figure as high as 80% likely reflects a broad definition of "overpaying" that includes _suboptimal rate classification_ (on a technically correct but non-optimal tariff), _demand charge management opportunities_ (paying correct charges but on a peak that could have been managed), and _true billing errors_ (incorrect charges). Under this broader definition, most commercial organizations probably could reduce their utility costs — but conflating rate optimization opportunity with billing error distorts the claim's meaning.
 
 ### Credibility Rating: **LOW**
+
 The 80% figure is vendor-generated marketing content from a company with direct financial incentive to maximize the perceived prevalence of billing errors. It cites no methodology, no sample size, and no independent verification.
 
 ### Usage Recommendation
+
 **Do not use this statistic in a business presentation or investor deck as presented.** Instead, use one of the following defensible alternatives:
 
 1. **Regulatory corroboration:** "State and federal regulators have uncovered multi-million-dollar billing misclassifications at major utilities including FirstEnergy ($108M, 2024) and Rhode Island Energy, and 83% of internally-flagged billing exceptions were sent to customers anyway."[^6][^4]
 2. **Conservative industry estimate:** "Energy auditing firms estimate that approximately 30% of commercial utility accounts contain a material billing error in any given year." — Flag as industry-sourced with moderate conflict of interest, but it is more defensible than 80%.[^9]
 3. **Focus on tariff optimization:** "Most commercial buildings are not on the lowest-cost available tariff for their load profile. Arcadia, the largest utility data platform, processes 500,000+ meter-tariff assignments and reports that 20% require expert manual intervention beyond automated matching — suggesting systematic mis-classification is pervasive."[^10]
 
-***
+---
 
 ## Claim 2: "Commercial buildings spent $241 billion on energy in 2024"
 
 ### Source Cited
+
 Reported as derived from EIA CBECS and the University of Michigan Center for Sustainable Systems (CSS) factsheet[^11]
 
 ### What the Primary Source Actually Says
@@ -68,29 +75,34 @@ Reported as derived from EIA CBECS and the University of Michigan Center for Sus
 ### Cross-Validation: Is $241 Billion Plausible?
 
 The $142 billion (2018) figure can be inflated to a rough 2024 estimate using two factors:
+
 1. **Energy price inflation:** EIA documented that total U.S. energy expenditures increased 22% in 2022 from 2021 alone (to more than $1.7 trillion total). Commercial electricity expenditures totaled approximately $482 billion across all sectors (residential + commercial + industrial) in 2022[^18][^19]
 2. **Commercial electricity consumption growth:** EIA forecasted 1,420 billion kWh for commercial customers in 2024, compared to approximately 1,371 billion kWh in 2022 — a modest consumption increase[^20][^21]
 
 However, price increases from 2018 to 2024 make $241 billion a **plausible order-of-magnitude estimate**. The commercial sector uses approximately 35–38% of total U.S. end-use electricity, and with electricity prices up significantly since 2018 (the average commercial electricity price rose from ~$0.107/kWh in 2018 to ~$0.128/kWh in 2022), a 70%+ increase in total expenditures from 2018's $142 billion is mathematically reasonable. But **it is a projection, not a measured figure.**[^19]
 
 ### Credibility Rating: **MEDIUM (if properly qualified)**
+
 The underlying EIA CBECS 2018 figure of $141–142 billion is **High** credibility. The $241 billion 2024 projection is derived data and should be explicitly labeled as an estimate based on price trend extrapolation from the 2018 CBECS baseline.[^13][^12]
 
 ### Usage Recommendation
+
 **Use with qualification.** The recommended formulation is:
 
-*"According to EIA's most recent Commercial Buildings Energy Consumption Survey (2018), U.S. commercial buildings spent $142 billion on energy. Adjusted for commercial energy price increases through 2024, current total commercial energy expenditure is estimated at approximately $200–250 billion annually."*[^12][^18]
+_"According to EIA's most recent Commercial Buildings Energy Consumption Survey (2018), U.S. commercial buildings spent $142 billion on energy. Adjusted for commercial energy price increases through 2024, current total commercial energy expenditure is estimated at approximately $200–250 billion annually."_[^12][^18]
 
 If maximum precision is needed, cite directly: "U.S. commercial buildings spent $142 billion on energy in 2018, the most recent year for which EIA has published official survey data." This is unimpeachable.[^13]
 
-***
+---
 
 ## Claim 3: "98% of facilities management respondents rated energy efficiency as extremely or very important, yet only 9% of companies have fully embraced software tools for managing energy and sustainability data"
 
 ### Source Cited
+
 2023 GridPoint "Commercial Building Energy Efficiency Survey" of 800+ U.S. and Canadian building professionals, conducted by Qualtrics[^22][^23][^24]
 
 ### Conflict of Interest Assessment
+
 **Significant.** GridPoint is a building energy management technology vendor. The survey was **commissioned by GridPoint**, administered by Qualtrics (a neutral survey platform), and designed to validate demand for products GridPoint sells. This creates a framing and question-design bias — results are likely shaped to highlight the gap between awareness/importance and software adoption, which is GridPoint's commercial opportunity.[^22]
 
 The 98% figure refers specifically to **facilities management respondents** (a sub-group), not all 800+ respondents. The broader survey found 89% of all respondents rated energy efficiency as highly important. The 98% figure requires cherry-picking the FM sub-group.[^22]
@@ -102,34 +114,39 @@ The survey does not appear to have been published in a peer-reviewed journal or 
 The 9% figure is reportedly from the same GridPoint survey. The specific phrasing in the market report was that "only 9% of companies have fully embraced software tools for managing energy and sustainability data." This very restrictive framing likely requires selecting only respondents who have deployed a full energy management software suite and are actively using it for sustainability reporting — a narrow definition designed to maximize the apparent gap.
 
 **Independent corroboration from EIA CBECS (2018):**
+
 - EIA's 2018 CBECS tracks building technology adoption, including energy management and control systems. The survey found that commercial building automation and energy management system penetration was approximately **4% of commercial buildings** in 2018 for full BEMS deployment[^25]
 - Only ~10% of commercial buildings had sub-metering installed in 2018[^25]
 - ENERGY STAR Portfolio Manager, the most widely used free energy benchmarking tool, covers approximately **25% of commercial floorspace** — meaning 75% of commercial building space has no systematic energy performance benchmarking at all[^26][^27]
 
-**Altair/Toggled Survey (2023, vendor-commissioned but different vendor):** Found that 78% of businesses have adopted *some* smart building technology, but only 36% have seen measurable decarbonization results. This suggests widespread partial adoption, not the low single-digit "full embrace" that GridPoint claims.[^28]
+**Altair/Toggled Survey (2023, vendor-commissioned but different vendor):** Found that 78% of businesses have adopted _some_ smart building technology, but only 36% have seen measurable decarbonization results. This suggests widespread partial adoption, not the low single-digit "full embrace" that GridPoint claims.[^28]
 
 **Independent synthesis:** The real picture is likely a spectrum: ~4% have full BEMS (High credibility, EIA); ~25% have energy benchmarking via ENERGY STAR Portfolio Manager (High credibility, EPA); ~78% have adopted some building technology (Medium, vendor survey); and <10% have integrated energy + sustainability software meeting the "fully embraced" definition GridPoint uses.[^28][^26][^25]
 
 ### Credibility Rating
+
 - **98% importance figure: LOW** — Cherry-picked sub-group from a vendor-commissioned survey
 - **9% adoption figure: LOW as stated** — Vendor-commissioned, narrow definition, no published methodology
 - **The underlying directional claim (most buildings lack integrated energy software): HIGH** — Strongly corroborated by EIA CBECS, EPA Portfolio Manager penetration data, and multiple independent sources[^26][^25]
 
 ### Usage Recommendation
+
 **Replace the vendor-sourced statistics with independently verifiable alternatives:**
 
-*"Only 4% of U.S. commercial buildings have deployed a full building energy management system (BEMS), according to EIA's Commercial Buildings Energy Consumption Survey. EPA's ENERGY STAR Portfolio Manager — the most widely used free benchmarking tool — covers just 25% of commercial floorspace, meaning 75% of commercial building space has no systematic energy performance tracking."*[^26][^25]
+_"Only 4% of U.S. commercial buildings have deployed a full building energy management system (BEMS), according to EIA's Commercial Buildings Energy Consumption Survey. EPA's ENERGY STAR Portfolio Manager — the most widely used free benchmarking tool — covers just 25% of commercial floorspace, meaning 75% of commercial building space has no systematic energy performance tracking."_[^26][^25]
 
 This conveys the same message (large unmet need) with government-sourced, defensible data.
 
-***
+---
 
 ## Claim 4: "Industry auditors estimate that 5–15% of commercial utility bills contain errors"
 
 ### Source Cited
+
 Utility audit firms including 360 Energy, Conservice, and National Utility Refund[^1][^9]
 
 ### Conflict of Interest Assessment
+
 **All three sources profit from finding billing errors** and have an economic incentive to characterize error rates as high. Conservice manages utility billing for commercial real estate and residential portfolios — finding errors is core to their value proposition. 360 Energy is an energy audit firm. National Utility Refund charges contingency fees on recovered overpayments. None of these sources is disinterested.
 
 ### What Independent Evidence Actually Says
@@ -147,23 +164,26 @@ Utility audit firms including 360 Energy, Conservice, and National Utility Refun
 **The 5–15% figure assessed:** The 5–15% range from 360 Energy describes the "additional costs annually" from billing errors — not a frequency rate. This is a subtly different claim: a 5–15% cost overrun could be produced by a single large error on a major bill, rather than widespread small errors. The figure is internally consistent with independent evidence (FERC audits documenting $108M mischarge at a single utility) but cannot be independently verified as a representative estimate.[^4]
 
 ### Credibility Rating: **LOW as a "scientific" figure**; **MEDIUM as a directional claim**
+
 The 5–15% figure is industry-self-reported with strong conflict of interest. However, its directional message — that billing errors are material and pervasive — is corroborated by regulator findings and is not disputed by any independent source.
 
 ### Usage Recommendation
+
 **Reframe as a directional claim with regulatory corroboration:**
 
-*"State and federal regulators have documented material commercial billing errors at multiple major utilities. FERC audits uncovered $108 million in misclassified costs at FirstEnergy. Rhode Island's PUC documented systematic billing system failures. Utility audit firms with access to large commercial portfolios estimate that billing errors add 5–15% to annual utility costs — a figure with inherent conflict of interest but consistent directional support from regulatory findings."*[^9][^6][^4]
+_"State and federal regulators have documented material commercial billing errors at multiple major utilities. FERC audits uncovered $108 million in misclassified costs at FirstEnergy. Rhode Island's PUC documented systematic billing system failures. Utility audit firms with access to large commercial portfolios estimate that billing errors add 5–15% to annual utility costs — a figure with inherent conflict of interest but consistent directional support from regulatory findings."_[^9][^6][^4]
 
-***
+---
 
 ## Claim 5: "U.S. colleges and universities spend over $6 billion annually on energy"
 
 ### Source Cited
+
 Reported as derived from "DOE and EPA estimates"
 
 ### Tracing the Primary Source
 
-The $6 billion figure for K-12 schools is clearly documented by **EPA ENERGY STAR** on its official K-12 Schools page: *"K-12 school districts spend over $8 billion nationwide on energy costs each year."* Note: The EPA figure is **$8 billion for K-12**, not $6 billion. The $6 billion figure may predate an EPA update.[^31][^32]
+The $6 billion figure for K-12 schools is clearly documented by **EPA ENERGY STAR** on its official K-12 Schools page: _"K-12 school districts spend over $8 billion nationwide on energy costs each year."_ Note: The EPA figure is **$8 billion for K-12**, not $6 billion. The $6 billion figure may predate an EPA update.[^31][^32]
 
 Additionally, NASEO's 2024 report on K-12 energy efficiency, citing EIA CBECS data, confirms "$11 billion of annual expenditures can be managed and likely reduced through proven energy efficiency measures" for K-12 schools — a higher and more recent figure.[^33]
 
@@ -183,6 +203,7 @@ Additionally, NASEO's 2024 report on K-12 energy efficiency, citing EIA CBECS da
 ### The EUI Benchmark for Higher Education
 
 The most authoritative per-square-foot energy use benchmark comes from EPA ENERGY STAR's national median table:
+
 - **Adult Education buildings:** 110.4 kBtu/sq ft/yr (EUI)[^38]
 - **K-12 Schools median:** approximately 48.5 kBtu/sq ft/yr[^38]
 - **Colleges / Universities:** approximately 115–130 kBtu/sq ft/yr for research-intensive campuses based on Portfolio Manager data[^38]
@@ -190,69 +211,77 @@ The most authoritative per-square-foot energy use benchmark comes from EPA ENERG
 Higher education buildings are significantly more energy-intensive than K-12 schools due to research laboratories, data centers, hospitals, and 24/7 residential facilities on campus.
 
 ### Credibility Rating: **MEDIUM (if attributed correctly)**
+
 The $6 billion figure (as cited) is **incorrect** — EPA's current figure is $8 billion+ for K-12 alone, and the combined education sector figure is over $18 billion. The higher education-specific figure of "$6 billion" appears to predate updates and may misattribute the K-12 figure.[^31][^34]
 
 ### Usage Recommendation
+
 **Correct and upgrade the statistic.** Use one of the following:
 
-1. *"K-12 school districts alone spend over $8 billion annually on energy, according to EPA ENERGY STAR."* — High credibility[^31]
-2. *"The education sector (K-12 + higher ed) consumed 854 TBtu in 2018 — 13% of all commercial building energy — representing approximately $18 billion in annual energy expenditure based on the EIA CBECS 2018."* — High credibility[^12][^34]
-3. *"Higher education institutions account for an estimated $8–11 billion in annual energy expenditure, derived from EIA CBECS data showing the education sector at 13% of total commercial energy spend, less EPA's $8B estimate for K-12 alone."* — Medium credibility (derived calculation, but from high-credibility inputs)[^12][^31]
+1. _"K-12 school districts alone spend over $8 billion annually on energy, according to EPA ENERGY STAR."_ — High credibility[^31]
+2. _"The education sector (K-12 + higher ed) consumed 854 TBtu in 2018 — 13% of all commercial building energy — representing approximately $18 billion in annual energy expenditure based on the EIA CBECS 2018."_ — High credibility[^12][^34]
+3. _"Higher education institutions account for an estimated $8–11 billion in annual energy expenditure, derived from EIA CBECS data showing the education sector at 13% of total commercial energy spend, less EPA's $8B estimate for K-12 alone."_ — Medium credibility (derived calculation, but from high-credibility inputs)[^12][^31]
 
-***
+---
 
 ## Claim 6: "Only 9% of commercial buildings use energy management software"
 
 ### Source Assessment
+
 As discussed in Claim 3, the 9% figure originates from the GridPoint 2023 vendor-commissioned survey. No government report uses this specific framing or figure.[^24][^23]
 
 ### What Government Data Actually Says About EMS Adoption
 
 **EIA CBECS (2018) — Highest Credibility:**
 The 2018 CBECS collected building characteristics data on technology adoption. Key findings:[^25]
+
 - **Building automation/energy management systems (BEMS):** ~4% of U.S. commercial buildings had a full BEMS deployed as of 2018
 - **Sub-metering:** Only ~10% of commercial floorspace had interval sub-metering (which enables the kind of energy analytics EMS platforms provide)
 - **Energy controls (programmable thermostats, occupancy sensors, etc.):** Substantially higher penetration (~50–70% for basic controls), but these are not "energy management software" in the enterprise sense
 
 **EPA ENERGY STAR (2023) — High Credibility:**
+
 - More than 330,000 buildings (representing ~25% of commercial floorspace) are actively benchmarked in ENERGY STAR Portfolio Manager[^27][^26]
 - Portfolio Manager is a free, web-based benchmarking tool — the lowest bar for "energy management software"
-- This 25% figure represents the *ceiling* of energy management software adoption for commercial buildings; full-featured paid EMS platforms (EnergyCAP, Schneider, etc.) would have far lower penetration
+- This 25% figure represents the _ceiling_ of energy management software adoption for commercial buildings; full-featured paid EMS platforms (EnergyCAP, Schneider, etc.) would have far lower penetration
 
 **DOE Better Buildings Initiative:** Approximately 12% of commercial floorspace participates in voluntary DOE energy efficiency programs, suggesting an upper bound for proactive energy management engagement.[^26]
 
 **Synthesis:** The evidence supports the following hierarchy:
+
 - **~4%** of commercial buildings have a deployed BEMS (EIA CBECS, 2018)[^25]
 - **~10%** have interval sub-metering (EIA CBECS, 2018)[^25]
 - **~25%** actively use ENERGY STAR Portfolio Manager (EPA, 2023)[^26]
-- **~78%** have adopted *some* smart building technology (Altair/Toggled vendor survey, 2023)[^28]
+- **~78%** have adopted _some_ smart building technology (Altair/Toggled vendor survey, 2023)[^28]
 
-The 9% figure from GridPoint falls plausibly within this spectrum if it is meant to describe *integrated energy + sustainability software platforms* (beyond basic benchmarking), but the methodology is not published and the source is conflicted.
+The 9% figure from GridPoint falls plausibly within this spectrum if it is meant to describe _integrated energy + sustainability software platforms_ (beyond basic benchmarking), but the methodology is not published and the source is conflicted.
 
 ### Credibility Rating
+
 - **9% figure from GridPoint: LOW** — Vendor-commissioned, unexplained methodology
 - **4% BEMS penetration from EIA CBECS: HIGH** — Government survey[^25]
 - **25% Portfolio Manager adoption from EPA: HIGH** — Government program data[^26]
 
 ### Usage Recommendation
+
 **Replace with layered, independently sourced statistics:**
 
-*"Commercial energy management software adoption spans a wide spectrum. Only 4% of U.S. commercial buildings had deployed a full building energy management system as of the most recent EIA survey, while 25% of commercial floorspace is actively benchmarked using EPA's ENERGY STAR Portfolio Manager — the most basic form of systematic energy monitoring. Integrated energy analytics platforms serving the enterprise commercial market reach an estimated 10–15% of eligible organizations, with significant untapped potential across the remaining 85–90%."*[^26][^25]
+_"Commercial energy management software adoption spans a wide spectrum. Only 4% of U.S. commercial buildings had deployed a full building energy management system as of the most recent EIA survey, while 25% of commercial floorspace is actively benchmarked using EPA's ENERGY STAR Portfolio Manager — the most basic form of systematic energy monitoring. Integrated energy analytics platforms serving the enterprise commercial market reach an estimated 10–15% of eligible organizations, with significant untapped potential across the remaining 85–90%."_[^26][^25]
 
-***
+---
 
 ## Summary Table
 
-| Claim | Stated Figure | Primary Source Credibility | Conflict of Interest? | Independent Corroboration | Recommended Use |
-|---|---|---|---|---|---|
-| 80% overpaying on utilities | 80% | **LOW** — vendor marketing | Severe | Partial — regulators confirm errors are real; ~30% client-reported rate from auditors | ❌ Do not use as stated; substitute regulatory findings |
-| $241B commercial energy spend 2024 | $241B | **MEDIUM** — derived from EIA 2018 | Low (CSS is academic) | EIA 2022 data shows ~22% energy cost spike; projection is plausible | ✅ Use if qualified as "estimated from 2018 baseline adjusted for price changes" |
-| 98% rate EE as important; 9% use software | 98% / 9% | **LOW** — vendor survey | Significant | EIA confirms low BEMS adoption (~4%); EPA shows 25% portfolio manager use | ❌ Replace with EIA/EPA figures |
-| 5–15% of bills contain errors | 5–15% | **LOW** — industry auditors | Direct | Regulatory enforcement findings confirm material errors exist | ✅ Use directionally only, with regulatory examples |
-| Universities spend $6B on energy | $6B | **INCORRECT** as cited | None | EPA: K-12 alone is $8B+; education sector total is ~$18B | ❌ Correct to: K-12=$8B+; higher ed=$8–11B derived |
-| Only 9% use energy management software | 9% | **LOW** — vendor survey | Significant | EIA: 4% BEMS; EPA: 25% Portfolio Manager | ❌ Replace with EIA/EPA layered data |
+| Claim                                     | Stated Figure | Primary Source Credibility         | Conflict of Interest? | Independent Corroboration                                                             | Recommended Use                                                                  |
+| ----------------------------------------- | ------------- | ---------------------------------- | --------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| 80% overpaying on utilities               | 80%           | **LOW** — vendor marketing         | Severe                | Partial — regulators confirm errors are real; ~30% client-reported rate from auditors | ❌ Do not use as stated; substitute regulatory findings                          |
+| $241B commercial energy spend 2024        | $241B         | **MEDIUM** — derived from EIA 2018 | Low (CSS is academic) | EIA 2022 data shows ~22% energy cost spike; projection is plausible                   | ✅ Use if qualified as "estimated from 2018 baseline adjusted for price changes" |
+| 98% rate EE as important; 9% use software | 98% / 9%      | **LOW** — vendor survey            | Significant           | EIA confirms low BEMS adoption (~4%); EPA shows 25% portfolio manager use             | ❌ Replace with EIA/EPA figures                                                  |
+| 5–15% of bills contain errors             | 5–15%         | **LOW** — industry auditors        | Direct                | Regulatory enforcement findings confirm material errors exist                         | ✅ Use directionally only, with regulatory examples                              |
+| Universities spend $6B on energy          | $6B           | **INCORRECT** as cited             | None                  | EPA: K-12 alone is $8B+; education sector total is ~$18B                              | ❌ Correct to: K-12=$8B+; higher ed=$8–11B derived                               |
+| Only 9% use energy management software    | 9%            | **LOW** — vendor survey            | Significant           | EIA: 4% BEMS; EPA: 25% Portfolio Manager                                              | ❌ Replace with EIA/EPA layered data                                             |
 
-***
+---
 
 ## Broader Methodological Observation
 
@@ -339,4 +368,3 @@ For a market research report that will be reviewed by sophisticated investors or
 37. [Colleges and Universities - Energy Star](https://www.energystar.gov/buildings/resources-audience/colleges-universities) - Some college and university buildings can see 1-100 ENERGY STAR scores after benchmarking in ENERGY ...
 
 38. [[PDF] US Energy Use Intensity by Property Type](https://portfoliomanager.energystar.gov/pdf/reference/US%20National%20Median%20Table.pdf) - For the majority of property types, the reference data is from the Commercial Building Energy Consum...
-

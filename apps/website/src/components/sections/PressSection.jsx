@@ -118,7 +118,6 @@ function InvestorFallback() {
             ))}
           </div>
 
-          {/* TODO: confirm with John/Dan — can we publicly state this? */}
           <motion.div variants={fadeUp} className="mt-10 flex items-center gap-4">
             <div className="h-px flex-1 bg-[var(--gray-200)] hidden sm:block" />
             <p className="text-[var(--navy)] font-[var(--font-display)] text-xl sm:text-2xl text-center w-full sm:w-auto sm:shrink-0">
