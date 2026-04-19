@@ -1,19 +1,30 @@
 export const D5 = {
   title: 'Market Opportunity Heatmap',
   tagline:
-    'Higher ed is the beachhead, healthcare is the Series A target, and recovery proof is the single biggest pre-raise gap.',
+    'Higher ed leads the GTM scorecard; multi-site retail and QSR run in parallel; healthcare is the long-term enterprise prize—and recovery proof is still the biggest pre-raise gap.',
+  tldrBullets: [
+    'Higher ed scores best on problem, readiness, deal path, and fit with what ships today — first beachhead.',
+    'Multi-site retail and QSR: strong structural fit and primary voice (Panda); run as a parallel pipeline while higher ed carries the calendar story—not pushed to a vague “phase two.”',
+    'Healthcare has the highest ceiling but IT security and documented recovery proof are hard gates—invest for the long win, not the first close.',
+    'Before May, ship one case file: detected problem → action taken → lower bill or budget line—not just a dashboard total of “savings we flagged.”',
+    'Heatmap dimensions: problem severity, buyer readiness, deal economics, competitive opening, data availability.',
+  ],
   threeDecisions: [
     {
-      headline: 'Higher education is the beachhead',
-      why: 'Highest composite score: problem severity, named incumbent frustration (EnergyCAP), predictable calendar, documented deal size, and product-market fit with what ships today. Two Texas universities are already warm.',
+      headline: 'Higher education comes first',
+      why: 'Highest composite score: problem severity, named incumbent frustration (EnergyCAP), predictable calendar, documented deal size, and product-market fit with what ships today. Two Texas universities are already warm. This is the sequencing choice—not the only customer you will ever serve.',
     },
     {
-      headline: 'Healthcare is the long-term prize, not the first win',
-      why: '$265M single-system spend at Ascension makes this the largest ceiling — but IT security gates (2.5 years at AdventHealth), SOC 2 Type II, and proof-of-recovery documentation are hard prerequisites. 18-month story, not 90-day.',
+      headline: 'Multi-site retail and QSR in parallel',
+      why: 'Panda-class operators show the same billing-intelligence gap as campuses: threshold-only ESCO analytics, franchise-tier OCR holes, and buyers who want interpretation—not just payment. Pursue this track alongside higher ed; entry is often regional or franchise-heavy footprints before parent HQ.',
     },
     {
-      headline: 'Close the identified-vs-realized gap before May',
-      why: 'Marc Spieler (NVIDIA) asks the identified-vs-realized question every investor repeats. One fully documented recovery loop matters more than aggregate “identified savings” headlines.',
+      headline: 'Healthcare is the long-term prize',
+      why: '$265M single-system spend at Ascension makes this the largest ceiling — but IT security gates (2.5 years at AdventHealth), SOC 2 Type II, and proof-of-recovery documentation are hard prerequisites. Build credibility in higher ed and parallel retail, then compound into health systems over 18–36 months.',
+    },
+    {
+      headline: 'Document one recover-to-cash story before May',
+      why: 'Investors and CFOs care whether money actually moved—not how big a “savings we found” number looks on a slide. One end-to-end example (what broke, what changed, proof on the invoice or ledger) answers that test; Marc Spieler (NVIDIA) is a public voice for the same skepticism.',
     },
   ],
   verticals: [
@@ -23,7 +34,7 @@ export const D5 = {
       scores: { problem: 5, readiness: 4, deal: 4, competition: 4, data: 3 },
       stage: 'Beachhead now',
       verdict:
-        'Highest composite. Closest alignment with today’s shipped product. Two institutional relationships established. Shortest time-to-first-dollar in the corpus.',
+        'Highest composite. Closest alignment with today’s shipped product. Two institutional relationships established. Shortest time-to-first-dollar in the research to date.',
       keyEvidence: [
         'Texas State: 1,500 meters, 98 buildings, multiplier error (3,500 → 35,000 gallons) — Andee Chamberlain.',
         'UT Austin: $20M annual gas spend; budget submitted before City of Austin rates final — Andi Ault.',
@@ -35,9 +46,9 @@ export const D5 = {
       vertical: 'Healthcare',
       total: 18,
       scores: { problem: 5, readiness: 3, deal: 5, competition: 3, data: 2 },
-      stage: 'Series A target',
+      stage: 'Long-term enterprise target',
       verdict:
-        'Highest deal ceiling, longest cycle. IT security + proof-of-recovery are the gates. Not the first win.',
+        'Highest deal ceiling, longest cycle. IT security + proof-of-recovery are the gates. Win here over time as higher ed and parallel retail proof harden security story and recovery documentation.',
       keyEvidence: [
         'Ascension: $265M annual utility spend, 2,500+ sites — Scott Czubkowski.',
         'Bon Secours: $5–6M single error, $1M recovery, board-level — Ann Walston.',
@@ -62,9 +73,9 @@ export const D5 = {
       vertical: 'Multi-Site Restaurant',
       total: 17,
       scores: { problem: 4, readiness: 3, deal: 3, competition: 4, data: 3 },
-      stage: 'Franchise tier, year 2',
+      stage: 'Parallel pipeline',
       verdict:
-        'Strong structural fit. Right entry is regional franchisees (25–100 sites), not enterprise parent.',
+        'Strong structural fit; runs in parallel with higher ed. Right entry is often regional franchisees or multi-site operators (25–100 sites); parent HQ and large chains are expansion targets as proof stacks—not the required first logo.',
       keyEvidence: [
         'Panda: Georgia Power ratchet, sewer overbilling, Alabama 45+ rate structures — Walt Taylor.',
         'ENGIE OCR coverage ~90% — gap at franchisee tier.',
@@ -77,7 +88,7 @@ export const D5 = {
       scores: { problem: 3, readiness: 2, deal: 4, competition: 2, data: 3 },
       stage: 'M&A target / channel later',
       verdict:
-        'Most competitive landscape in the corpus. JLL framed Clear Current as M&A target at enterprise tier.',
+        'Most competitive landscape in the research base. JLL framed Clear Current as M&A target at enterprise tier.',
       keyEvidence: [
         'WatchWire by Tango: 500+ CRE customers, Berkshire-backed.',
         'Measurabl free tier onboarded 11,000+ buildings in 4 weeks.',
@@ -88,13 +99,13 @@ export const D5 = {
       vertical: 'Hospitality',
       total: 13,
       scores: { problem: 3, readiness: 2, deal: 3, competition: 2, data: 3 },
-      stage: 'Insufficient evidence; defer',
+      stage: 'Later wave',
       verdict:
-        'No primary voice-of-customer. WatchWire and Measurabl already established. Revisit after HE and healthcare.',
+        'No primary voice-of-customer yet; WatchWire and Measurabl are crowded on ESG reporting. Revisit after higher ed and parallel retail/QSR evidence deepen—and after healthcare enterprise motion justifies a distinct lodging play.',
       keyEvidence: [
         'GRESB 2025: 1,002 fund managers, 2,382 assessments — ESG pressure real.',
         'NYC Local Law 97 compliance trigger.',
-        'No primary interview in this corpus.',
+        'No primary interview captured for this vertical yet.',
       ],
     },
   ],
@@ -161,7 +172,7 @@ export const D5 = {
       rest: 4,
       ch: 5,
       cre: 3,
-      evidence: 'STRONG for HE and channel; moderate for healthcare.',
+      evidence: 'STRONG for Higher Ed and channel; moderate for healthcare.',
     },
     {
       module: 'Energy HQ (portfolio visibility)',
@@ -170,7 +181,7 @@ export const D5 = {
       rest: 3,
       ch: 3,
       cre: 4,
-      evidence: 'STRONG at healthcare scale; moderate for HE.',
+      evidence: 'STRONG at healthcare scale; moderate for Higher Ed.',
     },
     {
       module: 'Regulatory Intelligence',
@@ -179,7 +190,7 @@ export const D5 = {
       rest: 3,
       ch: 4,
       cre: 2,
-      evidence: 'STRONG for HE only — Combs + Ault direct evidence.',
+      evidence: 'STRONG for Higher Ed only — Combs + Ault direct evidence.',
     },
     {
       module: 'Campus Chargeback',
@@ -188,7 +199,7 @@ export const D5 = {
       rest: 1,
       ch: 1,
       cre: 1,
-      evidence: 'STRONG for HE; emerging for healthcare district energy.',
+      evidence: 'STRONG for Higher Ed; emerging for healthcare district energy.',
     },
     {
       module: 'Dashboard push layer',
@@ -197,7 +208,8 @@ export const D5 = {
       rest: 4,
       ch: 3,
       cre: 3,
-      evidence: 'STRONG — cross-cutting finding across all primary interviews.',
+      evidence:
+        'STRONG — confirmed as highest-value delivery mode for non-technical users across all primary interviews (Dashboard push layer / proactive alerts row, D5 Market Opportunity Heatmap).',
     },
     {
       module: 'Autonomous agent tier',
@@ -206,7 +218,8 @@ export const D5 = {
       rest: 2,
       ch: 3,
       cre: 2,
-      evidence: 'LOW — not yet the shipped default; HITL needed.',
+      evidence:
+        'LOW — not yet the shipped default; recovery requires human-in-the-loop across all verticals (D5 Market Opportunity Heatmap synthesis, autonomous agent tier row).',
     },
   ],
   moat: [

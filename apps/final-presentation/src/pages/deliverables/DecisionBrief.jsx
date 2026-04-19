@@ -8,6 +8,7 @@ export function DecisionBrief() {
       <DeliverableHero
         tagline={BRIEF.tagline}
         leadStatement={BRIEF.leadStatement}
+        tldrBullets={BRIEF.tldrBullets}
         showMeta
         meta={[
           { label: 'Proofs', value: `${BRIEF.proofs.length}` },
@@ -22,20 +23,20 @@ export function DecisionBrief() {
           <CallCard
             label="Beachhead"
             headline="Higher education"
-            body={BRIEF.strategicDecisions.beachhead}
+            bullets={BRIEF.strategicDecisions.beachhead}
             accent="bg-cc-yellow"
           />
           <CallCard
-            label="First module"
+            label="Build this first"
             headline="Regulatory intel in Rate Analyst"
-            body={BRIEF.strategicDecisions.firstModule}
+            bullets={BRIEF.strategicDecisions.firstModule}
             accent="bg-cc-green"
           />
           <CallCard
-            label="Window"
-            headline="12–24 months"
-            body={BRIEF.strategicDecisions.window}
-            accent="bg-cc-amber"
+            label="Marketing"
+            headline={BRIEF.strategicDecisions.marketingHeadline}
+            bullets={BRIEF.strategicDecisions.marketing}
+            accent="bg-cc-navy"
           />
         </div>
       </section>
@@ -168,7 +169,7 @@ export function DecisionBrief() {
   )
 }
 
-function CallCard({ label, headline, body, accent }) {
+function CallCard({ label, headline, bullets, accent }) {
   return (
     <div className="relative overflow-hidden rounded-lg border border-cc-border bg-white p-5 shadow-sm">
       <div className={`absolute left-0 top-0 h-full w-1 ${accent}`} />
@@ -178,7 +179,11 @@ function CallCard({ label, headline, body, accent }) {
       <div className="mt-1 text-[17px] font-bold leading-tight text-cc-navy">
         {headline}
       </div>
-      <p className="mt-2 text-[12.5px] leading-relaxed text-cc-dark-text">{body}</p>
+      <ul className="mt-3 list-disc space-y-2 pl-4 text-[12.5px] leading-relaxed text-cc-dark-text marker:text-cc-navy">
+        {bullets.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
     </div>
   )
 }

@@ -4,6 +4,11 @@ export const D1 = {
     'What makes the phone ring for commercial energy teams — and when Clear Current must already be in the room.',
   openingProblem:
     'Commercial energy managers do not go looking for problems; problems find them, and facilities leaders are buried in day-to-day emergencies rather than proactive monitoring. A product that waits for logins misses the window. This map names the forced-action moments when alerts, dollar impact, and calendar-aware outreach matter most. Triggers cluster by vertical, season, and event type so product push logic and sales timing can align to peak receptivity.',
+  tldrBullets: [
+    'Buyers are pulled into problems; they are not browsing for another dashboard — meet them in forced-action moments.',
+    'Login-first products miss the window; push alerts, dollar impact, and calendar-aware outreach win receptivity.',
+    'Triggers cluster by vertical, season, and event so product logic and sales timing can align.',
+  ],
   typeLabels: {
     REACTIVE: 'Reactive',
     PROACTIVE: 'Proactive',
@@ -30,7 +35,7 @@ export const D1 = {
         'We had a weird multiplier happen in one of our bills. They listed 35,000 gallons instead of 3,500 — a 10× error in a pattern that should have been obvious.',
       ccSurface: 'Rate Analyst',
       whyItMatters:
-        'Highest-volume corpus trigger. Anomaly and dollar impact must surface before the PDF is opened.',
+        'Highest-volume trigger in primary research. Anomaly and dollar impact must surface before the PDF is opened.',
       productTag: 'FITS',
     },
     {
@@ -270,10 +275,11 @@ export const D1 = {
       urgency: 'medium',
       seasonality: 'Year-round',
       primarySource: 'Secondary research · industry pattern',
-      quote: 'New hires evaluate vendors and workflows in the first 60–90 days.',
+      quote:
+        'Industry pattern: new hire evaluates existing vendor relationships in first 60–90 days.',
       ccSurface: 'Energy HQ',
       whyItMatters:
-        'Orientation and fast answers compress time-to-value for a fresh owner of the problem.',
+        'Secondary-only trigger in synthesis (no primary sound bite); orientation and fast answers compress time-to-value for a fresh owner.',
       productTag: 'NET-NEW',
     },
     {
@@ -283,9 +289,9 @@ export const D1 = {
       verticals: ['cre', 'healthcare', 'higher-ed'],
       urgency: 'medium',
       seasonality: 'Q1 for calendar-year filers; rule-specific',
-      primarySource: 'Andi Ault · UT Austin',
+      primarySource: 'Andi Ault · UT Austin (passing) + regulatory secondary',
       quote:
-        'ESG obligations are mentioned in interview — thin verbatim on this trigger in corpus.',
+        'Annual ESG or carbon reporting deadlines require consumption, emissions, and utility documentation that is not yet organized or audit-ready.',
       ccSurface: 'Energy HQ',
       whyItMatters:
         'Audit-ready consumption and utility documentation supports disclosure workloads.',
@@ -298,9 +304,9 @@ export const D1 = {
       verticals: ['healthcare', 'higher-ed'],
       urgency: 'high',
       seasonality: 'Healthcare Q4 planning; higher-ed Jan–Mar',
-      primarySource: 'Scott Sukits · AdventHealth',
+      primarySource: 'John Culver · AdventHealth',
       quote:
-        'Any energy capital improvement project must be submitted before the budgeting cycle with a financial ROI case assembled in advance.',
+        'A lot of the work for determining — hey, here\'s the energy conservation measures or the facility improvement measures we want to pursue next year — that has to come before budgeting cycle so that we\'re able to have and provide that package to our financial leaders at the hospital level.',
       ccSurface: 'Rate Analyst',
       whyItMatters:
         'Bill and rate scenarios translate technical projects into CFO-ready dollars.',
@@ -381,7 +387,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'May 1 reporting annually',
       primarySource: 'Secondary research · NYC LL97',
-      quote: 'Compliance threshold and documentation pressure for NYC CRE portfolios.',
+      quote:
+        'Local Law 97 of 2019 requires buildings over 25,000 square feet to meet GHG emissions limits beginning in 2024, with an annual carbon emissions report due May 1 of each year.',
       ccSurface: 'Energy HQ',
       whyItMatters:
         'Portfolio compliance status and exposure quantification drive capital and reporting action.',

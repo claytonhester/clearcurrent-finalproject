@@ -9,7 +9,11 @@ export function Competition() {
 
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D6.tagline} leadStatement={D6.marketStructure} />
+      <DeliverableHero
+        tagline={D6.tagline}
+        leadStatement={D6.marketStructure}
+        tldrBullets={D6.tldrBullets}
+      />
 
       <section className="mb-10 grid gap-4 md:grid-cols-3">
         <div className="rounded-lg border border-cc-border bg-white p-4 shadow-sm md:col-span-2">

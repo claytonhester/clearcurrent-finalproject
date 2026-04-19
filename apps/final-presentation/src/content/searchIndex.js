@@ -2,8 +2,19 @@ export const SEARCH_INDEX = [
   {
     path: '/',
     label: 'Decision Brief',
-    description: 'Five proofs, three open questions, three strategic calls',
-    keywords: ['brief', 'decision', 'summary', 'executive', 'proofs', 'calls'],
+    description:
+      'Five proofs, three open questions; beachhead, build-first module, marketing and online presence',
+    keywords: [
+      'brief',
+      'decision',
+      'summary',
+      'executive',
+      'proofs',
+      'calls',
+      'marketing',
+      'website',
+      'beachhead',
+    ],
   },
   {
     path: '/triggers',

@@ -20,17 +20,17 @@ const MODULE_KEYS = [
 export function Market() {
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D5.tagline} />
+      <DeliverableHero tagline={D5.tagline} tldrBullets={D5.tldrBullets} />
 
-      {/* THREE DECISIONS */}
+      {/* STRATEGIC DECISIONS */}
       <section className="mb-10">
         <SectionLead
-          kicker="Three decisions"
-          title="Beachhead, target, and pre-raise gap"
+          kicker="Strategic decisions"
+          title="Higher ed first, retail in parallel, healthcare long-term"
         >
           The strategic spine of the market view — everything else is evidence.
         </SectionLead>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {D5.threeDecisions.map((d, i) => (
             <div
               key={i}

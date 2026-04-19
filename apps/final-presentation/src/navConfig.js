@@ -21,7 +21,8 @@ export const DELIVERABLES = [
     title: 'Decision Brief',
     artifact: 'Executive summary',
     eyebrow: 'Decision Brief · Strategic spine',
-    oneLiner: 'Five proofs, three open questions, three strategic calls.',
+    oneLiner:
+      'Five proofs, three open questions, three calls: beachhead, build-first product, marketing & web presence.',
   },
   {
     id: 'triggers',

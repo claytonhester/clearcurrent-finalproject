@@ -12,7 +12,7 @@ const PRIORITY_COLORS = {
 export function Investor() {
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D7.tagline} />
+      <DeliverableHero tagline={D7.tagline} tldrBullets={D7.tldrBullets} />
 
       {/* SIX-BEAT ARC */}
       <section className="mb-10">

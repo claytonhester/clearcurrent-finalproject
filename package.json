@@ -2,7 +2,8 @@
   "name": "clear-current-monorepo",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "dev:portal": "npm run dev -w @clear-current/final-presentation",
@@ -14,7 +15,11 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "npm run typecheck -w @clear-current/final-presentation",
-    "preview:portal": "npm run preview -w @clear-current/final-presentation"
+    "preview:portal": "npm run preview -w @clear-current/final-presentation",
+    "verify:deliverables": "npm run all -w @clear-current/deliverable-verification",
+    "verify:deliverables:corpus": "npm run corpus -w @clear-current/deliverable-verification",
+    "verify:deliverables:verify": "npm run verify -w @clear-current/deliverable-verification",
+    "verify:deliverables:export": "npm run export -w @clear-current/deliverable-verification"
   },
   "devDependencies": {
     "prettier": "^3.8.1"

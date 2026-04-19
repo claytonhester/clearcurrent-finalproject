@@ -1,0 +1,20 @@
+{
+  "name": "@clear-current/deliverable-verification",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "verify-deliverables": "./src/cli.mjs"
+  },
+  "scripts": {
+    "corpus": "node src/cli.mjs corpus",
+    "verify": "node src/cli.mjs verify",
+    "all": "node src/cli.mjs all",
+    "export": "node src/cli.mjs export"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "mammoth": "^1.9.0",
+    "yaml": "^2.7.0"
+  }
+}

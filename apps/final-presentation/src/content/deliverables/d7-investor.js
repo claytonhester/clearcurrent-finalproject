@@ -2,6 +2,12 @@ export const D7 = {
   title: 'Investor Narrative & Pitch Framework',
   tagline:
     'Six-beat narrative, tiered market math, and an honest objection handling book — anchored on government enforcement, not vendor surveys.',
+  tldrBullets: [
+    'Six-beat arc: broken market → buyer constraint → why now → what CC is (honest boundaries) → landscape → why us.',
+    'Evidence anchor is regulators and case law, not vendor NPS — misbilling is documented at scale.',
+    'Market math is tiered; objections are explicit (identified ≠ realized, IT gates, incumbent stickiness).',
+    'Differentiator story includes practitioner-grounded regulatory surveillance, not generic “AI on bills.”',
+  ],
   arc: [
     {
       beat: 1,
@@ -16,7 +22,7 @@ export const D7 = {
     {
       beat: 3,
       title: 'Why now — the window',
-      body: 'LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. Window is open; not permanent.',
+      body: 'LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. GTM is intentionally dual-track: higher ed first for calendar and evidence density; multi-site retail and QSR in parallel for the same ESCO-and-threshold gaps; health systems later once security and recovery proof match the ticket. Window is open; not permanent.',
     },
     {
       beat: 4,
@@ -26,7 +32,7 @@ export const D7 = {
     {
       beat: 5,
       title: 'The competitive landscape',
-      body: 'EnergyCAP owns HE with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have NL interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.',
+      body: 'EnergyCAP owns Higher Ed with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have NL interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.',
     },
     {
       beat: 6,
@@ -57,7 +63,7 @@ export const D7 = {
         vertical: 'Multi-site commercial (ERCOT-first)',
         accounts: '18 deregulated states mapped',
         acv: '$25–50K',
-        sam: 'Expansion, not starter',
+        sam: 'Parallel to higher ed — not “after” in time, secondary in sales focus',
       },
     ],
     som: [
@@ -139,9 +145,10 @@ export const D7 = {
     },
     {
       n: 8,
-      headline: 'Ratchet clauses create permanent exposure without monitoring',
+      headline:
+        'Demand ratchets: NREL-cited example — 1,000 kW summer peak at 80% ratchet can lock ~$144K/year',
       finding:
-        'NREL: single 1,000 kW peak at 80% ratchet = $144K/year locked. DOE: demand charges 30–70% of commercial bills. Panda: Georgia Power.',
+        'D1 synthesis secondary corroboration: NREL ratchet math; DOE band that demand charges are 30–70% of commercial bills; Panda (Georgia Power) ratchet narrative in primary.',
       confidence: 'STRONG (government + primary industry)',
     },
   ],
@@ -220,7 +227,7 @@ export const D7 = {
     {
       n: 5,
       q: 'Higher ed is a tough buyer. Why start there?',
-      a: 'Predictable, not slow. Jan–Feb budget, Mar–May procurement, Sept 1 FY start. EnergyCAP comparable confirms $50–75K willingness to pay. Arcadia has zero HE customers in 14 months. Underserved, not unattractive.',
+      a: 'Predictable, not slow. Jan–Feb budget, Mar–May procurement, Sept 1 FY start. EnergyCAP comparable confirms $50–75K willingness to pay. Arcadia has zero Higher Ed customers in 14 months. Underserved, not unattractive. Multi-site retail and QSR run in parallel (Panda-class proof)—same product, different trigger. Healthcare stays the long-term enterprise prize behind IT and recovery gates.',
       unresolved: 'Any current paid university reference before May?',
     },
     {
@@ -288,7 +295,7 @@ export const D7 = {
       priority: 'MEDIUM',
       title: 'Campus chargeback development timeline',
       owner: 'Jake Masters, Dan Schreiber',
-      timeline: 'Before HE customer conversations',
+      timeline: 'Before Higher Ed customer conversations',
       ask: 'Engineering estimate for MVP — even rough is better than silence.',
     },
     {

@@ -1,7 +1,99 @@
+import { useEffect, useId, useRef, useState } from 'react'
+import { ChevronDown } from 'lucide-react'
 import { getDeliverableByPath } from '../../navConfig.js'
 import { useLocation } from 'react-router-dom'
 
-export function DeliverableHero({ tagline, leadStatement, meta, showMeta = false }) {
+/** Eyebrow copy often repeats the badge id (`D1 · …`); show only the subtitle next to the pill. */
+function eyebrowWithoutBadgePrefix(eyebrow, shortLabel) {
+  const prefix = `${shortLabel} · `
+  return eyebrow.startsWith(prefix) ? eyebrow.slice(prefix.length) : eyebrow
+}
+
+function HeroTldr({ tldrBullets, leadStatement }) {
+  const [open, setOpen] = useState(false)
+  const rootRef = useRef(null)
+  const panelId = useId()
+
+  useEffect(() => {
+    if (!open) return
+    const onDoc = (e) => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) setOpen(false)
+    }
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    document.addEventListener('mousedown', onDoc)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onDoc)
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [open])
+
+  const hasBullets = Array.isArray(tldrBullets) && tldrBullets.length > 0
+  if (!hasBullets && !leadStatement) return null
+
+  return (
+    <div ref={rootRef} className="relative flex-shrink-0 print:hidden">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls={panelId}
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex items-center gap-1.5 rounded-md border border-cc-border bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-cc-navy shadow-sm transition hover:border-cc-navy/40 hover:bg-cc-light-gray"
+      >
+        TL;DR
+        <ChevronDown
+          className={`h-3.5 w-3.5 transition-transform ${open ? 'rotate-180' : ''}`}
+          aria-hidden
+        />
+      </button>
+      {open ? (
+        <div
+          id={panelId}
+          role="region"
+          aria-label="Brief overview"
+          className="absolute right-0 z-50 mt-2 w-[min(calc(100vw-2.5rem),22rem)] rounded-lg border border-cc-border bg-white p-4 shadow-lg"
+        >
+          {hasBullets ? (
+            <>
+              <p className="text-[10px] font-bold uppercase tracking-wider text-cc-mid-gray">
+                At a glance
+              </p>
+              <ul className="mt-2 list-disc space-y-1.5 pl-4 text-[13px] leading-snug text-cc-dark-text">
+                {tldrBullets.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </>
+          ) : null}
+          {leadStatement ? (
+            hasBullets ? (
+              <details className="mt-3 border-t border-cc-border pt-3">
+                <summary className="cursor-pointer text-[11px] font-semibold text-cc-navy">
+                  Full framing
+                </summary>
+                <p className="mt-2 text-[12.5px] leading-relaxed text-cc-mid-gray">
+                  {leadStatement}
+                </p>
+              </details>
+            ) : (
+              <p className="text-[12.5px] leading-relaxed text-cc-mid-gray">{leadStatement}</p>
+            )
+          ) : null}
+        </div>
+      ) : null}
+    </div>
+  )
+}
+
+export function DeliverableHero({
+  tagline,
+  leadStatement,
+  tldrBullets,
+  meta,
+  showMeta = false,
+}) {
   const { pathname } = useLocation()
   const d = getDeliverableByPath(pathname)
   if (!d) return null
@@ -12,18 +104,23 @@ export function DeliverableHero({ tagline, leadStatement, meta, showMeta = false
         <span className="inline-flex h-5 min-w-[2.25rem] items-center justify-center rounded bg-cc-navy text-[10px] font-bold text-cc-yellow">
           {d.shortLabel}
         </span>
-        <span className="text-cc-navy">{d.eyebrow}</span>
+        <span className="text-cc-navy">
+          {eyebrowWithoutBadgePrefix(d.eyebrow, d.shortLabel)}
+        </span>
       </div>
-      <h1 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-cc-navy sm:text-[2.25rem]">
-        {d.title}
-      </h1>
+      <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+        <h1 className="min-w-0 flex-1 text-3xl font-bold leading-tight tracking-tight text-cc-navy sm:text-[2.25rem]">
+          {d.title}
+        </h1>
+        <HeroTldr tldrBullets={tldrBullets} leadStatement={leadStatement} />
+      </div>
       {tagline ? (
         <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-cc-dark-text">
           <span className="bg-cc-yellow/40 px-1 py-0.5 font-medium">{tagline}</span>
         </p>
       ) : null}
       {leadStatement ? (
-        <p className="mt-4 max-w-3xl text-[13.5px] leading-relaxed text-cc-mid-gray">
+        <p className="mt-4 hidden max-w-3xl text-[13.5px] leading-relaxed text-cc-mid-gray print:block">
           {leadStatement}
         </p>
       ) : null}

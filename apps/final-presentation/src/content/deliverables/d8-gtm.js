@@ -1,10 +1,18 @@
 export const D8 = {
   title: 'GTM Strategy Playbook',
   tagline:
-    'Land with a free billing audit, expand with anomaly alerts, retain with regulatory intel — direct sales, higher-ed first, one recovery proof before May.',
+    'Land with a free billing audit, expand with anomaly alerts, retain with regulatory intel — direct sales, higher ed first with retail/QSR in parallel, healthcare over the long term; one recovery proof before May.',
+  tldrBullets: [
+    'Show up when the bill hurts — reactive buyers will not reliably come to you via passive product discovery.',
+    'Higher ed is the primary beachhead: two ICPs, incumbent UX pain, predictable calendar, and cleaner Arcadia whitespace. Multi-site retail and QSR are a parallel pipeline (ICP 2)—not sequenced “after” higher ed closes.',
+    'Healthcare systems stay on the roadmap as the long-term enterprise win; defer heavy pilots until SOC 2 / recovery proof match the gate.',
+    'Before May: ship one fully documented error-to-recovery loop — identified savings ≠ realized credits.',
+    'Arcadia’s migration window is 12–24 months of distraction, not a permanent competitive freeze.',
+  ],
   executiveScan: [
     'Buyers are reactive. Clear Current must appear at the moment the bill hurts — not when they go looking.',
-    'Higher ed is the only beachhead with two primary ICPs, an incumbent with structural UX complaints, a predictable calendar, and zero Arcadia presence.',
+    'Higher ed is the primary beachhead: two primary ICPs, structural incumbent weakness, predictable fiscal calendar, and zero Arcadia presence. Run multi-site retail and QSR in parallel where ESCO contracts, drift, and deregulated complexity create urgency.',
+    'Healthcare: invest for the long win—IT and recovery documentation are the gates.',
     'Most important action before May: one fully documented error-recovery loop. Identified ≠ realized.',
     'Arcadia’s migration distraction is a 12–24 month window. It is not permanent.',
   ],
@@ -69,9 +77,9 @@ export const D8 = {
     },
     {
       n: 2,
-      name: 'Multi-site corporate energy buyer (secondary beachhead)',
+      name: 'Multi-site retail / QSR (parallel pipeline)',
       description:
-        'Multi-site manufacturer, retail chain, or QSR operator. 20–200 locations in deregulated markets (ERCOT preferred). $5–50M annual spend. Facilities Director / VP Ops owns energy function. Currently uses spreadsheets or an ESCO like ENGIE Impact.',
+        'Multi-site manufacturer, retail chain, or QSR operator—Panda anchors research; large national chains are expansion targets as proof compounds. 20–200 locations in deregulated markets (ERCOT preferred). $5–50M annual spend. Facilities Director / VP Ops owns energy function. Often spreadsheets plus an ESCO like ENGIE Impact; renewal and pilot timing can open the door alongside higher-ed pursuits.',
       champions: [
         'VP Facilities / Director of Operations / Energy Manager',
         'CFO or VP Finance',
@@ -101,9 +109,9 @@ export const D8 = {
     },
     {
       n: 3,
-      name: 'Large health system (third vertical, evidence-informed)',
+      name: 'Large health system (long-term enterprise target)',
       description:
-        'Regional/national system. 10–50 campuses. $20M–$265M annual utility spend. Third-party bill processor (Peer AI, Get Choice) + energy broker. Single CEM covering entire portfolio.',
+        'Regional/national system. 10–50 campuses. $20M–$265M annual utility spend. Third-party bill processor (Peer AI, Get Choice) + energy broker. Single CEM covering entire portfolio. Highest ceiling, longest cycle—win here over time as higher-ed and parallel retail proof harden security posture and named recoveries.',
       champions: [
         'Director of Facilities / VP Sustainability',
         'CFO / VP Supply Chain',
@@ -120,8 +128,9 @@ export const D8 = {
         'No SOC 2 Type II / HIPAA readiness',
       ],
       pilot: {
-        duration: 'Defer — secondary research only',
-        scope: 'Do not prioritize without one primary health-system interview first',
+        duration: 'Defer heavy pilots — long-term track',
+        scope:
+          'Sequence after higher-ed wins and parallel retail proof raise SOC 2 / recovery story; do not prioritize without one primary health-system interview first',
         day30: '—',
         day90: '—',
         fee: '—',
@@ -239,14 +248,14 @@ export const D8 = {
     ],
     tiers: [
       {
-        tier: 'Pilot (90 days, HE)',
+        tier: 'Pilot (90 days, Higher Ed)',
         fee: '20% contingency, capped at $30K',
         includes:
           'Zero upfront. Below UtiliSave 40% benchmark. At day 75, present subscription conversion math.',
       },
       {
         tier: 'Annual subscription',
-        fee: '$80–150K/yr flat, anchored at $120K',
+        fee: '$120K–$250K/yr flat (anchor $120K; GTM research Part 4 enterprise license band)',
         includes:
           'Rate Analyst (audit) + Energy HQ (anomaly alerting) + regulatory intelligence (quarterly or rate-case triggered). Position as % of utility spend (e.g. ~1–2% on a large campus bill), not per-meter.',
       },

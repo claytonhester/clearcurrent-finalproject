@@ -4,6 +4,12 @@ export const D3 = {
     'Five reactive workflows where late discovery, manual multi-source investigation, and brittle resolution leave teams flying blind until dollars and credibility are already lost.',
   openingProblem:
     'Each map is built from primary interviews first and secondary research second, with product stages naming Clear Current surfaces (Rate Analyst, Energy HQ, Deal Center) and tiers (Dashboard push, Chat). The recurring pattern is backward-looking, threshold-based detection that misses baseline drift, expertise concentrated in people who may leave, and resolution that is political, slow, and often partial — while CC’s honest position is spot-and-assist with human-in-the-loop completion.',
+  tldrBullets: [
+    'Built interviews-first: stages name real CC surfaces (Rate Analyst, Energy HQ, Deal Center) and push vs chat tiers.',
+    'Status quo is backward-looking, threshold-based detection — easy to miss baseline drift until money is already gone.',
+    'Investigation is multi-source and expert-heavy; resolution is often political, slow, and partial.',
+    'Honest CC posture: spot-and-assist with human-in-the-loop completion — not autonomous recovery promises.',
+  ],
   journeys: [
     {
       id: 'j1',

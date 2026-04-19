@@ -17,7 +17,7 @@ function walk(dir: string, out: string[] = []) {
  * This test enforces editorial policy: the portal must never ship claims that
  * do not survive scrutiny. Specifically:
  *   - "80% of commercial bills are overpaying" — industry shorthand, not
- *     defensible in primary or secondary corpus.
+ *     defensible in primary interviews or secondary sources.
  */
 describe('banned stats editorial policy', () => {
   const ROOT = join(__dirname, '..')

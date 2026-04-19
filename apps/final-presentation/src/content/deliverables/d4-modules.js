@@ -4,6 +4,12 @@ export const D4 = {
     'Five buyer-grounded modules turn invoice and tariff depth into pushed answers, not another dashboard to hunt.',
   ceoScan:
     'These modules are grounded in what buyers need now — not generic AI — and sequenced for what Clear Current can ship honestly. The core tension: buyers want answers before they go looking; push beats pull. Modules 1–2 are the wedge, 3 is documented white space, 4–5 deepen rate intelligence and campus stickiness once trust is earned.',
+  tldrBullets: [
+    'Grounded in buyer jobs-to-be-done, sequenced for what CC can ship without overpromising.',
+    'Core tension: answers must arrive before buyers go looking — push beats another login.',
+    'Modules 1–2 are the wedge; 3 is confirmed white space; 4–5 deepen rate intel and stickiness after trust.',
+    'Interview-named alert families (ratchets, class thresholds, power factor) are fast credibility wins.',
+  ],
   buyerNamedAlerts:
     'Interview-grounded alert families leadership should expect in the roadmap and demo story: demand ratchets locking minimum demand after seasonal peaks; proximity to rate-class kW thresholds; power-factor penalties with capacitor ROI — often the fastest trust-building wins Don Johnson and Sean Sevy flagged.',
   modules: [
@@ -22,7 +28,7 @@ export const D4 = {
         'Roger Goldstein (Panda): paid a neighbor’s power a year — shared meter invisible to thresholds.',
         'James Norton (Texas State): “biggest thing” is knowing anomalies immediately — EnergyCAP gap.',
         'Sean Sevy (Houston Methodist): suspicious PF 80–81%; broker caught it, not Energy Print.',
-        'Ann Walston (BSMH): meter failures drove multi-million exposure before downstream flagging.',
+        'Ann Walston (BSMH): two major meter failures drove multi-million-dollar overbilling; recovery required board-level utility negotiation.',
       ],
       mvpScope: [
         'Per-meter baselines (rolling stats vs same-month history).',
@@ -41,7 +47,7 @@ export const D4 = {
         autonomous: 'None as default; humans act on alerts.',
       },
       competitive:
-        'Differentiator is drift/baseline-shift detection vs NG Insight–style threshold rules and EnergyCAP variance limits — documented failure modes in corpus.',
+        'Differentiator is drift/baseline-shift detection vs NG Insight–style threshold rules and EnergyCAP variance limits — documented failure modes in interviews and synthesis.',
       productTag: 'FITS',
     },
     {
@@ -94,10 +100,10 @@ export const D4 = {
       persona:
         'Daily: analyst / M&V / energy manager on scenarios. Economic buyer: VP Facilities / CFO on no-capex savings from a rate change request.',
       evidence: [
-        'Walt Taylor (Panda): dozens of structures per utility — AI must permute at scale.',
+        'Walt Taylor (Panda): bill variance calls need manual reconstruction across utilities, rate structures, and usage profiles — the scale problem NL Q&A must absorb.',
         'Don Johnson (Trane): most customers do not know their rate structure.',
         'DOE-cited band: demand charges often 30–70% of commercial bills.',
-        'Phil Combs: bar is beating his Excel — Energy Toolbase named, not holistic monitor.',
+        'Phil Combs (Trane): Excel is the primary daily driver; Energy Toolbase is the named rate/tariff reference — a holistic NL monitor is the gap.',
       ],
       mvpScope: [
         'Rate simulation engine over historical interval or monthly load.',
@@ -132,7 +138,7 @@ export const D4 = {
       persona:
         'Daily: energy manager / M&V engineer on dockets. Economic buyer: CFO / VP Finance on budget variance and hedging levers.',
       evidence: [
-        'Research corpus: zero named competitors offer PUC docket monitoring — white space.',
+        'Across interviews and competitive synthesis: zero named competitors offer PUC docket monitoring — white space.',
         'Andi Ault (UT Austin): budget in March vs Austin rates finalized later — timing gap.',
         'Phil Combs (Trane): “super powerful” to monitor filings and dollarize customer impact.',
         'AdventHealth (Culver): 73 utilities — needs “why we should care,” not just aggregation.',
@@ -172,8 +178,8 @@ export const D4 = {
       evidence: [
         'Andee Chamberlain (Texas State): tension — ops cares demand/usage, finance cares bottom line.',
         'G2/Capterra: EnergyCAP chargebacks/splits “hard to understand.”',
-        '660+ U.S. district energy systems — concentrated HE/health buyer base.',
-        'Arcadia corpus: no documented campus chargeback/district-energy parity.',
+        '660+ U.S. district energy systems — concentrated Higher Ed/health buyer base.',
+        'Arcadia competitive intel: no documented campus chargeback / district-energy parity.',
       ],
       mvpScope: [
         'Configurable allocation engine (consumption, SF, hybrid; demand allocation logic).',
@@ -220,6 +226,6 @@ export const D4 = {
     'Spieler’s identified-vs-realized recovery gap demands a full credit-received case study before scaling recovery claims in fundraising.',
     'Module 4 is incremental on existing tariff depth but should follow early audit wins so customers trust the tariff model.',
     'Modules 3 and 5 are highest moat but highest integration/config cost — justify after wedge adoption and multi-state PUC scoping.',
-    'Chargeback is the EnergyCAP displacement lever for long-term stickiness in district-energy HE/health accounts.',
+    'Chargeback is the EnergyCAP displacement lever for long-term stickiness in district-energy Higher Ed/health accounts.',
   ],
 }

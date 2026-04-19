@@ -13,7 +13,11 @@ export function Journeys() {
 
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D3.tagline} leadStatement={D3.openingProblem} />
+      <DeliverableHero
+        tagline={D3.tagline}
+        leadStatement={D3.openingProblem}
+        tldrBullets={D3.tldrBullets}
+      />
 
       {/* JOURNEY TABS */}
       <section className="mb-10">

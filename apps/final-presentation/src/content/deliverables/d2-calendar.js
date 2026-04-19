@@ -3,7 +3,14 @@ export const D2 = {
   tagline:
     'Commercial energy work clusters into predictable seasonal beats — budget, procurement, summer demand, compliance — so GTM should ride that rhythm, not run flat outreach.',
   openingProblem:
-    'Energy managers face recurring fiscal cliffs: budgets and forecasts lock while utility rates, capacity charges, and contract terms are still moving. That timing gap — especially before March budget submission for many schools and before October healthcare fiscal years — creates recurring moments when invoice-level intelligence and regulatory foresight are most valuable.',
+    'Energy managers face recurring fiscal cliffs: budgets and forecasts lock while utility rates, capacity charges, and contract terms are still moving. That timing gap — especially before March budget submission for many schools and before October healthcare fiscal years — creates recurring moments when invoice-level intelligence and regulatory foresight are most valuable. Multi-site retail and QSR add parallel beats—supplier renewals, franchise reporting, and deregulated-market volatility—while health systems remain the longest-cycle enterprise prize.',
+  tldrBullets: [
+    'Work clusters into predictable seasonal beats — budget, procurement, summer demand, compliance — not flat year-round urgency.',
+    'Forecasts often freeze before rates, capacity charges, and contract terms finish moving — that gap is the leverage point.',
+    'March (many schools) and October (healthcare FY) are recurring cliffs for invoice intelligence and regulatory foresight.',
+    'Retail / QSR: run overlapping calendar plays (contracts, franchise cycles, ERCOT-style complexity) in parallel with higher ed—not parked for a vague later phase.',
+    'GTM should ride the calendar rhythm instead of steady generic outreach.',
+  ],
   months: [
     {
       month: 'Jan',

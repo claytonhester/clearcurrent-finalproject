@@ -19,7 +19,11 @@ export function Modules() {
 
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D4.tagline} leadStatement={D4.ceoScan} />
+      <DeliverableHero
+        tagline={D4.tagline}
+        leadStatement={D4.ceoScan}
+        tldrBullets={D4.tldrBullets}
+      />
 
       <section className="decision-strip mb-10">
         <span className="text-[10px] font-bold uppercase tracking-wider text-cc-navy">

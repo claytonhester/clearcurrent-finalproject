@@ -8,10 +8,16 @@ export const D6 = {
     silentIncumbent:
       'Before SaaS displaces anything, large portfolios often rely on outsourced energy-management firms plus spreadsheets — bill processors custodied the data before you arrived. Competitive reality is consultants + OEM reps + incumbent bill pay, not three logos alone.',
     partnershipNote:
-      'ENGIE-class operators: partnership and licensing beats “rip and replace.” Their moat is historical bill custody; yours is NL intelligence on top.',
+      'ENGIE-class operators: lead with bolt-on analytics and partnership where bill custody is locked—then expand scope at renewal, RFP, or when pilot-stage “AI” fails against drift and interpretation demand. Their moat is historical custody; yours is reliable NL intelligence on top.',
   },
   marketStructure:
     'The market is consolidating around three poles. None has built the conversational, AI-native intelligence layer Clear Current is building. Incumbents are buying distribution (Tango + WatchWire, Arcadia + RPD/Urjanet), not deepening intelligence — which is the window.',
+  tldrBullets: [
+    'Three poles: enterprise ESMP, AI-native data infra, services outsourcers — each optimizing distribution, not invoice intelligence depth.',
+    'M&A stacks custody and routes; it does not close the NL “what does this bill mean in dollars?” gap.',
+    'Position CC as outside-the-meter truth for finance and procurement — complementary to BAS / analytics stacks.',
+    'Silent incumbent is often consultants + spreadsheets + bill processors before any SaaS logo “wins.”',
+  ],
   poles: [
     {
       id: 'esmp',
@@ -41,7 +47,7 @@ export const D6 = {
       primaryMarket: 'Higher ed, government, healthcare — large portfolios',
       pricing: '≈$50–75K/year for 1,500 meters via reseller',
       strengths: [
-        '20+ years of HE relationships',
+        '20+ years of Higher Ed relationships',
         'Reseller channels',
         'Institutional familiarity',
       ],
@@ -67,21 +73,22 @@ export const D6 = {
       ],
       weaknesses: [
         'No NL interface — dashboard + API only',
-        'Zero documented HE customers after 14 months',
+        'Zero documented Higher Ed customers after 14 months',
         'Senior PM role primarily migrating legacy Urjanet — not new features',
         'No campus chargeback; no PUC monitoring',
         'Trustpilot 2.6/5 (1,159 reviews) — Perch spinout pending',
+        'Practitioner quote (Walt Taylor · Panda): variance work is still download-the-bills, not conversational intelligence.',
       ],
       winCondition:
-        'Three conditions together: HE / district-energy customer; buyer wants conversational AI; decision happens before Arcadia finishes migration. 12–24 month window.',
+        'Three conditions together: Higher Ed / district-energy customer; buyer wants conversational AI; decision happens before Arcadia finishes migration. 12–24 month window.',
       quote:
-        '“I think if you could ask that question… instead of going, downloading the bills, reviewing the bills…” — Walt Taylor · Panda (today’s multi-utility variance work is analyst scavenger hunt, not conversational intelligence)',
+        'I think if you could ask that question. I can help answer this question instead of going, downloading the bills, reviewing the bills',
     },
     {
       name: 'WatchWire (Tango)',
       primaryMarket:
         'Institutional CRE, 500+ customers, 140+ countries; Brookfield named',
-      pricing: 'Not available in corpus',
+      pricing: 'Not disclosed in available sources',
       strengths: [
         'Berkshire-backed via Tango (2023 acquisition)',
         'GRESB, CDP, GRI reporting',
@@ -89,10 +96,10 @@ export const D6 = {
       weaknesses: [
         'Data infrastructure dependent on Arcadia’s Arc Plug API — not proprietary',
         'No campus chargeback; no NL interface',
-        'No documented HE vertical',
+        'No documented Higher Ed vertical',
       ],
       winCondition:
-        'Not a direct HE competitor. CRE is a future expansion. A WatchWire dissatisfied buyer cannot solve it by moving to Arcadia — same pipeline.',
+        'Not a direct Higher Ed competitor. CRE is a future expansion. A WatchWire dissatisfied buyer cannot solve it by moving to Arcadia — same pipeline.',
       quote: 'Gap flag: no primary interviewee mentioned WatchWire by name.',
     },
     {
@@ -112,7 +119,7 @@ export const D6 = {
         'OCR coverage ≈90% — 10% gap structural',
       ],
       winCondition:
-        'Partnership, not displacement. Clear Current as AI analytics layer on top of ENGIE bill data — exactly what Walt Taylor (Panda) asked for on record.',
+        'Land as the analytics layer on ENGIE-custodied data (Walt Taylor bolt-on frame). Displace or rebid at contract renewal, pilot fatigue, or when threshold-only workflows miss material drift—especially as higher ed and parallel retail proof widen the gap.',
       quote:
         '“It would be much better if, since NG already houses all that data, they would just work with Anthropic or whoever and bolt you on.” — Walt Taylor, Panda',
     },
@@ -166,7 +173,7 @@ export const D6 = {
       name: 'Campus chargeback for district energy',
       confidence: 'STRONG (primary + secondary)',
       status: 'EXTENDS ROADMAP',
-      why: '660+ district energy systems, concentrated in HE and hospitals. Only EnergyCAP has it — and users say it’s the worst feature. Arcadia can’t build it without a rebuild.',
+      why: '660+ district energy systems, concentrated in Higher Ed and hospitals. Only EnergyCAP has it — and users say it’s the worst feature. Arcadia can’t build it without a rebuild.',
     },
     {
       n: 4,
@@ -222,7 +229,7 @@ export const D6 = {
       n: 1,
       claim: 'Arcadia already does this, and they have $649M and 9,500 utilities.',
       response:
-        'Cox Enterprises chose Arcadia as a data feed, not a platform. Cox built their own dashboard. 14 months into enterprise, zero documented HE customers. No NL, no PUC, no chargeback. We compete on intelligence, not data breadth.',
+        'Cox Enterprises chose Arcadia as a data feed, not a platform. Cox built their own dashboard. 14 months into enterprise, zero documented Higher Ed customers. No NL, no PUC, no chargeback. We compete on intelligence, not data breadth.',
     },
     {
       n: 2,
@@ -232,7 +239,7 @@ export const D6 = {
     },
     {
       n: 3,
-      claim: 'EnergyCAP has deep relationships in HE. Universities won’t switch.',
+      claim: 'EnergyCAP has deep relationships in Higher Ed. Universities won’t switch.',
       response:
         'We don’t ask them to rip it out year one. We start with what EnergyCAP cannot do — proactive anomaly surfacing, NL Q&A, PUC monitoring — and prove value in 90 days before the replacement conversation.',
     },

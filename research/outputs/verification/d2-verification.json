@@ -1,0 +1,3706 @@
+{
+  "deliverableId": "d2",
+  "label": "D2 Seasonal Energy Calendar",
+  "sourceModule": "apps/final-presentation/src/content/deliverables/d2-calendar.js",
+  "generatedAt": "2026-04-19T00:29:21.079Z",
+  "corpusFingerprint": "bf93ef6cba97f964",
+  "claimCount": 82,
+  "summary": {
+    "supported": 80,
+    "partially_supported": 2,
+    "weak_match": 0,
+    "unsupported": 0
+  },
+  "claims": [
+    {
+      "claimId": "d2:0:$.title",
+      "jsonPath": "$.title",
+      "kind": "narrative",
+      "text": "Seasonal Energy Management Calendar",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.087
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_AdventHealth.docx",
+          "chunkIndex": 31,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "rry about heat too often. Our primary goal is to make sure we maintain temperature and humidity within critical spaces.\" Scott described an enthalpy-based control approach that continuously modulates discharge air temper…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_AdventHealth.docx",
+          "chunkIndex": 32,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "Scott described an enthalpy-based control approach that continuously modulates discharge air temperature based on actual space conditions — effectively a manual implementation of what AI control loops are designed to do …"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx",
+          "chunkIndex": 8,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "The first layer is optimization work — making existing equipment run as efficiently as possible. This follows a seasonal calendar: winter is spent improving heating systems, summer is spent improving cooling systems, and…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Randy_Dawes_Hyatt.docx",
+          "chunkIndex": 9,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "data is required at the end of the 1st quarter for previous year along with a mid-year check in on progress.\" Analysis The calendar described is an ESG reporting calendar, not an operational energy management calendar. E…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:1:$.tagline",
+      "jsonPath": "$.tagline",
+      "kind": "narrative",
+      "text": "Commercial energy work clusters into predictable seasonal beats — budget, procurement, summer demand, compliance — so GTM should ride that rhythm, not run flat outreach.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.492,
+        "bestCoverage": 0.579,
+        "bestJaccard": 0.112
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 2,
+          "corpusKind": "synthesis",
+          "score": 0.492,
+          "excerpt": "**Why it matters now:** The research corpus reveals that energy management is not uniformly distributed across the year. It has a predictable seasonal rhythm with hard deadlines, fiscal cliff moments, and procurement win…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1711,
+          "corpusKind": "other",
+          "score": 0.447,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1723,
+          "corpusKind": "other",
+          "score": 0.447,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 882,
+          "corpusKind": "primary_output",
+          "score": 0.447,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:2:$.openingProblem",
+      "jsonPath": "$.openingProblem",
+      "kind": "narrative",
+      "text": "Energy managers face recurring fiscal cliffs: budgets and forecasts lock while utility rates, capacity charges, and contract terms are still moving. That timing gap — especially before March budget submission for many schools and before October healthcare fiscal years — creates recurring moments when invoice-level intelligence and regulatory foresight are most valuable.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.435,
+        "bestCoverage": 0.512,
+        "bestJaccard": 0.022
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.435,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.435,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.435,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.435,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:3:$.tldrBullets[0]",
+      "jsonPath": "$.tldrBullets[0]",
+      "kind": "tldr",
+      "text": "Work clusters into predictable seasonal beats — budget, procurement, summer demand, compliance — not flat year-round urgency.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.011
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1723,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 894,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:4:$.tldrBullets[1]",
+      "jsonPath": "$.tldrBullets[1]",
+      "kind": "tldr",
+      "text": "Forecasts often freeze before rates, capacity charges, and contract terms finish moving — that gap is the leverage point.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.014
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 878,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 2,
+          "corpusKind": "synthesis",
+          "score": 0.486,
+          "excerpt": "**Why it matters now:** The research corpus reveals that energy management is not uniformly distributed across the year. It has a predictable seasonal rhythm with hard deadlines, fiscal cliff moments, and procurement win…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:5:$.tldrBullets[2]",
+      "jsonPath": "$.tldrBullets[2]",
+      "kind": "tldr",
+      "text": "March (many schools) and October (healthcare FY) are recurring cliffs for invoice intelligence and regulatory foresight.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.464,
+        "bestCoverage": 0.545,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:6:$.tldrBullets[3]",
+      "jsonPath": "$.tldrBullets[3]",
+      "kind": "tldr",
+      "text": "GTM should ride the calendar rhythm instead of steady generic outreach.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.472,
+        "bestCoverage": 0.556,
+        "bestJaccard": 0.053
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 2,
+          "corpusKind": "synthesis",
+          "score": 0.472,
+          "excerpt": "**Why it matters now:** The research corpus reveals that energy management is not uniformly distributed across the year. It has a predictable seasonal rhythm with hard deadlines, fiscal cliff moments, and procurement win…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.378,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 902,
+          "corpusKind": "primary_output",
+          "score": 0.378,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/agents/08_David_Okonkwo.md",
+          "chunkIndex": 140,
+          "corpusKind": "primary_output",
+          "score": 0.378,
+          "excerpt": "**What John and Dan should do:** Build a regulatory event calendar — state PUC rate proceedings, time-of-use structure changes, peak demand window shifts — that triggers outbound sales activity. A company in Georgia faci…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:7:$.months[0].headline",
+      "jsonPath": "$.months[0].headline",
+      "kind": "headline",
+      "text": "Year-end hangover · heating peaks · Q1 carbon reporting kickoff",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.082
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 10,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "_Sources: Andi Ault transcript (UT Austin); Texas State summary (Andee Chamberlain); Ann Walston summary (BSMH); secondary research (Part 4, higher ed calendar; GRESB 2025 assessment cycle)._ --- ## MONTH-BY-MONTH CALEND…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:8:$.months[0].activities[0]",
+      "jsonPath": "$.months[0].activities[0]",
+      "kind": "narrative",
+      "text": "Close prior year; reconcile Dec/Jan bills under peak heating loads",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.464,
+        "bestCoverage": 0.545,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:9:$.months[0].activities[1]",
+      "jsonPath": "$.months[0].activities[1]",
+      "kind": "narrative",
+      "text": "Start or deepen budget baselines (higher ed on Sept 1 FY)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.033
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 7,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "oactive positioning by Clear Current interrupts that reactive cycle most effectively. --- ## FISCAL YEAR REFERENCE MAP | Vertical | Fiscal Year Start | Budget Lock | Peak Demand Season | | -------------------------- | --…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 8,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "| Vertical | Fiscal Year Start | Budget Lock | Peak Demand Season | | -------------------------- | --------------------------------------------- | --------------------------------------------------- | ------------------ …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:10:$.months[0].activities[2]",
+      "jsonPath": "$.months[0].activities[2]",
+      "kind": "narrative",
+      "text": "CRE begins CDP-style data pulls; healthcare sees full PJM capacity charges",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.068
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget planning season begins. Andee Chamberlain (Texas State) described January–February as the period when her team pulls historical energy data to build budget narratives. Meter-lev…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 48,
+          "corpusKind": "synthesis",
+          "score": 0.496,
+          "excerpt": "- **Higher Education:** Summer operations begin. Most campuses are running at reduced academic load, but HVAC is fighting summer heat. Research buildings remain fully operational. UT Austin's 60 MW CHP system is at its m…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx",
+          "chunkIndex": 12,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "Implication for Clear Current: This is the most concrete validation yet of the billing error recovery challenge that Marc Spieler flagged: it is not enough to identify the error. The utility must acknowledge it and issue…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:11:$.months[0].salesPlay",
+      "jsonPath": "$.months[0].salesPlay",
+      "kind": "narrative",
+      "text": "Lead with Dec/Jan bill anomaly review and portfolio YoY variance — “close the year right.”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.014
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:12:$.months[1].headline",
+      "jsonPath": "$.months[1].headline",
+      "kind": "headline",
+      "text": "Higher-ed budget narratives peak · finance–ops “rate vs budget” gap widest",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.68,
+        "bestCoverage": 0.8,
+        "bestJaccard": 0.013
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.68,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.68,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.68,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.68,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:13:$.months[1].activities[0]",
+      "jsonPath": "$.months[1].activities[0]",
+      "kind": "narrative",
+      "text": "Sept 1 FY schools assemble budget narratives from usage, demand, cost",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.046
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget planning season begins. Andee Chamberlain (Texas State) described January–February as the period when her team pulls historical energy data to build budget narratives. Meter-lev…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 19,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "istorical consumption) and what the finance team needs (forward rate assumptions) is widest right now. **By vertical:** - **Higher Education (Sept 1 FY):** Budget narratives are being assembled. Andee Chamberlain's team …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 20,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget narratives are being assembled. Andee Chamberlain's team pulls demand, usage, and cost data for this process. The energy manager is the data source for the finance team's foreca…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:14:$.months[1].activities[1]",
+      "jsonPath": "$.months[1].activities[1]",
+      "kind": "narrative",
+      "text": "Jul 1 FY schools face pending rate cases while assumptions must harden",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.053
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/05_Dr._Patricia_Nash.md",
+          "chunkIndex": 94,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "_Problem Definition:_ Finance users managing institutional energy spend face a structural forecasting challenge: they must submit annual budgets before utility rates are finalized, before regulatory cases are resolved, a…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 20,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget narratives are being assembled. Andee Chamberlain's team pulls demand, usage, and cost data for this process. The energy manager is the data source for the finance team's foreca…"
+        },
+        {
+          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
+          "chunkIndex": 8,
+          "corpusKind": "secondary",
+          "score": 0.34,
+          "excerpt": "**Harvard Law School (2025):** A peer-reviewed legal analysis from Harvard's Environmental Law Initiative documents that utility rate cases are structurally asymmetric — utilities generate the information regulators use …"
+        },
+        {
+          "file": "research/SECONDARY DATA/Clear Current Technologies  Deep Secondary Research — Four Strategic Intelligence Modules.md",
+          "chunkIndex": 102,
+          "corpusKind": "secondary",
+          "score": 0.34,
+          "excerpt": "omplaints.pdf) - The utility must prove that the increase is needed. The utility also must notify customers at least ... 9. [Public Input Hearings Scheduled for Proposed Rate Change by PPL ...](https://www.puc.pa.gov/pre…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:15:$.months[1].activities[2]",
+      "jsonPath": "$.months[1].activities[2]",
+      "kind": "narrative",
+      "text": "Healthcare winter peak risk; CRE deep in CDP audit paths",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.756,
+        "bestCoverage": 0.889,
+        "bestJaccard": 0.073
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 20,
+          "corpusKind": "synthesis",
+          "score": 0.756,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget narratives are being assembled. Andee Chamberlain's team pulls demand, usage, and cost data for this process. The energy manager is the data source for the finance team's foreca…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 21,
+          "corpusKind": "synthesis",
+          "score": 0.661,
+          "excerpt": "- **CRE:** CDP data collection and audit deep in progress. ENERGY STAR score updates for January usage being processed. **Budget/procurement activity:** Higher education (Sept 1 FY): budget build at peak intensity. CRE: …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.661,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.661,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:16:$.months[1].salesPlay",
+      "jsonPath": "$.months[1].salesPlay",
+      "kind": "narrative",
+      "text": "Quantify pending rate-case exposure before assumptions freeze — “know the rate you’re budgeting against.”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.01
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 22,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "**Budget/procurement activity:** Higher education (Sept 1 FY): budget build at peak intensity. CRE: GRESB preparation beginning (GRESB assessment portal opens April 1; data collection begins now). Healthcare: procurement…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.496,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:17:$.months[2].headline",
+      "jsonPath": "$.months[2].headline",
+      "kind": "headline",
+      "text": "Budget lock (Jul 1 FY schools) · gas execution · compliance sprint",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/primary/agents/02_Marcus_Williams.md",
+          "chunkIndex": 74,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "| Period | Standard Hospital Systems (BSMH Ohio, Intermountain Utah, Ascension Nashville/Wichita) | Southern Variant (AdventHealth Florida, Houston Methodist Texas) | | -------------------------------------- | ----------…"
+        },
+        {
+          "file": "research/outputs/primary/agents/12_Alex_Sterling.md",
+          "chunkIndex": 80,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "ything differently?\" - _Source: Ann Walston Transcript_ **September – October: CRITICAL — Next-Year RFP Launch Window** - Procurement status: This is the highest-activity procurement period for organizations following BS…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:18:$.months[2].activities[0]",
+      "jsonPath": "$.months[2].activities[0]",
+      "kind": "narrative",
+      "text": "Jul 1 FY higher ed: budget submission month with uncertain rate assumptions",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.128
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 27,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": ". For energy management software vendors, this is the last outreach window before the decision moment. **By vertical:** - **Higher Education (July 1 FY):** **Budget submission month.** Andi Ault stated this directly in h…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 28,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "- **Higher Education (July 1 FY):** **Budget submission month.** Andi Ault stated this directly in her transcript. The five-year forecast is delivered alongside the annual budget. Rate assumptions are locked even though …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:19:$.months[2].activities[1]",
+      "jsonPath": "$.months[2].activities[1]",
+      "kind": "narrative",
+      "text": "Healthcare and higher ed execute / lock natural-gas positions",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.607,
+        "bestCoverage": 0.714,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1711,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 882,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:20:$.months[2].activities[2]",
+      "jsonPath": "$.months[2].activities[2]",
+      "kind": "narrative",
+      "text": "CRE races to April CDP deadlines; spring PUC / rate activity intensifies",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.51,
+        "bestCoverage": 0.6,
+        "bestJaccard": 0.107
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 13,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "and submitted by the CDP deadline (typically April). This triggers invoice-level data pulls across the entire portfolio. **Budget/procurement activity:** Higher education budget build begins (Sept 1 FY vertical). Healthc…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 36,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "- **Higher Education:** Post-budget-lock analysis. Finance teams reviewing what was submitted vs. what rate intelligence suggested. Energy managers beginning summer demand preparation — generator testing, HVAC commission…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 38,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "**Budget/procurement activity:** Healthcare natural gas contracting closing. CRE: GRESB data submission begins. University of Wisconsin RFP evidence suggests that institutional higher ed RFPs are sometimes issued in this…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:21:$.months[2].salesPlay",
+      "jsonPath": "$.months[2].salesPlay",
+      "kind": "narrative",
+      "text": "Last-call regulatory briefing tied to imminent budget lock; pair with procurement scenario support.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.019
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| Gap | Affects | Impact | Status / How to Close | | ---------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:22:$.months[3].headline",
+      "jsonPath": "$.months[3].headline",
+      "kind": "headline",
+      "text": "Shoulder month · procurement closes · summer prep · CRE CDP/GRESB crunch",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.51,
+        "bestCoverage": 0.6,
+        "bestJaccard": 0.059
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 36,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "- **Higher Education:** Post-budget-lock analysis. Finance teams reviewing what was submitted vs. what rate intelligence suggested. Energy managers beginning summer demand preparation — generator testing, HVAC commission…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 39,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "ers (CDP/GRESB crunch time); healthcare CFOs and facilities VPs (closing procurement, beginning to think about next FY). > _\"We do that for both now, for gas and electricity... we're looking at whether now is the right t…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:23:$.months[3].activities[0]",
+      "jsonPath": "$.months[3].activities[0]",
+      "kind": "narrative",
+      "text": "Healthcare finishes / closes many gas contracting cycles",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.005
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1711,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 882,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:24:$.months[3].activities[1]",
+      "jsonPath": "$.months[3].activities[1]",
+      "kind": "narrative",
+      "text": "CRE hits CDP deadlines; GRESB portal opens; compliance demand spikes",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.595,
+        "bestCoverage": 0.7,
+        "bestJaccard": 0.069
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 36,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "- **Higher Education:** Post-budget-lock analysis. Finance teams reviewing what was submitted vs. what rate intelligence suggested. Energy managers beginning summer demand preparation — generator testing, HVAC commission…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 21,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "- **CRE:** CDP data collection and audit deep in progress. ENERGY STAR score updates for January usage being processed. **Budget/procurement activity:** Higher education (Sept 1 FY): budget build at peak intensity. CRE: …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 22,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "**Budget/procurement activity:** Higher education (Sept 1 FY): budget build at peak intensity. CRE: GRESB preparation beginning (GRESB assessment portal opens April 1; data collection begins now). Healthcare: procurement…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:25:$.months[3].activities[2]",
+      "jsonPath": "$.months[3].activities[2]",
+      "kind": "narrative",
+      "text": "Higher ed shifts from budget submission to summer readiness",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.708,
+        "bestCoverage": 0.833,
+        "bestJaccard": 0.039
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.708,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 36,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education:** Post-budget-lock analysis. Finance teams reviewing what was submitted vs. what rate intelligence suggested. Energy managers beginning summer demand preparation — generator testing, HVAC commission…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 64,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education (Sept 1 FY):** End-of-fiscal-year reconciliation. Texas State's August peak demand — driven by emergency generator testing at 80% load bank capacity — is the demand charge exposure Andee Chamberlain …"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:26:$.months[3].salesPlay",
+      "jsonPath": "$.months[3].salesPlay",
+      "kind": "narrative",
+      "text": "Position invoice-organized data as the compliance substrate — “your CDP/GRESB inputs already exist in the bills.”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.496,
+        "bestCoverage": 0.583,
+        "bestJaccard": 0.069
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 38,
+          "corpusKind": "synthesis",
+          "score": 0.496,
+          "excerpt": "**Budget/procurement activity:** Healthcare natural gas contracting closing. CRE: GRESB data submission begins. University of Wisconsin RFP evidence suggests that institutional higher ed RFPs are sometimes issued in this…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
+          "chunkIndex": 20,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "| Dimension | Score (1–5) | Evidence | | ------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:27:$.months[4].headline",
+      "jsonPath": "$.months[4].headline",
+      "kind": "headline",
+      "text": "Shift from planning to pre-summer operational risk",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.708,
+        "bestCoverage": 0.833,
+        "bestJaccard": 0.029
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/02_Marcus_Williams.md",
+          "chunkIndex": 74,
+          "corpusKind": "primary_output",
+          "score": 0.708,
+          "excerpt": "| Period | Standard Hospital Systems (BSMH Ohio, Intermountain Utah, Ascension Nashville/Wichita) | Southern Variant (AdventHealth Florida, Houston Methodist Texas) | | -------------------------------------- | ----------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:28:$.months[4].activities[0]",
+      "jsonPath": "$.months[4].activities[0]",
+      "kind": "narrative",
+      "text": "Memorial Day marks hospitality/QSR climb toward summer electricity peaks",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.066
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 42,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education:** End of academic year. Building loads drop significantly as students leave; this creates an unusual metering situation where consumption drops sharply but demand charges (set in prior months) remai…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.472,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.472,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 48,
+          "corpusKind": "synthesis",
+          "score": 0.472,
+          "excerpt": "- **Higher Education:** Summer operations begin. Most campuses are running at reduced academic load, but HVAC is fighting summer heat. Research buildings remain fully operational. UT Austin's 60 MW CHP system is at its m…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:29:$.months[4].activities[1]",
+      "jsonPath": "$.months[4].activities[1]",
+      "kind": "narrative",
+      "text": "CRE: major deadlines (NYC LL97 May 1) and ongoing GRESB work",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.531,
+        "bestCoverage": 0.625,
+        "bestJaccard": 0.053
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/Clear Current Technologies  Deep Secondary Research — Four Strategic Intelligence Modules.md",
+          "chunkIndex": 69,
+          "corpusKind": "secondary",
+          "score": 0.531,
+          "excerpt": "- **WatchWire by Tango**: Enterprise-grade energy/sustainability data management; deep GRESB reporting integration; primary tool for major REITs and institutional landlords[^65] - **Measurabl**: Free tier launched July 2…"
+        },
+        {
+          "file": "research/SECONDARY DATA/Clear Current Technologies  Deep Secondary Research — Four Strategic Intelligence Modules.md",
+          "chunkIndex": 73,
+          "corpusKind": "secondary",
+          "score": 0.531,
+          "excerpt": "**GRESB reporting obligations**: GRESB's 2024 Real Estate Assessment covered $10 trillion in global real estate assets; 2025 saw 1,002 fund managers participate at an all-time high. GRESB data submission deadlines in Aug…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 554,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "Key CRE energy software tools in use: - **WatchWire by Tango**: Enterprise-grade energy/sustainability data management; deep GRESB reporting integration; primary tool for major REITs and institutional landlords[^65] - **…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 558,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "**GRESB reporting obligations**: GRESB's 2024 Real Estate Assessment covered $10 trillion in global real estate assets; 2025 saw 1,002 fund managers participate at an all-time high. GRESB data submission deadlines in Aug…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:30:$.months[4].activities[2]",
+      "jsonPath": "$.months[4].activities[2]",
+      "kind": "narrative",
+      "text": "Urgency shifts to ratchets, summer tariffs, and peak risk",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.052
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/08_David_Okonkwo.md",
+          "chunkIndex": 94,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "- ESG/sustainability reporting deadline for corporate hospitality clients (Randy Dawes: \"reporting data is required at the end of the 1st quarter for previous year\" — Randy Dawes Summary) - Rate structure change monitori…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 44,
+          "corpusKind": "synthesis",
+          "score": 0.486,
+          "excerpt": "**Budget/procurement activity:** Shoulder month for procurement — most decisions are made. Some late-cycle natural gas hedging decisions for utilities with summer-peak rate structures. Texas electricity market (ERCOT): s…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Don_Johnson_Trane_Transcript.docx",
+          "chunkIndex": 12,
+          "corpusKind": "primary_transcript",
+          "score": 0.364,
+          "excerpt": "A lot of them just don't understand even the rate they're on. Those tiered rates are pretty complicated. Utilities are trying to move everyone to time-of-use rates, and the peak profile is shifting now with electric vehi…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Don_Johnson_Trane (1).docx",
+          "chunkIndex": 17,
+          "corpusKind": "primary_summary",
+          "score": 0.364,
+          "excerpt": "shifting due to electrification and EV charging - what used to peak at 2pm is now moving to 4-5pm. **Demand Ratchets** Don walked through a specific mechanism where summer peak demand (June through September) sets a 75% …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:31:$.months[4].salesPlay",
+      "jsonPath": "$.months[4].salesPlay",
+      "kind": "narrative",
+      "text": "Pre-summer demand-charge risk map + summer rate-structure change audit before peaks land.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.607,
+        "bestCoverage": 0.714,
+        "bestJaccard": 0.013
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 44,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "**Budget/procurement activity:** Shoulder month for procurement — most decisions are made. Some late-cycle natural gas hedging decisions for utilities with summer-peak rate structures. Texas electricity market (ERCOT): s…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.546,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:32:$.months[5].headline",
+      "jsonPath": "$.months[5].headline",
+      "kind": "headline",
+      "text": "Summer peaks begin setting 12-month demand charges",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.607,
+        "bestCoverage": 0.714,
+        "bestJaccard": 0.008
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:33:$.months[5].activities[0]",
+      "jsonPath": "$.months[5].activities[0]",
+      "kind": "narrative",
+      "text": "One bad peak day can lock elevated demand charges for the next year",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.085
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/08_David_Okonkwo.md",
+          "chunkIndex": 30,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "Walt Taylor described the Georgia Power ratchet mechanism in specific terms: whatever peak demand a customer hits during the hottest month of the year becomes the basis for their capacity charge, applied at 100% for the …"
+        },
+        {
+          "file": "research/outputs/primary/company_cards/co-10_Panda_Walt_Taylor.md",
+          "chunkIndex": 20,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "**Outlier prioritization and root-cause scaffolding** Walt's team already identifies top outliers. What they cannot do efficiently is explain _why_ the outlier exists. \"We can identify the top 10 outliers, let's say, but…"
+        },
+        {
+          "file": "research/outputs/synthesis/D1_Engagement_Trigger_Map.md",
+          "chunkIndex": 26,
+          "corpusKind": "synthesis",
+          "score": 0.638,
+          "excerpt": "| Field | Detail | | ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1501,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:34:$.months[5].activities[1]",
+      "jsonPath": "$.months[5].activities[1]",
+      "kind": "narrative",
+      "text": "QSR electricity peaks (AC-driven) open; hospitals run flat-out cooling",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.661,
+        "bestCoverage": 0.778,
+        "bestJaccard": 0.065
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 48,
+          "corpusKind": "synthesis",
+          "score": 0.661,
+          "excerpt": "- **Higher Education:** Summer operations begin. Most campuses are running at reduced academic load, but HVAC is fighting summer heat. Research buildings remain fully operational. UT Austin's 60 MW CHP system is at its m…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:35:$.months[5].activities[2]",
+      "jsonPath": "$.months[5].activities[2]",
+      "kind": "narrative",
+      "text": "Interval / real-time workflows matter most for curtailment and DR",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.005
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_AdventHealth.docx",
+          "chunkIndex": 20,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "\"AdventHealth is interested in being experts itself, so that we can triage it our own way for our own needs and then more rapidly measure the benefit after we do some sort of change on site. Like we want to be able to ad…"
+        },
+        {
+          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
+          "chunkIndex": 31,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "to nearly 400 utilities as of January 2026. Commercial account utility bill coverage remains claimed at 95%+.[^16][^28] **Commercial account interval data gap:** The 95% commercial coverage claim applies to **billing dat…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:36:$.months[5].salesPlay",
+      "jsonPath": "$.months[5].salesPlay",
+      "kind": "narrative",
+      "text": "Sell peak monitoring / alerts and site-level exposure — “summer is when the bill sets the tax for the year.”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.013
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:37:$.months[6].headline",
+      "jsonPath": "$.months[6].headline",
+      "kind": "headline",
+      "text": "Operational crucible · Jul 1 FY vs Jul 1 rate resolutions",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.021
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
+          "chunkIndex": 68,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "- **Q1 (Jan-March):** Prior year utility reconciliation; GRESB data collection begins; LL97 annual reporting window (NYC); ENERGY STAR benchmarking data submission deadline (April 1 for prior year) - **Q2 (Apr-June):** B…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 53,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "real-time demand-peak push alert is [EXTENDS ROADMAP] depending on data feed latency from utility meters. --- ### JULY **What is happening in the market** July is the operational crucible. For higher education, it is sim…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 54,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "**What is happening in the market** July is the operational crucible. For higher education, it is simultaneously the peak demand month and the first month of the new fiscal year — meaning the bills that arrive in July re…"
+        },
+        {
+          "file": "research/CLEAR_CURRENT_PRODUCT_CONTEXT.md",
+          "chunkIndex": 8,
+          "corpusKind": "other",
+          "score": 0.283,
+          "excerpt": "--- ## Marketing modules ↔ CC Engine (for narrative alignment only) Use this so deliverables **name real surfaces** without inventing new product lines. If a mapping is wrong for a specific pilot, **the corpus wins** for…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:38:$.months[6].activities[0]",
+      "jsonPath": "$.months[6].activities[0]",
+      "kind": "narrative",
+      "text": "Jul 1 FY schools compare March assumptions to July bills (variance shows immediately)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.51,
+        "bestCoverage": 0.6,
+        "bestJaccard": 0.125
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 53,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "real-time demand-peak push alert is [EXTENDS ROADMAP] depending on data feed latency from utility meters. --- ### JULY **What is happening in the market** July is the operational crucible. For higher education, it is sim…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 54,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "**What is happening in the market** July is the operational crucible. For higher education, it is simultaneously the peak demand month and the first month of the new fiscal year — meaning the bills that arrive in July re…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 55,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "od service, July is the highest-energy-cost month of the year with no relief in sight until September. **By vertical:** - **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:39:$.months[6].activities[1]",
+      "jsonPath": "$.months[6].activities[1]",
+      "kind": "narrative",
+      "text": "Healthcare remains in max cooling / capacity-charge pain",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.607,
+        "bestCoverage": 0.714,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx",
+          "chunkIndex": 26,
+          "corpusKind": "primary_summary",
+          "score": 0.486,
+          "excerpt": "Ann's most vivid story was not about detecting an error — it was about recovering dollars after one. She fought for $1M+ over months, with board-level intervention, and still lost some. Clear Current's healthcare pitch s…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:40:$.months[6].activities[2]",
+      "jsonPath": "$.months[6].activities[2]",
+      "kind": "narrative",
+      "text": "CRE: many GRESB submission deadlines land",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.044
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/Clear Current Technologies  Deep Secondary Research — Four Strategic Intelligence Modules.md",
+          "chunkIndex": 73,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "**GRESB reporting obligations**: GRESB's 2024 Real Estate Assessment covered $10 trillion in global real estate assets; 2025 saw 1,002 fund managers participate at an all-time high. GRESB data submission deadlines in Aug…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 558,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "**GRESB reporting obligations**: GRESB's 2024 Real Estate Assessment covered $10 trillion in global real estate assets; 2025 saw 1,002 fund managers participate at an all-time high. GRESB data submission deadlines in Aug…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 816,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "70% of building energy use but landlords own the obligation. **Other major BPS and CRE reporting deadlines 2025–2026:** | Jurisdiction | Key 2025–26 Deadline | Penalty | |---|---|---| | **GRESB 2026** | Submission **July…"
+        },
+        {
+          "file": "research/outputs/secondary/00_secondary_corpus.txt",
+          "chunkIndex": 558,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "**GRESB reporting obligations**: GRESB's 2024 Real Estate Assessment covered $10 trillion in global real estate assets; 2025 saw 1,002 fund managers participate at an all-time high. GRESB data submission deadlines in Aug…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:41:$.months[6].salesPlay",
+      "jsonPath": "$.months[6].salesPlay",
+      "kind": "narrative",
+      "text": "Retrospective proof: show what changed effective Jul 1 and the portfolio dollar impact, then convert to monitoring.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.386,
+        "bestCoverage": 0.455,
+        "bestJaccard": 0.006
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.386,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.386,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.386,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.386,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:42:$.months[7].headline",
+      "jsonPath": "$.months[7].headline",
+      "kind": "headline",
+      "text": "Last month of peak demand · healthcare Oct 1 FY budget build accelerates",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.661,
+        "bestCoverage": 0.778,
+        "bestJaccard": 0.01
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.661,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.661,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.661,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:43:$.months[7].activities[0]",
+      "jsonPath": "$.months[7].activities[0]",
+      "kind": "narrative",
+      "text": "August bills encode max summer peaks that drive next-year demand charges",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.541,
+        "bestCoverage": 0.636,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.541,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.541,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.541,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.541,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:44:$.months[7].activities[1]",
+      "jsonPath": "$.months[7].activities[1]",
+      "kind": "narrative",
+      "text": "Healthcare pulls 12 months of bills to build October budgets",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.607,
+        "bestCoverage": 0.714,
+        "bestJaccard": 0.062
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 60,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "- **Rate Analyst (regulatory intelligence):** For any prospect in a jurisdiction with a July 1 rate case resolution — PPL PA, AES Ohio, City of Austin — this is the moment to demonstrate the value of advance rate intelli…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 62,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "**This is Clear Current's single most demonstrable regulatory intelligence proof point.** A prospect in PPL territory who submitted a budget in March 2026 is now, in July 2026, looking at a bill that reflects a rate they…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 63,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "months is being set right now. Healthcare organizations are beginning their October 1 FY budget build. **By vertical:** - **Higher Education (Sept 1 FY):** End-of-fiscal-year reconciliation. Texas State's August peak dem…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 64,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "- **Higher Education (Sept 1 FY):** End-of-fiscal-year reconciliation. Texas State's August peak demand — driven by emergency generator testing at 80% load bank capacity — is the demand charge exposure Andee Chamberlain …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:45:$.months[7].activities[2]",
+      "jsonPath": "$.months[7].activities[2]",
+      "kind": "narrative",
+      "text": "Sept 1 FY schools approach year-end complexity",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 34,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Persona** | **Primary Source** | **Research Confidence** | **Key Journey Arc** | | --- | --- | --- | --- | | Campus Energy Operations Manager | Andee Chamberlain (Texas State) | HIGH — direct, detailed | Monthly bill…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:46:$.months[7].salesPlay",
+      "jsonPath": "$.months[7].salesPlay",
+      "kind": "narrative",
+      "text": "Healthcare baseline pack + annual demand-charge audit — “where is the most impact?”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.744,
+        "bestCoverage": 0.875,
+        "bestJaccard": 0.143
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 67,
+          "corpusKind": "synthesis",
+          "score": 0.744,
+          "excerpt": "ns' PJM capacity charge forecast. NYC Local Law 97 penalty letters expected. **Clear Current recommended positioning:** - **Rate Analyst:** Annual demand charge audit — identify each site's peak demand from the summer an…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 68,
+          "corpusKind": "synthesis",
+          "score": 0.744,
+          "excerpt": "- **Rate Analyst:** Annual demand charge audit — identify each site's peak demand from the summer and calculate the 12-month demand charge impact. This is the highest-ROI audit moment of the year. - **Energy HQ:** Health…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.744,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:47:$.months[8].headline",
+      "jsonPath": "$.months[8].headline",
+      "kind": "headline",
+      "text": "Pivot · cooling eases · Sept 1 FY launches · healthcare budget finalization",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.531,
+        "bestCoverage": 0.625,
+        "bestJaccard": 0.057
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 70,
+          "corpusKind": "synthesis",
+          "score": 0.531,
+          "excerpt": "**Why it matters for Clear Current:** Ann Walston's question — where is the most impact? — is exactly what the Rate Analyst + Energy HQ combination answers. The demand charge audit identifies which sites generated the hi…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 72,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "- **Higher Education (Sept 1 FY):** **New fiscal year begins.** New building additions may come online (new academic buildings, dorms, research facilities). Budget is fresh; energy managers have the most flexibility they…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 74,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "**Budget/procurement activity:** Healthcare: October 1 FY budget finalization. Higher education: new FY operational planning. Corporate and CRE: Q4 budget cycle beginning. **Regulatory milestones:** Fall PUC filing seaso…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:48:$.months[8].activities[0]",
+      "jsonPath": "$.months[8].activities[0]",
+      "kind": "narrative",
+      "text": "Higher ed (Sept 1 FY): new year, new loads, max openness",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.031
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget planning season begins. Andee Chamberlain (Texas State) described January–February as the period when her team pulls historical energy data to build budget narratives. Meter-lev…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 14,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "**Budget/procurement activity:** Higher education budget build begins (Sept 1 FY vertical). Healthcare Q1 budget vs. actual review. Corporate and CRE: Q4 actuals triggering variance investigations that surface billing er…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 70,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "**Why it matters for Clear Current:** Ann Walston's question — where is the most impact? — is exactly what the Rate Analyst + Energy HQ combination answers. The demand charge audit identifies which sites generated the hi…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 29,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "ystem-Initiated (EnergyCAP EOL, compliance deadline). | | --- | **Deliverable 2 — Seasonal Energy Management Calendar** | **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — N…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:49:$.months[8].activities[1]",
+      "jsonPath": "$.months[8].activities[1]",
+      "kind": "narrative",
+      "text": "Healthcare: last edits to Oct 1 FY forecasts and narratives",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.013
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| Gap | Affects | Impact | Status / How to Close | | ---------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 72,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education (Sept 1 FY):** **New fiscal year begins.** New building additions may come online (new academic buildings, dorms, research facilities). Budget is fresh; energy managers have the most flexibility they…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:50:$.months[8].activities[2]",
+      "jsonPath": "$.months[8].activities[2]",
+      "kind": "narrative",
+      "text": "Fall PUC filing season begins — early warning for next year’s rates",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.595,
+        "bestCoverage": 0.7,
+        "bestJaccard": 0.135
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 73,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "/November but strategic planning begins now). ENERGY STAR annual certification period. Fall carbon strategy discussions. **Budget/procurement activity:** Healthcare: October 1 FY budget finalization. Higher education: ne…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 74,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "**Budget/procurement activity:** Healthcare: October 1 FY budget finalization. Higher education: new FY operational planning. Corporate and CRE: Q4 budget cycle beginning. **Regulatory milestones:** Fall PUC filing seaso…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 79,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "world conference. ESG strategy conversations at the fund level. NYC Local Law 97 2025 compliance year analysis underway. **Budget/procurement activity:** Healthcare: new FY, fresh budget. Corporate/hospitality: Q4 planni…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 80,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "**Budget/procurement activity:** Healthcare: new FY, fresh budget. Corporate/hospitality: Q4 planning. Higher education: early data pulls for next budget cycle. Natural gas procurement: winter contract decisions being ev…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:51:$.months[8].salesPlay",
+      "jsonPath": "$.months[8].salesPlay",
+      "kind": "narrative",
+      "text": "FY-launch audit: clean consolidated bill history + watchlist; attach Build Engine for new buildings/meters.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.496,
+        "bestCoverage": 0.583,
+        "bestJaccard": 0.008
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.496,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.496,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1729,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & T…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:52:$.months[9].headline",
+      "jsonPath": "$.months[9].headline",
+      "kind": "headline",
+      "text": "Healthcare Oct 1 FY reset · corporate Q4 planning · fall rate-case intake",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.011
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget planning season begins. Andee Chamberlain (Texas State) described January–February as the period when her team pulls historical energy data to build budget narratives. Meter-lev…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 74,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "**Budget/procurement activity:** Healthcare: October 1 FY budget finalization. Higher education: new FY operational planning. Corporate and CRE: Q4 budget cycle beginning. **Regulatory milestones:** Fall PUC filing seaso…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:53:$.months[9].activities[0]",
+      "jsonPath": "$.months[9].activities[0]",
+      "kind": "narrative",
+      "text": "Healthcare: new FY baseline bills establish targets",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.68,
+        "bestCoverage": 0.8,
+        "bestJaccard": 0.006
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.68,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.68,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/agents/05_Dr._Patricia_Nash.md",
+          "chunkIndex": 14,
+          "corpusKind": "primary_output",
+          "score": 0.68,
+          "excerpt": "- UPSC structure: finance organization representatives sit on the committee alongside facilities. This confirms finance has a seat at the procurement table in healthcare. - Pricing stability preference: \"We value predict…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 77,
+          "corpusKind": "synthesis",
+          "score": 0.68,
+          "excerpt": "— exactly the kind of forward intelligence Clear Current's regulatory monitoring should be surfacing. **By vertical:** - **Higher Education:** Mid-semester. Energy loads stabilizing after summer heat. October is when ene…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:54:$.months[9].activities[1]",
+      "jsonPath": "$.months[9].activities[1]",
+      "kind": "narrative",
+      "text": "Hospitality / retail: Q4 planning for next calendar-year budgets",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.729,
+        "bestCoverage": 0.857,
+        "bestJaccard": 0.009
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.729,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.729,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC Research - Andi Ault, UT Utilities Finance.docx",
+          "chunkIndex": 32,
+          "corpusKind": "primary_transcript",
+          "score": 0.607,
+          "excerpt": "Hester, Clayton 16:12Mhm.Right.OK. Thank you for that. And one like more question that came to my mind because I know that you are not able to touch on the energy management calendar, but from your standpoint, what is li…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 20,
+          "corpusKind": "primary_summary",
+          "score": 0.607,
+          "excerpt": "5. Annual Energy Management Calendar - Texas State Period Activity Jan - Feb Budget planning for next fiscal year begins. Administration assembles requests. Utility analyst pulls 3-5 years of historical data to establish…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:55:$.months[9].activities[2]",
+      "jsonPath": "$.months[9].activities[2]",
+      "kind": "narrative",
+      "text": "Filings now often resolve 9–12 months out — intelligence narrative strengthens",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.006
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/secondary/agents/s01_Victor_Hale.md",
+          "chunkIndex": 94,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "- Arcadia tracks 30,000+ tariff structures and 75,000 rate updates per month — these are _changes that have already happened_ - No competitor monitors PUC dockets for _rate cases that are pending_ — proceedings that will…"
+        },
+        {
+          "file": "research/outputs/synthesis/D1_Engagement_Trigger_Map.md",
+          "chunkIndex": 81,
+          "corpusKind": "synthesis",
+          "score": 0.486,
+          "excerpt": "| Field | Detail | | ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:56:$.months[9].salesPlay",
+      "jsonPath": "$.months[9].salesPlay",
+      "kind": "narrative",
+      "text": "Fall rate-case monitor tied to forward budget risk (actual utility cost growth vs escalators).",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.523,
+        "bestCoverage": 0.615,
+        "bestJaccard": 0.011
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:57:$.months[10].headline",
+      "jsonPath": "$.months[10].headline",
+      "kind": "headline",
+      "text": "Heating season · Q4 budget lock · winter gas decisions intensify",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.638,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:58:$.months[10].activities[0]",
+      "jsonPath": "$.months[10].activities[0]",
+      "kind": "narrative",
+      "text": "Corporate / hospitality / retail finalize next-year budgets with imperfect commodity visibility",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.595,
+        "bestCoverage": 0.7,
+        "bestJaccard": 0.08
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 84,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "**Why it matters for Clear Current:** This gap — 5.9% actual growth vs. 3% budgeted — is the systemic budget variance problem that every commercial energy buyer faces. It is not a one-time event; it is a structural plann…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 88,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "**Budget/procurement activity:** Corporate/hospitality/retail: Q4 final budget approvals for next year. Healthcare: commodity price monitoring for winter hedging decisions. Natural gas winter contracts being evaluated ac…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 87,
+          "corpusKind": "synthesis",
+          "score": 0.51,
+          "excerpt": ". - **CRE:** Q4 ESG reporting preparation. Annual sustainability reports being assembled. ENERGY STAR data verification. **Budget/procurement activity:** Corporate/hospitality/retail: Q4 final budget approvals for next y…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:59:$.months[10].activities[1]",
+      "jsonPath": "$.months[10].activities[1]",
+      "kind": "narrative",
+      "text": "Healthcare compares early FY actuals and rehears winter hedging posture",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx",
+          "chunkIndex": 20,
+          "corpusKind": "primary_summary",
+          "score": 0.319,
+          "excerpt": "Implication for Clear Current: This is not directly relevant to Clear Current's billing product, but it is a significant market intelligence finding: the healthcare facility management industry is structurally understaff…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 28,
+          "corpusKind": "primary_summary",
+          "score": 0.319,
+          "excerpt": "Hedging windows: Natural gas hedging decisions are most effectively made when markets are favorable (typically not mid-winter). Having real-time consumption data alongside market outlooks is what makes the Peer AI polar …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:60:$.months[10].activities[2]",
+      "jsonPath": "$.months[10].activities[2]",
+      "kind": "narrative",
+      "text": "Winter tariff / rate-structure changes often flip Nov 1 in many jurisdictions",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.51,
+        "bestCoverage": 0.6,
+        "bestJaccard": 0.008
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1723,
+          "corpusKind": "other",
+          "score": 0.51,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 894,
+          "corpusKind": "primary_output",
+          "score": 0.51,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1701,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: CC_Research_Texas_State_Transcript.docx | FOLDER: Call Transcripts ═══ Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Cla…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:61:$.months[10].salesPlay",
+      "jsonPath": "$.months[10].salesPlay",
+      "kind": "narrative",
+      "text": "Winter gas hedge decision support — predictability and variance reduction, not “cheapest trade.”",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.34,
+        "bestCoverage": 0.4,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.34,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.34,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1711,
+          "corpusKind": "other",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:62:$.months[11].headline",
+      "jsonPath": "$.months[11].headline",
+      "kind": "headline",
+      "text": "Year-end close · holiday ops · PJM capacity inputs · low new-logo season",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.541,
+        "bestCoverage": 0.636,
+        "bestJaccard": 0.053
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.541,
+          "excerpt": "- **Higher Education (Sept 1 FY):** Budget planning season begins. Andee Chamberlain (Texas State) described January–February as the period when her team pulls historical energy data to build budget narratives. Meter-lev…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.464,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:63:$.months[11].activities[0]",
+      "jsonPath": "$.months[11].activities[0]",
+      "kind": "narrative",
+      "text": "Minimal tool evaluation; focus on close, audits, volatility (polar-vortex risk)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.029
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/02_Marcus_Williams.md",
+          "chunkIndex": 74,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "| Period | Standard Hospital Systems (BSMH Ohio, Intermountain Utah, Ascension Nashville/Wichita) | Southern Variant (AdventHealth Florida, Houston Methodist Texas) | | -------------------------------------- | ----------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 94,
+          "corpusKind": "synthesis",
+          "score": 0.34,
+          "excerpt": "- **Higher Education:** End-of-semester. Building loads drop with student departures. End-of-FY (Dec 31) for calendar-year budget supplementary funds. Winter recess = anomalous low consumption that can mask or reveal met…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:64:$.months[11].activities[1]",
+      "jsonPath": "$.months[11].activities[1]",
+      "kind": "narrative",
+      "text": "Capacity auction results land Dec/Jan and flow into next-year charge expectations",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.464,
+        "bestCoverage": 0.545,
+        "bestJaccard": 0.009
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 95,
+          "corpusKind": "synthesis",
+          "score": 0.464,
+          "excerpt": "close. Final ENERGY STAR data submissions. Property managers reconciling year-end utility costs vs. tenant charge-backs. **Budget/procurement activity:** All verticals: year-end close. Corporate budget for next year is t…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 96,
+          "corpusKind": "synthesis",
+          "score": 0.464,
+          "excerpt": "**Budget/procurement activity:** All verticals: year-end close. Corporate budget for next year is typically approved. Energy commodity markets most volatile. PJM capacity auction results announced (December/January) — se…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:65:$.months[11].activities[2]",
+      "jsonPath": "$.months[11].activities[2]",
+      "kind": "narrative",
+      "text": "Prep January re-engagement packs from full-year invoice datasets",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.531,
+        "bestCoverage": 0.625,
+        "bestJaccard": 0.011
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1719,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Randy_Dawes_Hyatt.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Randy Dawes | Hyatt Hotels Corporation Director, Openings Engineering - Design & Construction…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 890,
+          "corpusKind": "primary_output",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Randy_Dawes_Hyatt.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Randy Dawes | Hyatt Hotels Corporation Director, Openings Engineering - Design & Construction…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:66:$.months[11].salesPlay",
+      "jsonPath": "$.months[11].salesPlay",
+      "kind": "narrative",
+      "text": "Customer success: ingest December bills, year-end portfolio summary, retention setup for January.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.708,
+        "bestCoverage": 0.833,
+        "bestJaccard": 0.013
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 902,
+          "corpusKind": "primary_output",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 96,
+          "corpusKind": "synthesis",
+          "score": 0.708,
+          "excerpt": "**Budget/procurement activity:** All verticals: year-end close. Corporate budget for next year is typically approved. Energy commodity markets most volatile. PJM capacity auction results announced (December/January) — se…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:67:$.fiscalYears[0].fyStart",
+      "jsonPath": "$.fiscalYears[0].fyStart",
+      "kind": "narrative",
+      "text": "Jul 1 (most); Sep 1 (Texas exemplars)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.022
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 20,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "5. Annual Energy Management Calendar - Texas State Period Activity Jan - Feb Budget planning for next fiscal year begins. Administration assembles requests. Utility analyst pulls 3-5 years of historical data to establish…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 29,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "ystem-Initiated (EnergyCAP EOL, compliance deadline). | | --- | **Deliverable 2 — Seasonal Energy Management Calendar** | **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — N…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:68:$.fiscalYears[0].budgetLock",
+      "jsonPath": "$.fiscalYears[0].budgetLock",
+      "kind": "narrative",
+      "text": "Mar (Jul 1 FY); Jan–Feb build (Sep 1 FY)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.708,
+        "bestCoverage": 0.833,
+        "bestJaccard": 0.041
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.708,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.708,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:69:$.fiscalYears[0].notes",
+      "jsonPath": "$.fiscalYears[0].notes",
+      "kind": "narrative",
+      "text": "Peak demand season Jun–Aug. Budget timing gap is the core wedge — rates finalize after assumptions lock.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.546,
+        "bestCoverage": 0.643,
+        "bestJaccard": 0.062
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.546,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.486,
+          "excerpt": "- **Higher Education (July 1 FY):** **New fiscal year begins.** The rate assumptions locked in March are now being tested against actual utility bills. If a pending rate case (e.g., PPL Pennsylvania, final decision July …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:70:$.fiscalYears[1].budgetLock",
+      "jsonPath": "$.fiscalYears[1].budgetLock",
+      "kind": "narrative",
+      "text": "Jul–Aug (with Oct FY finalization pressure in Aug–Sep)",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.024
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/compass_artifact_wf-c7afb3cb-564b-4e3b-9f45-16c97ab78ab9_text_markdown.md",
+          "chunkIndex": 76,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "ton BERDO details align across FirstService Residential, Facilities Dive, and Boston.gov. ### So what for Clear Current The GTM calendar has three clear annual pressure windows: **Q1 (Jan–Mar) for LL97 RDP engagement and…"
+        },
+        {
+          "file": "research/SECONDARY DATA/compass_artifact_wf-c7afb3cb-564b-4e3b-9f45-16c97ab78ab9_text_markdown.md",
+          "chunkIndex": 77,
+          "corpusKind": "secondary",
+          "score": 0.486,
+          "excerpt": "The GTM calendar has three clear annual pressure windows: **Q1 (Jan–Mar) for LL97 RDP engagement and data gathering; Q2 (Apr–Jun) for filing season (LL97 May 1, LL84/LL88 May 1, California AB 802 June 1, WA State Clean B…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:71:$.fiscalYears[1].notes",
+      "jsonPath": "$.fiscalYears[1].notes",
+      "kind": "narrative",
+      "text": "Peak demand season Jun–Aug. UPSC-driven gas/electric procurement is highly seasonal.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.708,
+        "bestCoverage": 0.833,
+        "bestJaccard": 0.014
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.708,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:72:$.fiscalYears[2].budgetLock",
+      "jsonPath": "$.fiscalYears[2].budgetLock",
+      "kind": "narrative",
+      "text": "Sep–Oct (GRESB cycle); Q4 corporate planning cross-cuts",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.531,
+        "bestCoverage": 0.625,
+        "bestJaccard": 0.009
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.531,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.531,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 878,
+          "corpusKind": "primary_output",
+          "score": 0.531,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:73:$.fiscalYears[2].notes",
+      "jsonPath": "$.fiscalYears[2].notes",
+      "kind": "narrative",
+      "text": "Compliance clusters Q1 (CDP) and Apr–Jul (GRESB); peak demand Jun–Aug.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.595,
+        "bestCoverage": 0.7,
+        "bestJaccard": 0.072
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.595,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.51,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.51,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/compass_artifact_wf-c7afb3cb-564b-4e3b-9f45-16c97ab78ab9_text_markdown.md",
+          "chunkIndex": 76,
+          "corpusKind": "secondary",
+          "score": 0.51,
+          "excerpt": "ton BERDO details align across FirstService Residential, Facilities Dive, and Boston.gov. ### So what for Clear Current The GTM calendar has three clear annual pressure windows: **Q1 (Jan–Mar) for LL97 RDP engagement and…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:74:$.priorityWindows[0].why",
+      "jsonPath": "$.priorityWindows[0].why",
+      "kind": "narrative",
+      "text": "Higher-ed Jul 1 FY budgets lock in March while pending rate cases can still be material — dollar-quantified regulatory intelligence is the highest-converting wedge.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.152
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 105,
+          "corpusKind": "synthesis",
+          "score": 0.567,
+          "excerpt": "--- ### The Two Peak Outreach Windows — Full Argument **Window 1: February–March (Higher Education Budget Lock)** This is the single highest-converting outreach window in the annual calendar. Andi Ault (UT Austin) locked…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 104,
+          "corpusKind": "synthesis",
+          "score": 0.425,
+          "excerpt": "| Existing customers | — | --- ### The Two Peak Outreach Windows — Full Argument **Window 1: February–March (Higher Education Budget Lock)** This is the single highest-converting outreach window in the annual calendar. A…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:75:$.priorityWindows[1].why",
+      "jsonPath": "$.priorityWindows[1].why",
+      "kind": "narrative",
+      "text": "Healthcare Oct 1 FY reset + higher-ed Sept 1 FY launch creates simultaneous openness; institutional RFP/procurement patterns cluster in fall.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.453,
+        "bestCoverage": 0.533,
+        "bestJaccard": 0.082
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 74,
+          "corpusKind": "synthesis",
+          "score": 0.453,
+          "excerpt": "**Budget/procurement activity:** Healthcare: October 1 FY budget finalization. Higher education: new FY operational planning. Corporate and CRE: Q4 budget cycle beginning. **Regulatory milestones:** Fall PUC filing seaso…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.453,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 72,
+          "corpusKind": "synthesis",
+          "score": 0.397,
+          "excerpt": "- **Higher Education (Sept 1 FY):** **New fiscal year begins.** New building additions may come online (new academic buildings, dorms, research facilities). Budget is fresh; energy managers have the most flexibility they…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.397,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:76:$.bigTakeaways[0]",
+      "jsonPath": "$.bigTakeaways[0]",
+      "kind": "narrative",
+      "text": "Calendar the motion to four beats — budget, procurement, summer demand, compliance/reporting. Buyer attention is not evenly distributed.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.546,
+        "bestCoverage": 0.643,
+        "bestJaccard": 0.016
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.546,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 896,
+          "corpusKind": "primary_output",
+          "score": 0.546,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:77:$.bigTakeaways[1]",
+      "jsonPath": "$.bigTakeaways[1]",
+      "kind": "narrative",
+      "text": "The recurring win is the budget timing gap: finance locks forecasts before utilities finalize rates. Time intel + invoice forensics to those cliffs.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.45,
+        "bestCoverage": 0.529,
+        "bestJaccard": 0.016
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.45,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 878,
+          "corpusKind": "primary_output",
+          "score": 0.45,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1723,
+          "corpusKind": "other",
+          "score": 0.4,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 894,
+          "corpusKind": "primary_output",
+          "score": 0.4,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:78:$.bigTakeaways[2]",
+      "jsonPath": "$.bigTakeaways[2]",
+      "kind": "narrative",
+      "text": "Treat Feb–Mar as the highest-converting higher-ed window (Jul 1 FY lock) and Aug–Sep as the second (healthcare FY close/launch + Sept FY fresh start).",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.614,
+        "bestCoverage": 0.722,
+        "bestJaccard": 0.131
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 103,
+          "corpusKind": "synthesis",
+          "score": 0.614,
+          "excerpt": "| Window | Campaign Theme | Primary Target | Secondary Target | | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------- | ------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.519,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.378,
+          "excerpt": "| **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — New FY | Texas State + UT Austin: both on Sep 1 fiscal year. New budgets take effect. New buildings may come online. | Pa…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 30,
+          "corpusKind": "secondary",
+          "score": 0.378,
+          "excerpt": "| Period | Primary Evidence | Secondary Corroboration | | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:79:$.bigTakeaways[3]",
+      "jsonPath": "$.bigTakeaways[3]",
+      "kind": "narrative",
+      "text": "Summer (Jun–Aug) is the dollars-at-risk season for demand charges. Lead with peak-setting risk and portfolio prioritization.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.729,
+        "bestCoverage": 0.857,
+        "bestJaccard": 0.016
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.729,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.729,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 100,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "| Season | Lead Module | Supporting Module | Target Vertical | Evidence Basis | | ----------- | ------------------------------------------------- | -------------------------------------------- | -------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.486,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:80:$.bigTakeaways[4]",
+      "jsonPath": "$.bigTakeaways[4]",
+      "kind": "narrative",
+      "text": "CRE compliance (CDP / GRESB / LL97) creates acute April–May tool demand; lead with invoice-level data readiness even if full carbon productization is adjacent.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.537,
+        "bestCoverage": 0.632,
+        "bestJaccard": 0.188
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 123,
+          "corpusKind": "synthesis",
+          "score": 0.537,
+          "excerpt": "- **[NET NEW / RESEARCH-ONLY]** The CRE CDP/GRESB compliance workflow (January–April) requires carbon accounting and building performance standard reporting outputs that are not described as current Clear Current capabil…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.403,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.358,
+          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.358,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:81:$.bigTakeaways[5]",
+      "jsonPath": "$.bigTakeaways[5]",
+      "kind": "narrative",
+      "text": "Be honest in pitch: detection + intelligence convert best paired with a credible “dollars recovered” case. Calendar creates the moments; proof converts them.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.478,
+        "bestCoverage": 0.563,
+        "bestJaccard": 0.167
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 110,
+          "corpusKind": "synthesis",
+          "score": 0.478,
+          "excerpt": "ause the product context is explicit: \"Resolve errors: assists manual completion — not hands-off resolution by default.\" The sales calendar is honest about this. The pitch is not \"we recover your money.\" The pitch is \"we…"
+        },
+        {
+          "file": "research/outputs/synthesis/D2_Seasonal_Energy_Management_Calendar.md",
+          "chunkIndex": 111,
+          "corpusKind": "synthesis",
+          "score": 0.478,
+          "excerpt": "The sales calendar is honest about this. The pitch is not \"we recover your money.\" The pitch is \"we find what you're missing, and we tell you why it matters before your next bill arrives.\" The proof that demand converts …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    }
+  ]
+}

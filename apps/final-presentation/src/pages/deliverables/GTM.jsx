@@ -17,7 +17,7 @@ export function GTM() {
 
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D8.tagline} />
+      <DeliverableHero tagline={D8.tagline} tldrBullets={D8.tldrBullets} />
 
       {/* EXECUTIVE SCAN */}
       <section className="mb-10">

@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-04-19T00:29:44.924Z",
+  "corpusFingerprint": "bf93ef6cba97f964",
+  "deliverables": [
+    {
+      "id": "brief",
+      "label": "D0 Decision Brief",
+      "summary": {
+        "supported": 44,
+        "partially_supported": 2,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 46,
+      "file": "brief-verification.json"
+    },
+    {
+      "id": "d1",
+      "label": "D1 Engagement Trigger Map",
+      "summary": {
+        "supported": 134,
+        "partially_supported": 9,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 143,
+      "file": "d1-verification.json"
+    },
+    {
+      "id": "d2",
+      "label": "D2 Seasonal Energy Calendar",
+      "summary": {
+        "supported": 80,
+        "partially_supported": 2,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 82,
+      "file": "d2-verification.json"
+    },
+    {
+      "id": "d3",
+      "label": "D3 Customer Journey Maps",
+      "summary": {
+        "supported": 65,
+        "partially_supported": 13,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 78,
+      "file": "d3-verification.json"
+    },
+    {
+      "id": "d4",
+      "label": "D4 Product Module Recommendations",
+      "summary": {
+        "supported": 91,
+        "partially_supported": 15,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 106,
+      "file": "d4-verification.json"
+    },
+    {
+      "id": "d5",
+      "label": "D5 Market Opportunity Heatmap",
+      "summary": {
+        "supported": 34,
+        "partially_supported": 0,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 34,
+      "file": "d5-verification.json"
+    },
+    {
+      "id": "d6",
+      "label": "D6 Competitive Intelligence",
+      "summary": {
+        "supported": 84,
+        "partially_supported": 3,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 87,
+      "file": "d6-verification.json"
+    },
+    {
+      "id": "d7",
+      "label": "D7 Investor Narrative",
+      "summary": {
+        "supported": 91,
+        "partially_supported": 6,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 97,
+      "file": "d7-verification.json"
+    },
+    {
+      "id": "d8",
+      "label": "D8 GTM Strategy",
+      "summary": {
+        "supported": 145,
+        "partially_supported": 2,
+        "weak_match": 0,
+        "unsupported": 0
+      },
+      "claimCount": 147,
+      "file": "d8-verification.json"
+    }
+  ],
+  "needsReview": [],
+  "humanReviewQueue": [],
+  "humanReviewQueueNote": "Heuristic queue: blockers (unsupported/weak), quote/evidence partial matches, attribution file mismatches, weak numeric matches. Still spot-check supported quotes in production."
+}

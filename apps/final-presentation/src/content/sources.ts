@@ -156,7 +156,7 @@ export const SOURCES: Record<string, Source> = {
   },
 
   // =========================================================================
-  // Primary research — quote banks, contacts, corpus
+  // Primary research — quote banks, contacts, compiled transcripts/summaries
   // =========================================================================
   'primary-quotes': {
     id: 'primary-quotes',

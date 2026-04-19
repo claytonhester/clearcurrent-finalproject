@@ -49,7 +49,7 @@ export function InterviewRoster() {
       <PageHeader
         eyebrow={appendixEyebrow('app-roster')}
         title="Interview roster"
-        lede="Twenty-one confirmed primary interviews. Section 2 summarizes where the corpus is thin and how many additional conversations would materially strengthen findings — not a named outreach list."
+        lede="Twenty-one confirmed primary interviews. Section 2 summarizes where coverage is thin and how many additional conversations would materially strengthen findings — not a named outreach list."
       />
 
       <section className="flex flex-col gap-3">
@@ -61,28 +61,24 @@ export function InterviewRoster() {
         <SectionHeader
           number={2}
           title="Coverage gaps & recommended interviews"
-          subtitle="Targets to deepen primary evidence — qualitative guidance aligned with known corpus limits. Numbers are directional, not staffing quotas."
+          subtitle="Three markets are marked as core GTM priorities (beachhead, parallel pipeline, long-term enterprise). The counts below assume a much larger primary program—not incremental one-off chats."
         />
 
         <div className="flex flex-col gap-2">
           <h3 className="text-[15px] font-bold text-cc-navy">
             Interview targets by industry
           </h3>
-          <p className="text-[13px] leading-snug text-cc-mid-gray">
-            &ldquo;Add interviews&rdquo; means additional primary sessions that change
-            confidence on claims — not warm intros counted toward a quota.
-          </p>
           <CoverageGapTable rows={COVERAGE_GAP_ROWS} />
         </div>
 
         <div className="flex flex-col gap-3">
           <h3 className="text-[15px] font-bold text-cc-navy">
-            Additional industries & verticals to prioritize
+            Additional industries to explore for fit
           </h3>
           <p className="text-[13px] leading-snug text-cc-mid-gray">
-            Verticals with little or no voice in the current primary corpus — useful for
-            sequencing the next wave of research after the beachhead verticals are
-            saturated.
+            Sectors with little or no primary voice yet—candidates for a later research
+            wave to test whether Clear Current should treat them as customers, and under
+            what motion.
           </p>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
             {RECOMMENDED_NEW_VERTICALS.map((v) => (
@@ -154,9 +150,10 @@ function RosterTable({ rows, columns }) {
 function CoverageGapTable({ rows }) {
   const columns = [
     'Industry / vertical',
-    'Corpus today',
+    'Coverage today',
     'Add interviews',
     'Why it matters',
+    'Future prospects',
   ]
 
   return (
@@ -178,16 +175,29 @@ function CoverageGapTable({ rows }) {
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, i) => (
+          {rows.map((row, i) => {
+            const priority = Boolean(row.tierLabel)
+            return (
             <tr
               key={row.vertical}
-              className={`border-b border-cc-border ${i % 2 === 0 ? 'bg-white' : 'bg-cc-light-gray/40'}`}
+              className={`border-b border-cc-border ${
+                priority
+                  ? 'border-l-4 border-l-cc-amber bg-cc-yellow-soft/40'
+                  : i % 2 === 0
+                    ? 'bg-white'
+                    : 'bg-cc-light-gray/40'
+              }`}
             >
-              <td className="px-3 py-2 align-top text-[13px] font-semibold text-cc-navy">
-                {row.vertical}
+              <td className="px-3 py-2 align-top">
+                {row.tierLabel ? (
+                  <div className="mb-1 text-[10px] font-bold uppercase tracking-wide text-cc-amber">
+                    {row.tierLabel}
+                  </div>
+                ) : null}
+                <div className="text-[13px] font-semibold text-cc-navy">{row.vertical}</div>
               </td>
               <td className="max-w-[13rem] px-3 py-2 align-top text-[12.5px] leading-snug text-cc-dark-text">
-                {row.corpusToday}
+                {row.coverageToday}
               </td>
               <td className="whitespace-nowrap px-3 py-2 align-top text-[12.5px] font-semibold tabular-nums text-cc-navy">
                 {row.addInterviews}
@@ -195,8 +205,20 @@ function CoverageGapTable({ rows }) {
               <td className="min-w-[12rem] px-3 py-2 align-top text-[12px] leading-snug text-cc-mid-gray">
                 {row.rationale}
               </td>
+              <td className="min-w-[11rem] max-w-[14rem] px-3 py-2 align-top text-[11.5px] leading-snug text-cc-dark-text">
+                {row.companyTargets?.length ? (
+                  <ul className="list-disc space-y-0.5 pl-3.5 marker:text-cc-navy">
+                    {row.companyTargets.map((name) => (
+                      <li key={name}>{name}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <span className="text-cc-mid-gray">—</span>
+                )}
+              </td>
             </tr>
-          ))}
+            )
+          })}
         </tbody>
       </table>
     </div>

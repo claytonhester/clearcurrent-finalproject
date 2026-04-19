@@ -14,7 +14,11 @@ const INTENSITY_HEIGHT = { peak: 'h-16', high: 'h-12', medium: 'h-8', low: 'h-5'
 export function Calendar() {
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D2.tagline} leadStatement={D2.openingProblem} />
+      <DeliverableHero
+        tagline={D2.tagline}
+        leadStatement={D2.openingProblem}
+        tldrBullets={D2.tldrBullets}
+      />
 
       {/* HEATSTRIP */}
       <section className="mb-10">

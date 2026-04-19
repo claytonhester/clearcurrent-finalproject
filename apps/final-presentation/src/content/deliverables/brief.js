@@ -1,9 +1,15 @@
 export const BRIEF = {
   title: 'Decision Brief',
   tagline:
-    'Reactive buyers and documented billing pain point to higher ed and proactive push intelligence—but recovery proof and IT gates must be closed before May.',
+    'Higher ed leads; multi-site retail and QSR run in parallel; healthcare is the long win—same reactive-buyer reality, with recovery proof and IT gates to close before May.',
   leadStatement:
-    'Primary and secondary research align: commercial energy buyers are reactive, billing errors are structurally real, finance and ops need different surfaces, regulatory intelligence is white space, and Arcadia’s window is real but finite. John and Dan should walk out knowing the beachhead is higher education with Rate Analyst’s regulatory layer as first engineering priority — and that one documented dollar recovered matters more than aggregate identified-error dollars for fundraise and enterprise credibility.',
+    'Primary and secondary research align: commercial energy buyers are reactive, billing errors are structurally real, finance and ops need different surfaces, regulatory intelligence is white space, and Arcadia’s window is real but finite. John and Dan should walk out knowing higher education is the first beachhead—with Rate Analyst’s regulatory layer as first engineering priority—while multi-site retail and restaurant chains (Panda-class today; large chains as expansion) stay an active parallel pipeline, and health systems remain the long-term enterprise prize behind SOC 2, HIPAA posture, and proof-of-recovery. One documented dollar recovered matters more than aggregate identified-error dollars for fundraise and enterprise credibility.',
+  tldrBullets: [
+    'Research aligns: reactive buyers, real billing pain, a structural finance ↔ ops split, and regulatory intel as white space.',
+    'First beachhead is higher education (regulatory layer in Rate Analyst first). Multi-site retail and QSR run in parallel—not deferred. Healthcare systems are the long-term enterprise win once security and recovery proof match the deal size.',
+    'One documented dollar recovered beats aggregate “identified error” totals for fundraise and enterprise credibility.',
+    'Arcadia’s distraction window is real but finite — don’t confuse migration lag with a permanent moat.',
+  ],
   proofs: [
     {
       n: 1,
@@ -52,9 +58,9 @@ export const BRIEF = {
       n: 5,
       headline: 'Arcadia’s gap is structural and time-bounded',
       oneLiner:
-        'A well-funded AI rival is corporate/API-first, with no higher-ed footprint and a migration-heavy 12–24 months — the window to build an HE moat.',
+        'A well-funded AI rival is corporate/API-first, with no higher-ed footprint and a migration-heavy 12–24 months — the window to build a Higher Ed moat.',
       evidence:
-        'Competitor intel: $649M raised, zero documented HE customers 14 months post-pivot, Urjanet migration drag. Primary: Panda — answering cross-site variance today means downloading and reconciling bills utility-by-utility. Combs names Energy Toolbase for tariffs, not Arcadia.',
+        'New intelligence confirms Arcadia has zero documented higher education customers after 14 months of enterprise sales. Their UX is a dashboard and data API — not a natural language interface for energy managers. Arcadia is simultaneously selling new enterprise accounts while migrating existing customers off a legacy Urjanet/Arc platform — job postings confirm this is the Senior PM\'s primary responsibility. Their attention is divided for 12–24 months.',
       quote:
         'I think if you could ask that question. I can help answer this question instead of going, downloading the bills, reviewing the bills',
       speaker: 'Walt Taylor · Panda Restaurant Group',
@@ -71,7 +77,7 @@ export const BRIEF = {
     {
       n: 2,
       headline: 'Will IT security gate adoption, and when?',
-      why: 'Trane internally blocks AI tools despite advocate demand. SOC 2 is the cited enterprise threshold, but no CC-specific review is in the corpus.',
+      why: 'Trane internally blocks AI tools despite advocate demand. SOC 2 is the cited enterprise threshold, but no Clear Current–specific security review appears in available research yet.',
       howToClose:
         'Confirm SOC 2 status, start Type II (or Type I bridge), and ask pilots early whether IT must approve before data share.',
     },
@@ -84,18 +90,29 @@ export const BRIEF = {
     },
   ],
   strategicDecisions: {
-    beachhead:
-      'Higher education — research universities with district energy, large meter count, EnergyCAP in place, separate finance and ops. Pain, incumbent weakness, calendar, and chargeback moat all align; healthcare / CRE / corporate lack the same combined proof or speed.',
-    firstModule:
-      'Regulatory intelligence inside Rate Analyst (PUC monitoring, dollarized impact, push alerts). Only uncrowded feature with named buyer timing (March budget lock) and no named competitor. Billing detection is the hook but not unique; chargeback is moat, not entry.',
-    window:
-      '12–24 months while Arcadia focuses on Urjanet/Arc migration and corporate dashboard/API posture. Ship HE-specific chargeback and district allocation before that advantage narrows.',
+    beachhead: [
+      'Higher education first: research universities with district energy, large meter count, EnergyCAP in place, and a real split between finance and ops.',
+      'In parallel, pursue multi-site retail and QSR—ESCO-dependent or franchise-heavy footprints and deregulated markets where it fits. Panda anchors the thesis; national chains are expansion targets as proof compounds, not implied logos.',
+      'Healthcare systems are the long-term win: huge spend and the same billing pain, but IT security and recovery documentation are gates. Build credibility in higher ed and parallel retail first—then compound into health systems.',
+    ],
+    firstModule: [
+      'Regulatory intelligence in Rate Analyst means watching what utilities and regulators are doing—state PUC dockets, rate cases, pending increases.',
+      'Turn that into concrete dollar impact (“if this rate change goes through, you’re exposed to about $X”) plus proactive alerts so finance and ops see it before the bill lands or the budget locks.',
+      'Lead engineering here first: research shows strong buyer pull and a thin competitive field for this layer.',
+      'Use billing error detection to open the door; campus chargeback is the long-term stickiness play, not the first wedge.',
+    ],
+    marketingHeadline: 'Marketing & online presence',
+    marketing: [
+      'Compared to competitors, Clear Current’s public footprint—site, story, and socials—doesn’t yet reflect how strong the product is. Buyers form an impression before they ever book a demo.',
+      'Prioritize a modern web and visual system: clearer offer, credible enterprise polish, and layouts that feel current next to how prospects shop the category.',
+      'Systematically collect permissioned wins and named references (big-label logos where contracts allow), then market them—homepage, case studies, sales decks, and social—not just internal slide fodder.',
+    ],
   },
   whatChangesIfWrong: [
     'If universities won’t pay alongside EnergyCAP: drop replacement framing, sell an intelligence layer on top, and clarify RFP/discretionary-buy path or face 6–12-month procurement drag.',
     'If regulatory intelligence is a delighter, not a trigger: lead with billing errors (with recovery proof) and demote the rate-case story to expansion.',
     'If Arcadia exits migration faster: compress the timeline — start chargeback roadmap by month four, not after pilots.',
-    'If Arcadia permanently skips higher ed: pressure on HE may ease, but monitor hires and announcements quarterly — don’t assume.',
+    'If Arcadia permanently skips higher ed: pressure on Higher Ed may ease, but monitor hires and announcements quarterly — don’t assume.',
   ],
   calloutCaveats: [
     'Do not circulate unaudited aggregate “identified savings” figures externally. Frame detection vs. customer-owned dispute/recovery honestly.',

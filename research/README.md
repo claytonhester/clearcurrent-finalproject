@@ -49,6 +49,18 @@ python research/validate_research.py
 
 Checks that registry globs resolve to at least one file on disk.
 
+### Portal deliverable evidence check (Node)
+
+Heuristic pass: extract claims from `apps/final-presentation/src/content/deliverables/*.js`, match against all research `.md` / `.txt` / `.docx` (except `research/outputs/verification/`), write JSON under `research/outputs/verification/`.
+
+```bash
+npm run verify:deliverables
+```
+
+Outputs include `summary.json` (with `humanReviewQueue`), per-deliverable `*-verification.json`, `claims-register.csv`, and `KNOWN_GAPS.md` in `research/outputs/verification/`. Refresh registers only: `npm run verify:deliverables:export`.
+
+See `.cursor/agents/deliverable-evidence-verifier.md` for how to use the reports with a review subagent.
+
 ## Portal publish path (human-in-the-loop)
 
 1. Approve candidates under [`staging/`](staging/) (JSON review packet).
@@ -61,7 +73,7 @@ Checks that registry globs resolve to at least one file on disk.
 2. `pipeline_2_secondary.py` — secondary agents
 3. `pipeline_3_synthesis.py` — D0–D8 synthesis markdown
 
-Orchestration may also exist in [`pipeline.py`](pipeline.py) for full corpus stitching.
+Orchestration may also exist in [`pipeline.py`](pipeline.py) for stitching combined research outputs.
 
 ## Agent prompts (human + CI)
 

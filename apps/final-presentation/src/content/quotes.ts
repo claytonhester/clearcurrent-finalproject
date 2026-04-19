@@ -1,7 +1,7 @@
 import type { Quote, QuoteBankSectionKey } from './types'
 
 /**
- * Curated quote library. Every quote extracted from the primary research corpus
+ * Curated quote library. Every quote extracted from primary interviews and summaries
  * has explicit attribution (name, role, org) and a sourceId linking back to the
  * interview transcript or company card. Paraphrases and do-not-use flags are
  * labelled explicitly so the UI can enforce attribution policy.

@@ -56,7 +56,11 @@ export function Triggers() {
 
   return (
     <article className="pb-16">
-      <DeliverableHero tagline={D1.tagline} leadStatement={D1.openingProblem} />
+      <DeliverableHero
+        tagline={D1.tagline}
+        leadStatement={D1.openingProblem}
+        tldrBullets={D1.tldrBullets}
+      />
 
       {/* FILTER BAR */}
       <section className="mb-6 rounded-lg border border-cc-border bg-white p-4 shadow-sm">
