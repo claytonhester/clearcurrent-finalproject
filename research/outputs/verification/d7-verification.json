@@ -2,11 +2,11 @@
   "deliverableId": "d7",
   "label": "D7 Investor Narrative",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d7-investor.js",
-  "generatedAt": "2026-04-19T00:29:38.702Z",
+  "generatedAt": "2026-04-19T02:07:44.940Z",
   "corpusFingerprint": "bf93ef6cba97f964",
-  "claimCount": 97,
+  "claimCount": 64,
   "summary": {
-    "supported": 91,
+    "supported": 58,
     "partially_supported": 6,
     "weak_match": 0,
     "unsupported": 0
@@ -466,43 +466,43 @@
       "claimId": "d7:10:$.arc[2].body",
       "jsonPath": "$.arc[2].body",
       "kind": "narrative",
-      "text": "LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. Window is open; not permanent.",
+      "text": "LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. GTM is intentionally dual-track: higher ed first for calendar and evidence density; multi-site retail and QSR in parallel for the same ESCO-and-threshold gaps; health systems later once security and recovery proof match the ticket. Window is open; not permanent.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.586,
-        "bestCoverage": 0.69,
-        "bestJaccard": 0.132
+        "bestScore": 0.402,
+        "bestCoverage": 0.473,
+        "bestJaccard": 0.045
       },
       "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 8,
-          "corpusKind": "synthesis",
-          "score": 0.586,
-          "excerpt": "Three forces have converged to make this moment the right one. First, AI infrastructure has reached the capability threshold where natural language interfaces can do real analytical work on complex tariff and billing dat…"
-        },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.469,
+          "score": 0.402,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.469,
-          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 46,
           "corpusKind": "secondary",
-          "score": 0.41,
+          "score": 0.402,
           "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.402,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
+          "score": 0.402,
+          "excerpt": "| Gap | Affects | Impact | Status / How to Close | | ---------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------…"
         }
       ],
       "inExpectedSourceFile": null
@@ -556,42 +556,42 @@
       "claimId": "d7:12:$.arc[4].body",
       "jsonPath": "$.arc[4].body",
       "kind": "narrative",
-      "text": "EnergyCAP owns HE with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have NL interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.",
+      "text": "EnergyCAP owns Higher Ed with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have NL interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.621,
-        "bestCoverage": 0.731,
-        "bestJaccard": 0.034
+        "bestScore": 0.63,
+        "bestCoverage": 0.741,
+        "bestJaccard": 0.036
       },
       "evidence": [
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.621,
+          "score": 0.63,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 118,
           "corpusKind": "synthesis",
-          "score": 0.621,
+          "score": 0.63,
           "excerpt": "\"The market has three incumbent poles. EnergyCAP owns higher education and government — 20 years of relationships, $50–75K/year contracts, and a platform its own users describe as 'a glorified spreadsheet.' Arcadia has $…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.588,
+          "score": 0.598,
           "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 50,
           "corpusKind": "secondary",
-          "score": 0.458,
+          "score": 0.472,
           "excerpt": "| **Dimension** | **What the Intelligence Confirms** | **Implication for Clear Current** | | --- | --- | --- | | Higher Ed Customers | ZERO documented university or hospital customers after 14 months of enterprise sales.…"
         }
       ],
@@ -868,7 +868,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:19:$.market.som[2].seg",
+      "claimId": "d7:19:$.market.sam[2].sam",
+      "jsonPath": "$.market.sam[2].sam",
+      "kind": "narrative",
+      "text": "Parallel to higher ed — not “after” in time, secondary in sales focus",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.005
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1501,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1725,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 672,
+          "corpusKind": "primary_output",
+          "score": 0.567,
+          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d7:20:$.market.som[2].seg",
       "jsonPath": "$.market.som[2].seg",
       "kind": "narrative",
       "text": "Multi-site commercial (ERCOT-first)",
@@ -913,187 +958,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:20:$.market.doNotUse[0].claim",
-      "jsonPath": "$.market.doNotUse[0].claim",
-      "kind": "narrative",
-      "text": "“$14.2B global TAM, $36.5B by 2033 at 11.1% CAGR”",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.143
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/secondary/agents/s02_Dana_Park.md",
-          "chunkIndex": 13,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "urce: Research Synthesis Brief, Section 03, Finding on \"Billing errors are real, material, and structurally persistent\"_ **Finding 4 — The $14.2B global TAM figure has no visible citation chain.** The report's headline T…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s02_Dana_Park.md",
-          "chunkIndex": 14,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "**Finding 4 — The $14.2B global TAM figure has no visible citation chain.** The report's headline TAM claim — \"$14.2 billion globally in 2024, projected to reach $36.5 billion by 2033 at 11.1% CAGR\" — is cited as [^6]. I…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 35,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "| Claim | Problem | What to Do | | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Clear Current Technologies  Commercial Energy Management SaaS Market Research Report.md",
-          "chunkIndex": 5,
-          "corpusKind": "secondary",
-          "score": 0.708,
-          "excerpt": "for reporting inflexibility and chargeback complexity. --- ## 1. Market Sizing & Growth ### Total Addressable Market Market sizing for commercial energy management software varies substantially depending on scope. The br…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:21:$.market.doNotUse[0].why",
-      "jsonPath": "$.market.doNotUse[0].why",
-      "kind": "narrative",
-      "text": "Citation chain invisible. Use bottom-up build instead.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.708,
-        "bestCoverage": 0.833,
-        "bestJaccard": 0.051
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 35,
-          "corpusKind": "synthesis",
-          "score": 0.708,
-          "excerpt": "| Claim | Problem | What to Do | | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s02_Dana_Park.md",
-          "chunkIndex": 54,
-          "corpusKind": "secondary",
-          "score": 0.567,
-          "excerpt": "**What we know:** Named by Phil Combs (Trane, 20 years enterprise energy sales) as the competitive reference for tariff analysis. Not described in the secondary research with any depth. This is a gap — a practitioner wit…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 138,
-          "corpusKind": "synthesis",
-          "score": 0.567,
-          "excerpt": "TAM Citation Chain [NEEDED IF USING THE $14.2B NUMBER] **The question:** \"Your $14.2B TAM — where does that come from?\" **What we have:** The figure appears in the Market Research Report with footnote [^6], but the sourc…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1705,
-          "corpusKind": "other",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:22:$.market.doNotUse[1].claim",
-      "jsonPath": "$.market.doNotUse[1].claim",
-      "kind": "narrative",
-      "text": "“~80% of businesses overpay on utility bills”",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.116
-      },
-      "evidence": [
-        {
-          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
-          "chunkIndex": 1,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "or unverifiable assertion --- ## Claim 1: \"80% of businesses are overpaying on their utility bills\" ### Source Cited [nationalutilitiesrefund.com](https://nationalutilitiesrefund.com/why-80-percent-of-businesses-overpay-…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
-          "chunkIndex": 2,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "[nationalutilitiesrefund.com](https://nationalutilitiesrefund.com/why-80-percent-of-businesses-overpay-on-utilities/) — a utility bill auditing company that earns revenue by finding billing errors and collecting continge…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
-          "chunkIndex": 61,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "rted by independent evidence; the specific figures simply need to be grounded in defensible sources. --- ## References 1. [Utility Bill Audits - National Utilities Refund](https://nationalutilitiesrefund.com/audits/utili…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
-          "chunkIndex": 62,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "1. [Utility Bill Audits - National Utilities Refund](https://nationalutilitiesrefund.com/audits/utility-bill-audits/) - On average, 80 percent of companies are overpaying on utility bills and are owed a utility refund fo…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:23:$.market.doNotUse[1].why",
-      "jsonPath": "$.market.doNotUse[1].why",
-      "kind": "narrative",
-      "text": "National Utilities Refund — contingency-fee firm citing own clients. Replace with RI PUC 83% + FERC $108M.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.789,
-        "bestCoverage": 0.929,
-        "bestJaccard": 0.133
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 35,
-          "corpusKind": "synthesis",
-          "score": 0.789,
-          "excerpt": "| Claim | Problem | What to Do | | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s05_Carlos_Mendez.md",
-          "chunkIndex": 32,
-          "corpusKind": "secondary",
-          "score": 0.668,
-          "excerpt": "| Statistic | Source Document | Citation Chain | Confidence | Notes | | ------------------------------------------------------------------------------------------------ | ------------------------------------------------ …"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s03_Priya_Nair.md",
-          "chunkIndex": 2,
-          "corpusKind": "secondary",
-          "score": 0.486,
-          "excerpt": "**What the Synthesis Brief does NOT provide:** Citation chains for any of its secondary sources. It names findings but does not trace where those findings come from. The Claim Verification Report is where the citation wo…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s03_Priya_Nair.md",
-          "chunkIndex": 4,
-          "corpusKind": "secondary",
-          "score": 0.425,
-          "excerpt": "**What matters most from each document:** The Claim Verification Report is the evidentiary workhorse. The Synthesis Brief provides the primary research grounding and the $10M pilot context. My job is to run every billing…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:24:$.evidence[0].headline",
+      "claimId": "d7:25:$.evidence[0].headline",
       "jsonPath": "$.evidence[0].headline",
       "kind": "evidence_line",
       "text": "The incumbent is visibly losing customer trust",
@@ -1138,7 +1003,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:25:$.evidence[0].finding",
+      "claimId": "d7:26:$.evidence[0].finding",
       "jsonPath": "$.evidence[0].finding",
       "kind": "evidence_line",
       "text": "Texas State (1,500 meters) on EnergyCAP: chargebacks “hard to understand,” help docs “lacking details.” 132 G2/Capterra reviews corroborate.",
@@ -1183,7 +1048,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:26:$.evidence[0].confidence",
+      "claimId": "d7:27:$.evidence[0].confidence",
       "jsonPath": "$.evidence[0].confidence",
       "kind": "evidence_line",
       "text": "STRONG (primary + secondary)",
@@ -1228,7 +1093,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:27:$.evidence[1].headline",
+      "claimId": "d7:28:$.evidence[1].headline",
       "jsonPath": "$.evidence[1].headline",
       "kind": "evidence_line",
       "text": "The finance/ops split is structural and unsolved",
@@ -1273,7 +1138,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:28:$.evidence[1].finding",
+      "claimId": "d7:29:$.evidence[1].finding",
       "jsonPath": "$.evidence[1].finding",
       "kind": "evidence_line",
       "text": "Chamberlain (ops): “I care more about demand and usage.” Ault (finance): same split, opposite chair. No tool serves both from one platform.",
@@ -1318,7 +1183,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:29:$.evidence[1].confidence",
+      "claimId": "d7:30:$.evidence[1].confidence",
       "jsonPath": "$.evidence[1].confidence",
       "kind": "evidence_line",
       "text": "STRONG (multi-source primary)",
@@ -1363,7 +1228,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:30:$.evidence[2].headline",
+      "claimId": "d7:31:$.evidence[2].headline",
       "jsonPath": "$.evidence[2].headline",
       "kind": "evidence_line",
       "text": "Regulatory intelligence is confirmed white space",
@@ -1408,7 +1273,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:31:$.evidence[2].finding",
+      "claimId": "d7:32:$.evidence[2].finding",
       "jsonPath": "$.evidence[2].finding",
       "kind": "evidence_line",
       "text": "Combs: “super powerful.” PPL Pennsylvania decision date 7/1/2026 = universities’ first fiscal day. Zero competitors offer it.",
@@ -1453,7 +1318,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:32:$.evidence[2].confidence",
+      "claimId": "d7:33:$.evidence[2].confidence",
       "jsonPath": "$.evidence[2].confidence",
       "kind": "evidence_line",
       "text": "STRONG (primary + secondary + regulatory)",
@@ -1498,7 +1363,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:33:$.evidence[3].headline",
+      "claimId": "d7:34:$.evidence[3].headline",
       "jsonPath": "$.evidence[3].headline",
       "kind": "evidence_line",
       "text": "Dead meter detection has a named ROI",
@@ -1543,7 +1408,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:34:$.evidence[3].finding",
+      "claimId": "d7:35:$.evidence[3].finding",
       "jsonPath": "$.evidence[3].finding",
       "kind": "evidence_line",
       "text": "Czubkowski (Ascension): “more than $1M/year” recovered on ghost meters alone. $265M spend across ~100 hospitals.",
@@ -1588,7 +1453,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:35:$.evidence[3].confidence",
+      "claimId": "d7:36:$.evidence[3].confidence",
       "jsonPath": "$.evidence[3].confidence",
       "kind": "evidence_line",
       "text": "PRIMARY (inherently credible at scale)",
@@ -1633,7 +1498,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:36:$.evidence[4].headline",
+      "claimId": "d7:37:$.evidence[4].headline",
       "jsonPath": "$.evidence[4].headline",
       "kind": "evidence_line",
       "text": "Billing errors are government-documented, not folklore",
@@ -1678,7 +1543,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:37:$.evidence[4].finding",
+      "claimId": "d7:38:$.evidence[4].finding",
       "jsonPath": "$.evidence[4].finding",
       "kind": "evidence_line",
       "text": "FERC $108M FirstEnergy; RI PUC 83% pass-through; PPL PA investigation; Harvard Law information asymmetry.",
@@ -1723,7 +1588,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:38:$.evidence[4].confidence",
+      "claimId": "d7:39:$.evidence[4].confidence",
       "jsonPath": "$.evidence[4].confidence",
       "kind": "evidence_line",
       "text": "STRONG (all government / regulatory / academic)",
@@ -1768,7 +1633,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:39:$.evidence[5].headline",
+      "claimId": "d7:40:$.evidence[5].headline",
       "jsonPath": "$.evidence[5].headline",
       "kind": "evidence_line",
       "text": "Third-party segmentation from a credible engineer",
@@ -1813,24 +1678,24 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:40:$.evidence[5].finding",
+      "claimId": "d7:41:$.evidence[5].finding",
       "jsonPath": "$.evidence[5].finding",
       "kind": "evidence_line",
-      "text": "Troy Nevels (UT Austin): “if UT didn’t have a district energy system…” — named Panda and Frito-Lay unprompted as Clear Current use cases.",
+      "text": "Troy Nevells (UT Austin): “if UT didn’t have a district energy system…” — named Panda and Frito-Lay unprompted as Clear Current use cases.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.188
+        "bestScore": 0.793,
+        "bestCoverage": 0.933,
+        "bestJaccard": 0.173
       },
       "evidence": [
         {
           "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
           "chunkIndex": 55,
           "corpusKind": "synthesis",
-          "score": 0.85,
+          "score": 0.793,
           "excerpt": "**Finding:** Troy Nevels (UT Austin Engineering/Operations) offered the clearest market segmentation statement in the entire research corpus. UT Austin — a district energy _producer_ — is not the primary customer. The pr…"
         },
         {
@@ -1841,24 +1706,24 @@
           "excerpt": "- Explicit market segmentation from a credible institutional voice: UT Austin (district energy producer) is NOT the primary customer; the primary customer is the multi-site utility purchaser — \"if the University of Texas…"
         },
         {
-          "file": "research/outputs/primary/company_cards/co-03_UT_Austin_Operations.md",
-          "chunkIndex": 23,
-          "corpusKind": "primary_output",
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1729,
+          "corpusKind": "other",
           "score": 0.68,
-          "excerpt": "**6. District Energy Structure Limits Applicability of Standard Billing Intelligence — But Troy Articulates the Broader Market Precisely** Troy was honest that UT's self-generation model means the external bill volume is…"
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & T…"
         },
         {
-          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
-          "chunkIndex": 117,
-          "corpusKind": "synthesis",
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 900,
+          "corpusKind": "primary_output",
           "score": 0.68,
-          "excerpt": "- **[NET NEW / RESEARCH-ONLY]** Troy Nevels' market segmentation insight — \"if UT Austin didn't have a district energy system, something like this would be very beneficial\" — points to a specific, high-value buyer profil…"
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & T…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:41:$.evidence[5].confidence",
+      "claimId": "d7:42:$.evidence[5].confidence",
       "jsonPath": "$.evidence[5].confidence",
       "kind": "evidence_line",
       "text": "PRIMARY (unusually strong qualitative signal)",
@@ -1903,7 +1768,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:42:$.evidence[6].headline",
+      "claimId": "d7:43:$.evidence[6].headline",
       "jsonPath": "$.evidence[6].headline",
       "kind": "evidence_line",
       "text": "The incumbent’s data backbone is not proprietary",
@@ -1948,7 +1813,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:43:$.evidence[6].finding",
+      "claimId": "d7:44:$.evidence[6].finding",
       "jsonPath": "$.evidence[6].finding",
       "kind": "evidence_line",
       "text": "ENGIE Impact uses Arcadia’s Arc API. 20-year moat is historical data, not analytics. Walt Taylor (Panda): ENGIE should “just bolt on” an LLM.",
@@ -1993,7 +1858,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:44:$.evidence[6].confidence",
+      "claimId": "d7:45:$.evidence[6].confidence",
       "jsonPath": "$.evidence[6].confidence",
       "kind": "evidence_line",
       "text": "STRONG (primary + technical documentation)",
@@ -2038,7 +1903,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:45:$.evidence[7].headline",
+      "claimId": "d7:46:$.evidence[7].headline",
       "jsonPath": "$.evidence[7].headline",
       "kind": "evidence_line",
       "text": "Demand ratchets: NREL-cited example — 1,000 kW summer peak at 80% ratchet can lock ~$144K/year",
@@ -2083,7 +1948,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:46:$.evidence[7].finding",
+      "claimId": "d7:47:$.evidence[7].finding",
       "jsonPath": "$.evidence[7].finding",
       "kind": "evidence_line",
       "text": "D1 synthesis secondary corroboration: NREL ratchet math; DOE band that demand charges are 30–70% of commercial bills; Panda (Georgia Power) ratchet narrative in primary.",
@@ -2128,7 +1993,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:47:$.evidence[7].confidence",
+      "claimId": "d7:48:$.evidence[7].confidence",
       "jsonPath": "$.evidence[7].confidence",
       "kind": "evidence_line",
       "text": "STRONG (government + primary industry)",
@@ -2173,7 +2038,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:48:$.quotes[0].text",
+      "claimId": "d7:49:$.quotes[0].text",
       "jsonPath": "$.quotes[0].text",
       "kind": "narrative",
       "text": "The regulatory intelligence piece I think is super powerful. Knowing what’s happening at the state PUC level — what rates are changing and when — I don’t know anything else that does that.",
@@ -2221,7 +2086,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d7:49:$.quotes[0].speaker",
+      "claimId": "d7:50:$.quotes[0].speaker",
       "jsonPath": "$.quotes[0].speaker",
       "kind": "narrative",
       "text": "Phil Combs · M&V / Digital Services, Trane Technologies",
@@ -2269,7 +2134,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d7:50:$.quotes[0].useFor",
+      "claimId": "d7:51:$.quotes[0].useFor",
       "jsonPath": "$.quotes[0].useFor",
       "kind": "narrative",
       "text": "Competitive differentiation slide. Outside voice = no spin risk.",
@@ -2317,7 +2182,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d7:51:$.quotes[1].text",
+      "claimId": "d7:52:$.quotes[1].text",
       "jsonPath": "$.quotes[1].text",
       "kind": "narrative",
       "text": "Flagging anomalies would be the first process so that that is streamlined and featured and flagged rather than looking for it.",
@@ -2365,7 +2230,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d7:52:$.quotes[1].speaker",
+      "claimId": "d7:53:$.quotes[1].speaker",
       "jsonPath": "$.quotes[1].speaker",
       "kind": "narrative",
       "text": "Andi Ault · Sr. Associate Director of Finance, UT Austin",
@@ -2413,7 +2278,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d7:53:$.quotes[1].useFor",
+      "claimId": "d7:54:$.quotes[1].useFor",
       "jsonPath": "$.quotes[1].useFor",
       "kind": "narrative",
       "text": "Product/persona slide. Exact buyer says exactly what the Push tier does.",
@@ -2461,7 +2326,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d7:54:$.quotes[2].text",
+      "claimId": "d7:55:$.quotes[2].text",
       "jsonPath": "$.quotes[2].text",
       "kind": "narrative",
       "text": "It being a little bit smarter and knowing how to interpret what’s on the bills and not just interpret, but tell us why we should care and what we can do to change it.",
@@ -2510,7 +2375,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d7:55:$.quotes[2].speaker",
+      "claimId": "d7:56:$.quotes[2].speaker",
       "jsonPath": "$.quotes[2].speaker",
       "kind": "narrative",
       "text": "John Culver / Scott Sukits · AdventHealth",
@@ -2559,7 +2424,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d7:56:$.quotes[2].useFor",
+      "claimId": "d7:57:$.quotes[2].useFor",
       "jsonPath": "$.quotes[2].useFor",
       "kind": "narrative",
       "text": "Problem/solution slide. A 55-hospital ENGIE customer names the gap.",
@@ -2608,7 +2473,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d7:57:$.pilotStory.raw",
+      "claimId": "d7:58:$.pilotStory.raw",
       "jsonPath": "$.pilotStory.raw",
       "kind": "narrative",
       "text": "Pilots surface billing issues and dollar estimates — recovery still runs through the customer’s dispute process.",
@@ -2653,7 +2518,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:58:$.pilotStory.distinction",
+      "claimId": "d7:59:$.pilotStory.distinction",
       "jsonPath": "$.pilotStory.distinction",
       "kind": "narrative",
       "text": "Identified ≠ realized. Spieler’s question is the one every investor asks. Lead with whether a documented utility credit exists for a CC-supported finding — not an unaudited aggregate headline.",
@@ -2698,7 +2563,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:59:$.pilotStory.investorReady",
+      "claimId": "d7:60:$.pilotStory.investorReady",
       "jsonPath": "$.pilotStory.investorReady",
       "kind": "narrative",
       "text": "“We structure audits and dispute packages so customers can pursue credits with their utilities. We track identified vs. realized explicitly and will cite named recovery cases when utility documentation exists — we do not equate modeled savings with cash recovered.”",
@@ -2743,7 +2608,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:60:$.pilotStory.pricingScenarios[2].assumption",
+      "claimId": "d7:61:$.pilotStory.pricingScenarios[2].assumption",
       "jsonPath": "$.pilotStory.pricingScenarios[2].assumption",
       "kind": "narrative",
       "text": "Illustrative $2M identified-value pool × 2%",
@@ -2788,862 +2653,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:61:$.objections[0].q",
-      "jsonPath": "$.objections[0].q",
-      "kind": "narrative",
-      "text": "Why won’t EnergyCAP or ENGIE just add AI?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.07
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 83,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "1. What is the smallest finding in the pilot set, and from what account type? 2. What is the largest finding, and was it a demand charge, tariff, or meter error? 3. Of the 12 pilots, how many have converted to paid accou…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1501,
-          "corpusKind": "other",
-          "score": 0.51,
-          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1703,
-          "corpusKind": "other",
-          "score": 0.51,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1705,
-          "corpusKind": "other",
-          "score": 0.51,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:62:$.objections[0].a",
-      "jsonPath": "$.objections[0].a",
-      "kind": "narrative",
-      "text": "Legacy architecture isn’t a 6-month sprint. ENGIE’s AI is internal by design (consulting revenue conflict). Arcadia is migration-bound 12–24 months. Our moat is institutional domain depth — campus chargeback, regulatory intel — that takes 18+ months to build correctly.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.504,
-        "bestCoverage": 0.593,
-        "bestJaccard": 0.195
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 87,
-          "corpusKind": "synthesis",
-          "score": 0.504,
-          "excerpt": "**Recommended response:** \"The incumbents have the data but not the product. We have the product. The window is EnergyCAP's 18–24-month re-architecture timeline and Arcadia's migration distraction. We are building the ve…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 86,
-          "corpusKind": "synthesis",
-          "score": 0.409,
-          "excerpt": "that are not publicly visible. The absence of evidence is not evidence of absence for private company product roadmaps. **Recommended response:** \"The incumbents have the data but not the product. We have the product. Th…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s01_Victor_Hale.md",
-          "chunkIndex": 54,
-          "corpusKind": "secondary",
-          "score": 0.378,
-          "excerpt": "- Enterprise product is 14 months old with two detailed case studies - Senior PM primarily doing legacy migration, not new feature development (job posting evidence) - Cox Enterprises, their best customer, found the UX i…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 85,
-          "corpusKind": "synthesis",
-          "score": 0.378,
-          "excerpt": "- EnergyCAP's architecture is described by its own users as \"outdated\" and \"un-intuitive.\" Adding AI to a legacy database architecture is not a 6-month sprint. The Synthesis Brief documents EnergyCAP reviews calling it a…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:63:$.objections[0].unresolved",
-      "jsonPath": "$.objections[0].unresolved",
-      "kind": "narrative",
-      "text": "Private roadmaps could change; absence of evidence ≠ evidence of absence.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.729,
-        "bestCoverage": 0.857,
-        "bestJaccard": 0.046
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 85,
-          "corpusKind": "synthesis",
-          "score": 0.729,
-          "excerpt": "- EnergyCAP's architecture is described by its own users as \"outdated\" and \"un-intuitive.\" Adding AI to a legacy database architecture is not a 6-month sprint. The Synthesis Brief documents EnergyCAP reviews calling it a…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 86,
-          "corpusKind": "synthesis",
-          "score": 0.729,
-          "excerpt": "that are not publicly visible. The absence of evidence is not evidence of absence for private company product roadmaps. **Recommended response:** \"The incumbents have the data but not the product. We have the product. Th…"
-        },
-        {
-          "file": "research/outputs/primary/agents/09_Lisa_Huang.md",
-          "chunkIndex": 128,
-          "corpusKind": "primary_output",
-          "score": 0.486,
-          "excerpt": "| Claim | Inference Basis | Confidence | | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------…"
-        },
-        {
-          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
-          "chunkIndex": 20,
-          "corpusKind": "primary_output",
-          "score": 0.486,
-          "excerpt": "This is a critical absence. Local Law 97 in New York City imposes building performance standards with escalating financial penalties beginning in 2024, applying to buildings over 25,000 square feet. Similar legislation e…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:64:$.objections[1].q",
-      "jsonPath": "$.objections[1].q",
-      "kind": "narrative",
-      "text": "Those pilot “identified savings” numbers — has any utility actually paid out?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.744,
-        "bestCoverage": 0.875,
-        "bestJaccard": 0.01
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1703,
-          "corpusKind": "other",
-          "score": 0.744,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 874,
-          "corpusKind": "primary_output",
-          "score": 0.744,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s05_Carlos_Mendez.md",
-          "chunkIndex": 32,
-          "corpusKind": "secondary",
-          "score": 0.744,
-          "excerpt": "| Statistic | Source Document | Citation Chain | Confidence | Notes | | ------------------------------------------------------------------------------------------------ | ------------------------------------------------ …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1713,
-          "corpusKind": "other",
-          "score": 0.638,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Jamare_Bates_JLL.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:65:$.objections[1].a",
-      "jsonPath": "$.objections[1].a",
-      "kind": "narrative",
-      "text": "Precisely: identified, not yet recovered at documentation level. Three pilots in active utility dialogue. Documented recoveries before Series A close. We do not pretend to automate political recovery. Honesty is the differentiator.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.502,
-        "bestCoverage": 0.591,
-        "bestJaccard": 0.16
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 91,
-          "corpusKind": "synthesis",
-          "score": 0.502,
-          "excerpt": "**Recommended response:** \"You're asking exactly the right question, and we want to be precise: the $10M is identified errors — anomalies our platform flagged, validated with our customers, and presented to their energy …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1705,
-          "corpusKind": "other",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1723,
-          "corpusKind": "other",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 876,
-          "corpusKind": "primary_output",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:66:$.objections[1].unresolved",
-      "jsonPath": "$.objections[1].unresolved",
-      "kind": "narrative",
-      "text": "Needs a documented credit letter before May.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.07
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 129,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**3-year horizon:** If Clear Current has financial system integrations at 20+ institutions by 2028, and those integrations are embedded in annual budget planning workflows, the competitive moat is comparable to what expe…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 24,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "| **FINDING 7 — The Identified vs. Realized Gap Is the Single Biggest Commercial Risk** Marc Spieler's most pointed question: 'Have utilities actually issued refunds based on errors Clear Current found, or is the $10M st…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 22,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "**FINDING 6 — Campus Chargeback Is the Trojan Horse into Higher Ed** EnergyCAP's most important feature for university customers is simultaneously its most complained-about feature. \"Chargebacks and splits are hard to un…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:67:$.objections[2].a",
-      "jsonPath": "$.objections[2].a",
-      "kind": "narrative",
-      "text": "AI-assisted invoice ingestion today = zero utility API dependency. Aggregation partnerships (incl. Arcadia’s Arc, which ENGIE uses) available as we scale. First barrier isn’t access — it’s insight.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.607,
-        "bestCoverage": 0.714,
-        "bestJaccard": 0.16
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 95,
-          "corpusKind": "synthesis",
-          "score": 0.607,
-          "excerpt": "**What remains unanswered:** Clear Current's specific data coverage by utility (how many of the 73 utilities AdventHealth uses can Clear Current ingest automatically vs. requiring manual upload?). This is a product depth…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 93,
-          "corpusKind": "synthesis",
-          "score": 0.445,
-          "excerpt": "- Adam Zavadsky (ENGIE Impact) stated explicitly: \"The hard part, the part that's not sexy or isn't fun, is in order to get that dashboard, you have to collect the data.\" ENGIE built a 20-year competitive moat on data co…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1703,
-          "corpusKind": "other",
-          "score": 0.405,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1731,
-          "corpusKind": "other",
-          "score": 0.405,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:68:$.objections[2].unresolved",
-      "jsonPath": "$.objections[2].unresolved",
-      "kind": "narrative",
-      "text": "Specific utility coverage vs 73-utility accounts (AdventHealth).",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.708,
-        "bestCoverage": 0.833,
-        "bestJaccard": 0.051
-      },
-      "evidence": [
-        {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_AdventHealth.docx",
-          "chunkIndex": 36,
-          "corpusKind": "primary_summary",
-          "score": 0.708,
-          "excerpt": "Recommendation 2: Lead with Data Integrity, Not AI Sophistication Both John and Scott were skeptical of 'AI layered on top' as a solution. They have seen vendors overpromise this. Clear Current's pitch to AdventHealth sh…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1705,
-          "corpusKind": "other",
-          "score": 0.708,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1731,
-          "corpusKind": "other",
-          "score": 0.708,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 876,
-          "corpusKind": "primary_output",
-          "score": 0.708,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:69:$.objections[3].q",
-      "jsonPath": "$.objections[3].q",
-      "kind": "narrative",
-      "text": "Enterprise IT security will kill your sales cycle.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.057
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 95,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What remains unanswered:** Clear Current's specific data coverage by utility (how many of the 73 utilities AdventHealth uses can Clear Current ingest automatically vs. requiring manual upload?). This is a product depth…"
-        },
-        {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
-          "chunkIndex": 21,
-          "corpusKind": "primary_summary",
-          "score": 0.68,
-          "excerpt": "months later I was talking about it, people were like, what are you talking about? This is the name of our company now.' Implication for Clear Current: Two clear product implications: (1) Data security documentation — wh…"
-        },
-        {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
-          "chunkIndex": 22,
-          "corpusKind": "primary_summary",
-          "score": 0.68,
-          "excerpt": "Implication for Clear Current: Two clear product implications: (1) Data security documentation — who can see the data, how is it anonymized, what are the data handling obligations — needs to be ready before any enterpris…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Clear Current Technologies  Deep Secondary Research — Four Strategic Intelligence Modules.md",
-          "chunkIndex": 62,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "covery, making a $50,000-$150,000 ACV SaaS contract highly defensible. ### Sales Cycle Length by Deal Size and Vertical | Segment | Typical Sales Cycle | Primary Gating Factor | | ----------------------------------------…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:70:$.objections[3].a",
-      "jsonPath": "$.objections[3].a",
-      "kind": "narrative",
-      "text": "Real risk — AdventHealth 2.5 years post-Johnson Controls hack. GTM sequences around it: start with campus energy managers who have direct budget authority. SOC 2 Type II on infrastructure roadmap before scaling to systems at AdventHealth’s size.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.598,
-        "bestCoverage": 0.704,
-        "bestJaccard": 0.021
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1705,
-          "corpusKind": "other",
-          "score": 0.598,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 876,
-          "corpusKind": "primary_output",
-          "score": 0.598,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 99,
-          "corpusKind": "synthesis",
-          "score": 0.535,
-          "excerpt": "**What remains unanswered:** Whether Clear Current currently has SOC 2 Type II certification, or a timeline to achieve it. This is a critical gap for enterprise sales readiness. **[NEEDS RESOLUTION]** **Recommended respo…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.441,
-          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:71:$.objections[3].unresolved",
-      "jsonPath": "$.objections[3].unresolved",
-      "kind": "narrative",
-      "text": "SOC 2 status and timeline — Jake Masters.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.68,
-        "bestCoverage": 0.8,
-        "bestJaccard": 0.085
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 132,
-          "corpusKind": "synthesis",
-          "score": 0.68,
-          "excerpt": "AdventHealth described 2.5-year approval cycle. Research confirms 76% of organizations increasing SaaS security budgets. **What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 133,
-          "corpusKind": "synthesis",
-          "score": 0.68,
-          "excerpt": "**What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (for healthcare) HIPAA compliance pathway. **Who can resolve it:** Jake Masters (CTO). **Timeline: Should be in investor m…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.51,
-          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.51,
-          "excerpt": "| Gap | Affects | Impact | Status / How to Close | | ---------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:72:$.objections[4].q",
-      "jsonPath": "$.objections[4].q",
-      "kind": "narrative",
-      "text": "Higher ed is a tough buyer. Why start there?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.061
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 99,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What remains unanswered:** Whether Clear Current currently has SOC 2 Type II certification, or a timeline to achieve it. This is a critical gap for enterprise sales readiness. **[NEEDS RESOLUTION]** **Recommended respo…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.68,
-          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1711,
-          "corpusKind": "other",
-          "score": 0.68,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peaco…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:73:$.objections[4].a",
-      "jsonPath": "$.objections[4].a",
-      "kind": "narrative",
-      "text": "Predictable, not slow. Jan–Feb budget, Mar–May procurement, Sept 1 FY start. EnergyCAP comparable confirms $50–75K willingness to pay. Arcadia has zero HE customers in 14 months. Underserved, not unattractive.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.58,
-        "bestCoverage": 0.682,
-        "bestJaccard": 0.172
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 101,
-          "corpusKind": "synthesis",
-          "score": 0.58,
-          "excerpt": "**How the research addresses it:** - The EnergyCAP comparable establishes that universities _do_ spend $50–75K/year on energy management software — and the University of Wisconsin RFP confirms $500K–$2M for comprehensive…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 103,
-          "corpusKind": "synthesis",
-          "score": 0.464,
-          "excerpt": "**What remains unanswered:** Whether any current Clear Current pilot includes a university customer on a paid contract. Having a named university reference customer before the May close would significantly strengthen thi…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.425,
-          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.425,
-          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:74:$.objections[4].unresolved",
-      "jsonPath": "$.objections[4].unresolved",
-      "kind": "narrative",
-      "text": "Any current paid university reference before May?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.01
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1721,
-          "corpusKind": "other",
-          "score": 0.85,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 892,
-          "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 102,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "education customers after 14 months of enterprise selling. The vertical is underserved, not unattractive. **[VERIFIED]** **What remains unanswered:** Whether any current Clear Current pilot includes a university customer…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 103,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What remains unanswered:** Whether any current Clear Current pilot includes a university customer on a paid contract. Having a named university reference customer before the May close would significantly strengthen thi…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:75:$.objections[5].q",
-      "jsonPath": "$.objections[5].q",
-      "kind": "narrative",
-      "text": "AI energy management is crowded. Real differentiation?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.68,
-        "bestCoverage": 0.8,
-        "bestJaccard": 0.007
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1725,
-          "corpusKind": "other",
-          "score": 0.68,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1733,
-          "corpusKind": "other",
-          "score": 0.68,
-          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: research ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULT…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 896,
-          "corpusKind": "primary_output",
-          "score": 0.68,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Sean_Sevy_Houston_Methodist (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Sean Sevy | Houston Methodist Director of Operations, System Facilities Conduct…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 904,
-          "corpusKind": "primary_output",
-          "score": 0.68,
-          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: extra ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULTING…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:76:$.objections[5].a",
-      "jsonPath": "$.objections[5].a",
-      "kind": "narrative",
-      "text": "Three things none of them do: NL interface for energy managers, PUC rate case alerts before budget lock, district energy cost allocation with conservation incentives. These are core design choices, not bolt-ons.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.567,
-        "bestCoverage": 0.667,
-        "bestJaccard": 0.022
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
-          "score": 0.567,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 888,
-          "corpusKind": "primary_output",
-          "score": 0.567,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 109,
-          "corpusKind": "synthesis",
-          "score": 0.531,
-          "excerpt": "**Recommended response:** \"The market has tools that organize bills and tools that analyze project economics. None of them do three things Clear Current does: answer a natural language question from an energy manager in …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1727,
-          "corpusKind": "other",
-          "score": 0.496,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:77:$.objections[6].q",
-      "jsonPath": "$.objections[6].q",
-      "kind": "narrative",
-      "text": "Seed-stage energy AI has promised autonomy and delivered HITL. Why different?",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "partially_supported",
-      "heuristic": {
-        "bestScore": 0.378,
-        "bestCoverage": 0.444,
-        "bestJaccard": 0.005
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1501,
-          "corpusKind": "other",
-          "score": 0.378,
-          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1707,
-          "corpusKind": "other",
-          "score": 0.378,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1729,
-          "corpusKind": "other",
-          "score": 0.378,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & T…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 672,
-          "corpusKind": "primary_output",
-          "score": 0.378,
-          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:78:$.objections[6].a",
-      "jsonPath": "$.objections[6].a",
-      "kind": "narrative",
-      "text": "Product Context explicit: Spot ≠ Resolve. Spieler hybrid pricing aligns incentives. Walston’s $1M recovery needed board escalation — recovery is political, not algorithmic. We assist; we don’t pretend to automate.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.665,
-        "bestCoverage": 0.783,
-        "bestJaccard": 0.213
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 111,
-          "corpusKind": "synthesis",
-          "score": 0.665,
-          "excerpt": "- The research corpus is unusually candid about this gap. The Product Context explicitly distinguishes between \"spot errors\" (strong, shipped) and \"resolve errors\" (assists manual completion — not autonomous). This intel…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1709,
-          "corpusKind": "other",
-          "score": 0.517,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 880,
-          "corpusKind": "primary_output",
-          "score": 0.517,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
-        },
-        {
-          "file": "research/outputs/primary/agents/13_Nina_Patel.md",
-          "chunkIndex": 75,
-          "corpusKind": "primary_output",
-          "score": 0.333,
-          "excerpt": "### Finding 11: The Full Billing Error Recovery Cycle Is the Missing Proof Point Marc Spieler (NVIDIA) identified this gap directly: \"Have the utilities actually recognized the mistakes and issued refunds?\" _(Marc Spiele…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:79:$.objections[6].unresolved",
-      "jsonPath": "$.objections[6].unresolved",
-      "kind": "narrative",
-      "text": "Current contract outcome commitment structure.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.68,
-        "bestCoverage": 0.8,
-        "bestJaccard": 0.05
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/primary/agents/04_James_Park.md",
-          "chunkIndex": 24,
-          "corpusKind": "primary_output",
-          "score": 0.68,
-          "excerpt": "Marc Spieler described a pattern he has observed repeatedly: \"As soon as they see you're on a trajectory to save them 20 million bucks, they're going to tell you 4 million bucks is way too expensive. They want to switch …"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 112,
-          "corpusKind": "synthesis",
-          "score": 0.68,
-          "excerpt": "t promises automatic recovery will eventually have to explain why it needed a board meeting. **[PRIMARY — Ann Walston]** **What remains unanswered:** What Clear Current's current contractual commitment is regarding outco…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 113,
-          "corpusKind": "synthesis",
-          "score": 0.68,
-          "excerpt": "**What remains unanswered:** What Clear Current's current contractual commitment is regarding outcome delivery. If the current contracts are pure SaaS (no outcome commitment), that is a different risk profile than a perf…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
-          "chunkIndex": 60,
-          "corpusKind": "secondary",
-          "score": 0.51,
-          "excerpt": "Arcadia's consumer Trustpilot rating is 2.6/5 stars across 1,159 reviews and has 25+ BBB complaints. These reviews describe billing confusion, unauthorized charges, poor customer support, and lack of billing transparency…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:80:$.moat[0].why",
+      "claimId": "d7:81:$.moat[0].why",
       "jsonPath": "$.moat[0].why",
       "kind": "narrative",
       "text": "Outcome-linked ingestion (error → dispute → credit → utility → rate case environment). Can’t be bought. Competitor faces 3-year data disadvantage that compounds.",
@@ -3688,7 +2698,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:81:$.moat[1].name",
+      "claimId": "d7:82:$.moat[1].name",
       "jsonPath": "$.moat[1].name",
       "kind": "narrative",
       "text": "Campus chargeback as structural switching cost",
@@ -3733,7 +2743,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:82:$.moat[1].why",
+      "claimId": "d7:83:$.moat[1].why",
       "jsonPath": "$.moat[1].why",
       "kind": "narrative",
       "text": "Once a university’s chargeback model is configured, switching = re-entering years of institutional logic. 15–20 university configs by 2028 = ERP-level lock-in.",
@@ -3778,7 +2788,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:83:$.moat[2].name",
+      "claimId": "d7:84:$.moat[2].name",
       "jsonPath": "$.moat[2].name",
       "kind": "narrative",
       "text": "Regulatory intelligence as recurring urgency",
@@ -3823,7 +2833,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:84:$.moat[2].why",
+      "claimId": "d7:85:$.moat[2].why",
       "jsonPath": "$.moat[2].why",
       "kind": "narrative",
       "text": "Ingests unstructured filings from 50 PUCs, maps to accounts, translates to dollars. Rate cases are continuous. Zero competitors have started. First mover compounds.",
@@ -3868,7 +2878,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d7:85:$.moat[3].why",
+      "claimId": "d7:86:$.moat[3].why",
       "jsonPath": "$.moat[3].why",
       "kind": "narrative",
       "text": "Ault’s #1 wish: financial system integration. Once embedded in budget planning, removing Clear Current = rebuilding integration. Concur/Coupa precedent.",
@@ -3908,501 +2918,6 @@
           "corpusKind": "other",
           "score": 0.5,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:86:$.gaps[0].title",
-      "jsonPath": "$.gaps[0].title",
-      "kind": "narrative",
-      "text": "No documented utility credit issuance",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.041
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 35,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "| Claim | Problem | What to Do | | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 129,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**3-year horizon:** If Clear Current has financial system integrations at 20+ institutions by 2028, and those integrations are embedded in annual budget planning workflows, the competitive moat is comparable to what expe…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 148,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "sideration; requires validation with additional multi-site restaurant operators before committing development resources. - **[NEEDS RESOLUTION — BEFORE MAY]** The $10M identified billing errors claim requires a documente…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 149,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "- **[NEEDS RESOLUTION — BEFORE MAY]** The $10M identified billing errors claim requires a documented credit issuance case study before it can be presented to investors without a defensive qualifier. John and Dan must ide…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:87:$.gaps[0].ask",
-      "jsonPath": "$.gaps[0].ask",
-      "kind": "narrative",
-      "text": "One documented case at any dollar amount — found, contacted, credited, confirmed.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.661,
-        "bestCoverage": 0.778,
-        "bestJaccard": 0.074
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 131,
-          "corpusKind": "synthesis",
-          "score": 0.661,
-          "excerpt": "**What we have:** $10M identified (internal Clear Current data). Marc Spieler flagged this explicitly. Ann Walston confirmed recovery is political and difficult. RI PUC 83% finding explains why utilities don't self-corre…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s05_Carlos_Mendez.md",
-          "chunkIndex": 100,
-          "corpusKind": "secondary",
-          "score": 0.567,
-          "excerpt": "--- ## 7. GAPS AND OPEN QUESTIONS These are ranked by impact on GTM strategy and investor readiness. ### GAP 1 (CRITICAL): The Identified-vs.-Realized Gap Is Unresolved _Impact: Every deliverable, May fundraise_ Marc Spi…"
-        },
-        {
-          "file": "research/outputs/synthesis/00_decision_brief.md",
-          "chunkIndex": 30,
-          "corpusKind": "synthesis",
-          "score": 0.567,
-          "excerpt": "**Why this is the most important unanswered question in the corpus:** Marc Spieler raised it directly in his interview. Clear Current's 12 pilots identified $10M in billing errors. The research cannot determine whether a…"
-        },
-        {
-          "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
-          "chunkIndex": 124,
-          "corpusKind": "synthesis",
-          "score": 0.567,
-          "excerpt": "\"The question every investor asks us is: you've identified $10M in billing errors — how much have you recovered? That is the right question. The government record establishes that the errors are real: FERC confirmed $108…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:88:$.gaps[1].title",
-      "jsonPath": "$.gaps[1].title",
-      "kind": "narrative",
-      "text": "SOC 2 Type II certification status",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.1
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/00_decision_brief.md",
-          "chunkIndex": 35,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "ies IT gatekeepers, but no interviewee described Clear Current specifically going through an enterprise security review. **What John and Dan need to do:** Determine Clear Current's current security certification status. …"
-        },
-        {
-          "file": "research/outputs/synthesis/00_decision_brief.md",
-          "chunkIndex": 36,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What John and Dan need to do:** Determine Clear Current's current security certification status. If SOC 2 Type II is not in progress, start the process before the May fundraise — not because investors require it, but b…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 131,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What we have:** $10M identified (internal Clear Current data). Marc Spieler flagged this explicitly. Ann Walston confirmed recovery is political and difficult. RI PUC 83% finding explains why utilities don't self-corre…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 149,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "- **[NEEDS RESOLUTION — BEFORE MAY]** The $10M identified billing errors claim requires a documented credit issuance case study before it can be presented to investors without a defensive qualifier. John and Dan must ide…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:89:$.gaps[1].ask",
-      "jsonPath": "$.gaps[1].ask",
-      "kind": "narrative",
-      "text": "Current certifications, SOC 2 timeline, HIPAA path for healthcare.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.729,
-        "bestCoverage": 0.857,
-        "bestJaccard": 0.128
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 132,
-          "corpusKind": "synthesis",
-          "score": 0.729,
-          "excerpt": "AdventHealth described 2.5-year approval cycle. Research confirms 76% of organizations increasing SaaS security budgets. **What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 133,
-          "corpusKind": "synthesis",
-          "score": 0.729,
-          "excerpt": "**What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (for healthcare) HIPAA compliance pathway. **Who can resolve it:** Jake Masters (CTO). **Timeline: Should be in investor m…"
-        },
-        {
-          "file": "research/outputs/primary/agents/13_Nina_Patel.md",
-          "chunkIndex": 105,
-          "corpusKind": "primary_output",
-          "score": 0.607,
-          "excerpt": "- Lead with Adam Zavadsky's characterization of ~30,000 municipalities with no digital infrastructure. - Document Clear Current's technical approach to paper bill ingestion. If it uses OCR, quantify accuracy vs. ENGIE's …"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.486,
-          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:90:$.gaps[2].ask",
-      "jsonPath": "$.gaps[2].ask",
-      "kind": "narrative",
-      "text": "# pilots converted; average time and ACV.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.68,
-        "bestCoverage": 0.8,
-        "bestJaccard": 0.062
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 133,
-          "corpusKind": "synthesis",
-          "score": 0.68,
-          "excerpt": "**What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (for healthcare) HIPAA compliance pathway. **Who can resolve it:** Jake Masters (CTO). **Timeline: Should be in investor m…"
-        },
-        {
-          "file": "research/outputs/primary/agents/05_Dr._Patricia_Nash.md",
-          "chunkIndex": 140,
-          "corpusKind": "primary_output",
-          "score": 0.51,
-          "excerpt": "**Gap 4: The Identified-vs-Realized Gap Needs Quantification From Clear Current's Own Pilots** Marc Spieler asked the key question: have utilities actually issued refunds? The research team didn't have a definitive answe…"
-        },
-        {
-          "file": "research/outputs/secondary/agents/s01_Victor_Hale.md",
-          "chunkIndex": 105,
-          "corpusKind": "secondary",
-          "score": 0.51,
-          "excerpt": "| Claim | Why It Is A Claim, Not Proven | What Would Prove It | | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------…"
-        },
-        {
-          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
-          "chunkIndex": 78,
-          "corpusKind": "synthesis",
-          "score": 0.51,
-          "excerpt": "tory intelligence use case directly evidenced. ACV estimate: $75K–$150K. **What needs to happen to close these deals:** 1. Document at least one full error-to-recovery loop from the existing 12 pilots (the proof-of-recov…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:91:$.gaps[3].title",
-      "jsonPath": "$.gaps[3].title",
-      "kind": "narrative",
-      "text": "Campus chargeback development timeline",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.063
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 133,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What we need:** Clear Current's current security certifications, timeline to SOC 2 Type II, and (for healthcare) HIPAA compliance pathway. **Who can resolve it:** Jake Masters (CTO). **Timeline: Should be in investor m…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 135,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**What we have:** The capability gap is confirmed (EnergyCAP's worst-reviewed feature; no AI-native competitor has it). The development investment has not been estimated in any available document. **What we need:** An en…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
-          "chunkIndex": 88,
-          "corpusKind": "secondary",
-          "score": 0.638,
-          "excerpt": "**1. Higher education as an uncontested vertical:** Arcadia has zero documented higher education customers. The specific requirements of universities — district energy cost allocation, departmental chargeback, ENERGY STA…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 42,
-          "corpusKind": "secondary",
-          "score": 0.638,
-          "excerpt": "| **Module** | **Primary Validation** | **Secondary Validation** | **Competitive Gap** | **MVP Scope Signal** | | --- | --- | --- | --- | --- | | Billing Error Audit Engine | Every interviewee. Texas State multiplier. Ph…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:92:$.gaps[3].ask",
-      "jsonPath": "$.gaps[3].ask",
-      "kind": "narrative",
-      "text": "Engineering estimate for MVP — even rough is better than silence.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.708,
-        "bestCoverage": 0.833,
-        "bestJaccard": 0.119
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 134,
-          "corpusKind": "synthesis",
-          "score": 0.708,
-          "excerpt": "TIONING] **The question:** \"You've identified campus chargeback as the Trojan horse into higher ed. When does it ship?\" **What we have:** The capability gap is confirmed (EnergyCAP's worst-reviewed feature; no AI-native …"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 135,
-          "corpusKind": "synthesis",
-          "score": 0.708,
-          "excerpt": "**What we have:** The capability gap is confirmed (EnergyCAP's worst-reviewed feature; no AI-native competitor has it). The development investment has not been estimated in any available document. **What we need:** An en…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 888,
-          "corpusKind": "primary_output",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:93:$.gaps[4].timeline",
-      "jsonPath": "$.gaps[4].timeline",
-      "kind": "narrative",
-      "text": "Acceptable gap for seed if labeled “next vertical”",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.133
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 136,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "nability director at a portfolio owner. Jamare Bates (JLL) provides partial coverage but is an advisor, not an operator. **Who can resolve it:** The consulting team can conduct one additional primary interview. **Timelin…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 137,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**Who can resolve it:** The consulting team can conduct one additional primary interview. **Timeline: Before May if possible; acceptable gap for seed round if labeled as \"next vertical after beachhead.\"** --- ### Gap 6 —…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1703,
-          "corpusKind": "other",
-          "score": 0.567,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 874,
-          "corpusKind": "primary_output",
-          "score": 0.567,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:94:$.gaps[4].ask",
-      "jsonPath": "$.gaps[4].ask",
-      "kind": "narrative",
-      "text": "One additional primary CRE interview (operator, not advisor).",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.708,
-        "bestCoverage": 0.833,
-        "bestJaccard": 0.075
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
-          "chunkIndex": 0,
-          "corpusKind": "primary_output",
-          "score": 0.708,
-          "excerpt": "# Agent: Carmen Vega | Commercial Real Estate Energy Portfolio Expert # Run: 2026-04-17T14:47:04.180466 --- # Carmen Vega — Commercial Real Estate Energy Portfolio Analysis ## Clear Current Technologies | Research Corpus…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 135,
-          "corpusKind": "synthesis",
-          "score": 0.708,
-          "excerpt": "**What we have:** The capability gap is confirmed (EnergyCAP's worst-reviewed feature; no AI-native competitor has it). The development investment has not been estimated in any available document. **What we need:** An en…"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 136,
-          "corpusKind": "synthesis",
-          "score": 0.708,
-          "excerpt": "nability director at a portfolio owner. Jamare Bates (JLL) provides partial coverage but is an advisor, not an operator. **Who can resolve it:** The consulting team can conduct one additional primary interview. **Timelin…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1703,
-          "corpusKind": "other",
-          "score": 0.567,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:95:$.gaps[5].timeline",
-      "jsonPath": "$.gaps[5].timeline",
-      "kind": "narrative",
-      "text": "Before May — will be asked in first meeting",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.063
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/synthesis/D8_GTM_Strategy_Playbook.md",
-          "chunkIndex": 57,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "r against the identified value. Do not let the pilot end without scheduling this meeting. ### Deal Killers — Documented 1. **IT says no:** Phil Combs' direct evidence. Pre-empt with SOC 2 documentation before the IT gate…"
-        },
-        {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Don_Johnson_Trane (1).docx",
-          "chunkIndex": 32,
-          "corpusKind": "primary_summary",
-          "score": 0.567,
-          "excerpt": "Don represents a user type that Clear Current may not have fully mapped: the energy solutions provider. He is not an energy buyer or seller. He is a middleman who needs quick energy intelligence to build proposals and cl…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 10,
-          "corpusKind": "secondary",
-          "score": 0.567,
-          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.567,
-          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
-        }
-      ],
-      "inExpectedSourceFile": null
-    },
-    {
-      "claimId": "d7:96:$.gaps[5].ask",
-      "jsonPath": "$.gaps[5].ask",
-      "kind": "narrative",
-      "text": "Published vs negotiated. Per-meter / per-site / outcome. Pilot terms.",
-      "attributionHint": null,
-      "matchedInterviewIds": [],
-      "status": "supported",
-      "heuristic": {
-        "bestScore": 0.567,
-        "bestCoverage": 0.667,
-        "bestJaccard": 0.015
-      },
-      "evidence": [
-        {
-          "file": "research/outputs/secondary/agents/s05_Carlos_Mendez.md",
-          "chunkIndex": 32,
-          "corpusKind": "secondary",
-          "score": 0.567,
-          "excerpt": "| Statistic | Source Document | Citation Chain | Confidence | Notes | | ------------------------------------------------------------------------------------------------ | ------------------------------------------------ …"
-        },
-        {
-          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
-          "chunkIndex": 137,
-          "corpusKind": "synthesis",
-          "score": 0.567,
-          "excerpt": "**Who can resolve it:** The consulting team can conduct one additional primary interview. **Timeline: Before May if possible; acceptable gap for seed round if labeled as \"next vertical after beachhead.\"** --- ### Gap 6 —…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.472,
-          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
-          "chunkIndex": 46,
-          "corpusKind": "secondary",
-          "score": 0.472,
-          "excerpt": "| Gap | Affects | Impact | Status / How to Close | | ---------------------------------------------------------------------------- | ------------------------------------------------------------- | ------ | ---------------…"
         }
       ],
       "inExpectedSourceFile": null

@@ -91,7 +91,7 @@ export const BRIEF = {
   ],
   strategicDecisions: {
     beachhead: [
-      'Higher education first: research universities with district energy, large meter count, EnergyCAP in place, and a real split between finance and ops.',
+      'Higher education first: research universities with district energy, large meter count, EnergyCAP in place, and a real split between finance and ops. Primary interviews surface meaningful on-site or district generation—invoice mix can look different from a pure “retail load” portfolio, but buyers still need tariff and purchased-power truth, peak/demand discipline, and internal allocation; sell the modules that match the pain, not a hypothetical all-features purchase.',
       'In parallel, pursue multi-site retail and QSR—ESCO-dependent or franchise-heavy footprints and deregulated markets where it fits. Panda anchors the thesis; national chains are expansion targets as proof compounds, not implied logos.',
       'Healthcare systems are the long-term win: huge spend and the same billing pain, but IT security and recovery documentation are gates. Build credibility in higher ed and parallel retail first—then compound into health systems.',
     ],

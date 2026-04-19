@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { getDeliverableByPath } from '../../navConfig.js'
 import { useLocation } from 'react-router-dom'
+import { formatInlineBold } from '../../utils/formatInlineBold.jsx'
 
 /** Eyebrow copy often repeats the badge id (`D1 · …`); show only the subtitle next to the pill. */
 function eyebrowWithoutBadgePrefix(eyebrow, shortLabel) {
@@ -62,7 +63,7 @@ function HeroTldr({ tldrBullets, leadStatement }) {
               </p>
               <ul className="mt-2 list-disc space-y-1.5 pl-4 text-[13px] leading-snug text-cc-dark-text">
                 {tldrBullets.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i}>{formatInlineBold(item)}</li>
                 ))}
               </ul>
             </>
@@ -74,11 +75,13 @@ function HeroTldr({ tldrBullets, leadStatement }) {
                   Full framing
                 </summary>
                 <p className="mt-2 text-[12.5px] leading-relaxed text-cc-mid-gray">
-                  {leadStatement}
+                  {formatInlineBold(leadStatement)}
                 </p>
               </details>
             ) : (
-              <p className="text-[12.5px] leading-relaxed text-cc-mid-gray">{leadStatement}</p>
+              <p className="text-[12.5px] leading-relaxed text-cc-mid-gray">
+                {formatInlineBold(leadStatement)}
+              </p>
             )
           ) : null}
         </div>
@@ -121,7 +124,7 @@ export function DeliverableHero({
       ) : null}
       {leadStatement ? (
         <p className="mt-4 hidden max-w-3xl text-[13.5px] leading-relaxed text-cc-mid-gray print:block">
-          {leadStatement}
+          {formatInlineBold(leadStatement)}
         </p>
       ) : null}
       {showMeta && meta && meta.length ? (

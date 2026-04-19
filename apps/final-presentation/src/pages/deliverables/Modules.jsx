@@ -1,20 +1,23 @@
 import { useState } from 'react'
-import { CheckCircle2, XCircle, Bot, MessageSquare, Zap } from 'lucide-react'
+import { Bot, CheckCircle2, ChevronDown, MessageSquare, XCircle, Zap } from 'lucide-react'
 import {
   DeliverableHero,
   ProductTag,
   SectionLead,
 } from '../../components/shared/DeliverableHero.jsx'
 import { D4 } from '../../content/deliverables/d4-modules.js'
+import { formatInlineBold } from '../../utils/formatInlineBold.jsx'
 
 const PHASE_COLORS = {
   'Phase 1': 'bg-cc-green text-white',
   'Phase 1.5': 'bg-cc-amber text-white',
   'Phase 2': 'bg-cc-navy text-white',
+  'Phase 3': 'bg-cc-yellow text-cc-navy',
 }
 
 export function Modules() {
   const [activeId, setActiveId] = useState(D4.modules[0].id)
+  const [buyerAlertsOpen, setBuyerAlertsOpen] = useState(false)
   const active = D4.modules.find((m) => m.id === activeId) ?? D4.modules[0]
 
   return (
@@ -25,26 +28,55 @@ export function Modules() {
         tldrBullets={D4.tldrBullets}
       />
 
-      <section className="decision-strip mb-10">
-        <span className="text-[10px] font-bold uppercase tracking-wider text-cc-navy">
-          Interview-grounded alerts
-        </span>
-        <p className="mt-2 text-[13px] leading-relaxed text-cc-navy">
-          {D4.buyerNamedAlerts}
-        </p>
+      <section className="decision-strip mb-10 rounded-sm">
+        <button
+          type="button"
+          id="buyer-alerts-trigger"
+          aria-expanded={buyerAlertsOpen}
+          aria-controls="buyer-alerts-panel"
+          onClick={() => setBuyerAlertsOpen((open) => !open)}
+          className="flex w-full items-start justify-between gap-3 rounded-sm text-left text-cc-navy outline-none focus-visible:ring-2 focus-visible:ring-cc-navy focus-visible:ring-offset-2"
+        >
+          <span className="text-[10px] font-bold uppercase tracking-wider">
+            What buyers expect to see alerted
+          </span>
+          <ChevronDown
+            className={`mt-0.5 h-4 w-4 flex-shrink-0 text-cc-navy transition-transform duration-200 ${
+              buyerAlertsOpen ? 'rotate-180' : ''
+            }`}
+            aria-hidden
+          />
+        </button>
+        {buyerAlertsOpen ? (
+          <ul
+            id="buyer-alerts-panel"
+            role="region"
+            aria-labelledby="buyer-alerts-trigger"
+            className="mt-2 list-disc space-y-2 pl-5 text-[13px] leading-relaxed text-cc-navy marker:text-cc-navy"
+          >
+            {D4.buyerNamedAlerts.map((line, i) => (
+              <li key={i}>{formatInlineBold(line)}</li>
+            ))}
+          </ul>
+        ) : null}
       </section>
 
       {/* BUILD SEQUENCE */}
       <section className="mb-10">
-        <SectionLead kicker="Build sequence" title="Three phases, five modules">
-          The order matters: push-first modules convert reactive buyers; deeper
-          integration earns stickiness later.
+        <SectionLead kicker="Build sequence" title="Four phases, five modules">
+          Phases 1–2 ship concrete capabilities; Phase 3 is the access layer —
+          natural-language conversational access to the same insights (Rate Analyst +
+          MCP→SQL), without replacing push alerts or module depth.
         </SectionLead>
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {D4.buildSequence.map((p) => (
             <div
               key={p.phase}
-              className="flex flex-col rounded-lg border border-cc-border bg-white p-5 shadow-sm"
+              className={`flex flex-col rounded-lg border bg-white p-5 shadow-sm ${
+                p.phase === 'Phase 3'
+                  ? 'border-cc-yellow ring-1 ring-cc-yellow/50'
+                  : 'border-cc-border'
+              }`}
             >
               <span
                 className={`inline-flex w-fit rounded px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
@@ -52,24 +84,40 @@ export function Modules() {
                 }`}
               >
                 {p.phase}
+                {p.phase === 'Phase 3' ? ' · Natural language' : ''}
               </span>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {p.modules.map((mid) => {
-                  const m = D4.modules.find((x) => x.id === mid)
-                  if (!m) return null
-                  return (
-                    <button
-                      type="button"
-                      key={mid}
-                      onClick={() => setActiveId(mid)}
-                      className="rounded-md border border-cc-navy bg-cc-navy/5 px-2 py-1 text-[11px] font-bold text-cc-navy hover:bg-cc-navy hover:text-white"
-                    >
-                      {m.name}
-                    </button>
-                  )
-                })}
-              </div>
-              <p className="mt-3 text-[12px] leading-relaxed text-cc-mid-gray">{p.why}</p>
+              {p.modules?.length ? (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {p.modules.map((mid) => {
+                    const m = D4.modules.find((x) => x.id === mid)
+                    if (!m) return null
+                    return (
+                      <button
+                        type="button"
+                        key={mid}
+                        onClick={() => setActiveId(mid)}
+                        className="rounded-md border border-cc-navy bg-cc-navy/5 px-2 py-1 text-[11px] font-bold text-cc-navy hover:bg-cc-navy hover:text-white"
+                      >
+                        {m.name}
+                      </button>
+                    )
+                  })}
+                </div>
+              ) : (
+                <p className="mt-3 text-[11px] font-semibold leading-snug text-cc-navy">
+                  Access layer only — natural language across all five modules.
+                </p>
+              )}
+              <p className="mt-3 text-[12px] leading-relaxed text-cc-mid-gray">
+                {formatInlineBold(p.why)}
+              </p>
+              {Array.isArray(p.bullets) && p.bullets.length > 0 ? (
+                <ul className="mt-3 list-disc space-y-1.5 border-t border-cc-border/80 pt-3 pl-4 text-[11px] leading-relaxed text-cc-dark-text marker:text-cc-navy">
+                  {p.bullets.map((line, i) => (
+                    <li key={i}>{formatInlineBold(line)}</li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           ))}
         </div>
@@ -79,10 +127,11 @@ export function Modules() {
       <section className="mb-10">
         <SectionLead
           kicker="Five modules, ranked"
-          title="What to build, why, and for whom"
+          title="What to build next — on the current engine"
         >
-          Priority rank by buyer pull × build feasibility × moat. Click any card to
-          expand.
+          Priority rank by buyer pull × build feasibility × moat. Each module extends
+          surfaces leadership already maintains — it does not replace them. Click any
+          card to expand.
         </SectionLead>
         <div className="mb-5 grid gap-3 md:grid-cols-5">
           {D4.modules
@@ -123,7 +172,12 @@ export function Modules() {
                     m.id === activeId ? 'text-white/70' : 'text-cc-mid-gray'
                   }`}
                 >
-                  {m.oneLiner}
+                  {formatInlineBold(
+                    m.oneLiner,
+                    m.id === activeId
+                      ? 'font-semibold text-cc-yellow'
+                      : 'font-semibold text-cc-navy',
+                  )}
                 </div>
               </button>
             ))}
@@ -131,8 +185,51 @@ export function Modules() {
         <ModuleDetail module={active} />
       </section>
 
+      <section className="mb-10">
+        <SectionLead
+          kicker="Maturity snapshot"
+          title="Where the CC Engine is today vs. Phase 3"
+        >
+          Skim <span className="font-semibold text-cc-navy">Today</span> for context; the
+          right column is what Phase 3 still has to close for buyers.
+        </SectionLead>
+        <div className="overflow-x-auto rounded-lg border border-cc-border bg-white shadow-sm">
+          <table className="min-w-full text-left">
+            <caption className="sr-only">
+              Maturity snapshot: capability, brief today status, Phase 3 gap to close
+            </caption>
+            <thead>
+              <tr className="border-b border-cc-border text-[10px] font-bold uppercase tracking-wider">
+                <th className="bg-cc-light-gray/50 px-4 py-3 text-cc-navy">Capability</th>
+                <th className="bg-cc-light-gray/50 px-4 py-3 font-semibold text-cc-mid-gray">
+                  Today
+                </th>
+                <th className="border-l-4 border-cc-yellow bg-cc-yellow-soft px-4 py-3 text-cc-navy">
+                  Phase 3 gap
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {D4.maturitySnapshot.map((row) => (
+                <tr key={row.capability} className="border-b border-cc-border/80">
+                  <td className="px-4 py-3 text-[12px] font-semibold text-cc-navy">
+                    {row.capability}
+                  </td>
+                  <td className="px-4 py-3 text-[11px] leading-snug text-cc-mid-gray">
+                    {row.today}
+                  </td>
+                  <td className="border-l-4 border-cc-yellow bg-cc-yellow-soft/60 px-4 py-3 text-[11px] leading-snug text-cc-navy">
+                    {row.gap}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* PRIORITY RATIONALE */}
-      <section>
+      <section className="mb-10">
         <SectionLead kicker="Rationale" title="Why this order and not another">
           The tradeoff between land speed, build cost, and long-term moat.
         </SectionLead>
@@ -145,7 +242,7 @@ export function Modules() {
               <span className="flex-shrink-0 font-mono text-[11px] font-bold text-cc-mid-gray">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <span>{r}</span>
+              <span>{formatInlineBold(r)}</span>
             </li>
           ))}
         </ol>
@@ -169,22 +266,28 @@ function ModuleDetail({ module: m }) {
             <ProductTag tag={m.productTag} />
           </div>
           <h3 className="mt-1 text-xl font-bold text-cc-navy">{m.name}</h3>
-          <p className="mt-1 text-[13px] text-cc-dark-text">{m.oneLiner}</p>
+          <p className="mt-1 text-[13px] text-cc-dark-text">{formatInlineBold(m.oneLiner)}</p>
+          {m.buildsOn ? (
+            <p className="mt-2 rounded-md border border-cc-navy/20 bg-cc-navy/[0.04] px-3 py-2 text-[12px] leading-snug text-cc-dark-text">
+              <span className="font-bold text-cc-navy">On today’s stack · </span>
+              {formatInlineBold(m.buildsOn)}
+            </p>
+          ) : null}
         </div>
       </div>
       <div className="grid gap-0 md:grid-cols-2">
         <Cell title="Problem" tone="red">
-          {m.problem}
+          {formatInlineBold(m.problem)}
         </Cell>
         <Cell title="Persona" tone="navy">
-          {m.persona}
+          {formatInlineBold(m.persona)}
         </Cell>
         <Cell title="Evidence" tone="amber" span>
           <ul className="space-y-1.5 text-[12px] leading-relaxed">
             {m.evidence.map((e, i) => (
               <li key={i} className="flex gap-2">
                 <span className="font-mono text-[10px] text-cc-mid-gray">·</span>
-                <span>{e}</span>
+                <span>{formatInlineBold(e)}</span>
               </li>
             ))}
           </ul>
@@ -194,7 +297,7 @@ function ModuleDetail({ module: m }) {
             {m.mvpScope.map((s, i) => (
               <li key={i} className="flex gap-2">
                 <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-cc-green" />
-                <span>{s}</span>
+                <span>{formatInlineBold(s)}</span>
               </li>
             ))}
           </ul>
@@ -204,7 +307,7 @@ function ModuleDetail({ module: m }) {
             {m.notInMvp.map((s, i) => (
               <li key={i} className="flex gap-2">
                 <XCircle className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-cc-mid-gray" />
-                <span>{s}</span>
+                <span>{formatInlineBold(s)}</span>
               </li>
             ))}
           </ul>
@@ -217,7 +320,7 @@ function ModuleDetail({ module: m }) {
           </div>
         </Cell>
         <Cell title="Competitive edge" tone="amber" span>
-          {m.competitive}
+          {formatInlineBold(m.competitive)}
         </Cell>
       </div>
     </div>
@@ -255,7 +358,7 @@ function AiTier({ icon: Icon, name, body }) {
           {name}
         </span>
       </div>
-      <p className="text-[11.5px] leading-relaxed text-cc-dark-text">{body}</p>
+      <p className="text-[11.5px] leading-relaxed text-cc-dark-text">{formatInlineBold(body)}</p>
     </div>
   )
 }

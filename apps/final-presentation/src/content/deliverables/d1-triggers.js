@@ -31,6 +31,8 @@ export const D1 = {
       urgency: 'peak',
       seasonality: 'Year-round; Jun–Aug and Jan–Feb highest',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'We had a weird multiplier happen in one of our bills. They listed 35,000 gallons instead of 3,500 — a 10× error in a pattern that should have been obvious.',
       ccSurface: 'Rate Analyst',
@@ -46,6 +48,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Aug–Sep post-summer; Feb–Mar post-winter',
       primarySource: 'Don Johnson · Trane Technologies',
+      additionalSources:
+        'Ross Snow · Matt Wilson · Bart Peacock · Intermountain Health',
       quote:
         'Most customers don’t know what rate structure they’re on. They don’t know if they have a demand ratchet. They just pay the bill. Even hospitals.',
       ccSurface: 'Rate Analyst',
@@ -61,6 +65,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Quarterly budget reconciliation',
       primarySource: 'John Culver · AdventHealth',
+      additionalSources: 'Scott Sukits · AdventHealth (field / controls)',
       quote:
         'Bills are not always matching the addresses of our sites. Bills for one hospital campus are being paid by another.',
       ccSurface: 'Energy HQ',
@@ -76,6 +81,7 @@ export const D1 = {
       urgency: 'medium',
       seasonality: 'Annual tax/audit review',
       primarySource: 'John Culver · AdventHealth',
+      additionalSources: 'Scott Sukits · AdventHealth',
       quote:
         'Non-profit tax exemptions — a real billing error category that goes undiscovered for months because nobody is systematically checking the tax line.',
       ccSurface: 'Rate Analyst',
@@ -121,6 +127,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Year-round',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'We had someone doing our bill processing for 10 to 15 years and she recently left, so we’re scrambling a little.',
       ccSurface: 'Rate Analyst',
@@ -158,6 +166,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Year-round; costliest in summer peak',
       primarySource: 'John Culver · AdventHealth',
+      additionalSources: 'Scott Sukits · AdventHealth',
       quote:
         'On-peak, off-peak, discounted off-peak, super off-peak, extreme on-peak — all actual names. Wrong tier and nobody catches it without line-by-line review.',
       ccSurface: 'Rate Analyst',
@@ -172,6 +181,8 @@ export const D1 = {
       urgency: 'medium',
       seasonality: 'Summer irrigation; leaks year-round',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote: 'They listed 35,000 gallons instead of the typical 3,500 gallons.',
       ccSurface: 'Rate Analyst',
       whyItMatters:
@@ -208,6 +219,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Higher-ed Jan–Mar; corporate Q3–Q4',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'Our budget is submitted in March, but the City of Austin’s rate changes are often not finalized until after we’ve already submitted. So we’re guessing.',
       ccSurface: 'Rate Analyst',
@@ -238,6 +251,8 @@ export const D1 = {
       urgency: 'medium',
       seasonality: 'Sep 1 FY start; Aug close-out',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'Our fiscal year is September 1 through August 31. That’s when everything resets — budgets, building assignments, everything.',
       ccSurface: 'Energy HQ',
@@ -253,6 +268,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Jun–Aug testing season',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'We test emergency generators at 80% load bank during summer — required for accreditation. But we’re not always thinking about what that does to our peak demand.',
       ccSurface: 'Dashboard',
@@ -305,6 +322,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Healthcare Q4 planning; higher-ed Jan–Mar',
       primarySource: 'John Culver · AdventHealth',
+      additionalSources: 'Scott Sukits · AdventHealth',
       quote:
         'A lot of the work for determining — hey, here\'s the energy conservation measures or the facility improvement measures we want to pursue next year — that has to come before budgeting cycle so that we\'re able to have and provide that package to our financial leaders at the hospital level.',
       ccSurface: 'Rate Analyst',
@@ -320,6 +338,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Mar–May; 3–6 month lead',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'We typically do three-year terms on gas. Every few years, that procurement decision comes around and we have to think through strips versus market again.',
       ccSurface: 'Deal Center',
@@ -357,6 +377,7 @@ export const D1 = {
       urgency: 'peak',
       seasonality: 'Results spring/summer; bill impact January',
       primarySource: 'Ann Walston · Bon Secours Mercy Health',
+      additionalSources: 'Scott Czubkowski · Medxcel (Ascension)',
       quote:
         'Capacity charges in PJM have increased tenfold in the last two years due to data center construction in Ohio. Most urgent and least controllable billing issue for our PJM hospitals.',
       ccSurface: 'Rate Analyst',
@@ -371,7 +392,7 @@ export const D1 = {
       verticals: ['higher-ed', 'healthcare'],
       urgency: 'medium',
       seasonality: '2026–2028 phase-ins by jurisdiction',
-      primarySource: 'Troy Nevels · UT Austin Engineering',
+      primarySource: 'Troy Nevells · UT Austin Engineering',
       quote:
         'In northeastern states, carbon charges are now appearing on natural gas bills. Another layer of potential error and another tariff to interpret.',
       ccSurface: 'Rate Analyst',
@@ -387,6 +408,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'May 1 reporting annually',
       primarySource: 'Secondary research · NYC LL97',
+      additionalSources: 'Jamare Bates · JLL (CRE compliance / portfolio advisory)',
       quote:
         'Local Law 97 of 2019 requires buildings over 25,000 square feet to meet GHG emissions limits beginning in 2024, with an annual carbon emissions report due May 1 of each year.',
       ccSurface: 'Energy HQ',
@@ -402,6 +424,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Effective dates vary; year-round filings',
       primarySource: 'Walt Taylor · Panda Restaurant Group',
+      additionalSources: 'Roger Goldstein · Panda Restaurant Group',
       quote:
         'Utilities will always adjust their rate structures to remain profitable. Energy managers who track only current rates will continually be caught behind.',
       ccSurface: 'Rate Analyst',
@@ -424,6 +447,8 @@ export const D1 = {
       urgency: 'peak',
       seasonality: 'Monthly close; acute Q1 and Q3',
       primarySource: 'Phil Combs · Trane Technologies',
+      additionalSources:
+        'Scott Czubkowski · Medxcel (Ascension); Randy Dawes · Hyatt',
       quote:
         'Nobody cares until you monetize it. If you can’t put a dollar sign on the problem and put it in front of a CFO, it doesn’t get acted on.',
       ccSurface: 'Dashboard',
@@ -454,6 +479,8 @@ export const D1 = {
       urgency: 'medium',
       seasonality: 'Year-round; acute at FY end',
       primarySource: 'James Norton · Texas State',
+      additionalSources:
+        'Andee Chamberlain · Carl Teague · Texas State (same interview)',
       quote:
         'Right now we charge buildings for utilities based on square footage. With actual usage data we could drive conservation.',
       ccSurface: 'Energy HQ',
@@ -528,6 +555,7 @@ export const D1 = {
       urgency: 'high',
       seasonality: '9–12 month pre-expiration windows',
       primarySource: 'Don Johnson · Trane Technologies',
+      additionalSources: 'Jamare Bates · JLL (CRE advisory)',
       quote:
         'The broker has their interests. The customer needs to understand not just the headline price, but whether the rate structure fits their usage.',
       ccSurface: 'Deal Center',
@@ -558,6 +586,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Annual renewal; Jan–Mar evaluations',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote: 'EnergyCAP tells us they can do that stuff, but it’s harder than it sounds.',
       ccSurface: 'Energy HQ',
       whyItMatters:
@@ -572,6 +602,8 @@ export const D1 = {
       urgency: 'peak',
       seasonality: '30–60 days post-departure',
       primarySource: 'Andee Chamberlain · Texas State',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State (same interview)',
       quote:
         'We had someone doing our bill processing for 10 to 15 years and she recently left — so we’re scrambling. We’ll probably outsource that.',
       ccSurface: 'Rate Analyst',
@@ -608,6 +640,8 @@ export const D1 = {
       urgency: 'high',
       seasonality: 'Annual contract review',
       primarySource: 'John Culver · AdventHealth',
+      additionalSources:
+        'Adam Zavadsky · ENGIE Impact; Scott Sukits · AdventHealth',
       quote:
         'ENGIE just aggregates and pays the bottom line. Being smarter — knowing how to interpret the bills and tell us why we should care — would be great.',
       ccSurface: 'Rate Analyst',
@@ -630,6 +664,8 @@ export const D1 = {
       urgency: 'peak',
       seasonality: 'Jun–Aug',
       primarySource: 'Andee Chamberlain · Texas State; Don Johnson · Trane',
+      additionalSources:
+        'Carl Teague · James Norton · Texas State; Ross Snow · Matt Wilson · Bart Peacock · Intermountain Health; Randy Dawes · Hyatt',
       quote:
         'Summer is when the numbers get real. Peak demand in July can set your charges for the next 12 months.',
       ccSurface: 'Dashboard',

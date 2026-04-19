@@ -2,11 +2,11 @@
   "deliverableId": "d1",
   "label": "D1 Engagement Trigger Map",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d1-triggers.js",
-  "generatedAt": "2026-04-19T00:29:17.447Z",
+  "generatedAt": "2026-04-19T02:07:22.679Z",
   "corpusFingerprint": "bf93ef6cba97f964",
-  "claimCount": 143,
+  "claimCount": 161,
   "summary": {
-    "supported": 134,
+    "supported": 152,
     "partially_supported": 9,
     "weak_match": 0,
     "unsupported": 0
@@ -332,7 +332,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:7:$.triggers[0].quote",
+      "claimId": "d1:7:$.triggers[0].additionalSources",
+      "jsonPath": "$.triggers[0].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:8:$.triggers[0].quote",
       "jsonPath": "$.triggers[0].quote",
       "kind": "quote",
       "text": "We had a weird multiplier happen in one of our bills. They listed 35,000 gallons instead of 3,500 — a 10× error in a pattern that should have been obvious.",
@@ -379,54 +426,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:8:$.triggers[0].whyItMatters",
+      "claimId": "d1:9:$.triggers[0].whyItMatters",
       "jsonPath": "$.triggers[0].whyItMatters",
       "kind": "narrative",
-      "text": "Highest-volume corpus trigger. Anomaly and dollar impact must surface before the PDF is opened.",
+      "text": "Highest-volume trigger in primary research. Anomaly and dollar impact must surface before the PDF is opened.",
       "attributionHint": "Andee Chamberlain · Texas State",
       "matchedInterviewIds": [
         "texas-state"
       ],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.567,
-        "bestCoverage": 0.667,
-        "bestJaccard": 0.113
+        "bestScore": 0.523,
+        "bestCoverage": 0.615,
+        "bestJaccard": 0.076
       },
       "evidence": [
         {
           "file": "research/outputs/synthesis/D1_Engagement_Trigger_Map.md",
-          "chunkIndex": 8,
-          "corpusKind": "synthesis",
-          "score": 0.567,
-          "excerpt": "**Why it matters for Clear Current:** This is the highest-volume trigger event in the corpus. Every vertical, every persona, every interview confirms it. The Intermountain Health case — where a bill jumped from ~$40K to …"
-        },
-        {
-          "file": "research/outputs/synthesis/D1_Engagement_Trigger_Map.md",
           "chunkIndex": 6,
           "corpusKind": "synthesis",
-          "score": 0.496,
+          "score": 0.523,
           "excerpt": "| Field | Detail | | ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
         },
         {
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1717,
           "corpusKind": "other",
-          "score": 0.425,
+          "score": 0.458,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1731,
-          "corpusKind": "other",
-          "score": 0.425,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
         }
       ],
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:9:$.triggers[1].name",
+      "claimId": "d1:10:$.triggers[1].name",
       "jsonPath": "$.triggers[1].name",
       "kind": "narrative",
       "text": "Demand charge disconnected from perceived usage",
@@ -474,7 +521,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:10:$.triggers[1].seasonality",
+      "claimId": "d1:11:$.triggers[1].seasonality",
       "jsonPath": "$.triggers[1].seasonality",
       "kind": "narrative",
       "text": "Aug–Sep post-summer; Feb–Mar post-winter",
@@ -522,7 +569,55 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:11:$.triggers[1].quote",
+      "claimId": "d1:12:$.triggers[1].additionalSources",
+      "jsonPath": "$.triggers[1].additionalSources",
+      "kind": "narrative",
+      "text": "Ross Snow · Matt Wilson · Bart Peacock · Intermountain Health",
+      "attributionHint": "Don Johnson · Trane Technologies",
+      "matchedInterviewIds": [
+        "trane-johnson",
+        "trane-combs"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.119
+      },
+      "evidence": [
+        {
+          "file": "research/Call Transcripts/CC Research - Intermountain Health Team.docx",
+          "chunkIndex": 82,
+          "corpusKind": "primary_transcript",
+          "score": 0.85,
+          "excerpt": "Ross Snow 34:54in these skills. And that may not mean it, it may in some cases mean a college degree, it may not. But if you're willing to take a few years and invest in these skills, you can name your price and you can …"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peacock Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters Intermountain Health's energy management team …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1109,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "Ross Snow 34:54 in these skills. And that may not mean it, it may in some cases mean a college degree, it may not. But if you're willing to take a few years and invest in these skills, you can name your price and you can…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1144,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "ter. Bart Peacock 47:58 Yep. Matt Wilson 48:00 It was here. Ross Snow 48:00 Thanks. Bart Peacock 48:00 Yeah. Hester, Clayton 48:00 Yeah. Hester, Clayton stopped transcription ═══ END: CC Research - Intermountain Health T…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:13:$.triggers[1].quote",
       "jsonPath": "$.triggers[1].quote",
       "kind": "quote",
       "text": "Most customers don’t know what rate structure they’re on. They don’t know if they have a demand ratchet. They just pay the bill. Even hospitals.",
@@ -570,7 +665,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:12:$.triggers[1].whyItMatters",
+      "claimId": "d1:14:$.triggers[1].whyItMatters",
       "jsonPath": "$.triggers[1].whyItMatters",
       "kind": "narrative",
       "text": "Structural information asymmetry converts when you monetize and explain the mechanism on the bill.",
@@ -618,7 +713,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:13:$.triggers[2].name",
+      "claimId": "d1:15:$.triggers[2].name",
       "jsonPath": "$.triggers[2].name",
       "kind": "narrative",
       "text": "Wrong account, address, or meter attribution",
@@ -666,7 +761,55 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:14:$.triggers[2].quote",
+      "claimId": "d1:16:$.triggers[2].additionalSources",
+      "jsonPath": "$.triggers[2].additionalSources",
+      "kind": "narrative",
+      "text": "Scott Sukits · AdventHealth (field / controls)",
+      "attributionHint": "John Culver · AdventHealth",
+      "matchedInterviewIds": [
+        "adventhealth",
+        "trane-johnson"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.006
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/synthesis/D1_Engagement_Trigger_Map.md",
+          "chunkIndex": 73,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "| Field | Detail | | ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_AdventHealth.docx",
+          "chunkIndex": 4,
+          "corpusKind": "primary_summary",
+          "score": 0.68,
+          "excerpt": "Note on scheduled vs. actual participants: This interview was booked with Allegra Wiesler (Executive Director, Environmental Sustainability). She was unable to join. John Culver and Scott Sukits participated in her place…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:17:$.triggers[2].quote",
       "jsonPath": "$.triggers[2].quote",
       "kind": "quote",
       "text": "Bills are not always matching the addresses of our sites. Bills for one hospital campus are being paid by another.",
@@ -714,7 +857,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:15:$.triggers[2].whyItMatters",
+      "claimId": "d1:18:$.triggers[2].whyItMatters",
       "jsonPath": "$.triggers[2].whyItMatters",
       "kind": "narrative",
       "text": "Site-to-invoice association is the automation prerequisite for everything else at multi-site scale.",
@@ -762,7 +905,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:16:$.triggers[3].name",
+      "claimId": "d1:19:$.triggers[3].name",
       "jsonPath": "$.triggers[3].name",
       "kind": "narrative",
       "text": "Tax exemption not applied on utility bills",
@@ -810,7 +953,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:17:$.triggers[3].quote",
+      "claimId": "d1:20:$.triggers[3].quote",
       "jsonPath": "$.triggers[3].quote",
       "kind": "quote",
       "text": "Non-profit tax exemptions — a real billing error category that goes undiscovered for months because nobody is systematically checking the tax line.",
@@ -858,7 +1001,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:18:$.triggers[3].whyItMatters",
+      "claimId": "d1:21:$.triggers[3].whyItMatters",
       "jsonPath": "$.triggers[3].whyItMatters",
       "kind": "narrative",
       "text": "Recoverable dollars and credit claims close the loop from identified error to realized savings.",
@@ -906,7 +1049,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:19:$.triggers[4].name",
+      "claimId": "d1:22:$.triggers[4].name",
       "jsonPath": "$.triggers[4].name",
       "kind": "narrative",
       "text": "Power-factor penalty without explanation",
@@ -953,7 +1096,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:20:$.triggers[4].quote",
+      "claimId": "d1:23:$.triggers[4].quote",
       "jsonPath": "$.triggers[4].quote",
       "kind": "quote",
       "text": "We’re seeing power factor readings of 79–81% at one of our campuses. Below where we should be — but I’m not sure if it’s equipment or meter malfunction.",
@@ -1000,7 +1143,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:21:$.triggers[4].whyItMatters",
+      "claimId": "d1:24:$.triggers[4].whyItMatters",
       "jsonPath": "$.triggers[4].whyItMatters",
       "kind": "narrative",
       "text": "Even sophisticated buyers need a fast second opinion separating billing error from operations.",
@@ -1047,7 +1190,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:22:$.triggers[5].name",
+      "claimId": "d1:25:$.triggers[5].name",
       "jsonPath": "$.triggers[5].name",
       "kind": "narrative",
       "text": "Ratchet locks after unexpected demand event",
@@ -1095,7 +1238,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:23:$.triggers[5].seasonality",
+      "claimId": "d1:26:$.triggers[5].seasonality",
       "jsonPath": "$.triggers[5].seasonality",
       "kind": "narrative",
       "text": "Aug–Sep after spike; cost persists 12 months",
@@ -1143,7 +1286,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:24:$.triggers[5].quote",
+      "claimId": "d1:27:$.triggers[5].quote",
       "jsonPath": "$.triggers[5].quote",
       "kind": "quote",
       "text": "If a customer hits a high demand in July, they may pay for that demand for the next 12 months. Most don’t know until the bill is already high.",
@@ -1191,7 +1334,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:25:$.triggers[5].whyItMatters",
+      "claimId": "d1:28:$.triggers[5].whyItMatters",
       "jsonPath": "$.triggers[5].whyItMatters",
       "kind": "narrative",
       "text": "High-dollar and poorly understood. Modeling and warnings beat post-bill surprise.",
@@ -1239,7 +1382,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:26:$.triggers[6].name",
+      "claimId": "d1:29:$.triggers[6].name",
       "jsonPath": "$.triggers[6].name",
       "kind": "narrative",
       "text": "Utility dispute with no historical documentation",
@@ -1286,7 +1429,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:27:$.triggers[6].quote",
+      "claimId": "d1:30:$.triggers[6].additionalSources",
+      "jsonPath": "$.triggers[6].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:31:$.triggers[6].quote",
       "jsonPath": "$.triggers[6].quote",
       "kind": "quote",
       "text": "We had someone doing our bill processing for 10 to 15 years and she recently left, so we’re scrambling a little.",
@@ -1333,7 +1523,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:28:$.triggers[6].whyItMatters",
+      "claimId": "d1:32:$.triggers[6].whyItMatters",
       "jsonPath": "$.triggers[6].whyItMatters",
       "kind": "narrative",
       "text": "Archived bills and patterns are the evidence base for disputes — and continuity after turnover.",
@@ -1380,7 +1570,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:29:$.triggers[7].name",
+      "claimId": "d1:33:$.triggers[7].name",
       "jsonPath": "$.triggers[7].name",
       "kind": "narrative",
       "text": "Retail supplier transition billing overlap or gap",
@@ -1427,7 +1617,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:30:$.triggers[7].seasonality",
+      "claimId": "d1:34:$.triggers[7].seasonality",
       "jsonPath": "$.triggers[7].seasonality",
       "kind": "narrative",
       "text": "Contract anniversaries; Q4 budget cycle",
@@ -1474,7 +1664,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:31:$.triggers[7].quote",
+      "claimId": "d1:35:$.triggers[7].quote",
       "jsonPath": "$.triggers[7].quote",
       "kind": "quote",
       "text": "ERCOT has 100+ REPs, an 87% commercial switching rate, and overlapping billing cycles during supplier transitions.",
@@ -1521,7 +1711,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:32:$.triggers[7].whyItMatters",
+      "claimId": "d1:36:$.triggers[7].whyItMatters",
       "jsonPath": "$.triggers[7].whyItMatters",
       "kind": "narrative",
       "text": "Structural complexity in home markets like ERCOT is a repeatable wedge for transition-error detection.",
@@ -1568,7 +1758,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:33:$.triggers[8].name",
+      "claimId": "d1:37:$.triggers[8].name",
       "jsonPath": "$.triggers[8].name",
       "kind": "narrative",
       "text": "TOU tier misclassification on the bill",
@@ -1616,7 +1806,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:34:$.triggers[8].seasonality",
+      "claimId": "d1:38:$.triggers[8].seasonality",
       "jsonPath": "$.triggers[8].seasonality",
       "kind": "narrative",
       "text": "Year-round; costliest in summer peak",
@@ -1664,7 +1854,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:35:$.triggers[8].quote",
+      "claimId": "d1:39:$.triggers[8].quote",
       "jsonPath": "$.triggers[8].quote",
       "kind": "quote",
       "text": "On-peak, off-peak, discounted off-peak, super off-peak, extreme on-peak — all actual names. Wrong tier and nobody catches it without line-by-line review.",
@@ -1712,7 +1902,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:36:$.triggers[8].whyItMatters",
+      "claimId": "d1:40:$.triggers[8].whyItMatters",
       "jsonPath": "$.triggers[8].whyItMatters",
       "kind": "narrative",
       "text": "Automated tariff cross-check beats manual workbook lookup at scale.",
@@ -1760,7 +1950,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:37:$.triggers[9].name",
+      "claimId": "d1:41:$.triggers[9].name",
       "jsonPath": "$.triggers[9].name",
       "kind": "narrative",
       "text": "Water or wastewater consumption anomaly",
@@ -1807,7 +1997,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:38:$.triggers[9].seasonality",
+      "claimId": "d1:42:$.triggers[9].seasonality",
       "jsonPath": "$.triggers[9].seasonality",
       "kind": "narrative",
       "text": "Summer irrigation; leaks year-round",
@@ -1854,7 +2044,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:39:$.triggers[9].quote",
+      "claimId": "d1:43:$.triggers[9].additionalSources",
+      "jsonPath": "$.triggers[9].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:44:$.triggers[9].quote",
       "jsonPath": "$.triggers[9].quote",
       "kind": "quote",
       "text": "They listed 35,000 gallons instead of the typical 3,500 gallons.",
@@ -1901,7 +2138,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:40:$.triggers[9].whyItMatters",
+      "claimId": "d1:45:$.triggers[9].whyItMatters",
       "jsonPath": "$.triggers[9].whyItMatters",
       "kind": "narrative",
       "text": "Multi-utility anomaly detection expands the platform beyond electrons alone.",
@@ -1948,7 +2185,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:41:$.triggers[10].name",
+      "claimId": "d1:46:$.triggers[10].name",
       "jsonPath": "$.triggers[10].name",
       "kind": "narrative",
       "text": "Supply contract 9–12 months from expiration",
@@ -1996,7 +2233,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:42:$.triggers[10].quote",
+      "claimId": "d1:47:$.triggers[10].quote",
       "jsonPath": "$.triggers[10].quote",
       "kind": "quote",
       "text": "The contract renewal window is the moment when customers actually pay attention to their energy costs.",
@@ -2044,7 +2281,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:43:$.triggers[10].whyItMatters",
+      "claimId": "d1:48:$.triggers[10].whyItMatters",
       "jsonPath": "$.triggers[10].whyItMatters",
       "kind": "narrative",
       "text": "Known calendar event with a finite decision window suits Deal Center + renewal alerts.",
@@ -2092,7 +2329,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:44:$.triggers[11].seasonality",
+      "claimId": "d1:49:$.triggers[11].seasonality",
       "jsonPath": "$.triggers[11].seasonality",
       "kind": "narrative",
       "text": "Higher-ed Jan–Mar; corporate Q3–Q4",
@@ -2139,7 +2376,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:45:$.triggers[11].quote",
+      "claimId": "d1:50:$.triggers[11].additionalSources",
+      "jsonPath": "$.triggers[11].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:51:$.triggers[11].quote",
       "jsonPath": "$.triggers[11].quote",
       "kind": "quote",
       "text": "Our budget is submitted in March, but the City of Austin’s rate changes are often not finalized until after we’ve already submitted. So we’re guessing.",
@@ -2186,7 +2470,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:46:$.triggers[11].whyItMatters",
+      "claimId": "d1:52:$.triggers[11].whyItMatters",
       "jsonPath": "$.triggers[11].whyItMatters",
       "kind": "narrative",
       "text": "Budget-vs-actual and rate intelligence close the gap finance cannot defend without data.",
@@ -2233,7 +2517,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:47:$.triggers[12].name",
+      "claimId": "d1:53:$.triggers[12].name",
       "jsonPath": "$.triggers[12].name",
       "kind": "narrative",
       "text": "Natural gas purchasing window (spring)",
@@ -2281,7 +2565,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:48:$.triggers[12].quote",
+      "claimId": "d1:54:$.triggers[12].quote",
       "jsonPath": "$.triggers[12].quote",
       "kind": "quote",
       "text": "We buy $20 million in natural gas every year plus or minus depending on pricing. That’s a proactive decision we make in the spring.",
@@ -2329,7 +2613,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:49:$.triggers[12].whyItMatters",
+      "claimId": "d1:55:$.triggers[12].whyItMatters",
       "jsonPath": "$.triggers[12].whyItMatters",
       "kind": "narrative",
       "text": "Large commodity decisions need baseline data and structured comparison in a narrow season.",
@@ -2377,7 +2661,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:50:$.triggers[13].name",
+      "claimId": "d1:56:$.triggers[13].name",
       "jsonPath": "$.triggers[13].name",
       "kind": "narrative",
       "text": "New fiscal year reset and reconciliation",
@@ -2424,7 +2708,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:51:$.triggers[13].quote",
+      "claimId": "d1:57:$.triggers[13].additionalSources",
+      "jsonPath": "$.triggers[13].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:58:$.triggers[13].quote",
       "jsonPath": "$.triggers[13].quote",
       "kind": "quote",
       "text": "Our fiscal year is September 1 through August 31. That’s when everything resets — budgets, building assignments, everything.",
@@ -2471,7 +2802,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:52:$.triggers[13].whyItMatters",
+      "claimId": "d1:59:$.triggers[13].whyItMatters",
       "jsonPath": "$.triggers[13].whyItMatters",
       "kind": "narrative",
       "text": "Portfolio onboarding and prior-year actuals anchor the new-year baseline.",
@@ -2518,7 +2849,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:53:$.triggers[14].name",
+      "claimId": "d1:60:$.triggers[14].name",
       "jsonPath": "$.triggers[14].name",
       "kind": "narrative",
       "text": "Scheduled generator test risks summer peak",
@@ -2565,7 +2896,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:54:$.triggers[14].quote",
+      "claimId": "d1:61:$.triggers[14].additionalSources",
+      "jsonPath": "$.triggers[14].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:62:$.triggers[14].quote",
       "jsonPath": "$.triggers[14].quote",
       "kind": "quote",
       "text": "We test emergency generators at 80% load bank during summer — required for accreditation. But we’re not always thinking about what that does to our peak demand.",
@@ -2612,7 +2990,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:55:$.triggers[14].whyItMatters",
+      "claimId": "d1:63:$.triggers[14].whyItMatters",
       "jsonPath": "$.triggers[14].whyItMatters",
       "kind": "narrative",
       "text": "Proactive calendar insert prevents a scheduled event from becoming a 12-month ratchet problem.",
@@ -2659,7 +3037,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:56:$.triggers[15].name",
+      "claimId": "d1:64:$.triggers[15].name",
       "jsonPath": "$.triggers[15].name",
       "kind": "narrative",
       "text": "New energy manager or expanded role",
@@ -2709,7 +3087,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:57:$.triggers[15].primarySource",
+      "claimId": "d1:65:$.triggers[15].primarySource",
       "jsonPath": "$.triggers[15].primarySource",
       "kind": "narrative",
       "text": "Secondary research · industry pattern",
@@ -2759,7 +3137,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:58:$.triggers[15].quote",
+      "claimId": "d1:66:$.triggers[15].quote",
       "jsonPath": "$.triggers[15].quote",
       "kind": "quote",
       "text": "Industry pattern: new hire evaluates existing vendor relationships in first 60–90 days.",
@@ -2809,7 +3187,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:59:$.triggers[15].whyItMatters",
+      "claimId": "d1:67:$.triggers[15].whyItMatters",
       "jsonPath": "$.triggers[15].whyItMatters",
       "kind": "narrative",
       "text": "Secondary-only trigger in synthesis (no primary sound bite); orientation and fast answers compress time-to-value for a fresh owner.",
@@ -2859,7 +3237,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:60:$.triggers[16].name",
+      "claimId": "d1:68:$.triggers[16].name",
       "jsonPath": "$.triggers[16].name",
       "kind": "narrative",
       "text": "ESG reporting deadline approaching",
@@ -2907,7 +3285,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:61:$.triggers[16].seasonality",
+      "claimId": "d1:69:$.triggers[16].seasonality",
       "jsonPath": "$.triggers[16].seasonality",
       "kind": "narrative",
       "text": "Q1 for calendar-year filers; rule-specific",
@@ -2955,7 +3333,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:62:$.triggers[16].primarySource",
+      "claimId": "d1:70:$.triggers[16].primarySource",
       "jsonPath": "$.triggers[16].primarySource",
       "kind": "narrative",
       "text": "Andi Ault · UT Austin (passing) + regulatory secondary",
@@ -3003,7 +3381,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:63:$.triggers[16].quote",
+      "claimId": "d1:71:$.triggers[16].quote",
       "jsonPath": "$.triggers[16].quote",
       "kind": "quote",
       "text": "Annual ESG or carbon reporting deadlines require consumption, emissions, and utility documentation that is not yet organized or audit-ready.",
@@ -3051,7 +3429,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:64:$.triggers[16].whyItMatters",
+      "claimId": "d1:72:$.triggers[16].whyItMatters",
       "jsonPath": "$.triggers[16].whyItMatters",
       "kind": "narrative",
       "text": "Audit-ready consumption and utility documentation supports disclosure workloads.",
@@ -3099,7 +3477,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:65:$.triggers[17].name",
+      "claimId": "d1:73:$.triggers[17].name",
       "jsonPath": "$.triggers[17].name",
       "kind": "narrative",
       "text": "Capital project needs ROI for budget committee",
@@ -3147,7 +3525,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:66:$.triggers[17].seasonality",
+      "claimId": "d1:74:$.triggers[17].seasonality",
       "jsonPath": "$.triggers[17].seasonality",
       "kind": "narrative",
       "text": "Healthcare Q4 planning; higher-ed Jan–Mar",
@@ -3195,7 +3573,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:67:$.triggers[17].quote",
+      "claimId": "d1:75:$.triggers[17].quote",
       "jsonPath": "$.triggers[17].quote",
       "kind": "quote",
       "text": "A lot of the work for determining — hey, here's the energy conservation measures or the facility improvement measures we want to pursue next year — that has to come before budgeting cycle so that we're able to have and provide that package to our financial leaders at the hospital level.",
@@ -3243,7 +3621,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:68:$.triggers[17].whyItMatters",
+      "claimId": "d1:76:$.triggers[17].whyItMatters",
       "jsonPath": "$.triggers[17].whyItMatters",
       "kind": "narrative",
       "text": "Bill and rate scenarios translate technical projects into CFO-ready dollars.",
@@ -3291,7 +3669,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:69:$.triggers[18].quote",
+      "claimId": "d1:77:$.triggers[18].additionalSources",
+      "jsonPath": "$.triggers[18].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:78:$.triggers[18].quote",
       "jsonPath": "$.triggers[18].quote",
       "kind": "quote",
       "text": "We typically do three-year terms on gas. Every few years, that procurement decision comes around and we have to think through strips versus market again.",
@@ -3338,7 +3763,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:70:$.triggers[18].whyItMatters",
+      "claimId": "d1:79:$.triggers[18].whyItMatters",
       "jsonPath": "$.triggers[18].whyItMatters",
       "kind": "narrative",
       "text": "Repeating procurement cadence rewards Deal Center modeling and benchmarks.",
@@ -3385,7 +3810,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:71:$.triggers[19].name",
+      "claimId": "d1:80:$.triggers[19].name",
       "jsonPath": "$.triggers[19].name",
       "kind": "narrative",
       "text": "Rate case filed before budget is locked",
@@ -3433,7 +3858,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:72:$.triggers[19].seasonality",
+      "claimId": "d1:81:$.triggers[19].seasonality",
       "jsonPath": "$.triggers[19].seasonality",
       "kind": "narrative",
       "text": "Filings year-round; pain at budget season",
@@ -3481,7 +3906,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:73:$.triggers[19].quote",
+      "claimId": "d1:82:$.triggers[19].quote",
       "jsonPath": "$.triggers[19].quote",
       "kind": "quote",
       "text": "Monitoring PUC filings, utility board meetings, rate hike proposals, grid-operator decisions — that’s forward intelligence nobody is providing.",
@@ -3529,7 +3954,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:74:$.triggers[19].whyItMatters",
+      "claimId": "d1:83:$.triggers[19].whyItMatters",
       "jsonPath": "$.triggers[19].whyItMatters",
       "kind": "narrative",
       "text": "Differentiated forward intelligence with dollar impact for a specific load profile.",
@@ -3577,7 +4002,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:75:$.triggers[20].name",
+      "claimId": "d1:84:$.triggers[20].name",
       "jsonPath": "$.triggers[20].name",
       "kind": "narrative",
       "text": "PJM capacity auction flows to bills",
@@ -3626,7 +4051,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:76:$.triggers[20].seasonality",
+      "claimId": "d1:85:$.triggers[20].seasonality",
       "jsonPath": "$.triggers[20].seasonality",
       "kind": "narrative",
       "text": "Results spring/summer; bill impact January",
@@ -3675,7 +4100,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:77:$.triggers[20].primarySource",
+      "claimId": "d1:86:$.triggers[20].primarySource",
       "jsonPath": "$.triggers[20].primarySource",
       "kind": "narrative",
       "text": "Ann Walston · Bon Secours Mercy Health",
@@ -3724,7 +4149,56 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:78:$.triggers[20].quote",
+      "claimId": "d1:87:$.triggers[20].additionalSources",
+      "jsonPath": "$.triggers[20].additionalSources",
+      "kind": "narrative",
+      "text": "Scott Czubkowski · Medxcel (Ascension)",
+      "attributionHint": "Ann Walston · Bon Secours Mercy Health",
+      "matchedInterviewIds": [
+        "bon-secours",
+        "intermountain",
+        "adventhealth"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.19
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, Energy & Facility Performance Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 1,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "onal Director, Energy & Facility Performance Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters Scott Czubkowski is the National Director of Energy & Facility Performance at Medxcel, the facilities m…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 2,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "Scott Czubkowski is the National Director of Energy & Facility Performance at Medxcel, the facilities management subsidiary of Ascension Health. He held the equivalent energy management role directly at Ascension for fiv…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 3,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "platforms needs to do to earn trust at this scale. 1. Interviewee Profile Field Detail Name Scott Czubkowski Title National Director, Energy & Facility Performance Company Medxcel (Ascension Health's facilities managemen…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:88:$.triggers[20].quote",
       "jsonPath": "$.triggers[20].quote",
       "kind": "quote",
       "text": "Capacity charges in PJM have increased tenfold in the last two years due to data center construction in Ohio. Most urgent and least controllable billing issue for our PJM hospitals.",
@@ -3773,7 +4247,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:79:$.triggers[20].whyItMatters",
+      "claimId": "d1:89:$.triggers[20].whyItMatters",
       "jsonPath": "$.triggers[20].whyItMatters",
       "kind": "narrative",
       "text": "Wholesale regulatory mechanics need forecasted bill impact before charges land.",
@@ -3822,11 +4296,11 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:80:$.triggers[21].seasonality",
+      "claimId": "d1:90:$.triggers[21].seasonality",
       "jsonPath": "$.triggers[21].seasonality",
       "kind": "narrative",
       "text": "2026–2028 phase-ins by jurisdiction",
-      "attributionHint": "Troy Nevels · UT Austin Engineering",
+      "attributionHint": "Troy Nevells · UT Austin Engineering",
       "matchedInterviewIds": [
         "ut-austin-ops",
         "ut-austin-finance"
@@ -3870,11 +4344,11 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:81:$.triggers[21].primarySource",
+      "claimId": "d1:91:$.triggers[21].primarySource",
       "jsonPath": "$.triggers[21].primarySource",
       "kind": "narrative",
-      "text": "Troy Nevels · UT Austin Engineering",
-      "attributionHint": "Troy Nevels · UT Austin Engineering",
+      "text": "Troy Nevells · UT Austin Engineering",
+      "attributionHint": "Troy Nevells · UT Austin Engineering",
       "matchedInterviewIds": [
         "ut-austin-ops",
         "ut-austin-finance"
@@ -3883,46 +4357,46 @@
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.044
+        "bestJaccard": 0.049
       },
       "evidence": [
         {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx",
-          "chunkIndex": 18,
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx",
+          "chunkIndex": 0,
           "corpusKind": "primary_summary",
           "score": 0.85,
-          "excerpt": "Monthly: pulling reports, running trends, comparing similar facilities for forecasting. Continuous: validation of purchased utility bills. Multi-year: fuel hedging strategy, capital planning. Key pain point: City of Aust…"
+          "excerpt": "Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & Technical Services Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters Troy Nevells is the Director…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx",
+          "chunkIndex": 1,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "ers, as opposed to the utility purchasers who are Clear Current's primary target. 1. Interviewee Profile Field Detail Name Troy Nevells Title Director of Engineering & Technical Services Department Utilities & Energy Man…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx",
+          "chunkIndex": 2,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "Name Troy Nevells Title Director of Engineering & Technical Services Department Utilities & Energy Management (UEM), UT Austin Campus Operations Tenure at UT ~7 months (joined from Yale University) Prior Roles Yale Unive…"
         },
         {
           "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1707,
+          "chunkIndex": 1728,
           "corpusKind": "other",
           "score": 0.85,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 878,
-          "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        },
-        {
-          "file": "research/outputs/primary/02_quote_bank.md",
-          "chunkIndex": 35,
-          "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "ut more than any energy-specific feature. DELIVERABLE TAGS: Product Module / Journey Map / Feature Desire / Presentation QUOTE #18 \"Yeah, I mean, if the University of Texas didn't have a district energy system and they h…"
+          "excerpt": "sing person leaves, we're the system that doesn't forget.' ═══ END: Clear_Current_Interview_Summary_Texas_State.docx ═══ ═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Sum…"
         }
       ],
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:82:$.triggers[21].quote",
+      "claimId": "d1:92:$.triggers[21].quote",
       "jsonPath": "$.triggers[21].quote",
       "kind": "quote",
       "text": "In northeastern states, carbon charges are now appearing on natural gas bills. Another layer of potential error and another tariff to interpret.",
-      "attributionHint": "Troy Nevels · UT Austin Engineering",
+      "attributionHint": "Troy Nevells · UT Austin Engineering",
       "matchedInterviewIds": [
         "ut-austin-ops",
         "ut-austin-finance"
@@ -3966,11 +4440,11 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:83:$.triggers[21].whyItMatters",
+      "claimId": "d1:93:$.triggers[21].whyItMatters",
       "jsonPath": "$.triggers[21].whyItMatters",
       "kind": "narrative",
       "text": "New line items need jurisdiction-specific tariff interpretation and audit.",
-      "attributionHint": "Troy Nevels · UT Austin Engineering",
+      "attributionHint": "Troy Nevells · UT Austin Engineering",
       "matchedInterviewIds": [
         "ut-austin-ops",
         "ut-austin-finance"
@@ -4014,7 +4488,57 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:84:$.triggers[22].quote",
+      "claimId": "d1:94:$.triggers[22].additionalSources",
+      "jsonPath": "$.triggers[22].additionalSources",
+      "kind": "narrative",
+      "text": "Jamare Bates · JLL (CRE compliance / portfolio advisory)",
+      "attributionHint": "Secondary research · NYC LL97",
+      "matchedInterviewIds": [
+        "texas-state",
+        "ut-austin-finance",
+        "ut-austin-ops",
+        "medxcel-ascension"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.729,
+        "bestCoverage": 0.857,
+        "bestJaccard": 0.09
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
+          "chunkIndex": 0,
+          "corpusKind": "primary_output",
+          "score": 0.729,
+          "excerpt": "# Agent: Carmen Vega | Commercial Real Estate Energy Portfolio Expert # Run: 2026-04-17T14:47:04.180466 --- # Carmen Vega — Commercial Real Estate Energy Portfolio Analysis ## Clear Current Technologies | Research Corpus…"
+        },
+        {
+          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
+          "chunkIndex": 9,
+          "corpusKind": "primary_output",
+          "score": 0.729,
+          "excerpt": "REIT Energy Teams **Source: Jamare Bates Transcript and Summary, cross-referenced against all other corpus documents.** Jamare Bates is a VP in JLL's advisory practice — he advises CRE clients, he does not operate a CRE …"
+        },
+        {
+          "file": "research/outputs/primary/agents/11_Carmen_Vega.md",
+          "chunkIndex": 10,
+          "corpusKind": "primary_output",
+          "score": 0.729,
+          "excerpt": "Jamare Bates is a VP in JLL's advisory practice — he advises CRE clients, he does not operate a CRE portfolio. The corpus contains no interviews with: a REIT energy manager, a property management company energy lead, a C…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1713,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Jamare_Bates_JLL.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:95:$.triggers[22].quote",
       "jsonPath": "$.triggers[22].quote",
       "kind": "quote",
       "text": "Local Law 97 of 2019 requires buildings over 25,000 square feet to meet GHG emissions limits beginning in 2024, with an annual carbon emissions report due May 1 of each year.",
@@ -4064,7 +4588,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:85:$.triggers[22].whyItMatters",
+      "claimId": "d1:96:$.triggers[22].whyItMatters",
       "jsonPath": "$.triggers[22].whyItMatters",
       "kind": "narrative",
       "text": "Portfolio compliance status and exposure quantification drive capital and reporting action.",
@@ -4114,7 +4638,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:86:$.triggers[23].name",
+      "claimId": "d1:97:$.triggers[23].name",
       "jsonPath": "$.triggers[23].name",
       "kind": "narrative",
       "text": "Rate redesign shifts fixed vs variable charges",
@@ -4162,7 +4686,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:87:$.triggers[23].seasonality",
+      "claimId": "d1:98:$.triggers[23].seasonality",
       "jsonPath": "$.triggers[23].seasonality",
       "kind": "narrative",
       "text": "Effective dates vary; year-round filings",
@@ -4210,7 +4734,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:88:$.triggers[23].primarySource",
+      "claimId": "d1:99:$.triggers[23].primarySource",
       "jsonPath": "$.triggers[23].primarySource",
       "kind": "narrative",
       "text": "Walt Taylor · Panda Restaurant Group",
@@ -4258,7 +4782,55 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:89:$.triggers[23].quote",
+      "claimId": "d1:100:$.triggers[23].additionalSources",
+      "jsonPath": "$.triggers[23].additionalSources",
+      "kind": "narrative",
+      "text": "Roger Goldstein · Panda Restaurant Group",
+      "attributionHint": "Walt Taylor · Panda Restaurant Group",
+      "matchedInterviewIds": [
+        "panda-walt",
+        "panda-roger"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.139
+      },
+      "evidence": [
+        {
+          "file": "research/Call Transcripts/CC Research - Roger Goldstein, PANDA Restaurants.txt",
+          "chunkIndex": 7,
+          "corpusKind": "primary_transcript",
+          "score": 0.85,
+          "excerpt": "e like you, they're a part of like Panda that that manage these, these, these 1000s of restaurants across the US. And so that was kind of like where we are today is, is just trying to collect data from different people i…"
+        },
+        {
+          "file": "research/Call Transcripts/CC Research - Roger Goldstein, PANDA Restaurants.txt",
+          "chunkIndex": 8,
+          "corpusKind": "primary_transcript",
+          "score": 0.85,
+          "excerpt": "that was kind of like where we are today is, is just trying to collect data from different people in different industries and how they manage their energy. Yes, sir. Excellent, Roger Goldstein 3:15 excellent. So, yeah, I…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx",
+          "chunkIndex": 1,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "tle Senior Account Manager Company ENGIE Impact (formerly ENGIE Insight / Ecova) Location Saint Paul, MN Education BS, University of Minnesota Carlson School of Management Prior Experience Investment banking (Piper Jaffr…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx",
+          "chunkIndex": 2,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "BS, University of Minnesota Carlson School of Management Prior Experience Investment banking (Piper Jaffray, ~10 years) Tenure at ENGIE ~18 years Client Referral Roger Goldstein, Executive Director Facilities & Energy, P…"
+        }
+      ],
+      "inExpectedSourceFile": true
+    },
+    {
+      "claimId": "d1:101:$.triggers[23].quote",
       "jsonPath": "$.triggers[23].quote",
       "kind": "quote",
       "text": "Utilities will always adjust their rate structures to remain profitable. Energy managers who track only current rates will continually be caught behind.",
@@ -4306,7 +4878,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:90:$.triggers[23].whyItMatters",
+      "claimId": "d1:102:$.triggers[23].whyItMatters",
       "jsonPath": "$.triggers[23].whyItMatters",
       "kind": "narrative",
       "text": "Modeling redesign impact prevents silent erosion of efficiency economics.",
@@ -4354,7 +4926,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:91:$.triggers[24].name",
+      "claimId": "d1:103:$.triggers[24].name",
       "jsonPath": "$.triggers[24].name",
       "kind": "narrative",
       "text": "Utility spend blows budget variance threshold",
@@ -4402,7 +4974,55 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:92:$.triggers[24].quote",
+      "claimId": "d1:104:$.triggers[24].additionalSources",
+      "jsonPath": "$.triggers[24].additionalSources",
+      "kind": "narrative",
+      "text": "Scott Czubkowski · Medxcel (Ascension); Randy Dawes · Hyatt",
+      "attributionHint": "Phil Combs · Trane Technologies",
+      "matchedInterviewIds": [
+        "trane-combs",
+        "trane-johnson"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.486,
+        "bestCoverage": 0.571,
+        "bestJaccard": 0.167
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.486,
+          "excerpt": "Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, Energy & Facility Performance Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 1,
+          "corpusKind": "primary_summary",
+          "score": 0.486,
+          "excerpt": "onal Director, Energy & Facility Performance Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters Scott Czubkowski is the National Director of Energy & Facility Performance at Medxcel, the facilities m…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 2,
+          "corpusKind": "primary_summary",
+          "score": 0.486,
+          "excerpt": "Scott Czubkowski is the National Director of Energy & Facility Performance at Medxcel, the facilities management subsidiary of Ascension Health. He held the equivalent energy management role directly at Ascension for fiv…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx",
+          "chunkIndex": 3,
+          "corpusKind": "primary_summary",
+          "score": 0.486,
+          "excerpt": "platforms needs to do to earn trust at this scale. 1. Interviewee Profile Field Detail Name Scott Czubkowski Title National Director, Energy & Facility Performance Company Medxcel (Ascension Health's facilities managemen…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:105:$.triggers[24].quote",
       "jsonPath": "$.triggers[24].quote",
       "kind": "quote",
       "text": "Nobody cares until you monetize it. If you can’t put a dollar sign on the problem and put it in front of a CFO, it doesn’t get acted on.",
@@ -4450,7 +5070,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:93:$.triggers[24].whyItMatters",
+      "claimId": "d1:106:$.triggers[24].whyItMatters",
       "jsonPath": "$.triggers[24].whyItMatters",
       "kind": "narrative",
       "text": "Dollar-denominated variance answers before the CFO asks preserves credibility.",
@@ -4498,7 +5118,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:94:$.triggers[25].name",
+      "claimId": "d1:107:$.triggers[25].name",
       "jsonPath": "$.triggers[25].name",
       "kind": "narrative",
       "text": "Unexplained YoY utility increase at quarterly close",
@@ -4546,7 +5166,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:95:$.triggers[25].quote",
+      "claimId": "d1:108:$.triggers[25].quote",
       "jsonPath": "$.triggers[25].quote",
       "kind": "quote",
       "text": "Flagging anomalies would be the first process — featured and flagged rather than looking for it. That would be time-saving.",
@@ -4594,7 +5214,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:96:$.triggers[25].whyItMatters",
+      "claimId": "d1:109:$.triggers[25].whyItMatters",
       "jsonPath": "$.triggers[25].whyItMatters",
       "kind": "narrative",
       "text": "Automated decomposition replaces manual bill-by-bill scavenger hunts.",
@@ -4642,7 +5262,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:97:$.triggers[26].name",
+      "claimId": "d1:110:$.triggers[26].name",
       "jsonPath": "$.triggers[26].name",
       "kind": "narrative",
       "text": "Chargeback dispute on flat allocation",
@@ -4689,7 +5309,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:98:$.triggers[26].quote",
+      "claimId": "d1:111:$.triggers[26].additionalSources",
+      "jsonPath": "$.triggers[26].additionalSources",
+      "kind": "narrative",
+      "text": "Andee Chamberlain · Carl Teague · Texas State (same interview)",
+      "attributionHint": "James Norton · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:112:$.triggers[26].quote",
       "jsonPath": "$.triggers[26].quote",
       "kind": "quote",
       "text": "Right now we charge buildings for utilities based on square footage. With actual usage data we could drive conservation.",
@@ -4736,7 +5403,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:99:$.triggers[26].whyItMatters",
+      "claimId": "d1:113:$.triggers[26].whyItMatters",
       "jsonPath": "$.triggers[26].whyItMatters",
       "kind": "narrative",
       "text": "Usage-based chargeback is a structural switching-cost wedge versus incumbents.",
@@ -4783,7 +5450,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:100:$.triggers[27].name",
+      "claimId": "d1:114:$.triggers[27].name",
       "jsonPath": "$.triggers[27].name",
       "kind": "narrative",
       "text": "Energy spend crosses C-suite materiality",
@@ -4830,7 +5497,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:101:$.triggers[27].seasonality",
+      "claimId": "d1:115:$.triggers[27].seasonality",
       "jsonPath": "$.triggers[27].seasonality",
       "kind": "narrative",
       "text": "Annual board and quarterly earnings rhythm",
@@ -4877,7 +5544,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:102:$.triggers[27].quote",
+      "claimId": "d1:116:$.triggers[27].quote",
       "jsonPath": "$.triggers[27].quote",
       "kind": "quote",
       "text": "Once energy spend hits $5M annually, it’s on the CFO’s radar. Below that, facilities problem. Above, a financial one.",
@@ -4924,7 +5591,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:103:$.triggers[27].whyItMatters",
+      "claimId": "d1:117:$.triggers[27].whyItMatters",
       "jsonPath": "$.triggers[27].whyItMatters",
       "kind": "narrative",
       "text": "Executive dashboards must summarize portfolio cost and opportunity at a glance.",
@@ -4971,7 +5638,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:104:$.triggers[28].name",
+      "claimId": "d1:118:$.triggers[28].name",
       "jsonPath": "$.triggers[28].name",
       "kind": "narrative",
       "text": "Broker or consultant review finds nothing actionable",
@@ -5018,7 +5685,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:105:$.triggers[28].seasonality",
+      "claimId": "d1:119:$.triggers[28].seasonality",
       "jsonPath": "$.triggers[28].seasonality",
       "kind": "narrative",
       "text": "Annual renewal; some quarterly cycles",
@@ -5065,7 +5732,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:106:$.triggers[28].quote",
+      "claimId": "d1:120:$.triggers[28].quote",
       "jsonPath": "$.triggers[28].quote",
       "kind": "quote",
       "text": "Prism does a cursory review of our invoices, but they’re not catching everything — we’re still seeing power factor anomalies.",
@@ -5112,7 +5779,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:107:$.triggers[28].whyItMatters",
+      "claimId": "d1:121:$.triggers[28].whyItMatters",
       "jsonPath": "$.triggers[28].whyItMatters",
       "kind": "narrative",
       "text": "Continuous audit layer augments outsourced review without replacing relationships.",
@@ -5159,7 +5826,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:108:$.triggers[29].name",
+      "claimId": "d1:122:$.triggers[29].name",
       "jsonPath": "$.triggers[29].name",
       "kind": "narrative",
       "text": "OEM rep uses bill story before equipment sale",
@@ -5207,7 +5874,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:109:$.triggers[29].quote",
+      "claimId": "d1:123:$.triggers[29].quote",
       "jsonPath": "$.triggers[29].quote",
       "kind": "quote",
       "text": "If I could generate an energy profile for a customer — that would make my job a lot easier. And it gives the customer a reason to act.",
@@ -5255,7 +5922,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:110:$.triggers[29].whyItMatters",
+      "claimId": "d1:124:$.triggers[29].whyItMatters",
       "jsonPath": "$.triggers[29].whyItMatters",
       "kind": "narrative",
       "text": "Channel-led discovery embeds Clear Current in the equipment justification motion.",
@@ -5303,7 +5970,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:111:$.triggers[30].name",
+      "claimId": "d1:125:$.triggers[30].name",
       "jsonPath": "$.triggers[30].name",
       "kind": "narrative",
       "text": "Broker contract lacks independent rate-structure check",
@@ -5351,7 +6018,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:112:$.triggers[30].quote",
+      "claimId": "d1:126:$.triggers[30].quote",
       "jsonPath": "$.triggers[30].quote",
       "kind": "quote",
       "text": "The broker has their interests. The customer needs to understand not just the headline price, but whether the rate structure fits their usage.",
@@ -5399,7 +6066,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:113:$.triggers[30].whyItMatters",
+      "claimId": "d1:127:$.triggers[30].whyItMatters",
       "jsonPath": "$.triggers[30].whyItMatters",
       "kind": "narrative",
       "text": "Independent fit analysis de-risks procurement decisions in deregulated markets.",
@@ -5447,7 +6114,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:114:$.triggers[31].name",
+      "claimId": "d1:128:$.triggers[31].name",
       "jsonPath": "$.triggers[31].name",
       "kind": "narrative",
       "text": "Post-M&V audit asks “who monitors next month?”",
@@ -5495,7 +6162,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:115:$.triggers[31].quote",
+      "claimId": "d1:129:$.triggers[31].quote",
       "jsonPath": "$.triggers[31].quote",
       "kind": "quote",
       "text": "After we do an audit, the client always asks: what about next month? I can come back quarterly — but they need something watching continuously.",
@@ -5543,7 +6210,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:116:$.triggers[31].whyItMatters",
+      "claimId": "d1:130:$.triggers[31].whyItMatters",
       "jsonPath": "$.triggers[31].whyItMatters",
       "kind": "narrative",
       "text": "Continuous monitoring captures buyers at peak receptivity after baseline work.",
@@ -5591,7 +6258,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:117:$.triggers[32].name",
+      "claimId": "d1:131:$.triggers[32].name",
       "jsonPath": "$.triggers[32].name",
       "kind": "narrative",
       "text": "EnergyCAP renewal without AI upgrade path",
@@ -5638,7 +6305,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:118:$.triggers[32].seasonality",
+      "claimId": "d1:132:$.triggers[32].seasonality",
       "jsonPath": "$.triggers[32].seasonality",
       "kind": "narrative",
       "text": "Annual renewal; Jan–Mar evaluations",
@@ -5685,7 +6352,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:119:$.triggers[32].quote",
+      "claimId": "d1:133:$.triggers[32].additionalSources",
+      "jsonPath": "$.triggers[32].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:134:$.triggers[32].quote",
       "jsonPath": "$.triggers[32].quote",
       "kind": "quote",
       "text": "EnergyCAP tells us they can do that stuff, but it’s harder than it sounds.",
@@ -5732,7 +6446,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:120:$.triggers[32].whyItMatters",
+      "claimId": "d1:135:$.triggers[32].whyItMatters",
       "jsonPath": "$.triggers[32].whyItMatters",
       "kind": "narrative",
       "text": "Renewal timing is the competitive bake-off against familiar but stagnant tooling.",
@@ -5779,7 +6493,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:121:$.triggers[33].name",
+      "claimId": "d1:136:$.triggers[33].name",
       "jsonPath": "$.triggers[33].name",
       "kind": "narrative",
       "text": "Long-tenured bill processor departs",
@@ -5826,7 +6540,54 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:122:$.triggers[33].quote",
+      "claimId": "d1:137:$.triggers[33].additionalSources",
+      "jsonPath": "$.triggers[33].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State (same interview)",
+      "attributionHint": "Andee Chamberlain · Texas State",
+      "matchedInterviewIds": [
+        "texas-state"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/Call Transcripts/CC_Research_Texas_State_Transcript.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_transcript",
+          "score": 0.744,
+          "excerpt": "Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Clayton Hester | March 2026 Participant Profiles Field Detail Name Andee Chamberlain T…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Texas_State.docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.744,
+          "excerpt": "Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted by Clayton Hester | March 2026 Why This Interview Matters Texas State University operates a district e…"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:138:$.triggers[33].quote",
       "jsonPath": "$.triggers[33].quote",
       "kind": "quote",
       "text": "We had someone doing our bill processing for 10 to 15 years and she recently left — so we’re scrambling. We’ll probably outsource that.",
@@ -5873,7 +6634,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:123:$.triggers[33].whyItMatters",
+      "claimId": "d1:139:$.triggers[33].whyItMatters",
       "jsonPath": "$.triggers[33].whyItMatters",
       "kind": "narrative",
       "text": "Platform memory replaces single-point-of-failure tribal knowledge.",
@@ -5920,7 +6681,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:124:$.triggers[34].name",
+      "claimId": "d1:140:$.triggers[34].name",
       "jsonPath": "$.triggers[34].name",
       "kind": "narrative",
       "text": "Incumbent fails security or SOC 2 bar",
@@ -5968,7 +6729,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:125:$.triggers[34].quote",
+      "claimId": "d1:141:$.triggers[34].quote",
       "jsonPath": "$.triggers[34].quote",
       "kind": "quote",
       "text": "You’ve got guys like me that would love to use this, and then IT says no, no, no.",
@@ -6016,7 +6777,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:126:$.triggers[34].whyItMatters",
+      "claimId": "d1:142:$.triggers[34].whyItMatters",
       "jsonPath": "$.triggers[34].whyItMatters",
       "kind": "narrative",
       "text": "Enterprise readiness and security posture unlock procurement, not just features.",
@@ -6064,7 +6825,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:127:$.triggers[35].name",
+      "claimId": "d1:143:$.triggers[35].name",
       "jsonPath": "$.triggers[35].name",
       "kind": "narrative",
       "text": "ENGIE-style aggregation without interpretation",
@@ -6112,7 +6873,55 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:128:$.triggers[35].quote",
+      "claimId": "d1:144:$.triggers[35].additionalSources",
+      "jsonPath": "$.triggers[35].additionalSources",
+      "kind": "narrative",
+      "text": "Adam Zavadsky · ENGIE Impact; Scott Sukits · AdventHealth",
+      "attributionHint": "John Culver · AdventHealth",
+      "matchedInterviewIds": [
+        "adventhealth",
+        "trane-johnson"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.184
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1704,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "gent pitch than any feature comparison. ═══ END: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx ═══ ═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 875,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "gent pitch than any feature comparison. ═══ END: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx ═══ ═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents…"
+        },
+        {
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 1,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.729,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:145:$.triggers[35].quote",
       "jsonPath": "$.triggers[35].quote",
       "kind": "quote",
       "text": "ENGIE just aggregates and pays the bottom line. Being smarter — knowing how to interpret the bills and tell us why we should care — would be great.",
@@ -6160,7 +6969,7 @@
       "inExpectedSourceFile": true
     },
     {
-      "claimId": "d1:129:$.triggers[35].whyItMatters",
+      "claimId": "d1:146:$.triggers[35].whyItMatters",
       "jsonPath": "$.triggers[35].whyItMatters",
       "kind": "narrative",
       "text": "Intelligence layer on top of pay-and-aggregate incumbents is a land-and-expand wedge.",
@@ -6208,7 +7017,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:130:$.triggers[36].primarySource",
+      "claimId": "d1:147:$.triggers[36].primarySource",
       "jsonPath": "$.triggers[36].primarySource",
       "kind": "narrative",
       "text": "Andee Chamberlain · Texas State; Don Johnson · Trane",
@@ -6257,7 +7066,56 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:131:$.triggers[36].quote",
+      "claimId": "d1:148:$.triggers[36].additionalSources",
+      "jsonPath": "$.triggers[36].additionalSources",
+      "kind": "narrative",
+      "text": "Carl Teague · James Norton · Texas State; Ross Snow · Matt Wilson · Bart Peacock · Intermountain Health; Randy Dawes · Hyatt",
+      "attributionHint": "Andee Chamberlain · Texas State; Don Johnson · Trane",
+      "matchedInterviewIds": [
+        "trane-johnson",
+        "texas-state",
+        "trane-combs"
+      ],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.7,
+        "bestCoverage": 0.824,
+        "bestJaccard": 0.099
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 1,
+          "corpusKind": "primary_output",
+          "score": 0.7,
+          "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
+        },
+        {
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 3,
+          "corpusKind": "primary_output",
+          "score": 0.6,
+          "excerpt": "--- ## NOTES ON CORPUS COVERAGE ### Interviews with Both Transcript AND Summary None explicitly stated. All documents appear to be research summaries prepared by the CDL MBA Consulting Team, not transcripts. ### Intervie…"
+        },
+        {
+          "file": "research/Call Transcripts/CC Research - Intermountain Health Team.docx",
+          "chunkIndex": 82,
+          "corpusKind": "primary_transcript",
+          "score": 0.4,
+          "excerpt": "Ross Snow 34:54in these skills. And that may not mean it, it may in some cases mean a college degree, it may not. But if you're willing to take a few years and invest in these skills, you can name your price and you can …"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Intermountain_Health_Team (1).docx",
+          "chunkIndex": 0,
+          "corpusKind": "primary_summary",
+          "score": 0.4,
+          "excerpt": "Interview Summary Intermountain Health | Energy Management Team Ross Snow, Matt Wilson & Bart Peacock Conducted by Clayton Hester | April 14, 2026 Why This Interview Matters Intermountain Health's energy management team …"
+        }
+      ],
+      "inExpectedSourceFile": false
+    },
+    {
+      "claimId": "d1:149:$.triggers[36].quote",
       "jsonPath": "$.triggers[36].quote",
       "kind": "quote",
       "text": "Summer is when the numbers get real. Peak demand in July can set your charges for the next 12 months.",
@@ -6306,7 +7164,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:132:$.triggers[36].whyItMatters",
+      "claimId": "d1:150:$.triggers[36].whyItMatters",
       "jsonPath": "$.triggers[36].whyItMatters",
       "kind": "narrative",
       "text": "Highest financial-exposure window needs proactive warnings before events set the peak.",
@@ -6355,7 +7213,7 @@
       "inExpectedSourceFile": false
     },
     {
-      "claimId": "d1:133:$.alertDesign[0]",
+      "claimId": "d1:151:$.alertDesign[0]",
       "jsonPath": "$.alertDesign[0]",
       "kind": "narrative",
       "text": "Push anomaly and dollar-impact alerts before customers open bills — especially on monthly cycles.",
@@ -6400,7 +7258,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:134:$.alertDesign[1]",
+      "claimId": "d1:152:$.alertDesign[1]",
       "jsonPath": "$.alertDesign[1]",
       "kind": "narrative",
       "text": "Encode vertical and fiscal calendars (higher-ed FY, healthcare capital season, QSR summer exposure) into notification timing.",
@@ -6445,7 +7303,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:135:$.alertDesign[2]",
+      "claimId": "d1:153:$.alertDesign[2]",
       "jsonPath": "$.alertDesign[2]",
       "kind": "narrative",
       "text": "Pair reactive bill triggers with proactive calendar triggers (renewals, generator tests, peak season).",
@@ -6490,7 +7348,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:136:$.alertDesign[3]",
+      "claimId": "d1:154:$.alertDesign[3]",
       "jsonPath": "$.alertDesign[3]",
       "kind": "narrative",
       "text": "Layer regulatory and wholesale signals (PUC dockets, PJM capacity) into forward charge forecasts, not just historical variance.",
@@ -6535,7 +7393,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:137:$.alertDesign[4]",
+      "claimId": "d1:155:$.alertDesign[4]",
       "jsonPath": "$.alertDesign[4]",
       "kind": "narrative",
       "text": "Every alert should answer cost, cause hypothesis, and next action in language finance recognizes.",
@@ -6580,7 +7438,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:138:$.salesImplications[0]",
+      "claimId": "d1:156:$.salesImplications[0]",
       "jsonPath": "$.salesImplications[0]",
       "kind": "narrative",
       "text": "Time outbound and pipeline reviews to clustered triggers, not generic quarterly blitzes.",
@@ -6625,7 +7483,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:139:$.salesImplications[1]",
+      "claimId": "d1:157:$.salesImplications[1]",
       "jsonPath": "$.salesImplications[1]",
       "kind": "narrative",
       "text": "Lead with monetized stories (spike, ratchet, transition error) before feature tours.",
@@ -6670,7 +7528,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:140:$.salesImplications[2]",
+      "claimId": "d1:158:$.salesImplications[2]",
       "jsonPath": "$.salesImplications[2]",
       "kind": "narrative",
       "text": "Prioritize Texas and deregulated footprints where switching and overlap errors concentrate.",
@@ -6715,7 +7573,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:141:$.salesImplications[3]",
+      "claimId": "d1:159:$.salesImplications[3]",
       "jsonPath": "$.salesImplications[3]",
       "kind": "narrative",
       "text": "Use channel (OEM, M&V, broker-adjacent) motions to manufacture discovery when buyers are not searching.",
@@ -6760,7 +7618,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d1:142:$.salesImplications[4]",
+      "claimId": "d1:160:$.salesImplications[4]",
       "jsonPath": "$.salesImplications[4]",
       "kind": "narrative",
       "text": "Treat incumbent renewal, staff turnover, and aggregator gaps as named plays with short windows.",

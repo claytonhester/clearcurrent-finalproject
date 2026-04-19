@@ -43,6 +43,11 @@ const AppendixInterviews = lazy(() =>
     default: m.InterviewRoster,
   })),
 )
+const AppendixChatPrompts = lazy(() =>
+  import('./pages/appendix/UserChatPromptLibrary.jsx').then((m) => ({
+    default: m.UserChatPromptLibrary,
+  })),
+)
 const AppendixCompanies = lazy(() =>
   import('./pages/appendix/IndustryCards.jsx').then((m) => ({
     default: m.IndustryCards,
@@ -84,6 +89,8 @@ export default function App() {
               <Route path="d2-calendar" element={<Navigate to="/calendar" replace />} />
               <Route path="d3-journeys" element={<Navigate to="/journeys" replace />} />
               <Route path="d4-modules" element={<Navigate to="/modules" replace />} />
+              <Route path="d4-2" element={<Navigate to="/modules" replace />} />
+              <Route path="d4-modules-v2" element={<Navigate to="/modules" replace />} />
               <Route path="d5-market" element={<Navigate to="/market" replace />} />
               <Route
                 path="d6-competition"
@@ -94,6 +101,7 @@ export default function App() {
               <Route path="appendix">
                 <Route path="quotes" element={<AppendixQuotes />} />
                 <Route path="interviews" element={<AppendixInterviews />} />
+                <Route path="chat-prompts" element={<AppendixChatPrompts />} />
                 <Route path="companies" element={<AppendixCompanies />} />
                 <Route path="sources" element={<AppendixSources />} />
               </Route>

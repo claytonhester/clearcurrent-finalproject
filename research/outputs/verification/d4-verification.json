@@ -2,12 +2,12 @@
   "deliverableId": "d4",
   "label": "D4 Product Module Recommendations",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d4-modules.js",
-  "generatedAt": "2026-04-19T00:29:29.347Z",
+  "generatedAt": "2026-04-19T02:07:35.302Z",
   "corpusFingerprint": "bf93ef6cba97f964",
   "claimCount": 106,
   "summary": {
-    "supported": 91,
-    "partially_supported": 15,
+    "supported": 90,
+    "partially_supported": 16,
     "weak_match": 0,
     "unsupported": 0
   },
@@ -1096,42 +1096,42 @@
       "claimId": "d4:24:$.modules[0].competitive",
       "jsonPath": "$.modules[0].competitive",
       "kind": "narrative",
-      "text": "Differentiator is drift/baseline-shift detection vs NG Insight–style threshold rules and EnergyCAP variance limits — documented failure modes in corpus.",
+      "text": "Differentiator is drift/baseline-shift detection vs NG Insight–style threshold rules and EnergyCAP variance limits — documented failure modes in interviews and synthesis.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.478,
-        "bestCoverage": 0.563,
-        "bestJaccard": 0.099
+        "bestScore": 0.4,
+        "bestCoverage": 0.471,
+        "bestJaccard": 0.086
       },
       "evidence": [
         {
           "file": "research/outputs/primary/agents/10_Tom_Reeves.md",
           "chunkIndex": 22,
           "corpusKind": "primary_output",
-          "score": 0.478,
+          "score": 0.4,
           "excerpt": "**Finding 2: Threshold-Based Exception Rules Systematically Miss Baseline Drift — This Is the Central Market Failure** Roger Goldstein's shared-meter discovery is the clearest illustration: \"We didn't know there was a si…"
         },
         {
           "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
           "chunkIndex": 26,
           "corpusKind": "synthesis",
-          "score": 0.425,
+          "score": 0.4,
           "excerpt": "| Competitor | What They Do | What They Miss | | ------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.35,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
         },
         {
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1727,
           "corpusKind": "other",
-          "score": 0.372,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 898,
-          "corpusKind": "primary_output",
-          "score": 0.372,
+          "score": 0.35,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
         }
       ],
@@ -2896,43 +2896,43 @@
       "claimId": "d4:64:$.modules[3].evidence[0]",
       "jsonPath": "$.modules[3].evidence[0]",
       "kind": "evidence_line",
-      "text": "Research corpus: zero named competitors offer PUC docket monitoring — white space.",
+      "text": "Across interviews and competitive synthesis: zero named competitors offer PUC docket monitoring — white space.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.773,
-        "bestCoverage": 0.909,
-        "bestJaccard": 0.018
+        "bestScore": 0.719,
+        "bestCoverage": 0.846,
+        "bestJaccard": 0.02
       },
       "evidence": [
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.719,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.719,
           "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 80,
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 53,
           "corpusKind": "synthesis",
-          "score": 0.773,
-          "excerpt": "**This is confirmed white space.** The secondary research in the Synthesis Brief confirms: _\"Zero competitors offer PUC docket monitoring — confirmed white space.\"_ - **EnergyCAP:** Historical bill processing and project…"
+          "score": 0.654,
+          "excerpt": "# The Case For Regulatory Intelligence First Three conditions simultaneously make this the highest-priority investment: **1. It is the only feature with no named competitor.** Phil Combs evaluated every energy software t…"
         },
         {
-          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
-          "chunkIndex": 65,
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 54,
           "corpusKind": "synthesis",
-          "score": 0.773,
-          "excerpt": "**Regulatory Intelligence × Higher Education (★★★★★):** Phil Combs (Trane): _\"I can tell you six months from now this utility is actively talking to the Public Utility Commission. They're proposing this rate hike. This r…"
+          "score": 0.654,
+          "excerpt": "**1. It is the only feature with no named competitor.** Phil Combs evaluated every energy software tool professionally for over 20 years. He named Energy Toolbase for tariff analysis and Excel as the real incumbent for s…"
         }
       ],
       "inExpectedSourceFile": null
@@ -3796,43 +3796,43 @@
       "claimId": "d4:84:$.modules[4].evidence[2]",
       "jsonPath": "$.modules[4].evidence[2]",
       "kind": "evidence_line",
-      "text": "660+ U.S. district energy systems — concentrated HE/health buyer base.",
+      "text": "660+ U.S. district energy systems — concentrated Higher Ed/health buyer base.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.638,
-        "bestCoverage": 0.75,
-        "bestJaccard": 0.011
+        "bestScore": 0.661,
+        "bestCoverage": 0.778,
+        "bestJaccard": 0.013
       },
       "evidence": [
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.638,
+          "score": 0.661,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.638,
+          "score": 0.661,
           "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 128,
-          "corpusKind": "synthesis",
-          "score": 0.638,
-          "excerpt": "**The key persona distinction:** The economic buyer for this module is the CFO or Budget Director, not the energy manager. Cost allocation accuracy is a financial controls issue, not just a facilities issue. This is how …"
+          "file": "research/SECONDARY DATA/Clear Current Technologies  GTM Strategy, Competitive Intelligence & Investor Readiness Research PART 4.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "1. **EnergyCAP is most entrenched here, and also most vulnerable here.** Higher ed represents 19% of EnergyCAP's customer base, and the campus chargeback capability that makes EnergyCAP irreplaceable is simultaneously th…"
         },
         {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 38,
-          "corpusKind": "secondary",
-          "score": 0.531,
-          "excerpt": "| **Opportunity** | **Value** | **Frequency** | **Strategic Impact** | **Competitive Gap** | **Evidence Base** | | --- | --- | --- | --- | --- | --- | | Billing Error Audit | HIGH | HIGH (monthly) | HIGH | Moderate — Arc…"
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 638,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "1. **EnergyCAP is most entrenched here, and also most vulnerable here.** Higher ed represents 19% of EnergyCAP's customer base, and the campus chargeback capability that makes EnergyCAP irreplaceable is simultaneously th…"
         }
       ],
       "inExpectedSourceFile": null
@@ -3841,43 +3841,43 @@
       "claimId": "d4:85:$.modules[4].evidence[3]",
       "jsonPath": "$.modules[4].evidence[3]",
       "kind": "evidence_line",
-      "text": "Arcadia corpus: no documented campus chargeback/district-energy parity.",
+      "text": "Arcadia competitive intel: no documented campus chargeback / district-energy parity.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.744,
-        "bestCoverage": 0.875,
-        "bestJaccard": 0.077
+        "bestScore": 0.661,
+        "bestCoverage": 0.778,
+        "bestJaccard": 0.013
       },
       "evidence": [
         {
-          "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
-          "chunkIndex": 126,
-          "corpusKind": "synthesis",
-          "score": 0.744,
-          "excerpt": "\"The LLM generation that made this technically feasible became reliable in 2023. The commercial energy cost pressure that makes it financially urgent is happening now — commercial energy CAGR of 5.9% against a 3% budgete…"
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.661,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
-          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 42,
+          "corpusKind": "secondary",
+          "score": 0.661,
+          "excerpt": "| **Module** | **Primary Validation** | **Secondary Validation** | **Competitive Gap** | **MVP Scope Signal** | | --- | --- | --- | --- | --- | | Billing Error Audit Engine | Every interviewee. Texas State multiplier. Ph…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 50,
           "corpusKind": "secondary",
-          "score": 0.638,
-          "excerpt": "This section is the most actionable for Clear Current's go-to-market strategy. The following gaps are assessed with HIGH confidence based on product documentation, customer evidence, and job postings. ### Gap 1: No Highe…"
+          "score": 0.661,
+          "excerpt": "| **Dimension** | **What the Intelligence Confirms** | **Implication for Clear Current** | | --- | --- | --- | | Higher Ed Customers | ZERO documented university or hospital customers after 14 months of enterprise sales.…"
         },
         {
-          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
-          "chunkIndex": 51,
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.638,
-          "excerpt": "is Clear Current's clearest vertical differentiation opportunity.** ### Gap 2: No Campus Chargeback or Cost Allocation Arcadia's enterprise UX is designed for a single corporate entity managing its utility spend. There i…"
-        },
-        {
-          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
-          "chunkIndex": 52,
-          "corpusKind": "secondary",
-          "score": 0.638,
-          "excerpt": "Arcadia's enterprise UX is designed for a single corporate entity managing its utility spend. There is no evidence of chargeback functionality (allocating energy costs to sub-tenants, academic departments, or campus buil…"
+          "score": 0.661,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         }
       ],
       "inExpectedSourceFile": null
@@ -4741,43 +4741,43 @@
       "claimId": "d4:105:$.priorityRationale[5]",
       "jsonPath": "$.priorityRationale[5]",
       "kind": "narrative",
-      "text": "Chargeback is the EnergyCAP displacement lever for long-term stickiness in district-energy HE/health accounts.",
+      "text": "Chargeback is the EnergyCAP displacement lever for long-term stickiness in district-energy Higher Ed/health accounts.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.695,
-        "bestCoverage": 0.818,
-        "bestJaccard": 0.15
+        "bestScore": 0.638,
+        "bestCoverage": 0.75,
+        "bestJaccard": 0.148
       },
       "evidence": [
         {
           "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
           "chunkIndex": 156,
           "corpusKind": "synthesis",
-          "score": 0.695,
+          "score": 0.638,
           "excerpt": "**Rank 5: Module 5 — Campus Chargeback Intelligence** _Why fifth:_ This is the highest-moat, highest-stickiness module — and the most complex to build and configure. The displacement case against EnergyCAP is clear, the …"
         },
         {
           "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
           "chunkIndex": 164,
           "corpusKind": "synthesis",
-          "score": 0.541,
+          "score": 0.496,
           "excerpt": "- **[EXTENDS ROADMAP]** Module 3 (Regulatory Intelligence Monitor) requires a new PUC data infrastructure layer (scraping, classification, docket monitoring) that does not exist in current CC Engine. The tariff/contract …"
         },
         {
-          "file": "research/outputs/primary/agents/01_Dr._Sarah_Chen.md",
-          "chunkIndex": 6,
-          "corpusKind": "primary_output",
-          "score": 0.464,
-          "excerpt": "- **EnergyCAP as the incumbent**: Named explicitly, described as the platform for billing data entry, usage tracking, historical data storage, and projection generation. Critically: they do not currently use EnergyCAP's …"
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 155,
-          "corpusKind": "synthesis",
-          "score": 0.464,
-          "excerpt": "et planning tool — the conversation shift that justifies enterprise contract values and supports the Series A narrative. **Rank 5: Module 5 — Campus Chargeback Intelligence** _Why fifth:_ This is the highest-moat, highes…"
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 50,
+          "corpusKind": "secondary",
+          "score": 0.425,
+          "excerpt": "| **Dimension** | **What the Intelligence Confirms** | **Implication for Clear Current** | | --- | --- | --- | | Higher Ed Customers | ZERO documented university or hospital customers after 14 months of enterprise sales.…"
         }
       ],
       "inExpectedSourceFile": null

@@ -49,7 +49,8 @@ export function Triggers() {
           !q ||
           t.name.toLowerCase().includes(q) ||
           t.quote?.toLowerCase().includes(q) ||
-          t.primarySource?.toLowerCase().includes(q),
+          t.primarySource?.toLowerCase().includes(q) ||
+          t.additionalSources?.toLowerCase().includes(q),
       )
       .sort((a, b) => (URGENCY_ORDER[a.urgency] ?? 9) - (URGENCY_ORDER[b.urgency] ?? 9))
   }, [typeFilter, verticalFilter, query])
@@ -225,6 +226,11 @@ function TriggerCard({ trigger }) {
           <div className="mt-1 not-italic text-[10.5px] font-semibold text-cc-mid-gray">
             — {trigger.primarySource}
           </div>
+          {trigger.additionalSources ? (
+            <div className="mt-1.5 not-italic text-[10px] leading-snug text-cc-mid-gray">
+              Also in primary research: {trigger.additionalSources}
+            </div>
+          ) : null}
         </blockquote>
       ) : null}
       <p className="mt-2 text-[12px] leading-relaxed text-cc-dark-text">

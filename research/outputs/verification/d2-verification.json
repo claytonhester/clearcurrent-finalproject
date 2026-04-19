@@ -2,12 +2,12 @@
   "deliverableId": "d2",
   "label": "D2 Seasonal Energy Calendar",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d2-calendar.js",
-  "generatedAt": "2026-04-19T00:29:21.079Z",
+  "generatedAt": "2026-04-19T02:07:26.285Z",
   "corpusFingerprint": "bf93ef6cba97f964",
-  "claimCount": 82,
+  "claimCount": 83,
   "summary": {
-    "supported": 80,
-    "partially_supported": 2,
+    "supported": 79,
+    "partially_supported": 4,
     "weak_match": 0,
     "unsupported": 0
   },
@@ -106,43 +106,43 @@
       "claimId": "d2:2:$.openingProblem",
       "jsonPath": "$.openingProblem",
       "kind": "narrative",
-      "text": "Energy managers face recurring fiscal cliffs: budgets and forecasts lock while utility rates, capacity charges, and contract terms are still moving. That timing gap — especially before March budget submission for many schools and before October healthcare fiscal years — creates recurring moments when invoice-level intelligence and regulatory foresight are most valuable.",
+      "text": "Energy managers face recurring fiscal cliffs: budgets and forecasts lock while utility rates, capacity charges, and contract terms are still moving. That timing gap — especially before March budget submission for many schools and before October healthcare fiscal years — creates recurring moments when invoice-level intelligence and regulatory foresight are most valuable. Multi-site retail and QSR add parallel beats—supplier renewals, franchise reporting, and deregulated-market volatility—while health systems remain the longest-cycle enterprise prize.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.435,
-        "bestCoverage": 0.512,
-        "bestJaccard": 0.022
+        "bestScore": 0.391,
+        "bestCoverage": 0.46,
+        "bestJaccard": 0.03
       },
       "evidence": [
         {
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1705,
           "corpusKind": "other",
-          "score": 0.435,
+          "score": 0.391,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1707,
-          "corpusKind": "other",
-          "score": 0.435,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
-          "score": 0.435,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
           "chunkIndex": 876,
           "corpusKind": "primary_output",
-          "score": 0.435,
+          "score": 0.391,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.364,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1707,
+          "corpusKind": "other",
+          "score": 0.364,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
         }
       ],
       "inExpectedSourceFile": null
@@ -286,6 +286,51 @@
       "claimId": "d2:6:$.tldrBullets[3]",
       "jsonPath": "$.tldrBullets[3]",
       "kind": "tldr",
+      "text": "Retail / QSR: run overlapping calendar plays (contracts, franchise cycles, ERCOT-style complexity) in parallel with higher ed—not parked for a vague later phase.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.331,
+        "bestCoverage": 0.389,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.331,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.331,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.331,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.331,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d2:7:$.tldrBullets[4]",
+      "jsonPath": "$.tldrBullets[4]",
+      "kind": "tldr",
       "text": "GTM should ride the calendar rhythm instead of steady generic outreach.",
       "attributionHint": null,
       "matchedInterviewIds": [],
@@ -328,7 +373,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:7:$.months[0].headline",
+      "claimId": "d2:8:$.months[0].headline",
       "jsonPath": "$.months[0].headline",
       "kind": "headline",
       "text": "Year-end hangover · heating peaks · Q1 carbon reporting kickoff",
@@ -373,7 +418,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:8:$.months[0].activities[0]",
+      "claimId": "d2:9:$.months[0].activities[0]",
       "jsonPath": "$.months[0].activities[0]",
       "kind": "narrative",
       "text": "Close prior year; reconcile Dec/Jan bills under peak heating loads",
@@ -418,7 +463,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:9:$.months[0].activities[1]",
+      "claimId": "d2:10:$.months[0].activities[1]",
       "jsonPath": "$.months[0].activities[1]",
       "kind": "narrative",
       "text": "Start or deepen budget baselines (higher ed on Sept 1 FY)",
@@ -463,7 +508,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:10:$.months[0].activities[2]",
+      "claimId": "d2:11:$.months[0].activities[2]",
       "jsonPath": "$.months[0].activities[2]",
       "kind": "narrative",
       "text": "CRE begins CDP-style data pulls; healthcare sees full PJM capacity charges",
@@ -508,7 +553,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:11:$.months[0].salesPlay",
+      "claimId": "d2:12:$.months[0].salesPlay",
       "jsonPath": "$.months[0].salesPlay",
       "kind": "narrative",
       "text": "Lead with Dec/Jan bill anomaly review and portfolio YoY variance — “close the year right.”",
@@ -553,7 +598,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:12:$.months[1].headline",
+      "claimId": "d2:13:$.months[1].headline",
       "jsonPath": "$.months[1].headline",
       "kind": "headline",
       "text": "Higher-ed budget narratives peak · finance–ops “rate vs budget” gap widest",
@@ -598,7 +643,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:13:$.months[1].activities[0]",
+      "claimId": "d2:14:$.months[1].activities[0]",
       "jsonPath": "$.months[1].activities[0]",
       "kind": "narrative",
       "text": "Sept 1 FY schools assemble budget narratives from usage, demand, cost",
@@ -643,7 +688,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:14:$.months[1].activities[1]",
+      "claimId": "d2:15:$.months[1].activities[1]",
       "jsonPath": "$.months[1].activities[1]",
       "kind": "narrative",
       "text": "Jul 1 FY schools face pending rate cases while assumptions must harden",
@@ -688,7 +733,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:15:$.months[1].activities[2]",
+      "claimId": "d2:16:$.months[1].activities[2]",
       "jsonPath": "$.months[1].activities[2]",
       "kind": "narrative",
       "text": "Healthcare winter peak risk; CRE deep in CDP audit paths",
@@ -733,7 +778,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:16:$.months[1].salesPlay",
+      "claimId": "d2:17:$.months[1].salesPlay",
       "jsonPath": "$.months[1].salesPlay",
       "kind": "narrative",
       "text": "Quantify pending rate-case exposure before assumptions freeze — “know the rate you’re budgeting against.”",
@@ -778,7 +823,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:17:$.months[2].headline",
+      "claimId": "d2:18:$.months[2].headline",
       "jsonPath": "$.months[2].headline",
       "kind": "headline",
       "text": "Budget lock (Jul 1 FY schools) · gas execution · compliance sprint",
@@ -823,7 +868,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:18:$.months[2].activities[0]",
+      "claimId": "d2:19:$.months[2].activities[0]",
       "jsonPath": "$.months[2].activities[0]",
       "kind": "narrative",
       "text": "Jul 1 FY higher ed: budget submission month with uncertain rate assumptions",
@@ -868,7 +913,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:19:$.months[2].activities[1]",
+      "claimId": "d2:20:$.months[2].activities[1]",
       "jsonPath": "$.months[2].activities[1]",
       "kind": "narrative",
       "text": "Healthcare and higher ed execute / lock natural-gas positions",
@@ -913,7 +958,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:20:$.months[2].activities[2]",
+      "claimId": "d2:21:$.months[2].activities[2]",
       "jsonPath": "$.months[2].activities[2]",
       "kind": "narrative",
       "text": "CRE races to April CDP deadlines; spring PUC / rate activity intensifies",
@@ -958,7 +1003,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:21:$.months[2].salesPlay",
+      "claimId": "d2:22:$.months[2].salesPlay",
       "jsonPath": "$.months[2].salesPlay",
       "kind": "narrative",
       "text": "Last-call regulatory briefing tied to imminent budget lock; pair with procurement scenario support.",
@@ -1003,7 +1048,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:22:$.months[3].headline",
+      "claimId": "d2:23:$.months[3].headline",
       "jsonPath": "$.months[3].headline",
       "kind": "headline",
       "text": "Shoulder month · procurement closes · summer prep · CRE CDP/GRESB crunch",
@@ -1048,7 +1093,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:23:$.months[3].activities[0]",
+      "claimId": "d2:24:$.months[3].activities[0]",
       "jsonPath": "$.months[3].activities[0]",
       "kind": "narrative",
       "text": "Healthcare finishes / closes many gas contracting cycles",
@@ -1093,7 +1138,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:24:$.months[3].activities[1]",
+      "claimId": "d2:25:$.months[3].activities[1]",
       "jsonPath": "$.months[3].activities[1]",
       "kind": "narrative",
       "text": "CRE hits CDP deadlines; GRESB portal opens; compliance demand spikes",
@@ -1138,7 +1183,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:25:$.months[3].activities[2]",
+      "claimId": "d2:26:$.months[3].activities[2]",
       "jsonPath": "$.months[3].activities[2]",
       "kind": "narrative",
       "text": "Higher ed shifts from budget submission to summer readiness",
@@ -1183,7 +1228,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:26:$.months[3].salesPlay",
+      "claimId": "d2:27:$.months[3].salesPlay",
       "jsonPath": "$.months[3].salesPlay",
       "kind": "narrative",
       "text": "Position invoice-organized data as the compliance substrate — “your CDP/GRESB inputs already exist in the bills.”",
@@ -1228,7 +1273,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:27:$.months[4].headline",
+      "claimId": "d2:28:$.months[4].headline",
       "jsonPath": "$.months[4].headline",
       "kind": "headline",
       "text": "Shift from planning to pre-summer operational risk",
@@ -1273,7 +1318,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:28:$.months[4].activities[0]",
+      "claimId": "d2:29:$.months[4].activities[0]",
       "jsonPath": "$.months[4].activities[0]",
       "kind": "narrative",
       "text": "Memorial Day marks hospitality/QSR climb toward summer electricity peaks",
@@ -1318,7 +1363,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:29:$.months[4].activities[1]",
+      "claimId": "d2:30:$.months[4].activities[1]",
       "jsonPath": "$.months[4].activities[1]",
       "kind": "narrative",
       "text": "CRE: major deadlines (NYC LL97 May 1) and ongoing GRESB work",
@@ -1363,7 +1408,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:30:$.months[4].activities[2]",
+      "claimId": "d2:31:$.months[4].activities[2]",
       "jsonPath": "$.months[4].activities[2]",
       "kind": "narrative",
       "text": "Urgency shifts to ratchets, summer tariffs, and peak risk",
@@ -1408,7 +1453,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:31:$.months[4].salesPlay",
+      "claimId": "d2:32:$.months[4].salesPlay",
       "jsonPath": "$.months[4].salesPlay",
       "kind": "narrative",
       "text": "Pre-summer demand-charge risk map + summer rate-structure change audit before peaks land.",
@@ -1453,7 +1498,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:32:$.months[5].headline",
+      "claimId": "d2:33:$.months[5].headline",
       "jsonPath": "$.months[5].headline",
       "kind": "headline",
       "text": "Summer peaks begin setting 12-month demand charges",
@@ -1498,7 +1543,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:33:$.months[5].activities[0]",
+      "claimId": "d2:34:$.months[5].activities[0]",
       "jsonPath": "$.months[5].activities[0]",
       "kind": "narrative",
       "text": "One bad peak day can lock elevated demand charges for the next year",
@@ -1543,7 +1588,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:34:$.months[5].activities[1]",
+      "claimId": "d2:35:$.months[5].activities[1]",
       "jsonPath": "$.months[5].activities[1]",
       "kind": "narrative",
       "text": "QSR electricity peaks (AC-driven) open; hospitals run flat-out cooling",
@@ -1588,7 +1633,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:35:$.months[5].activities[2]",
+      "claimId": "d2:36:$.months[5].activities[2]",
       "jsonPath": "$.months[5].activities[2]",
       "kind": "narrative",
       "text": "Interval / real-time workflows matter most for curtailment and DR",
@@ -1633,7 +1678,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:36:$.months[5].salesPlay",
+      "claimId": "d2:37:$.months[5].salesPlay",
       "jsonPath": "$.months[5].salesPlay",
       "kind": "narrative",
       "text": "Sell peak monitoring / alerts and site-level exposure — “summer is when the bill sets the tax for the year.”",
@@ -1678,7 +1723,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:37:$.months[6].headline",
+      "claimId": "d2:38:$.months[6].headline",
       "jsonPath": "$.months[6].headline",
       "kind": "headline",
       "text": "Operational crucible · Jul 1 FY vs Jul 1 rate resolutions",
@@ -1723,7 +1768,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:38:$.months[6].activities[0]",
+      "claimId": "d2:39:$.months[6].activities[0]",
       "jsonPath": "$.months[6].activities[0]",
       "kind": "narrative",
       "text": "Jul 1 FY schools compare March assumptions to July bills (variance shows immediately)",
@@ -1768,7 +1813,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:39:$.months[6].activities[1]",
+      "claimId": "d2:40:$.months[6].activities[1]",
       "jsonPath": "$.months[6].activities[1]",
       "kind": "narrative",
       "text": "Healthcare remains in max cooling / capacity-charge pain",
@@ -1813,7 +1858,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:40:$.months[6].activities[2]",
+      "claimId": "d2:41:$.months[6].activities[2]",
       "jsonPath": "$.months[6].activities[2]",
       "kind": "narrative",
       "text": "CRE: many GRESB submission deadlines land",
@@ -1858,7 +1903,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:41:$.months[6].salesPlay",
+      "claimId": "d2:42:$.months[6].salesPlay",
       "jsonPath": "$.months[6].salesPlay",
       "kind": "narrative",
       "text": "Retrospective proof: show what changed effective Jul 1 and the portfolio dollar impact, then convert to monitoring.",
@@ -1903,7 +1948,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:42:$.months[7].headline",
+      "claimId": "d2:43:$.months[7].headline",
       "jsonPath": "$.months[7].headline",
       "kind": "headline",
       "text": "Last month of peak demand · healthcare Oct 1 FY budget build accelerates",
@@ -1948,7 +1993,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:43:$.months[7].activities[0]",
+      "claimId": "d2:44:$.months[7].activities[0]",
       "jsonPath": "$.months[7].activities[0]",
       "kind": "narrative",
       "text": "August bills encode max summer peaks that drive next-year demand charges",
@@ -1993,7 +2038,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:44:$.months[7].activities[1]",
+      "claimId": "d2:45:$.months[7].activities[1]",
       "jsonPath": "$.months[7].activities[1]",
       "kind": "narrative",
       "text": "Healthcare pulls 12 months of bills to build October budgets",
@@ -2038,7 +2083,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:45:$.months[7].activities[2]",
+      "claimId": "d2:46:$.months[7].activities[2]",
       "jsonPath": "$.months[7].activities[2]",
       "kind": "narrative",
       "text": "Sept 1 FY schools approach year-end complexity",
@@ -2083,7 +2128,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:46:$.months[7].salesPlay",
+      "claimId": "d2:47:$.months[7].salesPlay",
       "jsonPath": "$.months[7].salesPlay",
       "kind": "narrative",
       "text": "Healthcare baseline pack + annual demand-charge audit — “where is the most impact?”",
@@ -2128,7 +2173,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:47:$.months[8].headline",
+      "claimId": "d2:48:$.months[8].headline",
       "jsonPath": "$.months[8].headline",
       "kind": "headline",
       "text": "Pivot · cooling eases · Sept 1 FY launches · healthcare budget finalization",
@@ -2173,7 +2218,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:48:$.months[8].activities[0]",
+      "claimId": "d2:49:$.months[8].activities[0]",
       "jsonPath": "$.months[8].activities[0]",
       "kind": "narrative",
       "text": "Higher ed (Sept 1 FY): new year, new loads, max openness",
@@ -2218,7 +2263,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:49:$.months[8].activities[1]",
+      "claimId": "d2:50:$.months[8].activities[1]",
       "jsonPath": "$.months[8].activities[1]",
       "kind": "narrative",
       "text": "Healthcare: last edits to Oct 1 FY forecasts and narratives",
@@ -2263,7 +2308,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:50:$.months[8].activities[2]",
+      "claimId": "d2:51:$.months[8].activities[2]",
       "jsonPath": "$.months[8].activities[2]",
       "kind": "narrative",
       "text": "Fall PUC filing season begins — early warning for next year’s rates",
@@ -2308,7 +2353,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:51:$.months[8].salesPlay",
+      "claimId": "d2:52:$.months[8].salesPlay",
       "jsonPath": "$.months[8].salesPlay",
       "kind": "narrative",
       "text": "FY-launch audit: clean consolidated bill history + watchlist; attach Build Engine for new buildings/meters.",
@@ -2353,7 +2398,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:52:$.months[9].headline",
+      "claimId": "d2:53:$.months[9].headline",
       "jsonPath": "$.months[9].headline",
       "kind": "headline",
       "text": "Healthcare Oct 1 FY reset · corporate Q4 planning · fall rate-case intake",
@@ -2398,7 +2443,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:53:$.months[9].activities[0]",
+      "claimId": "d2:54:$.months[9].activities[0]",
       "jsonPath": "$.months[9].activities[0]",
       "kind": "narrative",
       "text": "Healthcare: new FY baseline bills establish targets",
@@ -2443,7 +2488,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:54:$.months[9].activities[1]",
+      "claimId": "d2:55:$.months[9].activities[1]",
       "jsonPath": "$.months[9].activities[1]",
       "kind": "narrative",
       "text": "Hospitality / retail: Q4 planning for next calendar-year budgets",
@@ -2488,7 +2533,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:55:$.months[9].activities[2]",
+      "claimId": "d2:56:$.months[9].activities[2]",
       "jsonPath": "$.months[9].activities[2]",
       "kind": "narrative",
       "text": "Filings now often resolve 9–12 months out — intelligence narrative strengthens",
@@ -2533,7 +2578,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:56:$.months[9].salesPlay",
+      "claimId": "d2:57:$.months[9].salesPlay",
       "jsonPath": "$.months[9].salesPlay",
       "kind": "narrative",
       "text": "Fall rate-case monitor tied to forward budget risk (actual utility cost growth vs escalators).",
@@ -2578,7 +2623,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:57:$.months[10].headline",
+      "claimId": "d2:58:$.months[10].headline",
       "jsonPath": "$.months[10].headline",
       "kind": "headline",
       "text": "Heating season · Q4 budget lock · winter gas decisions intensify",
@@ -2623,7 +2668,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:58:$.months[10].activities[0]",
+      "claimId": "d2:59:$.months[10].activities[0]",
       "jsonPath": "$.months[10].activities[0]",
       "kind": "narrative",
       "text": "Corporate / hospitality / retail finalize next-year budgets with imperfect commodity visibility",
@@ -2668,7 +2713,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:59:$.months[10].activities[1]",
+      "claimId": "d2:60:$.months[10].activities[1]",
       "jsonPath": "$.months[10].activities[1]",
       "kind": "narrative",
       "text": "Healthcare compares early FY actuals and rehears winter hedging posture",
@@ -2713,7 +2758,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:60:$.months[10].activities[2]",
+      "claimId": "d2:61:$.months[10].activities[2]",
       "jsonPath": "$.months[10].activities[2]",
       "kind": "narrative",
       "text": "Winter tariff / rate-structure changes often flip Nov 1 in many jurisdictions",
@@ -2758,7 +2803,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:61:$.months[10].salesPlay",
+      "claimId": "d2:62:$.months[10].salesPlay",
       "jsonPath": "$.months[10].salesPlay",
       "kind": "narrative",
       "text": "Winter gas hedge decision support — predictability and variance reduction, not “cheapest trade.”",
@@ -2803,7 +2848,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:62:$.months[11].headline",
+      "claimId": "d2:63:$.months[11].headline",
       "jsonPath": "$.months[11].headline",
       "kind": "headline",
       "text": "Year-end close · holiday ops · PJM capacity inputs · low new-logo season",
@@ -2848,7 +2893,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:63:$.months[11].activities[0]",
+      "claimId": "d2:64:$.months[11].activities[0]",
       "jsonPath": "$.months[11].activities[0]",
       "kind": "narrative",
       "text": "Minimal tool evaluation; focus on close, audits, volatility (polar-vortex risk)",
@@ -2893,7 +2938,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:64:$.months[11].activities[1]",
+      "claimId": "d2:65:$.months[11].activities[1]",
       "jsonPath": "$.months[11].activities[1]",
       "kind": "narrative",
       "text": "Capacity auction results land Dec/Jan and flow into next-year charge expectations",
@@ -2938,7 +2983,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:65:$.months[11].activities[2]",
+      "claimId": "d2:66:$.months[11].activities[2]",
       "jsonPath": "$.months[11].activities[2]",
       "kind": "narrative",
       "text": "Prep January re-engagement packs from full-year invoice datasets",
@@ -2983,7 +3028,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:66:$.months[11].salesPlay",
+      "claimId": "d2:67:$.months[11].salesPlay",
       "jsonPath": "$.months[11].salesPlay",
       "kind": "narrative",
       "text": "Customer success: ingest December bills, year-end portfolio summary, retention setup for January.",
@@ -3028,7 +3073,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:67:$.fiscalYears[0].fyStart",
+      "claimId": "d2:68:$.fiscalYears[0].fyStart",
       "jsonPath": "$.fiscalYears[0].fyStart",
       "kind": "narrative",
       "text": "Jul 1 (most); Sep 1 (Texas exemplars)",
@@ -3073,7 +3118,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:68:$.fiscalYears[0].budgetLock",
+      "claimId": "d2:69:$.fiscalYears[0].budgetLock",
       "jsonPath": "$.fiscalYears[0].budgetLock",
       "kind": "narrative",
       "text": "Mar (Jul 1 FY); Jan–Feb build (Sep 1 FY)",
@@ -3118,7 +3163,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:69:$.fiscalYears[0].notes",
+      "claimId": "d2:70:$.fiscalYears[0].notes",
       "jsonPath": "$.fiscalYears[0].notes",
       "kind": "narrative",
       "text": "Peak demand season Jun–Aug. Budget timing gap is the core wedge — rates finalize after assumptions lock.",
@@ -3163,7 +3208,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:70:$.fiscalYears[1].budgetLock",
+      "claimId": "d2:71:$.fiscalYears[1].budgetLock",
       "jsonPath": "$.fiscalYears[1].budgetLock",
       "kind": "narrative",
       "text": "Jul–Aug (with Oct FY finalization pressure in Aug–Sep)",
@@ -3208,7 +3253,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:71:$.fiscalYears[1].notes",
+      "claimId": "d2:72:$.fiscalYears[1].notes",
       "jsonPath": "$.fiscalYears[1].notes",
       "kind": "narrative",
       "text": "Peak demand season Jun–Aug. UPSC-driven gas/electric procurement is highly seasonal.",
@@ -3253,7 +3298,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:72:$.fiscalYears[2].budgetLock",
+      "claimId": "d2:73:$.fiscalYears[2].budgetLock",
       "jsonPath": "$.fiscalYears[2].budgetLock",
       "kind": "narrative",
       "text": "Sep–Oct (GRESB cycle); Q4 corporate planning cross-cuts",
@@ -3298,7 +3343,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:73:$.fiscalYears[2].notes",
+      "claimId": "d2:74:$.fiscalYears[2].notes",
       "jsonPath": "$.fiscalYears[2].notes",
       "kind": "narrative",
       "text": "Compliance clusters Q1 (CDP) and Apr–Jul (GRESB); peak demand Jun–Aug.",
@@ -3343,7 +3388,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:74:$.priorityWindows[0].why",
+      "claimId": "d2:75:$.priorityWindows[0].why",
       "jsonPath": "$.priorityWindows[0].why",
       "kind": "narrative",
       "text": "Higher-ed Jul 1 FY budgets lock in March while pending rate cases can still be material — dollar-quantified regulatory intelligence is the highest-converting wedge.",
@@ -3388,7 +3433,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:75:$.priorityWindows[1].why",
+      "claimId": "d2:76:$.priorityWindows[1].why",
       "jsonPath": "$.priorityWindows[1].why",
       "kind": "narrative",
       "text": "Healthcare Oct 1 FY reset + higher-ed Sept 1 FY launch creates simultaneous openness; institutional RFP/procurement patterns cluster in fall.",
@@ -3433,7 +3478,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:76:$.bigTakeaways[0]",
+      "claimId": "d2:77:$.bigTakeaways[0]",
       "jsonPath": "$.bigTakeaways[0]",
       "kind": "narrative",
       "text": "Calendar the motion to four beats — budget, procurement, summer demand, compliance/reporting. Buyer attention is not evenly distributed.",
@@ -3478,7 +3523,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:77:$.bigTakeaways[1]",
+      "claimId": "d2:78:$.bigTakeaways[1]",
       "jsonPath": "$.bigTakeaways[1]",
       "kind": "narrative",
       "text": "The recurring win is the budget timing gap: finance locks forecasts before utilities finalize rates. Time intel + invoice forensics to those cliffs.",
@@ -3523,7 +3568,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:78:$.bigTakeaways[2]",
+      "claimId": "d2:79:$.bigTakeaways[2]",
       "jsonPath": "$.bigTakeaways[2]",
       "kind": "narrative",
       "text": "Treat Feb–Mar as the highest-converting higher-ed window (Jul 1 FY lock) and Aug–Sep as the second (healthcare FY close/launch + Sept FY fresh start).",
@@ -3568,7 +3613,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:79:$.bigTakeaways[3]",
+      "claimId": "d2:80:$.bigTakeaways[3]",
       "jsonPath": "$.bigTakeaways[3]",
       "kind": "narrative",
       "text": "Summer (Jun–Aug) is the dollars-at-risk season for demand charges. Lead with peak-setting risk and portfolio prioritization.",
@@ -3613,7 +3658,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:80:$.bigTakeaways[4]",
+      "claimId": "d2:81:$.bigTakeaways[4]",
       "jsonPath": "$.bigTakeaways[4]",
       "kind": "narrative",
       "text": "CRE compliance (CDP / GRESB / LL97) creates acute April–May tool demand; lead with invoice-level data readiness even if full carbon productization is adjacent.",
@@ -3658,7 +3703,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d2:81:$.bigTakeaways[5]",
+      "claimId": "d2:82:$.bigTakeaways[5]",
       "jsonPath": "$.bigTakeaways[5]",
       "kind": "narrative",
       "text": "Be honest in pitch: detection + intelligence convert best paired with a credible “dollars recovered” case. Calendar creates the moments; proof converts them.",

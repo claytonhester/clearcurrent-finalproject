@@ -12,19 +12,38 @@ export const D5 = {
   threeDecisions: [
     {
       headline: 'Higher education comes first',
-      why: 'Highest composite score: problem severity, named incumbent frustration (EnergyCAP), predictable calendar, documented deal size, and product-market fit with what ships today. Two Texas universities are already warm. This is the sequencing choice—not the only customer you will ever serve.',
+      bullets: [
+        'Leads the scorecard: problem pain, buyer readiness, deal path, and fit with what ships today.',
+        'EnergyCAP frustration, predictable fiscal calendar, and documented deal economics.',
+        'Many campuses mix grid purchases with district or on-site generation.',
+        'Rates, peaks, and internal allocation still need the same intelligence.',
+        'Land modules by acute pain—billing and regulatory first; campus chargeback when district metering is the bottleneck.',
+      ],
     },
     {
       headline: 'Multi-site retail and QSR in parallel',
-      why: 'Panda-class operators show the same billing-intelligence gap as campuses: threshold-only ESCO analytics, franchise-tier OCR holes, and buyers who want interpretation—not just payment. Pursue this track alongside higher ed; entry is often regional or franchise-heavy footprints before parent HQ.',
+      bullets: [
+        'Same job as campuses: billing intelligence—not payment rails alone.',
+        'Threshold-style ESCO analytics and franchise OCR gaps leave money on the table.',
+        'Buyers want interpretation, not another dashboard export.',
+        'Run parallel to higher ed; regional and franchise footprints often lead parent HQ.',
+      ],
     },
     {
       headline: 'Healthcare is the long-term prize',
-      why: '$265M single-system spend at Ascension makes this the largest ceiling — but IT security gates (2.5 years at AdventHealth), SOC 2 Type II, and proof-of-recovery documentation are hard prerequisites. Build credibility in higher ed and parallel retail, then compound into health systems over 18–36 months.',
+      bullets: [
+        'Ascension-scale spend (~$265M single-system) shows the ceiling.',
+        'Hard gates: IT security, SOC 2 Type II, and proof-of-recovery documentation.',
+        'Prove credibility in higher ed and parallel retail first—then compound into health systems over 18–36 months.',
+      ],
     },
     {
-      headline: 'Document one recover-to-cash story before May',
-      why: 'Investors and CFOs care whether money actually moved—not how big a “savings we found” number looks on a slide. One end-to-end example (what broke, what changed, proof on the invoice or ledger) answers that test; Marc Spieler (NVIDIA) is a public voice for the same skepticism.',
+      headline: 'CASE STUDY: Document one recover-to-cash story before May',
+      bullets: [
+        'Investors and CFOs ask whether cash actually moved.',
+        'A slide total of “savings we found” is not the proof.',
+        'One thread: what broke → what changed → proof on the invoice or ledger.',
+      ],
     },
   ],
   verticals: [
@@ -34,10 +53,10 @@ export const D5 = {
       scores: { problem: 5, readiness: 4, deal: 4, competition: 4, data: 3 },
       stage: 'Beachhead now',
       verdict:
-        'Highest composite. Closest alignment with today’s shipped product. Two institutional relationships established. Shortest time-to-first-dollar in the research to date.',
+        'Highest composite. Closest alignment with today’s shipped product. Two institutional relationships established. Shortest time-to-first-dollar in the research to date. Interviews stress district energy and on-site generation: the account is rarely “utility bills only,” but that increases—not removes—need for rate logic, anomaly detection, peak events, and internal allocation; scope the deal to the modules that match the buyer, not every CC surface on contract one.',
       keyEvidence: [
         'Texas State: 1,500 meters, 98 buildings, multiplier error (3,500 → 35,000 gallons) — Andee Chamberlain.',
-        'UT Austin: $20M annual gas spend; budget submitted before City of Austin rates final — Andi Ault.',
+        'UT Austin: $20M annual gas spend; budget submitted before City of Austin rates final — Andi Ault; district / central-plant context in engineering interviews (e.g. load shed, BAS) — Troy Nevells.',
         'University of Wisconsin RFP: $500K–$2M documented contract value.',
         'EnergyCAP 132 reviews name chargebacks and UX as weaknesses.',
       ],
@@ -88,11 +107,11 @@ export const D5 = {
       scores: { problem: 3, readiness: 2, deal: 4, competition: 2, data: 3 },
       stage: 'M&A target / channel later',
       verdict:
-        'Most competitive landscape in the research base. JLL framed Clear Current as M&A target at enterprise tier.',
+        'Most competitive landscape in the research base. JLL (primary interview) described JLL Technologies building internal AI energy-management and utility-bill intelligence on data they already hold—enterprise outcomes skew partnership, license, or M&A, not a default per-seat SaaS sale.',
       keyEvidence: [
         'WatchWire by Tango: 500+ CRE customers, Berkshire-backed.',
         'Measurabl free tier onboarded 11,000+ buildings in 4 weeks.',
-        'JLL building internal AI tools — Jamare Bates.',
+        'JLL Technologies: in-house AI energy-management / billing tooling in motion — Jamare Bates.',
       ],
     },
     {
@@ -124,7 +143,7 @@ export const D5 = {
       entry: 'Yes — for regulatory-intel pitch',
       authority: 'Budget holder',
       trigger: 'Rate change after budget, large unexplained variance',
-      surface: 'Dashboard push, Regulatory Intelligence',
+      surface: 'Proactive alerts, Regulatory Intelligence',
       quote:
         '“Flagging anomalies would be the first process so that that is streamlined and featured and flagged rather than looking for it.” — Andi Ault',
     },
@@ -158,6 +177,8 @@ export const D5 = {
   moduleFit: [
     {
       module: 'Rate Analyst (billing error detection)',
+      tooltip:
+        'Finds likely billing mistakes and line items that don’t match tariffs or history—so finance and ops catch errors before they compound.',
       he: 5,
       hc: 5,
       rest: 5,
@@ -167,6 +188,8 @@ export const D5 = {
     },
     {
       module: 'Rate Analyst (tariff / rate modeling)',
+      tooltip:
+        'Tariff and rate “what-if” work: schedules, riders, ratchets, time-of-use—what you should pay under the rules, not only what the bill shows.',
       he: 4,
       hc: 3,
       rest: 4,
@@ -176,6 +199,8 @@ export const D5 = {
     },
     {
       module: 'Energy HQ (portfolio visibility)',
+      tooltip:
+        'Portfolio roll-up: map- and dashboard-style view of sites, usage, and spend—built for sponsors who need the big picture, not invoice-by-invoice chat.',
       he: 4,
       hc: 5,
       rest: 3,
@@ -185,6 +210,8 @@ export const D5 = {
     },
     {
       module: 'Regulatory Intelligence',
+      tooltip:
+        'Tracks what utilities and regulators are doing (e.g. rate cases, dockets) and turns filings into “what this could cost your portfolio” before the budget locks.',
       he: 5,
       hc: 3,
       rest: 3,
@@ -194,6 +221,8 @@ export const D5 = {
     },
     {
       module: 'Campus Chargeback',
+      tooltip:
+        'Allocates central plant or district energy costs to buildings or departments—internal “who pays what” after the utility bill is understood.',
       he: 5,
       hc: 3,
       rest: 1,
@@ -202,17 +231,21 @@ export const D5 = {
       evidence: 'STRONG for Higher Ed; emerging for healthcare district energy.',
     },
     {
-      module: 'Dashboard push layer',
+      module: 'Proactive alerts layer',
+      tooltip:
+        'Surfaces important issues to users (ranked, usually with dollars) so they don’t have to log in to hunt—paired with Energy HQ-style surfacing in the research.',
       he: 4,
       hc: 5,
       rest: 4,
       ch: 3,
       cre: 3,
       evidence:
-        'STRONG — confirmed as highest-value delivery mode for non-technical users across all primary interviews (Dashboard push layer / proactive alerts row, D5 Market Opportunity Heatmap).',
+        'STRONG — confirmed as highest-value delivery mode for non-technical users across all primary interviews (proactive alerts / push-to-user delivery; Energy HQ surface in D5 Market Opportunity Heatmap).',
     },
     {
       module: 'Autonomous agent tier',
+      tooltip:
+        'More automated “agent” workflows; in the materials this is not the default shipped path—disputes and recovery still expect people in the loop.',
       he: 2,
       hc: 2,
       rest: 2,

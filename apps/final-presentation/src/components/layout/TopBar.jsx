@@ -38,25 +38,36 @@ export function TopBar() {
         <Menu className="h-5 w-5" />
       </button>
 
-      <div className="min-w-0 flex-1">
-        <div className="truncate text-[10px] font-bold uppercase tracking-wider text-cc-mid-gray">
-          {eyebrow}
+      <div className="flex min-w-0 flex-1 items-center gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="truncate text-[10px] font-bold uppercase tracking-wider text-cc-mid-gray">
+            {eyebrow}
+          </div>
+          <div className="truncate text-[13px] font-semibold text-cc-navy">{label}</div>
         </div>
-        <div className="truncate text-[13px] font-semibold text-cc-navy">{label}</div>
-      </div>
 
-      <div className="flex items-center gap-2">
         <button
           type="button"
           onClick={() => setSearchOpen(true)}
-          className="inline-flex items-center gap-1.5 rounded-md border border-cc-border bg-white px-2.5 py-1.5 text-[12px] font-medium text-cc-dark-text hover:bg-cc-light-gray"
+          className="inline-flex h-9 shrink-0 items-center justify-center rounded-lg border border-cc-border bg-white px-2.5 text-cc-navy shadow-sm hover:bg-cc-light-gray md:hidden"
+          aria-label="Open search"
         >
-          <Search className="h-3.5 w-3.5" />
-          <span className="hidden sm:inline">Search</span>
-          <kbd className="ml-1 hidden rounded bg-cc-light-gray px-1 text-[10px] font-bold text-cc-mid-gray md:inline">
+          <Search className="h-4 w-4" />
+        </button>
+        <button
+          type="button"
+          onClick={() => setSearchOpen(true)}
+          className="hidden h-9 shrink-0 items-center gap-2 rounded-lg border border-cc-border bg-cc-light-gray/60 px-3 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] hover:border-cc-mid-gray/25 hover:bg-cc-light-gray md:inline-flex md:min-w-[13rem] lg:min-w-[15rem]"
+        >
+          <Search className="h-4 w-4 shrink-0 text-cc-mid-gray" aria-hidden />
+          <span className="min-w-0 flex-1 truncate text-[13px] text-cc-mid-gray">Search pages…</span>
+          <kbd className="hidden shrink-0 rounded border border-cc-border bg-white px-1.5 py-0.5 text-[10px] font-semibold text-cc-mid-gray lg:inline">
             ⌘K
           </kbd>
         </button>
+      </div>
+
+      <div className="flex shrink-0 items-center gap-2">
         <button
           type="button"
           onClick={() => window.print()}

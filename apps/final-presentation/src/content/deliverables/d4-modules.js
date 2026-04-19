@@ -1,129 +1,140 @@
 export const D4 = {
   title: 'Product Module Recommendations',
   tagline:
-    'Five buyer-grounded modules turn invoice and tariff depth into pushed answers, not another dashboard to hunt.',
+    'Five build tracks—some net-new from recent interviews, others tightened with more validation. Site and coverage is now its own product; meter-to-site mapping kept surfacing as year-one work. Tariff audit and rate optimization fold into one tariff-intelligence module. Regulatory and chargeback stay in Phase 2 as the moat. Chat, files, MCP→SQL, and proactive association remain the platform baseline; these five tracks are the product work we layer on top.',
   ceoScan:
-    'These modules are grounded in what buyers need now — not generic AI — and sequenced for what Clear Current can ship honestly. The core tension: buyers want answers before they go looking; push beats pull. Modules 1–2 are the wedge, 3 is documented white space, 4–5 deepen rate intelligence and campus stickiness once trust is earned.',
+    'John and Dan: the earlier D4 list sounded like “same modules, sharper copy.” This version changes the **set** of products. Interview after interview, bad or incomplete meter↔site↔bill truth killed trust before analytics started (BSMH meter study, AdventHealth on matching units to addresses, Panda shared-meter story). Proactive association is a start — buyers still need a **coverage and exception product**: missing bills, identity conflicts, onboarding after M&A, and reconciliation queues. **Rank 1 — Site, Meter & Coverage Integrity** is that product, not a footnote. **Rank 2 — Anomaly Detection** stays push-first drift and pattern alerts (Texas State, UT Austin, Intermountain). **Rank 3 — Tariff, Audit & Rate Health** merges the old billing-audit and tariff-optimization modules: one tariff-intelligence surface for wrong line items and wrong schedules/ratchets, one trust curve, one natural-language path (Panda, Trane). **Rank 4 — Regulatory Intelligence** is forward docket → budget dollars. **Rank 5 — Campus Chargeback** lands once upstream truth is boringly reliable. Resolve errors and autonomous utility action stay manual until credited recovery is documented.',
   tldrBullets: [
-    'Grounded in buyer jobs-to-be-done, sequenced for what CC can ship without overpromising.',
-    'Core tension: answers must arrive before buyers go looking — push beats another login.',
-    'Modules 1–2 are the wedge; 3 is confirmed white space; 4–5 deepen rate intel and stickiness after trust.',
-    'Interview-named alert families (ratchets, class thresholds, power factor) are fast credibility wins.',
+    'Structural change: **Site & coverage integrity** is its own ranked module — not only a prerequisite buried in “we already associate invoices.”',
+    'Structural change: **Tariff audit + rate / schedule optimization** = one module so GTM and engineering do not fork “error team vs rate team.”',
+    'Unchanged insight: push beats pull; the “did the credit actually hit the bill?” bar still requires case stages and at least one proof of money back.',
+    'Regulatory + chargeback remain Phase 2 depth — high moat, high config — after Phase 1 proves dollars.',
+    'Phase 3: non-expert-friendly Rate Analyst on top of all five modules (MCP→SQL), without replacing push.',
   ],
-  buyerNamedAlerts:
-    'Interview-grounded alert families leadership should expect in the roadmap and demo story: demand ratchets locking minimum demand after seasonal peaks; proximity to rate-class kW thresholds; power-factor penalties with capacitor ROI — often the fastest trust-building wins Don Johnson and Sean Sevy flagged.',
+  buyerNamedAlerts: [
+    'Each alert should point to a real line on the bill: what the charge is, what month it hit, and roughly how many dollars. Customers already get “something looks off” flags from **bill-pay vendors** — they will compare you to those.',
+    'Before you flag “weird usage,” catch broken basics: a bill that never showed up, an account that’s out of date, or the wrong building tied to a meter. **Fix coverage first** — then drift and pattern alerts are trustworthy.',
+    'Demand ratchets, creeping into a higher rate tier, and power-factor charges — partners and hospitals brought these up; use them as a **quick credibility** check in demos.',
+    'Wrong math on the bill, bad meter reads, bad power factor — interview stories where the problem hid behind bills that **looked normal every month**.',
+    'Money for power nobody is using, bills still running after a site closes, or paying for another tenant’s meter — **unused power**, **closed sites still billing**, and **shared meters** (e.g. Panda, health systems).',
+  ],
   modules: [
     {
-      id: 'm2',
+      id: 'm0',
       rank: 1,
+      phase: 'Phase 1',
+      name: 'Site, Meter & Coverage Integrity',
+      oneLiner:
+        'Reconciliation queues and health metrics so every downstream alert is tied to the right site.',
+      buildsOn:
+        'You already invest in proactive invoice→site association — this module productizes the **gap cases** buyers actually burn time on: conflicts, duplicates, onboarding after growth, “is this the right meter for this address?”, and portfolio coverage (missing bills, stale meters). Without it, Modules 2–3 produce noise or false confidence.',
+      problem:
+        'Health systems and campuses spend months mapping meters to buildings; chains lose money when one meter serves two tenants or bills never arrive. AdventHealth asked for basic certainty that usage landed at the right site. Panda’s year-long neighbor bill is an identity problem, not a threshold problem. No drift model fixes bad graph truth.',
+      persona:
+        'Daily: energy manager or bill operations lead owning portfolio hygiene. Economic buyer: CFO / VP Ops — audit-ready certainty before trusting savings numbers.',
+      evidence: [
+        '**AdventHealth:** electrons/gas matched to site addresses — “foundational,” not flashy.',
+        '**BSMH:** meter study over a year before analytics were trustworthy.',
+        '**Panda:** shared-meter bleed invisible until manual discovery.',
+        '**UT Austin:** hard to tell billing noise from wrong meter / blend of fixed vs volumetric.',
+      ],
+      mvpScope: [
+        'Coverage dashboard: expected vs received bills per account, missed-cycle flags.',
+        'Exception queue for identity conflicts (two invoices one meter, one invoice two sites, etc.).',
+        'Manual resolution workflow with audit log — no silent auto-merge in MVP.',
+        'Site onboarding checklist for M&A / new stores tying into ingestion.',
+        'Exports for internal audit: “what we believe is true” snapshot by site.',
+      ],
+      notInMvp: [
+        'Fully automated entity resolution at national scale without human sign-off.',
+        'Replacing third-party bill pay — this module coordinates truth on top of pay workflows.',
+      ],
+      aiTiers: {
+        push: 'Coverage and conflict digests to ops — “these accounts need human resolution this week.”',
+        chat: 'Rate Analyst answers “which meter feeds this building?” and “what is broken in coverage?” from structured graph + bills.',
+        autonomous: 'Suggest merges only; humans approve identity changes.',
+      },
+      competitive:
+        'Bill partners optimize payment throughput, not portfolio graph health. This is how you differentiate “we pay bills” from “we know what happened at each site.”',
+      productTag: 'FITS',
+    },
+    {
+      id: 'm2',
+      rank: 2,
       phase: 'Phase 1',
       name: 'Anomaly Detection & Alerting',
       oneLiner:
-        'Drift and pattern alerts beyond static thresholds for huge meter portfolios.',
+        'Drift, pattern, and peer consistency — after coverage is trustworthy.',
+      buildsOn:
+        'Runs on clean site/meter linkage from Site & Coverage Integrity. Extends “spot errors” with push-ranked signals threshold workflows miss: baseline drift, structural shared-load issues, stable-looking bad reads.',
       problem:
-        'Threshold rules catch spikes, not gradual baseline drift, shared-meter bleed, or meters that re-base wrong — so costs compound for months. No team can eyeball every account every cycle.',
+        'Processors and exception rules catch spikes and missed bills; they miss gradual re-basing and failures that look normal month to month. Reactive buyers will not hunt dashboards — Texas State and UT Austin both pointed to push-first behavior.',
       persona:
-        'Daily: energy/facilities manager receiving pushed alerts. Economic buyer: VP Ops / CFO buying coverage volume humans cannot scan.',
+        'Daily: multi-site energy or facilities lead. Economic buyer: VP Ops / CFO buying scalable vigilance.',
       evidence: [
-        'Roger Goldstein (Panda): paid a neighbor’s power a year — shared meter invisible to thresholds.',
-        'James Norton (Texas State): “biggest thing” is knowing anomalies immediately — EnergyCAP gap.',
-        'Sean Sevy (Houston Methodist): suspicious PF 80–81%; broker caught it, not Energy Print.',
-        'Ann Walston (BSMH): two major meter failures drove multi-million-dollar overbilling; recovery required board-level utility negotiation.',
+        '**Texas State:** flag anomalies; should not have to go ask (paraphrase).',
+        '**UT Austin:** streamlined anomaly flagging vs manual hunt.',
+        '**Intermountain:** large step-change missed by processor; accountant caught it.',
+        '**Medxcel / Ascension:** peer-style flat suspicious usage patterns.',
+        '**Panda / BSMH:** drift and “looks normal” meter failures.',
       ],
       mvpScope: [
-        'Per-meter baselines (rolling stats vs same-month history).',
-        'Sigma- and dollar-weighted deviation scoring.',
-        'Spike vs drift classification and pattern typing.',
-        'Alert queue prioritized by estimated dollar impact.',
-        'Fast-read alert cards: expected vs actual, delta, investigation hint, portfolio rollup.',
+        'Per-meter baselines (rolling + same-period history).',
+        'Sigma- and dollar-weighted scoring; spike vs drift typing.',
+        'Peer / cohort checks where metadata allows.',
+        'Queue ranked by estimated annual $ impact.',
+        'Alert cards: expected vs actual, delta, investigation hint, exec rollup.',
       ],
       notInMvp: [
-        'Weather-normalized anomaly models (v2).',
-        'Replacing human investigation / utility outreach — alerts start the workflow.',
+        'Weather-normalized causal models (v2).',
+        'Autonomous utility or vendor outreach.',
       ],
       aiTiers: {
-        push: 'Unattended runs produce digest alerts — primary tier for reactive buyers.',
-        chat: 'Post-alert interrogation: history, peer sites, pattern context via Rate Analyst.',
-        autonomous: 'None as default; humans act on alerts.',
+        push: 'Primary tier — scheduled digests for reactive buyers.',
+        chat: 'Deep history and comparisons after a flag.',
+        autonomous: 'None; humans investigate.',
       },
       competitive:
-        'Differentiator is drift/baseline-shift detection vs NG Insight–style threshold rules and EnergyCAP variance limits — documented failure modes in interviews and synthesis.',
+        'Threshold-first incumbents are blind to structural drift; you pair pattern intelligence with your own ingestion and graph.',
       productTag: 'FITS',
     },
     {
       id: 'm1',
-      rank: 2,
-      phase: 'Phase 1',
-      name: 'Billing Error Audit Engine',
-      oneLiner:
-        'Tariff-aware audit flags mischarges with dispute-ready evidence, not autonomous fixes.',
-      problem:
-        'Portfolio energy teams cannot manually catch multiplier, demand, and rate-component errors across thousands of meters; utilities can flag issues yet still bill them through. Recovery requires a documented, quantified case — not a hunch.',
-      persona:
-        'Daily: campus/portfolio energy manager investigating flags. Economic buyer: VP Facilities / CFO on ROI from recoveries and avoided contingency auditors.',
-      evidence: [
-        'RI PUC: 83% of internally flagged billing exceptions still reached customers.',
-        'FERC: $108M mischarged at a single utility (FirstEnergy).',
-        'Andee Chamberlain (Texas State): 10× wastewater multiplier caught by vigilance, not tooling.',
-        'Marc Spieler (NVIDIA): asks whether identified errors actually become credits/refunds.',
-      ],
-      mvpScope: [
-        'Invoice ingestion with line-item extraction (usage, demand, components, multipliers).',
-        'Historical baselines per meter/line item; deviation vs history and tariff-expected value.',
-        'Rules for multiplier, demand, rate class, component, and read anomalies.',
-        'Prioritized exception queue with dollar delta and confidence.',
-        'Dispute package: invoice excerpt, tariff cite, historical comparison chart.',
-      ],
-      notInMvp: [
-        'Autonomous utility correspondence, dispute tracking, credit monitoring.',
-        'Positioning as unattended “resolution” without closed-loop case studies.',
-      ],
-      aiTiers: {
-        push: 'Nightly/weekly runs populate a prioritized exception queue without user-initiated queries.',
-        chat: 'Rate Analyst answers scoped questions on discrepancies, periods, and error classes.',
-        autonomous:
-          'Roadmap: automated correspondence and credit monitoring — ship only with named closed-loop proof.',
-      },
-      competitive:
-        'Vs threshold/OCR bill stores (e.g., EnergyCAP) and spike-only processors: tariff-expected comparison plus structured dispute outputs. Arcadia lacks this workflow UX.',
-      productTag: 'FITS',
-    },
-    {
-      id: 'm4',
       rank: 3,
       phase: 'Phase 1.5',
-      name: 'Tariff Optimization Engine',
+      name: 'Tariff, Audit & Rate Health',
       oneLiner:
-        'Simulates every eligible rate against your load; ranks savings and switch path.',
+        'One module: tariff-expected line items and eligible schedule / ratchet / savings scenarios — dispute packets + rate cards + plain-language prompts.',
+      buildsOn:
+        'Merges the former “billing error audit” and “tariff optimization” tracks. Buyers do not experience “wrong charge” and “wrong schedule” as two products — Trane’s channel lens and Panda’s multi-site operations both need both in one conversation. Same tariff engine, one trust curve: prove line-item correctness, then rank alternatives and ratchet risk. Case stages that prove credits landed (NVIDIA-style diligence asks) stay in MVP for pilots.',
       problem:
-        'Customers often sit on wrong rate schedules for years. Demand ratchets and TOU interactions are combinatorial, and many don’t know their current schedule. Mis-fit is persistent overpayment without a labeled “billing error.”',
+        'Utilities can bill errors through; recovery needs evidence. At the same time, customers sit on wrong schedules for years (Trane customer pattern) and variance work is still manual bill forensics (Panda). Pitching rate savings before line-item tariff trust reads as black box — one module sequences audit → rate health → savings cards.',
       persona:
-        'Daily: analyst / M&V / energy manager on scenarios. Economic buyer: VP Facilities / CFO on no-capex savings from a rate change request.',
+        'Daily: energy manager, M&V, or channel partner. Economic buyer: VP Facilities / CFO on recoveries + no-capex rate fixes.',
       evidence: [
-        'Walt Taylor (Panda): bill variance calls need manual reconstruction across utilities, rate structures, and usage profiles — the scale problem NL Q&A must absorb.',
-        'Don Johnson (Trane): most customers do not know their rate structure.',
-        'DOE-cited band: demand charges often 30–70% of commercial bills.',
-        'Phil Combs (Trane): Excel is the primary daily driver; Energy Toolbase is the named rate/tariff reference — a holistic NL monitor is the gap.',
+        '**Texas State:** multiplier error found by vigilance.',
+        '**NVIDIA:** identified vs credited?',
+        '**Panda:** variance should be a question, not a research project.',
+        '**Trane:** rate literacy, PF, ratchet reality; Excel + Toolbase workflows — gap is holistic natural-language rate health.',
       ],
       mvpScope: [
-        'Rate simulation engine over historical interval or monthly load.',
-        'Rank alternatives by annual $ vs current schedule with confidence.',
-        'Eligibility/feasibility gates (class, demand thresholds, terms).',
-        'Recommendation cards: current vs alt schedules, savings, next steps.',
-        'Ratchet/peak-event diagnostics for demand-charge unlock scenarios.',
+        'Line extraction; tariff-expected vs billed; prioritized exception queue + error taxonomy.',
+        'Dispute packet export + pilot case stages (flagged → disputed → response → credit recorded).',
+        'Rate simulation over historical load; rank alternatives by annual $ with eligibility gates.',
+        'Recommendation + ratchet / peak diagnostics cards; assumptions explicit.',
+        'Layman Rate Analyst prompts (“wrong charge?”, “wrong schedule?”) with guardrails.',
       ],
       notInMvp: [
-        'Full TOU operational playbooks and DR enrollment optimizer (v2).',
-        'Pitching optimizations before tariff-model trust from audit wins.',
+        'Full TOU / DR playbooks (v2).',
+        'Autonomous utility correspondence or savings guarantees without proof.',
       ],
       aiTiers: {
-        push: 'Proactive cards when savings exceed configurable thresholds.',
-        chat: 'Deep what-if and schedule exploration via Rate Analyst.',
-        autonomous:
-          'Deterministic tariff math with AI assist on parsing/rules — not hands-free switching.',
+        push: 'Exception queue + proactive savings / risk cards when thresholds trip.',
+        chat: 'Unified Q&A across errors and schedules — one analyst surface.',
+        autonomous: 'Deterministic tariff math; AI explains — does not auto-switch utilities.',
       },
       competitive:
-        'Vs Energy Toolbase / Arcadia / brokers: continuous, platform-integrated optimization paired with Module 1 findings — combined “wrong charge + wrong rate” narrative.',
+        'Split bill-QA tools from rate tools and buyers rebuild the story in Excel. Integrated “wrong charge + wrong rate + ratchet” is the channel and enterprise narrative.',
       productTag: 'FITS',
     },
     {
@@ -132,36 +143,36 @@ export const D4 = {
       phase: 'Phase 2',
       name: 'Regulatory Intelligence Monitor',
       oneLiner:
-        'PUC filings become dollarized budget alerts before final rates hit bills.',
+        'Dockets and forward utility actions → T12 dollars and budget timelines.',
+      buildsOn:
+        'Net-new monitoring: filing → impact → alert → FP&A export. Trane called docket surveillance “super powerful”; UT Austin flagged the budget-calendar gap.',
       problem:
-        'Rate cases are public, but institutions lack the bandwidth and expertise to monitor dockets across many utilities — so budgets lock before cost impacts are knowable. Finance needs dollars, not PDFs.',
+        'Finance locks budgets before rates finalize; multi-utility systems cannot mine every docket. Needs dollars, not PDFs.',
       persona:
-        'Daily: energy manager / M&V engineer on dockets. Economic buyer: CFO / VP Finance on budget variance and hedging levers.',
+        'Daily: energy / M&V lead. Economic buyer: finance VP.',
       evidence: [
-        'Across interviews and competitive synthesis: zero named competitors offer PUC docket monitoring — white space.',
-        'Andi Ault (UT Austin): budget in March vs Austin rates finalized later — timing gap.',
-        'Phil Combs (Trane): “super powerful” to monitor filings and dollarize customer impact.',
-        'AdventHealth (Culver): 73 utilities — needs “why we should care,” not just aggregation.',
+        '**Trane:** PUC/board surveillance → facility dollar impact.',
+        '**UT Austin:** March budget vs later rate finality.',
+        '**AdventHealth:** interpret many utilities — why we should care.',
+        'Synthesis: rare competitor coverage for docket → portfolio $.',
       ],
       mvpScope: [
-        'PUC monitoring for priority states (TX, CA, OH, PA starter set).',
-        'Filing alerts when a served utility opens or updates material rate proposals.',
-        'Impact calculator: proposed components × trailing 12-month consumption.',
-        'Alert cards: docket, dates, projected $, decision timeline, suggested actions.',
-        'Budget-oriented export of revised energy-line forecast.',
+        'Starter geography with honest completeness metrics.',
+        'Material filing alerts for in-portfolio utilities.',
+        'Impact estimate: proposed components × T12.',
+        'Docket cards + budget-oriented export.',
       ],
       notInMvp: [
-        'Full 50-state coverage day one; heterogeneous source maturity.',
-        'Full PJM capacity auction automation (v2 track).',
+        '50-state day one.',
+        'Full ISO capacity automation (v2).',
       ],
       aiTiers: {
-        push: 'Structured filing and dollar-impact alerts to ops and finance dashboards.',
-        chat: 'Expert queries on docket contents, exposure by site, scenarios.',
-        autonomous:
-          'Continuous monitoring/classification runs unattended; human approves budget actions.',
+        push: 'Filing and $-impact alerts.',
+        chat: 'Docket Q&A and scenarios.',
+        autonomous: 'Ingestion/classification unattended; humans own budget bets.',
       },
       competitive:
-        'Confirmed gap vs EnergyCAP, Arcadia (backward tariffs), Energy Toolbase (analysis without forward docket mining), ENGIE/Schneider bill-scale without this monitor.',
+        'Backward tariffs and pay partners do not own forward docket → budget bridge.',
       productTag: 'EXTENDS',
     },
     {
@@ -170,62 +181,102 @@ export const D4 = {
       phase: 'Phase 2',
       name: 'Campus Chargeback Intelligence',
       oneLiner:
-        'Tariff-faithful allocations from shared utility costs to departments — explained.',
+        'Finance-grade allocations on top of trusted usage, tariff, and anomaly data.',
+      buildsOn:
+        'Consumes graph + tariff + anomaly truth from Site/Coverage, Anomaly, and Tariff modules. Chargeback before truth invites political failure.',
       problem:
-        'District-energy campuses must split energy, demand, and passthrough components across many cost centers. Ops needs kW/kWh, finance needs dollars — bad splits drive political disputes and opaque variances. Incumbent tools are sticky but weak on UX and district complexity.',
+        'Ops vs finance split (Texas State); sq-ft chargebacks miss efficiency levers (Texas State); district energy complexity breaks weak UX (G2 on EnergyCAP).',
       persona:
-        'Daily: campus energy manager configuring rules and reviewing cycles. Economic buyer: CFO / budget director on allocation accuracy and audit readiness.',
+        'Daily: campus energy manager. Economic buyer: CFO / budget director.',
       evidence: [
-        'Andee Chamberlain (Texas State): tension — ops cares demand/usage, finance cares bottom line.',
-        'G2/Capterra: EnergyCAP chargebacks/splits “hard to understand.”',
-        '660+ U.S. district energy systems — concentrated Higher Ed/health buyer base.',
-        'Arcadia competitive intel: no documented campus chargeback / district-energy parity.',
+        '**Texas State:** ops vs finance tension; usage-based internal chargeback when data allows.',
+        'G2/Capterra: chargeback / split confusion recurring.',
       ],
       mvpScope: [
-        'Configurable allocation engine (consumption, SF, hybrid; demand allocation logic).',
-        'District-energy passthrough / internal transfer pricing from inputs + production.',
-        'Monthly per cost-center statements with portfolio finance rollup.',
-        'Variance vs prior month and budget with materiality flags.',
-        'Exportable/PDF statements and audit trail of methodology.',
+        'Allocation rules; plant / purchased passthrough where data exists.',
+        'Monthly cost-center statements; portfolio rollup; variance flags.',
+        'PDF + methodology audit trail.',
       ],
       notInMvp: [
-        'Self-service departmental portals and formal dispute ticketing (v2).',
-        'Lightweight pilots before allocation rules and sub-meter integrations are mature.',
+        'Department portals v1.',
+        'Deep rollout before upstream modules are stable.',
       ],
       aiTiers: {
-        push: 'Monthly auto-run notices to finance with variance highlights and exports.',
-        chat: 'NL explanations of allocation jumps and hypotheticals (Energy HQ / Rate Analyst).',
-        autonomous:
-          'Deterministic calcs. AI assists config and variance narration, not silent reallocations.',
+        push: 'Scheduled allocation + variance highlights.',
+        chat: 'Natural-language explanation of allocation changes.',
+        autonomous: 'Deterministic calcs; no silent reallocations.',
       },
       competitive:
-        'Vs EnergyCAP module (poor UX, weak district story) and absent Arcadia chargeback — NL explanations plus sync to billing errors and rate changes.',
+        'Explainable splits synced with audit + rate findings — not a standalone spreadsheet module.',
       productTag: 'EXTENDS',
     },
   ],
   buildSequence: [
     {
       phase: 'Phase 1',
-      modules: ['m2', 'm1'],
-      why: 'Shared ingestion, mapping, and baselines. Push-first alerts convert passive buyers (Norton/Ault priority), then layer tariff-vs-actual audit on stable signals.',
+      modules: ['m0', 'm2'],
+      why: 'Parallel: **coverage integrity** (AdventHealth/BSMH/Panda) and **push anomalies** (Texas State/UT Austin/Intermountain). Bad graph poisons alerts; alerts prove value while graph hardens.',
     },
     {
       phase: 'Phase 1.5',
-      modules: ['m4'],
-      why: 'Leverages shipped tariff engine for savings-ranked scenarios and channel “Rate Health Check” after audit proof builds tariff trust.',
+      modules: ['m1'],
+      why: 'Single **tariff intelligence** shipment: line-item audit + rate / ratchet / savings cards + credited-recovery case stages — one GTM story, one trust curve after Phase 1 signal quality.',
     },
     {
       phase: 'Phase 2',
       modules: ['m3', 'm5'],
-      why: 'PUC data layer is high build complexity but budget whitespace. Chargeback needs deepest config / integration — land stickiness once core billing intelligence is proven.',
+      why: 'Regulatory monitor = finance beachhead whitespace. Chargeback = stickiness once Site/Coverage, Anomaly, and Tariff modules are referenceable — highest config, land last for most accounts.',
+    },
+    {
+      phase: 'Phase 3',
+      modules: [],
+      why: 'When Phases 1–2 are in market: Rate Analyst answers in plain language for the same outputs experts get from queues and exports — MCP→SQL–grounded, non-expert presets optional, push unchanged.',
     },
   ],
   priorityRationale: [
-    'Push beats pull: research shows reactive buyers. Anomaly + audit must surface findings without login hunting.',
-    'Modules 1–2 share one Billing Intelligence foundation — efficient to co-develop as complementary outputs (pattern vs tariff correctness).',
-    'Spieler’s identified-vs-realized recovery gap demands a full credit-received case study before scaling recovery claims in fundraising.',
-    'Module 4 is incremental on existing tariff depth but should follow early audit wins so customers trust the tariff model.',
-    'Modules 3 and 5 are highest moat but highest integration/config cost — justify after wedge adoption and multi-state PUC scoping.',
-    'Chargeback is the EnergyCAP displacement lever for long-term stickiness in district-energy Higher Ed/health accounts.',
+    'We elevated **Site, Meter & Coverage Integrity** to Rank 1 because buyers named mapping and identity as year-one work — not a silent prerequisite.',
+    '**Anomaly Detection** stays the reactive-buyer hook — but it now explicitly depends on cleaner coverage from Rank 1.',
+    '**Tariff, Audit & Rate Health** (single module) replaces separate audit + optimization SKUs so GTM and engineering stay one tariff story.',
+    '**Regulatory Intelligence** stays Phase 2 for build cost — thin spike earlier only if the beachhead forces it.',
+    '**Campus Chargeback** remains the EnergyCAP displacement lever: wrong first wedge, right retention play after truth is proven.',
+    'Proof of **credited recovery** is still the diligence gate — case stages live in Tariff, Audit & Rate Health.',
+    'Phase 3 is access, not a sixth SKU: natural language on the same artifacts once all five modules are real.',
+  ],
+  maturitySnapshot: [
+    {
+      capability: 'Identify invoices of interest',
+      today: 'Plain-language Q&A on bills and tariffs.',
+      gap: 'Show how much money is on the line and a simple “how do we compare?” view—without needing an expert to set everything up first.',
+    },
+    {
+      capability: 'Associate invoices with sites / meters',
+      today: 'Bill ↔ site/meter match is the strongest automation.',
+      gap: 'Work at full portfolio size: catch shared meters, split landlord and tenant bills, and keep rechecking so nothing slowly attaches to the wrong place.',
+    },
+    {
+      capability: 'Spot errors',
+      today: 'Clearer for non-experts; dispute-ready packets still improving.',
+      gap: 'Buyers need to see the credit show up on a later bill—not only an alert that something might be wrong.',
+    },
+    {
+      capability: 'Resolve errors',
+      today: 'People drive disputes; the product does not email the utility alone.',
+      gap: 'If the product ever takes action for the customer, it should follow rules the customer and their lawyers are comfortable with—clear steps, no surprises.',
+    },
+    {
+      capability: 'Spot / package opportunities',
+      today: 'Still needs someone who knows rates and real usage.',
+      gap: 'A facilities or finance lead should be able to ask “Are we on the wrong rate?” and get a straight answer, with the math shown in the open.',
+    },
+    {
+      capability: 'Realize opportunities',
+      today: 'Savings captured outside the tool: sign-offs and changing how the account runs.',
+      gap: 'Spell out who does what next—no messaging that sounds like the software fixes your rates in one click.',
+    },
+    {
+      capability: 'Spot / predict trends & budgets',
+      today: 'Alerts over open-ended analysis; deep dives still specialist-led.',
+      gap: 'Save “what will this cost us?” for times the business actually plans around—like a known rate hike or a big rule change—not open-ended chart surfing.',
+    },
   ],
 }

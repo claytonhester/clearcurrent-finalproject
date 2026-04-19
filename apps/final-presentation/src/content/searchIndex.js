@@ -1,3 +1,5 @@
+import { APPENDIX_ITEMS, DELIVERABLES } from '../navConfig.js'
+
 export const SEARCH_INDEX = [
   {
     path: '/',
@@ -40,21 +42,35 @@ export const SEARCH_INDEX = [
   {
     path: '/journeys',
     label: 'D3 · Customer Journey Maps',
-    description: 'Before/after swim lanes across five core buyer journeys',
+    description: 'Before/after swim lanes across six buyer and channel-adjacent journeys',
     keywords: ['d3', 'journey', 'workflow', 'before', 'after', '/journeys'],
   },
   {
     path: '/modules',
     label: 'D4 · Product Module Recommendations',
-    description: 'Five modules with MVP scope, AI tiers, and phased build sequence',
+    description:
+      'Five modules, phased build, maturity snapshot, ranked MVP scope',
     keywords: [
       'd4',
+      'd4-2',
+      'd42',
+      'd4-modules-v2',
+      'modules-v2',
       'modules',
       'product',
       'mvp',
       'roadmap',
       'anomaly',
       'chargeback',
+      'phase 3',
+      'layman',
+      'autonomy',
+      'mcp',
+      'sql',
+      'evolution',
+      'maturity',
+      'push',
+      'chat',
       '/modules',
     ],
   },
@@ -75,19 +91,30 @@ export const SEARCH_INDEX = [
   {
     path: '/competition',
     label: 'D6 · Competitive Intelligence Brief',
-    description: 'Three poles, competitor cards, and white space claim',
-    keywords: ['d6', 'competition', 'arcadia', 'energycap', 'urjanet', '/competition'],
+    description: 'Three poles, competitor cards, and white space',
+    keywords: [
+      'd6',
+      'competition',
+      'arcadia',
+      'energycap',
+      'urjanet',
+      'watchwire',
+      'engie',
+      'energy toolbase',
+      'brainbox',
+      '/competition',
+    ],
   },
   {
     path: '/investor',
     label: 'D7 · Investor Narrative & Pitch',
     description: 'Six-beat arc, tiered market math, and objection handling',
-    keywords: ['d7', 'investor', 'pitch', 'tam', 'sam', 'som', 'objections', '/investor'],
+    keywords: ['d7', 'investor', 'pitch', 'tam', 'sam', 'som', '/investor'],
   },
   {
     path: '/gtm',
     label: 'D8 · GTM Strategy Playbook',
-    description: 'ICPs, land–expand–retain, pricing, and 90-day plan',
+    description: 'ICPs, land–expand–retain tracks, pricing, deal killers, channel posture',
     keywords: ['d8', 'gtm', 'playbook', 'icp', 'pilot', 'sales', '/gtm'],
   },
   {
@@ -113,6 +140,30 @@ export const SEARCH_INDEX = [
     ],
   },
   {
+    path: '/appendix/chat-prompts',
+    label: 'Evidence & diligence · User chat prompt library',
+    description:
+      'Buyer-style chat prompts elicited during primary interviews — for demos, journeys, and eval coverage',
+    keywords: [
+      'prompts',
+      'chat',
+      'llm',
+      'questions',
+      'users',
+      'buyers',
+      'elicitation',
+      'primary',
+      'evidence',
+      'diligence',
+      'industry',
+      'healthcare',
+      'higher ed',
+      'qsr',
+      'channel',
+      'filter',
+    ],
+  },
+  {
     path: '/appendix/companies',
     label: 'Evidence & diligence · Company cards',
     description:
@@ -127,3 +178,44 @@ export const SEARCH_INDEX = [
     keywords: ['sources', 'citations', 'primary', 'secondary', 'links', 'evidence'],
   },
 ]
+
+/** One row per route: nav labels + enriched copy from SEARCH_INDEX (no duplicate paths). */
+export function getSearchCatalog() {
+  const byPath = new Map()
+
+  for (const d of DELIVERABLES) {
+    byPath.set(d.path, {
+      path: d.path,
+      label: d.label,
+      kind: 'deliverable',
+      keywords: [],
+    })
+  }
+  for (const a of APPENDIX_ITEMS) {
+    byPath.set(a.path, {
+      path: a.path,
+      label: a.label,
+      kind: 'appendix',
+      keywords: [],
+    })
+  }
+  for (const row of SEARCH_INDEX) {
+    const prev = byPath.get(row.path)
+    const kind = row.path.startsWith('/appendix') ? 'appendix' : 'deliverable'
+    const mergedKeywords = [
+      ...new Set([...(prev?.keywords ?? []), ...(row.keywords ?? [])]),
+    ]
+    byPath.set(row.path, {
+      ...prev,
+      ...row,
+      kind: prev?.kind ?? kind,
+      keywords: mergedKeywords,
+    })
+  }
+
+  const order = [
+    ...DELIVERABLES.map((d) => d.path),
+    ...APPENDIX_ITEMS.map((a) => a.path),
+  ]
+  return order.map((p) => byPath.get(p)).filter(Boolean)
+}

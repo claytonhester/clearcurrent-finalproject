@@ -43,7 +43,7 @@
 
 @layer utilities {
   .decision-strip {
-    @apply border-l-4 border-cc-yellow bg-cc-yellow-soft px-4 py-3 text-sm font-semibold text-cc-navy;
+    @apply border-l-4 border-cc-yellow bg-cc-yellow-soft px-4 py-3 text-sm font-normal text-cc-navy;
   }
 
   .evidence-card {

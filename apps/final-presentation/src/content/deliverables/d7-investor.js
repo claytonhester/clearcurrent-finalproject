@@ -1,11 +1,11 @@
 export const D7 = {
   title: 'Investor Narrative & Pitch Framework',
   tagline:
-    'Six-beat narrative, tiered market math, and an honest objection handling book — anchored on government enforcement, not vendor surveys.',
+    'Six-beat narrative and tiered market math — anchored on government enforcement, not vendor surveys.',
   tldrBullets: [
     'Six-beat arc: broken market → buyer constraint → why now → what CC is (honest boundaries) → landscape → why us.',
     'Evidence anchor is regulators and case law, not vendor NPS — misbilling is documented at scale.',
-    'Market math is tiered; objections are explicit (identified ≠ realized, IT gates, incumbent stickiness).',
+    'Market math is tiered; identified ≠ realized and IT gates stay explicit in the narrative.',
     'Differentiator story includes practitioner-grounded regulatory surveillance, not generic “AI on bills.”',
   ],
   arc: [
@@ -22,7 +22,7 @@ export const D7 = {
     {
       beat: 3,
       title: 'Why now — the window',
-      body: 'LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. GTM is intentionally dual-track: higher ed first for calendar and evidence density; multi-site retail and QSR in parallel for the same ESCO-and-threshold gaps; health systems later once security and recovery proof match the ticket. Window is open; not permanent.',
+      body: 'LLMs cross the capability threshold for bill parsing and natural language analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. GTM is intentionally dual-track: higher ed first for calendar and evidence density; multi-site retail and QSR in parallel for the same ESCO-and-threshold gaps; health systems later once security and recovery proof match the ticket. Window is open; not permanent.',
     },
     {
       beat: 4,
@@ -32,7 +32,7 @@ export const D7 = {
     {
       beat: 5,
       title: 'The competitive landscape',
-      body: 'EnergyCAP owns Higher Ed with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have NL interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.',
+      body: 'EnergyCAP owns Higher Ed with “glorified spreadsheet” UX. Arcadia has $649M and a data API, not intelligence. ENGIE outsources processing and keeps AI internal. None have a natural language interface, PUC monitoring, or campus chargeback. None touches 660+ district energy systems.',
     },
     {
       beat: 6,
@@ -82,16 +82,6 @@ export const D7 = {
       },
       { seg: 'Total SOM (24-month)', accounts: '18–30', acv: '—', rev: '$650K–$2.4M' },
     ],
-    doNotUse: [
-      {
-        claim: '“$14.2B global TAM, $36.5B by 2033 at 11.1% CAGR”',
-        why: 'Citation chain invisible. Use bottom-up build instead.',
-      },
-      {
-        claim: '“~80% of businesses overpay on utility bills”',
-        why: 'National Utilities Refund — contingency-fee firm citing own clients. Replace with RI PUC 83% + FERC $108M.',
-      },
-    ],
   },
   evidence: [
     {
@@ -133,7 +123,7 @@ export const D7 = {
       n: 6,
       headline: 'Third-party segmentation from a credible engineer',
       finding:
-        'Troy Nevels (UT Austin): “if UT didn’t have a district energy system…” — named Panda and Frito-Lay unprompted as Clear Current use cases.',
+        'Troy Nevells (UT Austin): “if UT didn’t have a district energy system…” — named Panda and Frito-Lay unprompted as Clear Current use cases.',
       confidence: 'PRIMARY (unusually strong qualitative signal)',
     },
     {
@@ -198,51 +188,6 @@ export const D7 = {
       },
     ],
   },
-  objections: [
-    {
-      n: 1,
-      q: 'Why won’t EnergyCAP or ENGIE just add AI?',
-      a: 'Legacy architecture isn’t a 6-month sprint. ENGIE’s AI is internal by design (consulting revenue conflict). Arcadia is migration-bound 12–24 months. Our moat is institutional domain depth — campus chargeback, regulatory intel — that takes 18+ months to build correctly.',
-      unresolved:
-        'Private roadmaps could change; absence of evidence ≠ evidence of absence.',
-    },
-    {
-      n: 2,
-      q: 'Those pilot “identified savings” numbers — has any utility actually paid out?',
-      a: 'Precisely: identified, not yet recovered at documentation level. Three pilots in active utility dialogue. Documented recoveries before Series A close. We do not pretend to automate political recovery. Honesty is the differentiator.',
-      unresolved: 'Needs a documented credit letter before May.',
-    },
-    {
-      n: 3,
-      q: 'How do you get utility bill data?',
-      a: 'AI-assisted invoice ingestion today = zero utility API dependency. Aggregation partnerships (incl. Arcadia’s Arc, which ENGIE uses) available as we scale. First barrier isn’t access — it’s insight.',
-      unresolved: 'Specific utility coverage vs 73-utility accounts (AdventHealth).',
-    },
-    {
-      n: 4,
-      q: 'Enterprise IT security will kill your sales cycle.',
-      a: 'Real risk — AdventHealth 2.5 years post-Johnson Controls hack. GTM sequences around it: start with campus energy managers who have direct budget authority. SOC 2 Type II on infrastructure roadmap before scaling to systems at AdventHealth’s size.',
-      unresolved: 'SOC 2 status and timeline — Jake Masters.',
-    },
-    {
-      n: 5,
-      q: 'Higher ed is a tough buyer. Why start there?',
-      a: 'Predictable, not slow. Jan–Feb budget, Mar–May procurement, Sept 1 FY start. EnergyCAP comparable confirms $50–75K willingness to pay. Arcadia has zero Higher Ed customers in 14 months. Underserved, not unattractive. Multi-site retail and QSR run in parallel (Panda-class proof)—same product, different trigger. Healthcare stays the long-term enterprise prize behind IT and recovery gates.',
-      unresolved: 'Any current paid university reference before May?',
-    },
-    {
-      n: 6,
-      q: 'AI energy management is crowded. Real differentiation?',
-      a: 'Three things none of them do: NL interface for energy managers, PUC rate case alerts before budget lock, district energy cost allocation with conservation incentives. These are core design choices, not bolt-ons.',
-      unresolved: 'Pricing/contract model specifics.',
-    },
-    {
-      n: 7,
-      q: 'Seed-stage energy AI has promised autonomy and delivered HITL. Why different?',
-      a: 'Product Context explicit: Spot ≠ Resolve. Spieler hybrid pricing aligns incentives. Walston’s $1M recovery needed board escalation — recovery is political, not algorithmic. We assist; we don’t pretend to automate.',
-      unresolved: 'Current contract outcome commitment structure.',
-    },
-  ],
   moat: [
     {
       n: 1,
@@ -267,50 +212,6 @@ export const D7 = {
       name: 'Workflow integration depth',
       horizon: '20+ integrations by 2028',
       why: 'Ault’s #1 wish: financial system integration. Once embedded in budget planning, removing Clear Current = rebuilding integration. Concur/Coupa precedent.',
-    },
-  ],
-  gaps: [
-    {
-      priority: 'CRITICAL',
-      title: 'No documented utility credit issuance',
-      owner: 'John Reuter, Dan Schreiber',
-      timeline: 'Before any investor meeting',
-      ask: 'One documented case at any dollar amount — found, contacted, credited, confirmed.',
-    },
-    {
-      priority: 'HIGH',
-      title: 'SOC 2 Type II certification status',
-      owner: 'Jake Masters (CTO)',
-      timeline: 'In May pitch materials',
-      ask: 'Current certifications, SOC 2 timeline, HIPAA path for healthcare.',
-    },
-    {
-      priority: 'HIGH',
-      title: 'Pilot-to-paid conversion rate',
-      owner: 'John Reuter',
-      timeline: 'Before May meetings',
-      ask: '# pilots converted; average time and ACV.',
-    },
-    {
-      priority: 'MEDIUM',
-      title: 'Campus chargeback development timeline',
-      owner: 'Jake Masters, Dan Schreiber',
-      timeline: 'Before Higher Ed customer conversations',
-      ask: 'Engineering estimate for MVP — even rough is better than silence.',
-    },
-    {
-      priority: 'MEDIUM',
-      title: 'No primary CRE voice of customer',
-      owner: 'Consulting team',
-      timeline: 'Acceptable gap for seed if labeled “next vertical”',
-      ask: 'One additional primary CRE interview (operator, not advisor).',
-    },
-    {
-      priority: 'MEDIUM',
-      title: 'Pricing model finalization',
-      owner: 'John Reuter, Dan Schreiber',
-      timeline: 'Before May — will be asked in first meeting',
-      ask: 'Published vs negotiated. Per-meter / per-site / outcome. Pilot terms.',
     },
   ],
 }

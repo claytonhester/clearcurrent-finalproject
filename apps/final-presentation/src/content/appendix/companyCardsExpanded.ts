@@ -46,7 +46,7 @@ export const COMPANY_CARD_DETAILS: Record<string, CompanyCardDiligence> = {
   },
   'cc-medxcel': {
     snapshot:
-      '~$265M portfolio energy cited; Peer AI (Constellation) live ~9 months; sophisticated NL query + ghost-meter wins already.',
+      '~$265M portfolio energy cited; Peer AI (Constellation) live ~9 months; sophisticated natural language query + ghost-meter wins already.',
     bullets: [
       'Ghost meters at vacated sites — stable small bills evaded thresholds; ~$1M/yr category after pattern-based detection.',
       '$7.2M polar-vortex shock in three days; gas nomination + weather intel is the ROI narrative.',
@@ -136,6 +136,7 @@ export const COMPANY_CARD_DETAILS: Record<string, CompanyCardDiligence> = {
     snapshot:
       'CRE advisory — enterprise clients may build or acquire tools; mid-market relies on advisors + manual bill forensics.',
     bullets: [
+      'JLL Technologies is building internal AI energy-management and utility-bill intelligence on data JLL already holds through facility contracts (Jamare Bates).',
       'Clients delayed efficiency capex until crisis — five-year infrastructure lead times now.',
       'Data access + confidentiality are the enterprise AI gate — trust and terms beat feature slides.',
       'At JLL scale, outcome may be partnership, license, or acquisition — not a simple SaaS seat sale.',

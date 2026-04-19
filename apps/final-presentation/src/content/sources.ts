@@ -128,6 +128,21 @@ export const SOURCES: Record<string, Source> = {
     title: 'D6 — Competitive Intelligence Brief',
     file: 'research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md',
   },
+  'd6-competitive-deep-dive': {
+    id: 'd6-competitive-deep-dive',
+    kind: 'writtenDeliverable',
+    title:
+      'Competitive research — utility bill intelligence & energy management platforms',
+    file: 'research/SECONDARY DATA/Competitive Research - Utility Bill Intelligence and Energy Management Platforms.md',
+    note: 'Internal research memo (not surfaced in portal UI). Vendor matrix + citations; feeds D6 updates.',
+  },
+  'd6-compass-energycap': {
+    id: 'd6-compass-energycap',
+    kind: 'writtenDeliverable',
+    title: 'Compass — EnergyCAP and the utility bill intelligence competitive set',
+    file: 'research/SECONDARY DATA/Compass - EnergyCAP and utility bill intelligence competitive set.md',
+    note: 'Internal memo (not surfaced in portal UI). PE ownership, Wattics, Watts AI, Schneider RA+, wedge framing.',
+  },
   'd6-whitespace': {
     id: 'd6-whitespace',
     kind: 'writtenDeliverable',

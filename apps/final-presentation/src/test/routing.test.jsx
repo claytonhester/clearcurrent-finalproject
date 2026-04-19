@@ -45,6 +45,11 @@ const LAZY = {
       default: m.InterviewRoster,
     })),
   ),
+  '/appendix/chat-prompts': lazy(() =>
+    import('../pages/appendix/UserChatPromptLibrary.jsx').then((m) => ({
+      default: m.UserChatPromptLibrary,
+    })),
+  ),
   '/appendix/companies': lazy(() =>
     import('../pages/appendix/IndustryCards.jsx').then((m) => ({
       default: m.IndustryCards,

@@ -1,61 +1,61 @@
 {
-  "generatedAt": "2026-04-19T00:29:44.924Z",
+  "generatedAt": "2026-04-19T02:07:51.275Z",
   "corpusFingerprint": "bf93ef6cba97f964",
   "deliverables": [
     {
       "id": "brief",
       "label": "D0 Decision Brief",
       "summary": {
-        "supported": 44,
-        "partially_supported": 2,
+        "supported": 46,
+        "partially_supported": 7,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 46,
+      "claimCount": 53,
       "file": "brief-verification.json"
     },
     {
       "id": "d1",
       "label": "D1 Engagement Trigger Map",
       "summary": {
-        "supported": 134,
+        "supported": 152,
         "partially_supported": 9,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 143,
+      "claimCount": 161,
       "file": "d1-verification.json"
     },
     {
       "id": "d2",
       "label": "D2 Seasonal Energy Calendar",
       "summary": {
-        "supported": 80,
-        "partially_supported": 2,
+        "supported": 79,
+        "partially_supported": 4,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 82,
+      "claimCount": 83,
       "file": "d2-verification.json"
     },
     {
       "id": "d3",
       "label": "D3 Customer Journey Maps",
       "summary": {
-        "supported": 65,
-        "partially_supported": 13,
+        "supported": 71,
+        "partially_supported": 23,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 78,
+      "claimCount": 94,
       "file": "d3-verification.json"
     },
     {
       "id": "d4",
       "label": "D4 Product Module Recommendations",
       "summary": {
-        "supported": 91,
-        "partially_supported": 15,
+        "supported": 90,
+        "partially_supported": 16,
         "weak_match": 0,
         "unsupported": 0
       },
@@ -67,51 +67,78 @@
       "label": "D5 Market Opportunity Heatmap",
       "summary": {
         "supported": 34,
-        "partially_supported": 0,
+        "partially_supported": 2,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 34,
+      "claimCount": 36,
       "file": "d5-verification.json"
     },
     {
       "id": "d6",
       "label": "D6 Competitive Intelligence",
       "summary": {
-        "supported": 84,
-        "partially_supported": 3,
+        "supported": 85,
+        "partially_supported": 4,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 87,
+      "claimCount": 89,
       "file": "d6-verification.json"
     },
     {
       "id": "d7",
       "label": "D7 Investor Narrative",
       "summary": {
-        "supported": 91,
+        "supported": 58,
         "partially_supported": 6,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 97,
+      "claimCount": 64,
       "file": "d7-verification.json"
     },
     {
       "id": "d8",
       "label": "D8 GTM Strategy",
       "summary": {
-        "supported": 145,
+        "supported": 71,
         "partially_supported": 2,
         "weak_match": 0,
         "unsupported": 0
       },
-      "claimCount": 147,
+      "claimCount": 73,
       "file": "d8-verification.json"
     }
   ],
   "needsReview": [],
-  "humanReviewQueue": [],
+  "humanReviewQueue": [
+    {
+      "deliverable": "d7",
+      "jsonPath": "$.arc[2].body",
+      "kind": "narrative",
+      "status": "partially_supported",
+      "reasons": [
+        "numeric_or_year_not_strong_match"
+      ],
+      "attributionHint": null,
+      "inExpectedSourceFile": null,
+      "text": "LLMs cross the capability threshold for bill parsing and NL analysis in 2023. Arcadia’s 14-month-old enterprise pivot is migration-bound for 12–24 months. Commercial energy CAGR 5.9% vs 3% budgeted — rising shortfalls. Zero competitors offer PUC monitoring. GTM is intentionally d",
+      "topEvidence": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx"
+    },
+    {
+      "deliverable": "d8",
+      "jsonPath": "$.icps[1].description",
+      "kind": "narrative",
+      "status": "partially_supported",
+      "reasons": [
+        "numeric_or_year_not_strong_match"
+      ],
+      "attributionHint": null,
+      "inExpectedSourceFile": null,
+      "text": "Multi-site manufacturer, retail chain, or QSR operator—Panda anchors research; large national chains are expansion targets as proof compounds. 20–200 locations in deregulated markets (ERCOT preferred). $5–50M annual spend. Facilities Director / VP Ops owns energy function. Often ",
+      "topEvidence": "research/outputs/synthesis/D8_GTM_Strategy_Playbook.md"
+    }
+  ],
   "humanReviewQueueNote": "Heuristic queue: blockers (unsupported/weak), quote/evidence partial matches, attribution file mismatches, weak numeric matches. Still spot-check supported quotes in production."
 }

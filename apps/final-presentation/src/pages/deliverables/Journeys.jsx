@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { ArrowRight } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { ArrowRight, Quote, X } from 'lucide-react'
 import {
   DeliverableHero,
   ProductTag,
@@ -23,7 +23,7 @@ export function Journeys() {
       <section className="mb-10">
         <SectionLead
           kicker="Select a journey"
-          title="Five workflows, before and after Clear Current"
+          title="Six workflows, before and after Clear Current"
         >
           Each tab shows the reactive status quo vs the product intervention, with honest
           bounds.
@@ -54,7 +54,7 @@ export function Journeys() {
       <section className="mb-10">
         <SectionLead
           kicker="What we saw everywhere"
-          title="Patterns that cut across all five journeys"
+          title="Patterns that cut across all six journeys"
         >
           These are the structural realities product must solve — not the details of any
           one map.
@@ -103,18 +103,19 @@ function JourneyDetail({ journey }) {
     <div className="rounded-lg border border-cc-border bg-white shadow-sm">
       {/* HEADER */}
       <div className="border-b border-cc-border p-5">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+          <div className="flex min-w-0 items-center gap-2">
             <span className="font-mono text-[10px] uppercase tracking-wider text-cc-mid-gray">
               {journey.id}
             </span>
             <ProductTag tag={journey.productTag} />
           </div>
+          <JourneyEvidenceLauncher journey={journey} />
         </div>
         <h3 className="mt-2 text-xl font-bold text-cc-navy">{journey.name}</h3>
         <div className="mt-2 grid gap-2 text-[12.5px] md:grid-cols-2">
           <InfoRow label="Persona" value={journey.persona} />
-          <InfoRow label="Archetype interviews" value={journey.personaArchetype} />
+          <InfoRow label="Archetype organizations" value={journey.personaArchetype} />
           <InfoRow label="Trigger" value={journey.trigger} colSpan={2} />
         </div>
       </div>
@@ -221,7 +222,87 @@ function InfoRow({ label, value, colSpan }) {
       <div className="text-[9.5px] font-bold uppercase tracking-wider text-cc-mid-gray">
         {label}
       </div>
-      <div className="text-cc-dark-text">{value}</div>
+      <div className="break-words text-cc-dark-text">{value}</div>
     </div>
+  )
+}
+
+function JourneyEvidenceLauncher({ journey }) {
+  const [open, setOpen] = useState(false)
+  const quotes = journey.evidenceQuotes ?? []
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
+
+  if (!quotes.length) return null
+
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-cc-navy bg-cc-navy px-2.5 py-1.5 text-[11px] font-semibold text-white shadow-sm transition hover:bg-cc-navy/90 sm:gap-2 sm:px-3 sm:text-[12px]"
+      >
+        <Quote className="h-3 w-3 sm:h-3.5 sm:w-3.5" aria-hidden />
+        Interview evidence ({quotes.length} quotes)
+      </button>
+      {open ? (
+        <div
+          className="fixed inset-0 z-50 flex items-end justify-center bg-black/45 p-0 sm:items-center sm:p-4"
+          role="presentation"
+          onClick={() => setOpen(false)}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby={`evidence-title-${journey.id}`}
+            className="flex max-h-[min(90vh,720px)] w-full max-w-2xl flex-col rounded-t-lg border border-cc-border bg-white shadow-xl sm:rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-3 border-b border-cc-border px-4 py-3">
+              <div>
+                <h4
+                  id={`evidence-title-${journey.id}`}
+                  className="text-[14px] font-bold text-cc-navy"
+                >
+                  Evidence — {journey.name}
+                </h4>
+                <p className="mt-0.5 text-[11px] text-cc-mid-gray">
+                  {journey.id.toUpperCase()} · {quotes.length} quotes
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                className="rounded-md p-1 text-cc-mid-gray hover:bg-cc-light-gray hover:text-cc-navy"
+                aria-label="Close"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="overflow-y-auto px-4 py-3">
+              <ol className="flex flex-col gap-4">
+                {quotes.map((q, i) => (
+                  <li key={i} className="rounded-md border border-cc-border bg-cc-light-gray/40 p-3">
+                    <div className="mb-1.5 text-[10px] font-bold uppercase tracking-wider text-cc-navy">
+                      {q.organization}
+                    </div>
+                    <blockquote className="border-l-2 border-cc-yellow pl-2.5 text-[12.5px] italic leading-relaxed text-cc-dark-text">
+                      &ldquo;{q.quote}&rdquo;
+                    </blockquote>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+      ) : null}
+    </>
   )
 }

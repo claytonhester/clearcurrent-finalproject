@@ -2,12 +2,12 @@
   "deliverableId": "d6",
   "label": "D6 Competitive Intelligence",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d6-competition.js",
-  "generatedAt": "2026-04-19T00:29:34.548Z",
+  "generatedAt": "2026-04-19T02:07:40.680Z",
   "corpusFingerprint": "bf93ef6cba97f964",
-  "claimCount": 87,
+  "claimCount": 89,
   "summary": {
-    "supported": 84,
-    "partially_supported": 3,
+    "supported": 85,
+    "partially_supported": 4,
     "weak_match": 0,
     "unsupported": 0
   },
@@ -106,7 +106,7 @@
       "claimId": "d6:2:$.leadershipFraming.silentIncumbent",
       "jsonPath": "$.leadershipFraming.silentIncumbent",
       "kind": "narrative",
-      "text": "Before SaaS displaces anything, large portfolios often rely on outsourced energy-management firms plus spreadsheets — bill processors custodied the data before you arrived. Competitive reality is consultants + OEM reps + incumbent bill pay, not three logos alone.",
+      "text": "Before SaaS displaces anything, large portfolios often rely on outsourced energy-management firms plus spreadsheets — bill processors custodied the data before you arrived. Competitive reality is consultants + OEM reps + incumbent bill pay, not three logos alone. JLL (Jamare Bates) described JLL Technologies actively building internal AI energy-management and utility-bill tooling on custodied client data—another enterprise “build first” pattern, not an automatic SaaS buyer.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "partially_supported",
@@ -151,43 +151,43 @@
       "claimId": "d6:3:$.leadershipFraming.partnershipNote",
       "jsonPath": "$.leadershipFraming.partnershipNote",
       "kind": "narrative",
-      "text": "ENGIE-class operators: partnership and licensing beats “rip and replace.” Their moat is historical bill custody; yours is NL intelligence on top.",
+      "text": "ENGIE-class operators: lead with bolt-on analytics and partnership where bill custody is locked—then expand scope at renewal, RFP, or when pilot-stage “AI” fails against drift and interpretation demand. Their moat is historical custody; yours is reliable NL intelligence on top.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.51,
-        "bestCoverage": 0.6,
-        "bestJaccard": 0.013
+        "bestScore": 0.455,
+        "bestCoverage": 0.536,
+        "bestJaccard": 0.021
       },
       "evidence": [
         {
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1703,
           "corpusKind": "other",
-          "score": 0.51,
+          "score": 0.455,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
           "chunkIndex": 874,
           "corpusKind": "primary_output",
-          "score": 0.51,
+          "score": 0.455,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
         },
         {
           "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1731,
+          "chunkIndex": 1705,
           "corpusKind": "other",
-          "score": 0.397,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+          "score": 0.364,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 902,
+          "chunkIndex": 876,
           "corpusKind": "primary_output",
-          "score": 0.397,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+          "score": 0.364,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
         }
       ],
       "inExpectedSourceFile": null
@@ -643,7 +643,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:14:$.competitors[0].weaknesses[0]",
+      "claimId": "d6:14:$.competitors[0].strengths[0]",
+      "jsonPath": "$.competitors[0].strengths[0]",
+      "kind": "narrative",
+      "text": "20+ years of Higher Ed relationships",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.005
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
+          "chunkIndex": 102,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "**What John and Dan need to do before the May raise:** Confirm whether any of the 12 pilot customers has received a utility credit or refund based on a Clear Current-identified error. If yes, document it completely — uti…"
+        },
+        {
+          "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
+          "chunkIndex": 117,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "tioner confirming that the technical moment for this product is now. --- **Name the competitive landscape precisely:** \"The market has three incumbent poles. EnergyCAP owns higher education and government — 20 years of r…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d6:15:$.competitors[0].weaknesses[0]",
       "jsonPath": "$.competitors[0].weaknesses[0]",
       "kind": "narrative",
       "text": "“Outdated,” “glorified spreadsheet” (132 G2/Capterra reviews)",
@@ -688,7 +733,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:15:$.competitors[0].weaknesses[1]",
+      "claimId": "d6:16:$.competitors[0].weaknesses[1]",
       "jsonPath": "$.competitors[0].weaknesses[1]",
       "kind": "narrative",
       "text": "Chargebacks and splits “hard to understand” — stickiest and most complained-about feature",
@@ -733,7 +778,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:16:$.competitors[0].weaknesses[3]",
+      "claimId": "d6:17:$.competitors[0].weaknesses[3]",
       "jsonPath": "$.competitors[0].weaknesses[3]",
       "kind": "narrative",
       "text": "Own 2026 survey: 76% of customers reactive — indicts platform proactivity",
@@ -778,7 +823,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:17:$.competitors[0].winCondition",
+      "claimId": "d6:18:$.competitors[0].winCondition",
       "jsonPath": "$.competitors[0].winCondition",
       "kind": "narrative",
       "text": "Better chargeback experience + NL interface + one documented university recovery case. Not lost to attrition — lost to frustration + compelling alternative.",
@@ -823,7 +868,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:18:$.competitors[0].quote",
+      "claimId": "d6:19:$.competitors[0].quote",
       "jsonPath": "$.competitors[0].quote",
       "kind": "quote",
       "text": "“Chargebacks and splits are hard to understand. I tried to use the help, but it is lacking details.” — EnergyCAP G2 review",
@@ -868,7 +913,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:19:$.competitors[1].primaryMarket",
+      "claimId": "d6:20:$.competitors[1].primaryMarket",
       "jsonPath": "$.competitors[1].primaryMarket",
       "kind": "narrative",
       "text": "Fortune 500 corporate, hyperscalers (enterprise pivot Jan 2025)",
@@ -913,7 +958,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:20:$.competitors[1].pricing",
+      "claimId": "d6:21:$.competitors[1].pricing",
       "jsonPath": "$.competitors[1].pricing",
       "kind": "narrative",
       "text": "No public pricing. Enterprise contract + API usage (LOW confidence)",
@@ -958,7 +1003,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:21:$.competitors[1].strengths[0]",
+      "claimId": "d6:22:$.competitors[1].strengths[0]",
       "jsonPath": "$.competitors[1].strengths[0]",
       "kind": "narrative",
       "text": "$649M raised, last $1.5B valuation",
@@ -1003,7 +1048,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:22:$.competitors[1].weaknesses[0]",
+      "claimId": "d6:23:$.competitors[1].weaknesses[0]",
       "jsonPath": "$.competitors[1].weaknesses[0]",
       "kind": "narrative",
       "text": "No NL interface — dashboard + API only",
@@ -1048,17 +1093,17 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:23:$.competitors[1].weaknesses[1]",
+      "claimId": "d6:24:$.competitors[1].weaknesses[1]",
       "jsonPath": "$.competitors[1].weaknesses[1]",
       "kind": "narrative",
-      "text": "Zero documented HE customers after 14 months",
+      "text": "Zero documented Higher Ed customers after 14 months",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.007
+        "bestJaccard": 0.009
       },
       "evidence": [
         {
@@ -1067,13 +1112,6 @@
           "corpusKind": "secondary",
           "score": 0.85,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 18,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "| **FINDING 4 — Regulatory Intelligence Is Confirmed White Space With a Quantified Business Case** Phil Combs called it 'super powerful' and Andi Ault's budget timing problem is the exact use case — both were primary evi…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
@@ -1088,12 +1126,19 @@
           "corpusKind": "secondary",
           "score": 0.85,
           "excerpt": "| **FINDING 5 — Arcadia****'****s Competitive Gap Is Structural, Not Just Strategic** New intelligence confirms Arcadia has zero documented higher education customers after 14 months of enterprise sales. Their UX is a da…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 49,
+          "corpusKind": "secondary",
+          "score": 0.85,
+          "excerpt": "ive narrative significantly. The table below documents what we now know with high confidence vs. what remains uncertain. | **Dimension** | **What the Intelligence Confirms** | **Implication for Clear Current** | | --- | …"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:24:$.competitors[1].weaknesses[2]",
+      "claimId": "d6:25:$.competitors[1].weaknesses[2]",
       "jsonPath": "$.competitors[1].weaknesses[2]",
       "kind": "narrative",
       "text": "Senior PM role primarily migrating legacy Urjanet — not new features",
@@ -1138,7 +1183,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:25:$.competitors[1].weaknesses[3]",
+      "claimId": "d6:26:$.competitors[1].weaknesses[3]",
       "jsonPath": "$.competitors[1].weaknesses[3]",
       "kind": "narrative",
       "text": "No campus chargeback; no PUC monitoring",
@@ -1183,7 +1228,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:26:$.competitors[1].weaknesses[4]",
+      "claimId": "d6:27:$.competitors[1].weaknesses[4]",
       "jsonPath": "$.competitors[1].weaknesses[4]",
       "kind": "narrative",
       "text": "Trustpilot 2.6/5 (1,159 reviews) — Perch spinout pending",
@@ -1228,7 +1273,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:27:$.competitors[1].weaknesses[5]",
+      "claimId": "d6:28:$.competitors[1].weaknesses[5]",
       "jsonPath": "$.competitors[1].weaknesses[5]",
       "kind": "narrative",
       "text": "Practitioner quote (Walt Taylor · Panda): variance work is still download-the-bills, not conversational intelligence.",
@@ -1273,52 +1318,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:28:$.competitors[1].winCondition",
+      "claimId": "d6:29:$.competitors[1].winCondition",
       "jsonPath": "$.competitors[1].winCondition",
       "kind": "narrative",
-      "text": "Three conditions together: HE / district-energy customer; buyer wants conversational AI; decision happens before Arcadia finishes migration. 12–24 month window.",
+      "text": "Three conditions together: Higher Ed / district-energy customer; buyer wants conversational AI; decision happens before Arcadia finishes migration. 12–24 month window.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.65,
-        "bestCoverage": 0.765,
-        "bestJaccard": 0.213
+        "bestScore": 0.661,
+        "bestCoverage": 0.778,
+        "bestJaccard": 0.23
       },
       "evidence": [
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 24,
           "corpusKind": "synthesis",
-          "score": 0.65,
+          "score": 0.661,
           "excerpt": "**Clear Current's Win Condition:** Clear Current wins against Arcadia in three conditions that the research confirms are simultaneously true: (1) the customer is a higher education institution or district energy operator…"
         },
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 23,
           "corpusKind": "synthesis",
-          "score": 0.45,
+          "score": 0.472,
           "excerpt": "| **Clear Current's Win Condition:** Clear Current wins against Arcadia in three conditions that the research confirms are simultaneously true: (1) the customer is a higher education institution or district energy operat…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.4,
+          "score": 0.425,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 46,
           "corpusKind": "secondary",
-          "score": 0.4,
+          "score": 0.425,
           "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:29:$.competitors[1].quote",
+      "claimId": "d6:30:$.competitors[1].quote",
       "jsonPath": "$.competitors[1].quote",
       "kind": "quote",
       "text": "I think if you could ask that question. I can help answer this question instead of going, downloading the bills, reviewing the bills",
@@ -1363,7 +1408,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:30:$.competitors[2].primaryMarket",
+      "claimId": "d6:31:$.competitors[2].primaryMarket",
       "jsonPath": "$.competitors[2].primaryMarket",
       "kind": "narrative",
       "text": "Institutional CRE, 500+ customers, 140+ countries; Brookfield named",
@@ -1408,7 +1453,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:31:$.competitors[2].strengths[0]",
+      "claimId": "d6:32:$.competitors[2].pricing",
+      "jsonPath": "$.competitors[2].pricing",
+      "kind": "narrative",
+      "text": "Not disclosed in available sources",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.567,
+        "bestCoverage": 0.667,
+        "bestJaccard": 0.033
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/Arcadia Competitive Intelligence Report.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "**Total raised:** ~$649.9M (CB Insights) to ~$658M (Growjo)[^2][^1] **Last known valuation:** $1.5 billion (May 2022 Series E). No valuation disclosed in the April 2024 round.[^1] **Key investors** still active as of 202…"
+        },
+        {
+          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
+          "chunkIndex": 22,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "**Significant.** GridPoint is a building energy management technology vendor. The survey was **commissioned by GridPoint**, administered by Qualtrics (a neutral survey platform), and designed to validate demand for produ…"
+        },
+        {
+          "file": "research/SECONDARY DATA/Claim Verification Report  Commercial Energy Management Statistics VOLUME 3.md",
+          "chunkIndex": 23,
+          "corpusKind": "secondary",
+          "score": 0.567,
+          "excerpt": "of error — is not disclosed in available public materials.[^23] ### The \"9%\" Adoption Figure — Source and Corroboration The 9% figure is reportedly from the same GridPoint survey. The specific phrasing in the market repo…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 10,
+          "corpusKind": "other",
+          "score": 0.567,
+          "excerpt": "**Total raised:** ~$649.9M (CB Insights) to ~$658M (Growjo)[^2][^1] **Last known valuation:** $1.5 billion (May 2022 Series E). No valuation disclosed in the April 2024 round.[^1] **Key investors** still active as of 202…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d6:33:$.competitors[2].strengths[0]",
       "jsonPath": "$.competitors[2].strengths[0]",
       "kind": "narrative",
       "text": "Berkshire-backed via Tango (2023 acquisition)",
@@ -1453,7 +1543,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:32:$.competitors[2].weaknesses[0]",
+      "claimId": "d6:34:$.competitors[2].weaknesses[0]",
       "jsonPath": "$.competitors[2].weaknesses[0]",
       "kind": "narrative",
       "text": "Data infrastructure dependent on Arcadia’s Arc Plug API — not proprietary",
@@ -1498,7 +1588,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:33:$.competitors[2].weaknesses[1]",
+      "claimId": "d6:35:$.competitors[2].weaknesses[1]",
       "jsonPath": "$.competitors[2].weaknesses[1]",
       "kind": "narrative",
       "text": "No campus chargeback; no NL interface",
@@ -1543,52 +1633,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:34:$.competitors[2].winCondition",
+      "claimId": "d6:36:$.competitors[2].winCondition",
       "jsonPath": "$.competitors[2].winCondition",
       "kind": "narrative",
-      "text": "Not a direct HE competitor. CRE is a future expansion. A WatchWire dissatisfied buyer cannot solve it by moving to Arcadia — same pipeline.",
+      "text": "Not a direct Higher Ed competitor. CRE is a future expansion. A WatchWire dissatisfied buyer cannot solve it by moving to Arcadia — same pipeline.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.729,
-        "bestCoverage": 0.857,
-        "bestJaccard": 0.162
+        "bestScore": 0.737,
+        "bestCoverage": 0.867,
+        "bestJaccard": 0.176
       },
       "evidence": [
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 32,
           "corpusKind": "synthesis",
-          "score": 0.729,
+          "score": 0.737,
           "excerpt": "**Clear Current's Win Condition:** WatchWire is not a clear head-to-head competitor at Clear Current's current target verticals (higher education, large commercial). The CRE market is a future expansion segment. The rele…"
         },
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 31,
           "corpusKind": "synthesis",
-          "score": 0.607,
+          "score": 0.623,
           "excerpt": "planning). GRESB 2025 reported 1,002 fund managers using sustainability reporting frameworks WatchWire supports. | **Clear Current's Win Condition:** WatchWire is not a clear head-to-head competitor at Clear Current's cu…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.425,
+          "score": 0.453,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 46,
           "corpusKind": "secondary",
-          "score": 0.425,
+          "score": 0.453,
           "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:35:$.competitors[2].quote",
+      "claimId": "d6:37:$.competitors[2].quote",
       "jsonPath": "$.competitors[2].quote",
       "kind": "quote",
       "text": "Gap flag: no primary interviewee mentioned WatchWire by name.",
@@ -1633,7 +1723,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:36:$.competitors[3].primaryMarket",
+      "claimId": "d6:38:$.competitors[3].primaryMarket",
       "jsonPath": "$.competitors[3].primaryMarket",
       "kind": "narrative",
       "text": "Large enterprise / multi-site — restaurants, retailers, manufacturers",
@@ -1678,7 +1768,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:37:$.competitors[3].pricing",
+      "claimId": "d6:39:$.competitors[3].pricing",
       "jsonPath": "$.competitors[3].pricing",
       "kind": "narrative",
       "text": "Calibrated to labor avoidance — 4–6 accounting headcount replaced (Goldstein / Panda)",
@@ -1723,7 +1813,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:38:$.competitors[3].strengths[0]",
+      "claimId": "d6:40:$.competitors[3].strengths[0]",
       "jsonPath": "$.competitors[3].strengths[0]",
       "kind": "narrative",
       "text": "20-year data moat at accounts like Panda",
@@ -1768,7 +1858,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:39:$.competitors[3].strengths[1]",
+      "claimId": "d6:41:$.competitors[3].strengths[1]",
       "jsonPath": "$.competitors[3].strengths[1]",
       "kind": "narrative",
       "text": "Outsourced bill payment creates dependency",
@@ -1813,7 +1903,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:40:$.competitors[3].weaknesses[0]",
+      "claimId": "d6:42:$.competitors[3].weaknesses[0]",
       "jsonPath": "$.competitors[3].weaknesses[0]",
       "kind": "narrative",
       "text": "Client-facing AI nonexistent by design",
@@ -1858,7 +1948,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:41:$.competitors[3].weaknesses[1]",
+      "claimId": "d6:43:$.competitors[3].weaknesses[1]",
       "jsonPath": "$.competitors[3].weaknesses[1]",
       "kind": "narrative",
       "text": "Threshold-based anomaly detection misses baseline drift",
@@ -1903,7 +1993,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:42:$.competitors[3].weaknesses[2]",
+      "claimId": "d6:44:$.competitors[3].weaknesses[2]",
       "jsonPath": "$.competitors[3].weaknesses[2]",
       "kind": "narrative",
       "text": "Uses Arcadia Arc API for electronic bills — not proprietary",
@@ -1948,7 +2038,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:43:$.competitors[3].weaknesses[3]",
+      "claimId": "d6:45:$.competitors[3].weaknesses[3]",
       "jsonPath": "$.competitors[3].weaknesses[3]",
       "kind": "narrative",
       "text": "OCR coverage ≈90% — 10% gap structural",
@@ -1993,52 +2083,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:44:$.competitors[3].winCondition",
+      "claimId": "d6:46:$.competitors[3].winCondition",
       "jsonPath": "$.competitors[3].winCondition",
       "kind": "narrative",
-      "text": "Partnership, not displacement. Clear Current as AI analytics layer on top of ENGIE bill data — exactly what Walt Taylor (Panda) asked for on record.",
+      "text": "Land as the analytics layer on ENGIE-custodied data (Walt Taylor bolt-on frame). Displace or rebid at contract renewal, pilot fatigue, or when threshold-only workflows miss material drift—especially as higher ed and parallel retail proof widen the gap.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.691,
-        "bestCoverage": 0.813,
-        "bestJaccard": 0.213
+        "bestScore": 0.364,
+        "bestCoverage": 0.429,
+        "bestJaccard": 0.017
       },
       "evidence": [
-        {
-          "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
-          "chunkIndex": 46,
-          "corpusKind": "synthesis",
-          "score": 0.691,
-          "excerpt": "**Clear Current's Win Condition:** Not head-to-head displacement — partnership. ENGIE has the bill payment relationship that creates the data moat Zavadsky describes. Clear Current has the LLM intelligence layer ENGIE's …"
-        },
         {
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1703,
           "corpusKind": "other",
-          "score": 0.638,
+          "score": 0.364,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1731,
-          "corpusKind": "other",
-          "score": 0.638,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
           "chunkIndex": 874,
           "corpusKind": "primary_output",
-          "score": 0.638,
+          "score": 0.364,
           "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.304,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.304,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:45:$.competitors[3].quote",
+      "claimId": "d6:47:$.competitors[3].quote",
       "jsonPath": "$.competitors[3].quote",
       "kind": "quote",
       "text": "“It would be much better if, since NG already houses all that data, they would just work with Anthropic or whoever and bolt you on.” — Walt Taylor, Panda",
@@ -2083,7 +2173,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:46:$.competitors[4].primaryMarket",
+      "claimId": "d6:48:$.competitors[4].primaryMarket",
       "jsonPath": "$.competitors[4].primaryMarket",
       "kind": "narrative",
       "text": "Commercial/industrial engineers and consultants",
@@ -2128,7 +2218,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:47:$.competitors[4].strengths[0]",
+      "claimId": "d6:49:$.competitors[4].strengths[0]",
       "jsonPath": "$.competitors[4].strengths[0]",
       "kind": "narrative",
       "text": "Named by Phil Combs for rate/tariff analysis",
@@ -2173,7 +2263,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:48:$.competitors[4].winCondition",
+      "claimId": "d6:50:$.competitors[4].winCondition",
       "jsonPath": "$.competitors[4].winCondition",
       "kind": "narrative",
       "text": "On Rate Analyst head-to-head: lead with regulatory intelligence differentiator. Combs: “super powerful… saves somebody like me so much time.”",
@@ -2218,7 +2308,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:49:$.competitors[4].quote",
+      "claimId": "d6:51:$.competitors[4].quote",
       "jsonPath": "$.competitors[4].quote",
       "kind": "quote",
       "text": "“I can tell you six months from now this utility is actively talking to the Public Utility Commission…” — Phil Combs, Trane",
@@ -2263,7 +2353,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:50:$.competitors[5].primaryMarket",
+      "claimId": "d6:52:$.competitors[5].primaryMarket",
       "jsonPath": "$.competitors[5].primaryMarket",
       "kind": "narrative",
       "text": "Building operations — HVAC optimization",
@@ -2308,7 +2398,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:51:$.competitors[5].strengths[0]",
+      "claimId": "d6:53:$.competitors[5].strengths[0]",
       "jsonPath": "$.competitors[5].strengths[0]",
       "kind": "narrative",
       "text": "AI-based HVAC scheduling using real-time sensors",
@@ -2353,7 +2443,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:52:$.competitors[5].weaknesses[0]",
+      "claimId": "d6:54:$.competitors[5].weaknesses[0]",
       "jsonPath": "$.competitors[5].weaknesses[0]",
       "kind": "narrative",
       "text": "Does not analyze utility bills, tariffs, or portfolio billing anomalies",
@@ -2398,7 +2488,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:53:$.competitors[5].winCondition",
+      "claimId": "d6:55:$.competitors[5].winCondition",
       "jsonPath": "$.competitors[5].winCondition",
       "kind": "narrative",
       "text": "Not a competitor — a referral endpoint. When Clear Current finds HVAC-driven drift, Trane/BrainBox is the resolution pathway.",
@@ -2443,7 +2533,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:54:$.competitors[5].quote",
+      "claimId": "d6:56:$.competitors[5].quote",
       "jsonPath": "$.competitors[5].quote",
       "kind": "quote",
       "text": "“Trane purchased BrainBox AI… we can offer AI building optimization even to customers who don’t have our BAS.” — Don Johnson, Trane",
@@ -2488,7 +2578,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:55:$.whiteSpace[0].name",
+      "claimId": "d6:57:$.whiteSpace[0].name",
       "jsonPath": "$.whiteSpace[0].name",
       "kind": "narrative",
       "text": "AI-native NL interface for energy analysis",
@@ -2533,7 +2623,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:56:$.whiteSpace[0].why",
+      "claimId": "d6:58:$.whiteSpace[0].why",
       "jsonPath": "$.whiteSpace[0].why",
       "kind": "narrative",
       "text": "Every primary interviewee requested or described an NL interface. Cox built their own rather than use Arcadia’s dashboard. No competitor has a documented equivalent.",
@@ -2578,7 +2668,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:57:$.whiteSpace[1].name",
+      "claimId": "d6:59:$.whiteSpace[1].name",
       "jsonPath": "$.whiteSpace[1].name",
       "kind": "narrative",
       "text": "Forward-looking regulatory intelligence (PUC monitoring)",
@@ -2623,7 +2713,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:58:$.whiteSpace[1].why",
+      "claimId": "d6:60:$.whiteSpace[1].why",
       "jsonPath": "$.whiteSpace[1].why",
       "kind": "narrative",
       "text": "Zero competitors. Combs calls it “super powerful.” Ohio PUC 275-day timelines; PPL Pennsylvania decision date 7/1/2026 hits universities on day one of new fiscal year.",
@@ -2668,7 +2758,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:59:$.whiteSpace[2].name",
+      "claimId": "d6:61:$.whiteSpace[2].name",
       "jsonPath": "$.whiteSpace[2].name",
       "kind": "narrative",
       "text": "Campus chargeback for district energy",
@@ -2713,52 +2803,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:60:$.whiteSpace[2].why",
+      "claimId": "d6:62:$.whiteSpace[2].why",
       "jsonPath": "$.whiteSpace[2].why",
       "kind": "narrative",
-      "text": "660+ district energy systems, concentrated in HE and hospitals. Only EnergyCAP has it — and users say it’s the worst feature. Arcadia can’t build it without a rebuild.",
+      "text": "660+ district energy systems, concentrated in Higher Ed and hospitals. Only EnergyCAP has it — and users say it’s the worst feature. Arcadia can’t build it without a rebuild.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.668,
-        "bestCoverage": 0.786,
-        "bestJaccard": 0.02
+        "bestScore": 0.68,
+        "bestCoverage": 0.8,
+        "bestJaccard": 0.021
       },
       "evidence": [
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.668,
+          "score": 0.68,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.668,
+          "score": 0.68,
           "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
           "file": "research/outputs/synthesis/D6_Competitive_Intelligence_Brief.md",
           "chunkIndex": 130,
           "corpusKind": "synthesis",
-          "score": 0.668,
+          "score": 0.68,
           "excerpt": "- **[EXTENDS ROADMAP]** PUC docket monitoring and forward-looking regulatory intelligence is confirmed white space with zero competition and strong primary validation (Phil Combs: \"super powerful\"; Andi Ault's budget tim…"
         },
         {
           "file": "research/outputs/secondary/agents/s05_Carlos_Mendez.md",
           "chunkIndex": 92,
           "corpusKind": "secondary",
-          "score": 0.607,
+          "score": 0.623,
           "excerpt": "| Claim | Evidence | Sources | | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:61:$.whiteSpace[3].name",
+      "claimId": "d6:63:$.whiteSpace[3].name",
       "jsonPath": "$.whiteSpace[3].name",
       "kind": "narrative",
       "text": "Dual-audience platform (ops + finance from one system)",
@@ -2803,7 +2893,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:62:$.whiteSpace[3].confidence",
+      "claimId": "d6:64:$.whiteSpace[3].confidence",
       "jsonPath": "$.whiteSpace[3].confidence",
       "kind": "narrative",
       "text": "STRONG (two independent primary sources)",
@@ -2848,7 +2938,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:63:$.whiteSpace[3].why",
+      "claimId": "d6:65:$.whiteSpace[3].why",
       "jsonPath": "$.whiteSpace[3].why",
       "kind": "narrative",
       "text": "Chamberlain (ops) + Ault (finance) confirm the same structural split. Three-tier delivery model answers it: chat for experts, dashboard for finance.",
@@ -2893,7 +2983,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:64:$.whiteSpace[4].name",
+      "claimId": "d6:66:$.whiteSpace[4].name",
       "jsonPath": "$.whiteSpace[4].name",
       "kind": "narrative",
       "text": "Proactive insight delivery (vs reactive query)",
@@ -2938,7 +3028,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:65:$.whiteSpace[4].why",
+      "claimId": "d6:67:$.whiteSpace[4].why",
       "jsonPath": "$.whiteSpace[4].why",
       "kind": "narrative",
       "text": "EnergyCAP 2026 survey: 76% reactive despite rising costs. Threshold alerts miss drift. Push layer is the product requirement, not a nice-to-have.",
@@ -2983,7 +3073,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:66:$.whiteSpace[5].confidence",
+      "claimId": "d6:68:$.whiteSpace[5].confidence",
       "jsonPath": "$.whiteSpace[5].confidence",
       "kind": "narrative",
       "text": "EMERGING (one primary, no secondary)",
@@ -3028,7 +3118,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:67:$.whiteSpace[5].why",
+      "claimId": "d6:69:$.whiteSpace[5].why",
       "jsonPath": "$.whiteSpace[5].why",
       "kind": "narrative",
       "text": "Walt Taylor (Panda): “no meter about how much water is actually leaving the restaurant.” Investigate before building.",
@@ -3073,7 +3163,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:68:$.positioning.options[0].headline",
+      "claimId": "d6:70:$.positioning.options[0].headline",
       "jsonPath": "$.positioning.options[0].headline",
       "kind": "headline",
       "text": "“The only platform that finds your money and gets it back.”",
@@ -3118,7 +3208,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:69:$.positioning.options[0].useWhen",
+      "claimId": "d6:71:$.positioning.options[0].useWhen",
       "jsonPath": "$.positioning.options[0].useWhen",
       "kind": "narrative",
       "text": "Reserve until one documented named recovery case study exists.",
@@ -3163,7 +3253,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:70:$.positioning.options[0].risk",
+      "claimId": "d6:72:$.positioning.options[0].risk",
       "jsonPath": "$.positioning.options[0].risk",
       "kind": "narrative",
       "text": "The word “recovers” — Spieler’s question. Overstates current shipped capability (“assists manual completion”).",
@@ -3208,7 +3298,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:71:$.positioning.options[1].headline",
+      "claimId": "d6:73:$.positioning.options[1].headline",
       "jsonPath": "$.positioning.options[1].headline",
       "kind": "headline",
       "text": "“The energy intelligence platform your finance and operations teams will actually use.”",
@@ -3253,7 +3343,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:72:$.positioning.options[1].useWhen",
+      "claimId": "d6:74:$.positioning.options[1].useWhen",
       "jsonPath": "$.positioning.options[1].useWhen",
       "kind": "narrative",
       "text": "Primary positioning through May fundraise.",
@@ -3298,7 +3388,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:73:$.positioning.options[1].risk",
+      "claimId": "d6:75:$.positioning.options[1].risk",
       "jsonPath": "$.positioning.options[1].risk",
       "kind": "narrative",
       "text": "“Will actually use” needs adoption evidence. Show the personas — chat for engineer, dashboard for finance.",
@@ -3343,7 +3433,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:74:$.positioning.options[2].headline",
+      "claimId": "d6:76:$.positioning.options[2].headline",
       "jsonPath": "$.positioning.options[2].headline",
       "kind": "headline",
       "text": "“The AI energy manager for multi-site commercial portfolios.”",
@@ -3388,7 +3478,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:75:$.positioning.options[2].useWhen",
+      "claimId": "d6:77:$.positioning.options[2].useWhen",
       "jsonPath": "$.positioning.options[2].useWhen",
       "kind": "narrative",
       "text": "Website copy; context-setting. Not the lead in investor rooms.",
@@ -3433,7 +3523,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:76:$.positioning.options[2].risk",
+      "claimId": "d6:78:$.positioning.options[2].risk",
       "jsonPath": "$.positioning.options[2].risk",
       "kind": "narrative",
       "text": "Already the public positioning — does not differentiate.",
@@ -3478,7 +3568,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:77:$.objections[0].claim",
+      "claimId": "d6:79:$.objections[0].claim",
       "jsonPath": "$.objections[0].claim",
       "kind": "narrative",
       "text": "Arcadia already does this, and they have $649M and 9,500 utilities.",
@@ -3523,52 +3613,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:78:$.objections[0].response",
+      "claimId": "d6:80:$.objections[0].response",
       "jsonPath": "$.objections[0].response",
       "kind": "narrative",
-      "text": "Cox Enterprises chose Arcadia as a data feed, not a platform. Cox built their own dashboard. 14 months into enterprise, zero documented HE customers. No NL, no PUC, no chargeback. We compete on intelligence, not data breadth.",
+      "text": "Cox Enterprises chose Arcadia as a data feed, not a platform. Cox built their own dashboard. 14 months into enterprise, zero documented Higher Ed customers. No NL, no PUC, no chargeback. We compete on intelligence, not data breadth.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.773,
-        "bestCoverage": 0.909,
-        "bestJaccard": 0.032
+        "bestScore": 0.776,
+        "bestCoverage": 0.913,
+        "bestJaccard": 0.034
       },
       "evidence": [
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.776,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 50,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.776,
           "excerpt": "| **Dimension** | **What the Intelligence Confirms** | **Implication for Clear Current** | | --- | --- | --- | | Higher Ed Customers | ZERO documented university or hospital customers after 14 months of enterprise sales.…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.776,
           "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
           "chunkIndex": 50,
           "corpusKind": "secondary",
-          "score": 0.773,
+          "score": 0.776,
           "excerpt": "| Dimension | What the Intelligence Confirms | Implication for Clear Current | | ------------------------ | ----------------------------------------------------------------------------------------------------------------…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:79:$.objections[1].claim",
+      "claimId": "d6:81:$.objections[1].claim",
       "jsonPath": "$.objections[1].claim",
       "kind": "narrative",
       "text": "You find billing errors in pilots — how much has actually been recovered?",
@@ -3613,7 +3703,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:80:$.objections[1].response",
+      "claimId": "d6:82:$.objections[1].response",
       "jsonPath": "$.objections[1].response",
       "kind": "narrative",
       "text": "The honest two-part answer: government record establishes the errors are structural (FERC $108M, RI PUC 83%). Recovery is a documented, named case study we are generating now. If one pilot credit exists — name it. If not — state the timeline.",
@@ -3658,17 +3748,17 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:81:$.objections[2].claim",
+      "claimId": "d6:83:$.objections[2].claim",
       "jsonPath": "$.objections[2].claim",
       "kind": "narrative",
-      "text": "EnergyCAP has deep relationships in HE. Universities won’t switch.",
+      "text": "EnergyCAP has deep relationships in Higher Ed. Universities won’t switch.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.075
+        "bestJaccard": 0.088
       },
       "evidence": [
         {
@@ -3682,28 +3772,28 @@
           "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
           "chunkIndex": 101,
           "corpusKind": "synthesis",
-          "score": 0.567,
+          "score": 0.607,
           "excerpt": "**How the research addresses it:** - The EnergyCAP comparable establishes that universities _do_ spend $50–75K/year on energy management software — and the University of Wisconsin RFP confirms $500K–$2M for comprehensive…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.425,
+          "score": 0.486,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
           "file": "research/SECONDARY DATA/Clear Current Technologies  GTM Strategy, Competitive Intelligence & Investor Readiness Research PART 4.md",
           "chunkIndex": 76,
           "corpusKind": "secondary",
-          "score": 0.425,
+          "score": 0.486,
           "excerpt": "**2. Arcadia has no campus chargeback.** University and hospital campus cost allocation — the distribution of central utility costs across 50–150 metered entities including departments, schools, grants, auxiliaries, and …"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:82:$.objections[2].response",
+      "claimId": "d6:84:$.objections[2].response",
       "jsonPath": "$.objections[2].response",
       "kind": "narrative",
       "text": "We don’t ask them to rip it out year one. We start with what EnergyCAP cannot do — proactive anomaly surfacing, NL Q&A, PUC monitoring — and prove value in 90 days before the replacement conversation.",
@@ -3748,7 +3838,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:83:$.objections[3].claim",
+      "claimId": "d6:85:$.objections[3].claim",
       "jsonPath": "$.objections[3].claim",
       "kind": "narrative",
       "text": "Our IT department will never approve this. Too much security risk.",
@@ -3793,7 +3883,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:84:$.objections[3].response",
+      "claimId": "d6:86:$.objections[3].response",
       "jsonPath": "$.objections[3].response",
       "kind": "narrative",
       "text": "Valid concern, not an objection to overcome with rhetoric. Procedural response: SOC 2 Type II [status], documented data handling policies, IT involved early. Trane’s internal restriction shows the salesperson must educate IT, not work around them.",
@@ -3838,7 +3928,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:85:$.objections[4].claim",
+      "claimId": "d6:87:$.objections[4].claim",
       "jsonPath": "$.objections[4].claim",
       "kind": "narrative",
       "text": "The energy management market is fragmented. What makes you a platform, not a point solution?",
@@ -3883,7 +3973,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d6:86:$.objections[4].response",
+      "claimId": "d6:88:$.objections[4].response",
       "jsonPath": "$.objections[4].response",
       "kind": "narrative",
       "text": "Point solutions serve one persona. Combs (ops) asks tariff questions, Ault (finance) needs budget exposure, Chamberlain (ops) traces anomalies — same data, same engine, three tiers. Cox and Taylor both demonstrated platform demand by building their own.",

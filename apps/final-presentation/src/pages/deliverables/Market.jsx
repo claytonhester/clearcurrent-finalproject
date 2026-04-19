@@ -1,3 +1,4 @@
+import { Info } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
 import { D5 } from '../../content/deliverables/d5-market.js'
 
@@ -42,9 +43,11 @@ export function Market() {
               <h3 className="mt-2 text-[16px] font-bold leading-snug text-cc-navy">
                 {d.headline}
               </h3>
-              <p className="mt-2 text-[12.5px] leading-relaxed text-cc-dark-text">
-                {d.why}
-              </p>
+              <ul className="mt-2 list-disc space-y-1.5 pl-4 text-[12.5px] leading-relaxed text-cc-dark-text marker:text-cc-navy">
+                {d.bullets.map((line, j) => (
+                  <li key={j}>{line}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -143,7 +146,9 @@ export function Market() {
             <tbody>
               {D5.moduleFit.map((m) => (
                 <tr key={m.module} className="border-t border-cc-border/60">
-                  <Td bold>{m.module}</Td>
+                  <Td>
+                    <ModuleNameWithHint name={m.module} hint={m.tooltip} />
+                  </Td>
                   {MODULE_KEYS.map((k) => (
                     <td key={k.key} className="px-2 py-3 text-center">
                       <HeatCell score={m[k.key]} />
@@ -288,6 +293,31 @@ function Meta({ label, value }) {
         {label}
       </dt>
       <dd className="text-cc-dark-text">{value}</dd>
+    </div>
+  )
+}
+
+function ModuleNameWithHint({ name, hint }) {
+  if (!hint) {
+    return <span className="font-bold text-cc-navy">{name}</span>
+  }
+  return (
+    <div className="flex items-start gap-1.5 pr-1">
+      <span className="min-w-0 font-bold leading-snug text-cc-navy">{name}</span>
+      <button
+        type="button"
+        title={hint}
+        className="group relative mt-0.5 shrink-0 rounded text-cc-mid-gray hover:text-cc-navy focus:outline-none focus-visible:ring-2 focus-visible:ring-cc-navy/35"
+        aria-label={`Plain-language summary: ${name}`}
+      >
+        <Info className="h-3.5 w-3.5" strokeWidth={2} aria-hidden />
+        <span
+          className="pointer-events-none absolute bottom-full left-0 z-40 mb-1 hidden w-[min(17.5rem,calc(100vw-3rem))] rounded-md border border-cc-border bg-white px-2.5 py-2 text-left text-[11px] font-normal leading-snug text-cc-dark-text shadow-lg group-hover:block group-focus-visible:block"
+          role="tooltip"
+        >
+          {hint}
+        </span>
+      </button>
     </div>
   )
 }

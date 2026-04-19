@@ -2,12 +2,12 @@
   "deliverableId": "d3",
   "label": "D3 Customer Journey Maps",
   "sourceModule": "apps/final-presentation/src/content/deliverables/d3-journeys.js",
-  "generatedAt": "2026-04-19T00:29:24.732Z",
+  "generatedAt": "2026-04-19T02:07:30.726Z",
   "corpusFingerprint": "bf93ef6cba97f964",
-  "claimCount": 78,
+  "claimCount": 94,
   "summary": {
-    "supported": 65,
-    "partially_supported": 13,
+    "supported": 71,
+    "partially_supported": 23,
     "weak_match": 0,
     "unsupported": 0
   },
@@ -16,43 +16,43 @@
       "claimId": "d3:0:$.tagline",
       "jsonPath": "$.tagline",
       "kind": "narrative",
-      "text": "Five reactive workflows where late discovery, manual multi-source investigation, and brittle resolution leave teams flying blind until dollars and credibility are already lost.",
+      "text": "Six buyer- and channel-adjacent workflows where late discovery, manual multi-source investigation, and brittle resolution leave teams flying blind until dollars and credibility are already lost.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.468,
-        "bestCoverage": 0.55,
-        "bestJaccard": 0.134
+        "bestScore": 0.348,
+        "bestCoverage": 0.409,
+        "bestJaccard": 0.015
       },
       "evidence": [
         {
-          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
-          "chunkIndex": 126,
-          "corpusKind": "synthesis",
-          "score": 0.468,
-          "excerpt": "Every map begins with a reactive trigger. Every Stage 1 is a late-discovery story. Every Stage 2 is a manual, multi-source reconciliation that requires expertise that most organizations have on a single person who might …"
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.348,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.348,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
         },
         {
           "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
           "chunkIndex": 125,
           "corpusKind": "synthesis",
-          "score": 0.425,
+          "score": 0.348,
           "excerpt": "ctural theme: **these buyers are running their organizations through the energy management equivalent of flying blind.** Every map begins with a reactive trigger. Every Stage 1 is a late-discovery story. Every Stage 2 is…"
         },
         {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1707,
-          "corpusKind": "other",
-          "score": 0.34,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
-        },
-        {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 878,
-          "corpusKind": "primary_output",
-          "score": 0.34,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
+          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
+          "chunkIndex": 126,
+          "corpusKind": "synthesis",
+          "score": 0.348,
+          "excerpt": "Every map begins with a reactive trigger. Every Stage 1 is a late-discovery story. Every Stage 2 is a manual, multi-source reconciliation that requires expertise that most organizations have on a single person who might …"
         }
       ],
       "inExpectedSourceFile": null
@@ -61,7 +61,7 @@
       "claimId": "d3:1:$.openingProblem",
       "jsonPath": "$.openingProblem",
       "kind": "narrative",
-      "text": "Each map is built from primary interviews first and secondary research second, with product stages naming Clear Current surfaces (Rate Analyst, Energy HQ, Deal Center) and tiers (Dashboard push, Chat). The recurring pattern is backward-looking, threshold-based detection that misses baseline drift, expertise concentrated in people who may leave, and resolution that is political, slow, and often partial — while CC’s honest position is spot-and-assist with human-in-the-loop completion.",
+      "text": "Each map is built from primary interviews first and secondary research second, with product stages naming Clear Current products (Rate Analyst, Energy HQ, Deal Center) and tiers (Proactive alerts, Chat). The recurring pattern is backward-looking, threshold-based detection that misses baseline drift, expertise concentrated in people who may leave, and resolution that is political, slow, and often partial — while CC’s honest position is spot-and-assist with human-in-the-loop completion.",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "partially_supported",
@@ -89,14 +89,14 @@
           "file": "research/outputs/00_master_corpus.txt",
           "chunkIndex": 1501,
           "corpusKind": "other",
-          "score": 0.374,
+          "score": 0.391,
           "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
           "chunkIndex": 672,
           "corpusKind": "primary_output",
-          "score": 0.374,
+          "score": 0.391,
           "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
         }
       ],
@@ -106,43 +106,43 @@
       "claimId": "d3:2:$.tldrBullets[0]",
       "jsonPath": "$.tldrBullets[0]",
       "kind": "tldr",
-      "text": "Built interviews-first: stages name real CC surfaces (Rate Analyst, Energy HQ, Deal Center) and push vs chat tiers.",
+      "text": "Built interviews-first: six maps (five core buyer workflows plus procurement/channel/continuous assurance) name real CC products and push vs chat tiers.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.546,
-        "bestCoverage": 0.643,
-        "bestJaccard": 0.088
+        "bestScore": 0.403,
+        "bestCoverage": 0.474,
+        "bestJaccard": 0.01
       },
       "evidence": [
         {
-          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
-          "chunkIndex": 0,
-          "corpusKind": "synthesis",
-          "score": 0.546,
-          "excerpt": "# Customer Journey Maps # Generated: 2026-04-17T20:55:37.434243 --- # Clear Current Technologies ## Customer Journey Maps: Five Complete Workflows **Prepared for John Reuter (CEO) & Dan Schreiber (CPO)** _CDL Texas MBA C…"
-        },
-        {
-          "file": "research/CLEAR_CURRENT_PRODUCT_CONTEXT.md",
-          "chunkIndex": 8,
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
           "corpusKind": "other",
-          "score": 0.486,
-          "excerpt": "--- ## Marketing modules ↔ CC Engine (for narrative alignment only) Use this so deliverables **name real surfaces** without inventing new product lines. If a mapping is wrong for a specific pilot, **the corpus wins** for…"
+          "score": 0.403,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
         },
         {
           "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1501,
+          "chunkIndex": 1709,
           "corpusKind": "other",
-          "score": 0.486,
-          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+          "score": 0.403,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
         },
         {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
-          "score": 0.486,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.403,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 880,
+          "corpusKind": "primary_output",
+          "score": 0.403,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
         }
       ],
       "inExpectedSourceFile": null
@@ -331,43 +331,43 @@
       "claimId": "d3:7:$.journeys[0].personaArchetype",
       "jsonPath": "$.journeys[0].personaArchetype",
       "kind": "narrative",
-      "text": "Andee Chamberlain · Sean Sevy · John Culver",
+      "text": "Texas State University · Houston Methodist · AdventHealth · Medxcel (Ascension) · Bon Secours Mercy Health · Panda Restaurant Group · Hyatt",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
-        "bestScore": 0.85,
-        "bestCoverage": 1,
-        "bestJaccard": 0.043
+        "bestScore": 0.797,
+        "bestCoverage": 0.938,
+        "bestJaccard": 0.107
       },
       "evidence": [
         {
           "file": "research/outputs/primary/01_contact_list.md",
           "chunkIndex": 1,
           "corpusKind": "primary_output",
-          "score": 0.85,
+          "score": 0.797,
           "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
         },
         {
-          "file": "research/outputs/primary/01_contact_list.md",
-          "chunkIndex": 3,
+          "file": "research/outputs/primary/agents/10_Tom_Reeves.md",
+          "chunkIndex": 29,
           "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "--- ## NOTES ON CORPUS COVERAGE ### Interviews with Both Transcript AND Summary None explicitly stated. All documents appear to be research summaries prepared by the CDL MBA Consulting Team, not transcripts. ### Intervie…"
+          "score": 0.584,
+          "excerpt": "**Finding 6: Three of Five Interviewed Organizations Are Already Using Third-Party Bill Processors With AI Components** Panda Restaurant Group → NG Insight (threshold-based exceptions, manual review) Bon Secours Mercy He…"
         },
         {
-          "file": "research/outputs/primary/agents/06_Ray_Kowalski.md",
-          "chunkIndex": 22,
+          "file": "research/outputs/primary/agents/10_Tom_Reeves.md",
+          "chunkIndex": 30,
           "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "- Texas State: A wastewater multiplier error — 3,500 gallons to 35,000 — caught through periodic manual bill review, not automated alerting. _Source: TX State Transcript, Andee Chamberlain_ - Intermountain Health: A util…"
+          "score": 0.584,
+          "excerpt": "Panda Restaurant Group → NG Insight (threshold-based exceptions, manual review) Bon Secours Mercy Health → Get Choice (described as using AI for anomaly detection, found a water leak) Houston Methodist → Energy Print (pr…"
         },
         {
-          "file": "research/outputs/primary/agents/06_Ray_Kowalski.md",
-          "chunkIndex": 26,
-          "corpusKind": "primary_output",
-          "score": 0.85,
-          "excerpt": "Andee Chamberlain at Texas State explicitly said: \"Yes, but not regularly. It's really complex. I'm grateful I don't have to do it monthly.\" This is a senior utilities professional describing her own discomfort with the …"
+          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
+          "chunkIndex": 12,
+          "corpusKind": "synthesis",
+          "score": 0.531,
+          "excerpt": "| Dimension | Score (1–5) | Evidence | | ------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------------…"
         }
       ],
       "inExpectedSourceFile": null
@@ -691,43 +691,43 @@
       "claimId": "d3:15:$.journeys[0].stagesWithCC[0].name",
       "jsonPath": "$.journeys[0].stagesWithCC[0].name",
       "kind": "narrative",
-      "text": "CC surface: Rate Analyst — Dashboard + Chat",
+      "text": "CC Product: Rate Analyst — Dashboard + Chat",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.052
+        "bestJaccard": 0.061
       },
       "evidence": [
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "**3. It is the key that unlocks the finance persona.** Andi Ault will not become a power user of chat-based energy analytics. She will not query invoice data. But she will use a tool that tells her in February: _\"The Cit…"
+        },
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 93,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "ze the finance-facing dashboard alerts (anomaly flagging, budget variance) as the first expansion of the dashboard tier. - **[FITS CURRENT PRODUCT]** Billing error detection (Rate Analyst, spot errors) is validated as th…"
+        },
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 96,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "- **[FITS CURRENT PRODUCT]** The three-tier delivery model maps precisely to the dual-audience finding: chat for the energy analyst, push dashboard for the finance director. This is not an abstract architecture — it is t…"
+        },
         {
           "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
           "chunkIndex": 0,
           "corpusKind": "synthesis",
           "score": 0.85,
           "excerpt": "# Customer Journey Maps # Generated: 2026-04-17T20:55:37.434243 --- # Clear Current Technologies ## Customer Journey Maps: Five Complete Workflows **Prepared for John Reuter (CEO) & Dan Schreiber (CPO)** _CDL Texas MBA C…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 48,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**Primary tier: Dashboard → Push to User** This is the defining tier for this module. Anomaly detection must run unattended and surface findings without user initiation. The reactive buyer finding makes this non-negotiab…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 104,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "- TOU (time-of-use) optimization: what operational changes would reduce peak-period consumption, and what is the dollar value of each change? - Demand response enrollment analysis: does the customer qualify for a utility…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 161,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "xisting data. Rate Analyst is the natural surface. Activates channel partner use case (Trane) documented by Don Johnson. - **[FITS CURRENT PRODUCT]** The three-tier model (Chat/React, Dashboard/Push, Autonomous/Do) is va…"
         }
       ],
       "inExpectedSourceFile": null
@@ -871,43 +871,43 @@
       "claimId": "d3:19:$.journeys[1].personaArchetype",
       "jsonPath": "$.journeys[1].personaArchetype",
       "kind": "narrative",
-      "text": "James Norton · Sean Sevy · Intermountain Health team",
+      "text": "Texas State University · Houston Methodist · Intermountain Health · UT Austin · AdventHealth",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.137
+        "bestJaccard": 0.065
       },
       "evidence": [
-        {
-          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
-          "chunkIndex": 31,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "gap between identified and realized errors remains the honest open problem. --- ## MAP 2: Anomaly Detection & Response **Persona:** Energy operations manager who discovers — or receives an alert about — an unexpected con…"
-        },
-        {
-          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
-          "chunkIndex": 32,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**Persona:** Energy operations manager who discovers — or receives an alert about — an unexpected consumption or cost spike. **Archetype composite:** James Norton (Texas State University), Sean Sevy (Houston Methodist), …"
-        },
         {
           "file": "research/outputs/primary/01_contact_list.md",
           "chunkIndex": 1,
           "corpusKind": "primary_output",
-          "score": 0.729,
+          "score": 0.85,
           "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
         },
         {
-          "file": "research/outputs/primary/01_contact_list.md",
-          "chunkIndex": 3,
+          "file": "research/Call Transcripts/CC Research, AdventHealth.docx",
+          "chunkIndex": 6,
+          "corpusKind": "primary_transcript",
+          "score": 0.661,
+          "excerpt": "Hester, Clayton 1:57Okay, perfect. Well, I appreciate you both being here. I'm just a part of a program here at A&M that's putting students in classrooms, putting them in front of subjects that they've never been a part …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1616,
+          "corpusKind": "other",
+          "score": 0.661,
+          "excerpt": "Hester, Clayton 1:57 Okay, perfect. Well, I appreciate you both being here. I'm just a part of a program here at A&M that's putting students in classrooms, putting them in front of subjects that they've never been a part…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 787,
           "corpusKind": "primary_output",
-          "score": 0.729,
-          "excerpt": "--- ## NOTES ON CORPUS COVERAGE ### Interviews with Both Transcript AND Summary None explicitly stated. All documents appear to be research summaries prepared by the CDL MBA Consulting Team, not transcripts. ### Intervie…"
+          "score": 0.661,
+          "excerpt": "Hester, Clayton 1:57 Okay, perfect. Well, I appreciate you both being here. I'm just a part of a program here at A&M that's putting students in classrooms, putting them in front of subjects that they've never been a part…"
         }
       ],
       "inExpectedSourceFile": null
@@ -1231,7 +1231,7 @@
       "claimId": "d3:27:$.journeys[1].stagesWithCC[0].name",
       "jsonPath": "$.journeys[1].stagesWithCC[0].name",
       "kind": "narrative",
-      "text": "CC surface: Energy HQ + Rate Analyst — Dashboard primary, Chat for triage",
+      "text": "CC Product: Energy HQ + Rate Analyst — Dashboard primary, Chat for triage",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
@@ -1256,18 +1256,18 @@
           "excerpt": "| Persona | Entry Point? | Typical Authority | Primary Trigger | Right Product Surface | | ----------------------- | ------------------------------------ | ----------------- | --------------------------------------------…"
         },
         {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
           "score": 0.638,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
         },
         {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 888,
-          "corpusKind": "primary_output",
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 46,
+          "corpusKind": "secondary",
           "score": 0.638,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "excerpt": "| **Gap** | **Affects** | **Impact** | **Status / How to Close** | | --- | --- | --- | --- | | **No CRE buyer voice — zero primary research from commercial real estate** | Journey Maps; Opportunity Heatmap | **MEDIUM** |…"
         }
       ],
       "inExpectedSourceFile": null
@@ -1453,7 +1453,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:32:$.journeys[2].trigger",
+      "claimId": "d3:32:$.journeys[2].personaArchetype",
+      "jsonPath": "$.journeys[2].personaArchetype",
+      "kind": "narrative",
+      "text": "Texas State University · UT Austin",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.045
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx",
+          "chunkIndex": 4,
+          "corpusKind": "primary_summary",
+          "score": 0.85,
+          "excerpt": "UT Austin's energy infrastructure is substantially more complex and self-sufficient than any other institution interviewed in this research program. ~95% on-site electricity generation on main campus via a combined heat …"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 6,
+          "corpusKind": "secondary",
+          "score": 0.85,
+          "excerpt": "| **Interviewee** | **Organization** | **Role** | **Why They Matter** | **Key Persona** | | --- | --- | --- | --- | --- | | Don Johnson | Trane Technologies | Sr. Account Manager | Channel partner with portfolio view of …"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.85,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 29,
+          "corpusKind": "secondary",
+          "score": 0.85,
+          "excerpt": "ystem-Initiated (EnergyCAP EOL, compliance deadline). | | --- | **Deliverable 2 — Seasonal Energy Management Calendar** | **Period** | **Primary Evidence** | **Secondary Corroboration** | | --- | --- | --- | | Sept 1 — N…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:33:$.journeys[2].trigger",
       "jsonPath": "$.journeys[2].trigger",
       "kind": "narrative",
       "text": "Period close forces internal allocation of paid utility costs as the campus footprint and metering reality keep shifting.",
@@ -1498,7 +1543,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:33:$.journeys[2].stagesWithoutCC[0].summary",
+      "claimId": "d3:34:$.journeys[2].stagesWithoutCC[0].summary",
       "jsonPath": "$.journeys[2].stagesWithoutCC[0].summary",
       "kind": "narrative",
       "text": "Mixed metering and district-energy complexity collide with tools that promised more integration than they deliver.",
@@ -1543,7 +1588,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:34:$.journeys[2].stagesWithoutCC[0].painPoint",
+      "claimId": "d3:35:$.journeys[2].stagesWithoutCC[0].painPoint",
       "jsonPath": "$.journeys[2].stagesWithoutCC[0].painPoint",
       "kind": "narrative",
       "text": "Data for usage-based chargeback is missing or siloed. Monthly reconciliation is manual on a deadline.",
@@ -1588,7 +1633,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:35:$.journeys[2].stagesWithoutCC[1].summary",
+      "claimId": "d3:36:$.journeys[2].stagesWithoutCC[1].summary",
       "jsonPath": "$.journeys[2].stagesWithoutCC[1].summary",
       "kind": "narrative",
       "text": "Teams disaggregate central plant costs, convert units, and defend assumptions ops and finance each need differently.",
@@ -1633,7 +1678,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:36:$.journeys[2].stagesWithoutCC[1].painPoint",
+      "claimId": "d3:37:$.journeys[2].stagesWithoutCC[1].painPoint",
       "jsonPath": "$.journeys[2].stagesWithoutCC[1].painPoint",
       "kind": "narrative",
       "text": "Dual-audience tension — usage vs dollars — with no system that serves both. Iterative approximations get contested.",
@@ -1678,7 +1723,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:37:$.journeys[2].stagesWithoutCC[2].summary",
+      "claimId": "d3:38:$.journeys[2].stagesWithoutCC[2].summary",
       "jsonPath": "$.journeys[2].stagesWithoutCC[2].summary",
       "kind": "narrative",
       "text": "Charges go out; departments accept or dispute under square-footage or weak signals.",
@@ -1723,7 +1768,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:38:$.journeys[2].stagesWithoutCC[2].painPoint",
+      "claimId": "d3:39:$.journeys[2].stagesWithoutCC[2].painPoint",
       "jsonPath": "$.journeys[2].stagesWithoutCC[2].painPoint",
       "kind": "narrative",
       "text": "Charges feel arbitrary, so conservation incentives fail. Disputes stay painful to defend with assembled evidence.",
@@ -1768,19 +1813,33 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:39:$.journeys[2].stagesWithCC[0].name",
+      "claimId": "d3:40:$.journeys[2].stagesWithCC[0].name",
       "jsonPath": "$.journeys[2].stagesWithCC[0].name",
       "kind": "narrative",
-      "text": "CC surface: Rate Analyst + Energy HQ — Dashboard + Chat",
+      "text": "CC Product: Rate Analyst + Energy HQ — Dashboard + Chat",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.062
+        "bestJaccard": 0.073
       },
       "evidence": [
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "**3. It is the key that unlocks the finance persona.** Andi Ault will not become a power user of chat-based energy analytics. She will not query invoice data. But she will use a tool that tells her in February: _\"The Cit…"
+        },
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 96,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "- **[FITS CURRENT PRODUCT]** The three-tier delivery model maps precisely to the dual-audience finding: chat for the energy analyst, push dashboard for the finance director. This is not an abstract architecture — it is t…"
+        },
         {
           "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
           "chunkIndex": 0,
@@ -1794,26 +1853,12 @@
           "corpusKind": "synthesis",
           "score": 0.85,
           "excerpt": "| Persona | Entry Point? | Typical Authority | Primary Trigger | Right Product Surface | | ----------------------- | ------------------------------------ | ----------------- | --------------------------------------------…"
-        },
-        {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx",
-          "chunkIndex": 10,
-          "corpusKind": "primary_summary",
-          "score": 0.708,
-          "excerpt": "Implication for Clear Current: This is the strongest validation yet of Dan's dual-audience UX design. The finance user does not want to do the technical analysis herself. She wants the technical team to interact with the…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1707,
-          "corpusKind": "other",
-          "score": 0.708,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx | FOLDER: Interview Summary Documents ═══ Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associa…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:40:$.journeys[2].stagesWithCC[0].capability",
+      "claimId": "d3:41:$.journeys[2].stagesWithCC[0].capability",
       "jsonPath": "$.journeys[2].stagesWithCC[0].capability",
       "kind": "narrative",
       "text": "Stronger meter-to-building association, validation, anomaly flags, building-level consumption and cost views, and role-shaped NL queries from one dataset.",
@@ -1858,7 +1903,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:41:$.journeys[2].stagesWithCC[0].bounds",
+      "claimId": "d3:42:$.journeys[2].stagesWithCC[0].bounds",
       "jsonPath": "$.journeys[2].stagesWithCC[0].bounds",
       "kind": "narrative",
       "text": "Does not replace a full chargeback/ERP system. District-energy disaggregation, departmental allocation logic, and deep ERP integration are roadmap-level for this vertical wedge.",
@@ -1903,7 +1948,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:42:$.journeys[3].name",
+      "claimId": "d3:43:$.journeys[3].name",
       "jsonPath": "$.journeys[3].name",
       "kind": "narrative",
       "text": "Regulatory Intelligence & Budget Impact",
@@ -1948,7 +1993,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:43:$.journeys[3].persona",
+      "claimId": "d3:44:$.journeys[3].persona",
       "jsonPath": "$.journeys[3].persona",
       "kind": "narrative",
       "text": "Energy manager or finance director exposed when rate cases land after budgets are set.",
@@ -1993,7 +2038,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:44:$.journeys[3].trigger",
+      "claimId": "d3:45:$.journeys[3].personaArchetype",
+      "jsonPath": "$.journeys[3].personaArchetype",
+      "kind": "narrative",
+      "text": "UT Austin · Trane Technologies · Bon Secours Mercy Health · Medxcel (Ascension) · JLL",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.072
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 1,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
+        },
+        {
+          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
+          "chunkIndex": 5,
+          "corpusKind": "synthesis",
+          "score": 0.68,
+          "excerpt": "The problem is not awareness. Every energy professional we interviewed knows billing complexity is expensive. The problem is structural resource constraint. Ann Walston manages energy for 36 hospitals at Bon Secours Merc…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1616,
+          "corpusKind": "other",
+          "score": 0.51,
+          "excerpt": "Hester, Clayton 1:57 Okay, perfect. Well, I appreciate you both being here. I'm just a part of a program here at A&M that's putting students in classrooms, putting them in front of subjects that they've never been a part…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.51,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:46:$.journeys[3].trigger",
       "jsonPath": "$.journeys[3].trigger",
       "kind": "narrative",
       "text": "Budget uses forward rate assumptions; later, utilities finalize increases on a regulatory calendar misaligned with institutional budgeting.",
@@ -2038,7 +2128,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:45:$.journeys[3].stagesWithoutCC[0].summary",
+      "claimId": "d3:47:$.journeys[3].stagesWithoutCC[0].summary",
       "jsonPath": "$.journeys[3].stagesWithoutCC[0].summary",
       "kind": "narrative",
       "text": "Dockets are public but dense; in practice people learn from bills, irregular notices, brokers, or luck.",
@@ -2083,7 +2173,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:46:$.journeys[3].stagesWithoutCC[0].painPoint",
+      "claimId": "d3:48:$.journeys[3].stagesWithoutCC[0].painPoint",
       "jsonPath": "$.journeys[3].stagesWithoutCC[0].painPoint",
       "kind": "narrative",
       "text": "The mismatch stays invisible until variance hits. No bridge between PUC process and budget calendar.",
@@ -2128,7 +2218,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:47:$.journeys[3].stagesWithoutCC[1].summary",
+      "claimId": "d3:49:$.journeys[3].stagesWithoutCC[1].summary",
       "jsonPath": "$.journeys[3].stagesWithoutCC[1].summary",
       "kind": "narrative",
       "text": "Finance models dollar impact across schedules and buildings; ops and finance wrestle the same data in different shapes.",
@@ -2173,7 +2263,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:48:$.journeys[3].stagesWithoutCC[1].painPoint",
+      "claimId": "d3:50:$.journeys[3].stagesWithoutCC[1].painPoint",
       "jsonPath": "$.journeys[3].stagesWithoutCC[1].painPoint",
       "kind": "narrative",
       "text": "Manual rate-schedule mapping and updates make precise, timely portfolio math expensive.",
@@ -2218,7 +2308,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:49:$.journeys[3].stagesWithoutCC[2].summary",
+      "claimId": "d3:51:$.journeys[3].stagesWithoutCC[2].summary",
       "jsonPath": "$.journeys[3].stagesWithoutCC[2].summary",
       "kind": "narrative",
       "text": "Teams update budgets or absorb variance and rarely execute proactive mitigation in the reactive scramble.",
@@ -2263,7 +2353,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:50:$.journeys[3].stagesWithoutCC[2].painPoint",
+      "claimId": "d3:52:$.journeys[3].stagesWithoutCC[2].painPoint",
       "jsonPath": "$.journeys[3].stagesWithoutCC[2].painPoint",
       "kind": "narrative",
       "text": "Mitigation and class-review opportunities are missed. Explanations to leadership stay technical and slow.",
@@ -2308,52 +2398,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:51:$.journeys[3].stagesWithCC[0].name",
+      "claimId": "d3:53:$.journeys[3].stagesWithCC[0].name",
       "jsonPath": "$.journeys[3].stagesWithCC[0].name",
       "kind": "narrative",
-      "text": "CC surface: Rate Analyst — Dashboard + Chat",
+      "text": "CC Product: Rate Analyst — Dashboard + Chat",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.052
+        "bestJaccard": 0.061
       },
       "evidence": [
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "**3. It is the key that unlocks the finance persona.** Andi Ault will not become a power user of chat-based energy analytics. She will not query invoice data. But she will use a tool that tells her in February: _\"The Cit…"
+        },
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 93,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "ze the finance-facing dashboard alerts (anomaly flagging, budget variance) as the first expansion of the dashboard tier. - **[FITS CURRENT PRODUCT]** Billing error detection (Rate Analyst, spot errors) is validated as th…"
+        },
+        {
+          "file": "research/outputs/synthesis/00_decision_brief.md",
+          "chunkIndex": 96,
+          "corpusKind": "synthesis",
+          "score": 0.85,
+          "excerpt": "- **[FITS CURRENT PRODUCT]** The three-tier delivery model maps precisely to the dual-audience finding: chat for the energy analyst, push dashboard for the finance director. This is not an abstract architecture — it is t…"
+        },
         {
           "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
           "chunkIndex": 0,
           "corpusKind": "synthesis",
           "score": 0.85,
           "excerpt": "# Customer Journey Maps # Generated: 2026-04-17T20:55:37.434243 --- # Clear Current Technologies ## Customer Journey Maps: Five Complete Workflows **Prepared for John Reuter (CEO) & Dan Schreiber (CPO)** _CDL Texas MBA C…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 48,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "**Primary tier: Dashboard → Push to User** This is the defining tier for this module. Anomaly detection must run unattended and surface findings without user initiation. The reactive buyer finding makes this non-negotiab…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 104,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "- TOU (time-of-use) optimization: what operational changes would reduce peak-period consumption, and what is the dollar value of each change? - Demand response enrollment analysis: does the customer qualify for a utility…"
-        },
-        {
-          "file": "research/outputs/synthesis/D4_Product_Module_Recommendations.md",
-          "chunkIndex": 161,
-          "corpusKind": "synthesis",
-          "score": 0.85,
-          "excerpt": "xisting data. Rate Analyst is the natural surface. Activates channel partner use case (Trane) documented by Don Johnson. - **[FITS CURRENT PRODUCT]** The three-tier model (Chat/React, Dashboard/Push, Autonomous/Do) is va…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:52:$.journeys[3].stagesWithCC[0].capability",
+      "claimId": "d3:54:$.journeys[3].stagesWithCC[0].capability",
       "jsonPath": "$.journeys[3].stagesWithCC[0].capability",
       "kind": "narrative",
       "text": "Vision in the map: docket-aware alerts with portfolio impact, instant scenario Q&A, and CFO-ready variance memos tied to tariff logic.",
@@ -2398,7 +2488,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:53:$.journeys[3].stagesWithCC[0].bounds",
+      "claimId": "d3:55:$.journeys[3].stagesWithCC[0].bounds",
       "jsonPath": "$.journeys[3].stagesWithCC[0].bounds",
       "kind": "narrative",
       "text": "Automated PUC docket monitoring integrated with impact modeling is explicitly not described as shipped. Tariff/scenario engine exists, but the monitoring/intake layer is the roadmap extension.",
@@ -2443,7 +2533,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:54:$.journeys[4].name",
+      "claimId": "d3:56:$.journeys[4].name",
       "jsonPath": "$.journeys[4].name",
       "kind": "narrative",
       "text": "Budgeting & Forecasting (Annual Cycle)",
@@ -2488,7 +2578,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:55:$.journeys[4].persona",
+      "claimId": "d3:57:$.journeys[4].persona",
       "jsonPath": "$.journeys[4].persona",
       "kind": "narrative",
       "text": "Energy and finance leaders building a defensible annual energy budget and multi-year view.",
@@ -2533,52 +2623,52 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:56:$.journeys[4].personaArchetype",
+      "claimId": "d3:58:$.journeys[4].personaArchetype",
       "jsonPath": "$.journeys[4].personaArchetype",
       "kind": "narrative",
-      "text": "Andi Ault · Andee Chamberlain · Phil Combs",
+      "text": "UT Austin · Texas State University · Trane Technologies · NVIDIA · Medxcel (Ascension) · JLL",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
       "heuristic": {
         "bestScore": 0.85,
         "bestCoverage": 1,
-        "bestJaccard": 0.066
+        "bestJaccard": 0.072
       },
       "evidence": [
         {
-          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Andi_Ault_UT_Austin.docx",
-          "chunkIndex": 0,
-          "corpusKind": "primary_summary",
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 1,
+          "corpusKind": "primary_output",
           "score": 0.85,
-          "excerpt": "Interview Summary The University of Texas at Austin | Utilities & Energy Management Andi Ault, Senior Associate Director, Finance & Administrative Services Conducted by Clayton Hester | April 1, 2026 Why This Interview M…"
+          "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 6,
           "corpusKind": "secondary",
-          "score": 0.85,
+          "score": 0.595,
           "excerpt": "| **Interviewee** | **Organization** | **Role** | **Why They Matter** | **Key Persona** | | --- | --- | --- | --- | --- | | Don Johnson | Trane Technologies | Sr. Account Manager | Channel partner with portfolio view of …"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 6,
+          "corpusKind": "secondary",
+          "score": 0.595,
+          "excerpt": "| Interviewee | Organization | Role | Why They Matter | Key Persona | | ---------------------------------------------- | ---------------------- | -------------------------------------- | ---------------------------------…"
         },
         {
           "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
           "chunkIndex": 10,
           "corpusKind": "secondary",
-          "score": 0.85,
+          "score": 0.51,
           "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
-        },
-        {
-          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
-          "chunkIndex": 26,
-          "corpusKind": "secondary",
-          "score": 0.85,
-          "excerpt": "| **What We Have** | **Primary Source** | **Secondary Source** | | --- | --- | --- | | Bill shock / unexpected rate increase | Texas State: 'weird multiplier' — bill shock triggers auditing | EnergyCAP SoU 2026: 76% expe…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:57:$.journeys[4].trigger",
+      "claimId": "d3:59:$.journeys[4].trigger",
       "jsonPath": "$.journeys[4].trigger",
       "kind": "narrative",
       "text": "Annual budget season starts — energy is a scrutinized line item amid rising costs and opaque drivers.",
@@ -2623,7 +2713,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:58:$.journeys[4].stagesWithoutCC[0].summary",
+      "claimId": "d3:60:$.journeys[4].stagesWithoutCC[0].summary",
       "jsonPath": "$.journeys[4].stagesWithoutCC[0].summary",
       "kind": "narrative",
       "text": "Teams blend last-year actuals with escalation guesses and parallel finance assumptions.",
@@ -2668,7 +2758,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:59:$.journeys[4].stagesWithoutCC[0].painPoint",
+      "claimId": "d3:61:$.journeys[4].stagesWithoutCC[0].painPoint",
       "jsonPath": "$.journeys[4].stagesWithoutCC[0].painPoint",
       "kind": "narrative",
       "text": "Rate-case timing vs budget lock guarantees structural error. Risk stays hidden until variance reports.",
@@ -2713,7 +2803,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:60:$.journeys[4].stagesWithoutCC[1].summary",
+      "claimId": "d3:62:$.journeys[4].stagesWithoutCC[1].summary",
       "jsonPath": "$.journeys[4].stagesWithoutCC[1].summary",
       "kind": "narrative",
       "text": "Forecasting splits into volume, rate, and schedule/contract mix — usually only partially supported by tools.",
@@ -2758,7 +2848,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:61:$.journeys[4].stagesWithoutCC[1].painPoint",
+      "claimId": "d3:63:$.journeys[4].stagesWithoutCC[1].painPoint",
       "jsonPath": "$.journeys[4].stagesWithoutCC[1].painPoint",
       "kind": "narrative",
       "text": "Rate path is the broken component. Optimization never gets attention during the crunch.",
@@ -2803,7 +2893,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:62:$.journeys[4].stagesWithoutCC[2].summary",
+      "claimId": "d3:64:$.journeys[4].stagesWithoutCC[2].summary",
       "jsonPath": "$.journeys[4].stagesWithoutCC[2].summary",
       "kind": "narrative",
       "text": "Budget submits with known weak assumptions. Later variance erodes credibility and capital asks.",
@@ -2848,7 +2938,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:63:$.journeys[4].stagesWithoutCC[2].painPoint",
+      "claimId": "d3:65:$.journeys[4].stagesWithoutCC[2].painPoint",
       "jsonPath": "$.journeys[4].stagesWithoutCC[2].painPoint",
       "kind": "narrative",
       "text": "Wrong for structural reasons outside the energy manager’s control still burns organizational trust.",
@@ -2893,10 +2983,10 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:64:$.journeys[4].stagesWithCC[0].name",
+      "claimId": "d3:66:$.journeys[4].stagesWithCC[0].name",
       "jsonPath": "$.journeys[4].stagesWithCC[0].name",
       "kind": "narrative",
-      "text": "CC surface: Rate Analyst + Deal Center — Dashboard + Chat",
+      "text": "CC Product: Rate Analyst + Deal Center — Dashboard + Chat",
       "attributionHint": null,
       "matchedInterviewIds": [],
       "status": "supported",
@@ -2921,24 +3011,24 @@
           "excerpt": "**What falls through the cracks:** Rate schedule optimization that would have reduced the forecast. Demand response opportunities that would have reduced peak exposure. Capital investments that would have been funded if …"
         },
         {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
-          "corpusKind": "other",
-          "score": 0.607,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "file": "research/outputs/synthesis/D5_Market_Opportunity_Heatmap.md",
+          "chunkIndex": 56,
+          "corpusKind": "synthesis",
+          "score": 0.729,
+          "excerpt": "which modules should anchor the fundraise narrative in each segment. --- ### Module Definitions (from Product Context) - **Rate Analyst** — Invoice validation, variance detection, tariff scenario/what-if modeling - **Ene…"
         },
         {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 888,
-          "corpusKind": "primary_output",
+          "file": "research/CLEAR_CURRENT_PRODUCT_CONTEXT.md",
+          "chunkIndex": 8,
+          "corpusKind": "other",
           "score": 0.607,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "excerpt": "--- ## Marketing modules ↔ CC Engine (for narrative alignment only) Use this so deliverables **name real surfaces** without inventing new product lines. If a mapping is wrong for a specific pilot, **the corpus wins** for…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:65:$.journeys[4].stagesWithCC[0].capability",
+      "claimId": "d3:67:$.journeys[4].stagesWithCC[0].capability",
       "jsonPath": "$.journeys[4].stagesWithCC[0].capability",
       "kind": "narrative",
       "text": "Budget-open briefings from monitored portfolio context; NL scenario modeling for finance and ops; gas/strip context alongside consumption via Deal Center; documented assumptions for CFO questions.",
@@ -2983,7 +3073,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:66:$.journeys[4].stagesWithCC[0].bounds",
+      "claimId": "d3:68:$.journeys[4].stagesWithCC[0].bounds",
       "jsonPath": "$.journeys[4].stagesWithCC[0].bounds",
       "kind": "narrative",
       "text": "PUC monitoring layer remains roadmap. Full M&V-grade baselines and ranked multi-year capital ROI are directional roadmap — not fully shipped as described.",
@@ -3028,7 +3118,592 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:67:$.crossMapFindings[0]",
+      "claimId": "d3:69:$.journeys[5].name",
+      "jsonPath": "$.journeys[5].name",
+      "kind": "narrative",
+      "text": "Procurement, Channel & Continuous Assurance",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.035
+      },
+      "evidence": [
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx",
+          "chunkIndex": 23,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "online. Shoulder season optimization: maximize outside air, minimize both heating and cooling energy. Winter (Dec-Feb) Boilers running at peak. Cooling equipment maintenance and replacements occur — off-season for chille…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx",
+          "chunkIndex": 24,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "Boilers running at peak. Cooling equipment maintenance and replacements occur — off-season for chillers. Quarterly UPSC (Utilities Procurement Steering Committee) meets to review market positions, hedging strategy, and p…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Don_Johnson_Trane (1).docx",
+          "chunkIndex": 7,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "t (Meta, Jupiter facilities in El Paso) | Market signal. Data centers are a massive, growing energy consumer vertical. | | **Key Takeaway for Clear Current** Trane is building building operations intelligence (how equipm…"
+        },
+        {
+          "file": "research/Interview Summary Documents/Clear_Current_Interview_Summary_Don_Johnson_Trane (1).docx",
+          "chunkIndex": 8,
+          "corpusKind": "primary_summary",
+          "score": 0.425,
+          "excerpt": "| **Key Takeaway for Clear Current** Trane is building building operations intelligence (how equipment runs). Clear Current is building billing and procurement intelligence (how customers get charged). These are compleme…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:70:$.journeys[5].persona",
+      "jsonPath": "$.journeys[5].persona",
+      "kind": "narrative",
+      "text": "Energy or facilities leader at contract renewal, post-audit handoff, or outsourced bill-pay — with OEM reps and advisors shaping the table.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.319,
+        "bestCoverage": 0.375,
+        "bestJaccard": 0.054
+      },
+      "evidence": [
+        {
+          "file": "research/SECONDARY DATA/compass_artifact_wf-c7afb3cb-564b-4e3b-9f45-16c97ab78ab9_text_markdown.md",
+          "chunkIndex": 26,
+          "corpusKind": "secondary",
+          "score": 0.319,
+          "excerpt": "**EnergyCAP ownership context (critical for trigger mapping):** Founded 1980 (FASER); acquired by Enron 1996; repurchased post-bankruptcy; renamed EnergyCAP in 2010. **Resurgens Technology Partners took a strategic equit…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 774,
+          "corpusKind": "other",
+          "score": 0.319,
+          "excerpt": "**EnergyCAP ownership context (critical for trigger mapping):** Founded 1980 (FASER); acquired by Enron 1996; repurchased post-bankruptcy; renamed EnergyCAP in 2010. **Resurgens Technology Partners took a strategic equit…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.319,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1709,
+          "corpusKind": "other",
+          "score": 0.319,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Ann_Walston_Bon_Secours (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Ann Walston | Bon Secours Mercy Health Vice President, Acute Care Facilities Manage…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:71:$.journeys[5].personaArchetype",
+      "jsonPath": "$.journeys[5].personaArchetype",
+      "kind": "narrative",
+      "text": "Trane Technologies · JLL · AdventHealth · ENGIE Impact · NVIDIA",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.85,
+        "bestCoverage": 1,
+        "bestJaccard": 0.05
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/primary/01_contact_list.md",
+          "chunkIndex": 1,
+          "corpusKind": "primary_output",
+          "score": 0.85,
+          "excerpt": "| Name | Title | Company | Email | Phone | Interview Date | Duration | Conducted By | | ----------------- | ---------------------------------------------------------------- | ---------------------------- | --------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 876,
+          "corpusKind": "primary_output",
+          "score": 0.607,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/synthesis/D7_Investor_Narrative_and_Pitch_Framework.md",
+          "chunkIndex": 5,
+          "corpusKind": "synthesis",
+          "score": 0.607,
+          "excerpt": "The problem is not awareness. Every energy professional we interviewed knows billing complexity is expensive. The problem is structural resource constraint. Ann Walston manages energy for 36 hospitals at Bon Secours Merc…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:72:$.journeys[5].trigger",
+      "jsonPath": "$.journeys[5].trigger",
+      "kind": "narrative",
+      "text": "A supply or broker contract window opens, an OEM needs a defensible bill-based load story, a professional audit ends, or a pay-and-aggregate processor delivers totals without variance explanation.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.37,
+        "bestCoverage": 0.435,
+        "bestJaccard": 0.015
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.37,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.37,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.333,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.333,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:73:$.journeys[5].stagesWithoutCC[0].summary",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[0].summary",
+      "kind": "narrative",
+      "text": "Renewal calendars, channel proposals, and outsourced processors show up as episodic events — not as a continuous interpretation layer on the bill stack.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.01
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 874,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1705,
+          "corpusKind": "other",
+          "score": 0.243,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_AdventHealth.docx | FOLDER: Interview Summary Documents ═══ Interview Summary AdventHealth Corporate | Sustainability & Energy Management John Culver, Corporate Sustainability …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.243,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:74:$.journeys[5].stagesWithoutCC[0].painPoint",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[0].painPoint",
+      "kind": "narrative",
+      "text": "Attention goes to headline price and relationships. After M&V or a big study, nobody is chartered to own “next month” the same way.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.458,
+        "bestCoverage": 0.538,
+        "bestJaccard": 0.009
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1501,
+          "corpusKind": "other",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 672,
+          "corpusKind": "primary_output",
+          "score": 0.458,
+          "excerpt": "═══ SOURCE: CC Research — Jamare Bates, JLL.docx | FOLDER: Call Transcripts ═══ Interview Transcript Jamare Bates | JLL Vice President, Clean Energy & Infrastructure Advisory Conducted by Clayton Hester & Victor Pan | Ap…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:75:$.journeys[5].stagesWithoutCC[1].summary",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[1].summary",
+      "kind": "narrative",
+      "text": "Teams compare quotes, riders, and usage fit in spreadsheets — in parallel with IT/security and incumbent renewal politics.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.354,
+        "bestCoverage": 0.417,
+        "bestJaccard": 0.007
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.354,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.354,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.354,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 902,
+          "corpusKind": "primary_output",
+          "score": 0.354,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:76:$.journeys[5].stagesWithoutCC[1].painPoint",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[1].painPoint",
+      "kind": "narrative",
+      "text": "Independent rate-structure fit versus real load shape is hard to get. Advisor and channel incentives are not the same as the buyer’s.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.425,
+        "bestCoverage": 0.5,
+        "bestJaccard": 0.011
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.425,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.364,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.364,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:77:$.journeys[5].stagesWithoutCC[2].summary",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[2].summary",
+      "kind": "narrative",
+      "text": "Sign, renew, or defer; equipment moves ahead with thin bill evidence; aggregator or broker relationships continue without a durable “why did this change?” owner.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.378,
+        "bestCoverage": 0.444,
+        "bestJaccard": 0.012
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.378,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.378,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1701,
+          "corpusKind": "other",
+          "score": 0.283,
+          "excerpt": "═══ SOURCE: CC_Research_Texas_State_Transcript.docx | FOLDER: Call Transcripts ═══ Interview Transcript Texas State University | Utilities & Energy Management Andee Chamberlain, Carl Teague, James Norton Conducted by Cla…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1723,
+          "corpusKind": "other",
+          "score": 0.283,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Scott_Czubkowski_Ascension (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Scott Czubkowski, PE, CHC, CEM | Medxcel (Ascension Health) National Director, E…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:78:$.journeys[5].stagesWithoutCC[2].painPoint",
+      "jsonPath": "$.journeys[5].stagesWithoutCC[2].painPoint",
+      "kind": "narrative",
+      "text": "Convenience wins over structural truth. Spend crosses materiality for the CFO without a persistent monitor tied to the same dataset.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.34,
+        "bestCoverage": 0.4,
+        "bestJaccard": 0.008
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1703,
+          "corpusKind": "other",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 874,
+          "corpusKind": "primary_output",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
+        },
+        {
+          "file": "research/SECONDARY DATA/Clear Current Technologies  Commercial Energy Management SaaS — Market Research Report.md",
+          "chunkIndex": 28,
+          "corpusKind": "secondary",
+          "score": 0.283,
+          "excerpt": "| Error Type | Description | Prevalence / Impact | | ------------------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 394,
+          "corpusKind": "other",
+          "score": 0.283,
+          "excerpt": "| Error Type | Description | Prevalence / Impact | |---|---|---| | **Wrong Rate Classification** | Account billed on residential, small commercial, or industrial rate instead of applicable tariff | Very common; can persi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:79:$.journeys[5].stagesWithCC[0].name",
+      "jsonPath": "$.journeys[5].stagesWithCC[0].name",
+      "kind": "narrative",
+      "text": "CC Product: Deal Center + Rate Analyst + Build Engine — Proactive alerts, Chat, channel-facing artifacts",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.588,
+        "bestCoverage": 0.692,
+        "bestJaccard": 0.089
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/synthesis/D3_Customer_Journey_Maps.md",
+          "chunkIndex": 0,
+          "corpusKind": "synthesis",
+          "score": 0.588,
+          "excerpt": "# Customer Journey Maps # Generated: 2026-04-17T20:55:37.434243 --- # Clear Current Technologies ## Customer Journey Maps: Five Complete Workflows **Prepared for John Reuter (CEO) & Dan Schreiber (CPO)** _CDL Texas MBA C…"
+        },
+        {
+          "file": "research/CLEAR_CURRENT_PRODUCT_CONTEXT.md",
+          "chunkIndex": 8,
+          "corpusKind": "other",
+          "score": 0.523,
+          "excerpt": "--- ## Marketing modules ↔ CC Engine (for narrative alignment only) Use this so deliverables **name real surfaces** without inventing new product lines. If a mapping is wrong for a specific pilot, **the corpus wins** for…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.523,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:80:$.journeys[5].stagesWithCC[0].capability",
+      "jsonPath": "$.journeys[5].stagesWithCC[0].capability",
+      "kind": "narrative",
+      "text": "Renewal-window briefings with tariff and usage-fit clarity; bill-derived load and variance stories for OEM justification; narrative for continuous monitoring after audits; NL explanations of stacked charges for finance when a processor pays the line.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.34,
+        "bestCoverage": 0.4,
+        "bestJaccard": 0.015
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1727,
+          "corpusKind": "other",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 898,
+          "corpusKind": "primary_output",
+          "score": 0.34,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Texas_State.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Texas State University | Utility Operations Andee Chamberlain, Carl Teague & James Norton Conducted…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1721,
+          "corpusKind": "other",
+          "score": 0.306,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 892,
+          "corpusKind": "primary_output",
+          "score": 0.306,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Roger_Goldstein_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Roger Goldstein | Panda Restaurant Group Executive Director, Facilities & Energy Conducte…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:81:$.journeys[5].stagesWithCC[0].bounds",
+      "jsonPath": "$.journeys[5].stagesWithCC[0].bounds",
+      "kind": "narrative",
+      "text": "Does not replace brokers, OEMs, or aggregators — documents fit and assumptions they can challenge. IT/security and SOC gates remain separate. Build Engine is channel-adjacent justification, not autonomous equipment dispatch.",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "partially_supported",
+      "heuristic": {
+        "bestScore": 0.37,
+        "bestCoverage": 0.435,
+        "bestJaccard": 0.014
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.37,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.37,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1729,
+          "corpusKind": "other",
+          "score": 0.333,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Troy_Nevells_UT_Austin (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Troy Nevells | UT Austin — Utilities & Energy Management Director of Engineering & T…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1731,
+          "corpusKind": "other",
+          "score": 0.333,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Walt_Taylor_Panda.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Walt Taylor | Panda Restaurant Group Energy Manager (Contractor) Conducted by Clayton Hester …"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:82:$.crossMapFindings[0]",
       "jsonPath": "$.crossMapFindings[0]",
       "kind": "narrative",
       "text": "Every journey starts reactive. Stage 1 is routinely late discovery, and stress peaks in investigation and resolution — not always at the trigger.",
@@ -3073,7 +3748,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:68:$.crossMapFindings[1]",
+      "claimId": "d3:83:$.crossMapFindings[1]",
       "jsonPath": "$.crossMapFindings[1]",
       "kind": "narrative",
       "text": "A single structural theme repeats: flying blind until problems surface with accumulated time and dollars lost.",
@@ -3118,7 +3793,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:69:$.crossMapFindings[2]",
+      "claimId": "d3:84:$.crossMapFindings[2]",
       "jsonPath": "$.crossMapFindings[2]",
       "kind": "narrative",
       "text": "Expertise and memory concentrated in one long-tenured person creates brittle detection that disappears when they leave.",
@@ -3163,7 +3838,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:70:$.crossMapFindings[3]",
+      "claimId": "d3:85:$.crossMapFindings[3]",
       "jsonPath": "$.crossMapFindings[3]",
       "kind": "narrative",
       "text": "The dual-audience fracture (ops wants usage; finance wants dollars) runs across higher ed and large commercial accounts.",
@@ -3208,7 +3883,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:71:$.crossMapFindings[4]",
+      "claimId": "d3:86:$.crossMapFindings[4]",
       "jsonPath": "$.crossMapFindings[4]",
       "kind": "narrative",
       "text": "Three CC strengths span the maps: proactive dollar-ranked alerts, NL investigation on shared data, and monetized CFO-ready outputs.",
@@ -3253,7 +3928,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:72:$.crossMapFindings[5]",
+      "claimId": "d3:87:$.crossMapFindings[5]",
       "jsonPath": "$.crossMapFindings[5]",
       "kind": "narrative",
       "text": "The honest cross-cutting hole is identified-vs-realized recovery. Faster evidence does not equal guaranteed refunds or credits.",
@@ -3298,52 +3973,97 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:73:$.productHonesty[0]",
-      "jsonPath": "$.productHonesty[0]",
+      "claimId": "d3:88:$.crossMapFindings[6]",
+      "jsonPath": "$.crossMapFindings[6]",
       "kind": "narrative",
-      "text": "Ships now: Dashboard push alerts, Chat investigation, invoice ingestion with strong site-invoice association, anomaly flagging from invoice-level data, and tariff/contract scenario analysis from Rate Analyst. Deal Center supports procurement context in the budget journey.",
+      "text": "Renewal, channel, and outsourced-pay moments create receptivity — but buyers still need independent structure-and-usage fit and continuity after consultant visits.",
       "attributionHint": null,
       "matchedInterviewIds": [],
-      "status": "supported",
+      "status": "partially_supported",
       "heuristic": {
-        "bestScore": 0.453,
-        "bestCoverage": 0.533,
-        "bestJaccard": 0.023
+        "bestScore": 0.35,
+        "bestCoverage": 0.412,
+        "bestJaccard": 0.01
       },
       "evidence": [
         {
           "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1717,
+          "chunkIndex": 1703,
           "corpusKind": "other",
-          "score": 0.453,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
-        },
-        {
-          "file": "research/outputs/00_master_corpus.txt",
-          "chunkIndex": 1733,
-          "corpusKind": "other",
-          "score": 0.453,
-          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: research ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULT…"
+          "score": 0.35,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
         },
         {
           "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 888,
+          "chunkIndex": 874,
           "corpusKind": "primary_output",
-          "score": 0.453,
-          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+          "score": 0.35,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Adam_Zavadsky_ENGIE_Impact (1).docx | FOLDER: Interview Summary Documents ═══ Interview Summary Adam Zavadsky | ENGIE Impact Senior Account Manager Conducted by Clayton Hester …"
         },
         {
-          "file": "research/outputs/primary/00_primary_corpus.txt",
-          "chunkIndex": 904,
-          "corpusKind": "primary_output",
-          "score": 0.453,
-          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: extra ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULTING…"
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.docx",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.3,
+          "excerpt": "| **Finding** | **Primary Evidence** | **Secondary Corroboration** | **Deliverable** | **Strength** | | --- | --- | --- | --- | --- | | **Most commercial energy buyers are reactive, not proactive** | Don Johnson: 'Most c…"
+        },
+        {
+          "file": "research/SECONDARY DATA/CC_Research_Synthesis_Brief.md",
+          "chunkIndex": 10,
+          "corpusKind": "secondary",
+          "score": 0.3,
+          "excerpt": "| Finding | Primary Evidence | Secondary Corroboration | Deliverable | Strength | | ------------------------------------------------------------------------------------------ | -------------------------------------------…"
         }
       ],
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:74:$.productHonesty[1]",
+      "claimId": "d3:89:$.productHonesty[0]",
+      "jsonPath": "$.productHonesty[0]",
+      "kind": "narrative",
+      "text": "Ships now: Proactive alerts to users, Chat investigation, invoice ingestion with strong site-invoice association, anomaly flagging from invoice-level data, and tariff/contract scenario analysis from Rate Analyst. Deal Center supports procurement and renewal context (budget journey j5 and procurement journey j6).",
+      "attributionHint": null,
+      "matchedInterviewIds": [],
+      "status": "supported",
+      "heuristic": {
+        "bestScore": 0.464,
+        "bestCoverage": 0.545,
+        "bestJaccard": 0.047
+      },
+      "evidence": [
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1733,
+          "corpusKind": "other",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: research ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULT…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 904,
+          "corpusKind": "primary_output",
+          "score": 0.464,
+          "excerpt": "═══ SOURCE: CDL MBA Project Scope - Mapping Customer Journey & Product.docx (1).pdf | FOLDER: extra ═══ DSCHREIBER@CLEARCURRENT.AI 646-341-0136 C C U J P M - CDL MBA LEAR URRENT SER OURNEY AND RODUCT APPING C P ONSULTING…"
+        },
+        {
+          "file": "research/outputs/00_master_corpus.txt",
+          "chunkIndex": 1717,
+          "corpusKind": "other",
+          "score": 0.438,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        },
+        {
+          "file": "research/outputs/primary/00_primary_corpus.txt",
+          "chunkIndex": 888,
+          "corpusKind": "primary_output",
+          "score": 0.438,
+          "excerpt": "═══ SOURCE: Clear_Current_Interview_Summary_Phil_Combs_Trane.docx | FOLDER: Interview Summary Documents ═══ Interview Summary Phil Combs | Trane Technologies Sr. Digital Services Engineer, CMVP, CEM, PMVA Conducted by Vi…"
+        }
+      ],
+      "inExpectedSourceFile": null
+    },
+    {
+      "claimId": "d3:90:$.productHonesty[1]",
       "jsonPath": "$.productHonesty[1]",
       "kind": "narrative",
       "text": "Roadmap / extends: automated PUC docket monitoring tied to portfolio impact; deep campus chargeback (district energy disaggregation, allocation logic, ERP paths); richer forecasting/M&V baselines; multi-year capital ROI ranking.",
@@ -3388,7 +4108,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:75:$.productHonesty[2]",
+      "claimId": "d3:91:$.productHonesty[2]",
       "jsonPath": "$.productHonesty[2]",
       "kind": "narrative",
       "text": "Hard boundary: CC spots and assists. It does not autonomously resolve disputes, secure credits, or replace human utility and executive politics.",
@@ -3433,7 +4153,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:76:$.productHonesty[3]",
+      "claimId": "d3:92:$.productHonesty[3]",
       "jsonPath": "$.productHonesty[3]",
       "kind": "narrative",
       "text": "Proof gaps: documented recovered-dollar case studies; optional net-new scans like long-held deposit recovery and confirmed water-invoice ingestion breadth.",
@@ -3478,7 +4198,7 @@
       "inExpectedSourceFile": null
     },
     {
-      "claimId": "d3:77:$.productHonesty[4]",
+      "claimId": "d3:93:$.productHonesty[4]",
       "jsonPath": "$.productHonesty[4]",
       "kind": "narrative",
       "text": "Positioning risk: investors and customers will ask whether identified errors become realized dollars. The product accelerates evidence, not guaranteed outcomes.",

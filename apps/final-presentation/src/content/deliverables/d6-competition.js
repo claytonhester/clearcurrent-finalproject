@@ -6,32 +6,33 @@ export const D6 = {
     productScope:
       'Clear Current is utility billing, tariff, and procurement intelligence — not HVAC optimization or building-automation analytics. For sophisticated healthcare and campus buyers, pitch as complementary to ROC / SkySpark / BrainBox-class stacks: outside-the-meter truth for finance and procurement; those systems stay the demand-side toolkit.',
     silentIncumbent:
-      'Before SaaS displaces anything, large portfolios often rely on outsourced energy-management firms plus spreadsheets — bill processors custodied the data before you arrived. Competitive reality is consultants + OEM reps + incumbent bill pay, not three logos alone.',
+      'Before SaaS displaces anything, large portfolios often rely on outsourced energy-management firms plus spreadsheets — bill processors custodied the data before you arrived. Competitive reality is consultants + OEM reps + incumbent bill pay, not three logos alone. JLL (Jamare Bates) described JLL Technologies actively building internal AI energy-management and utility-bill tooling on custodied client data—another enterprise “build first” pattern, not an automatic SaaS buyer.',
     partnershipNote:
-      'ENGIE-class operators: lead with bolt-on analytics and partnership where bill custody is locked—then expand scope at renewal, RFP, or when pilot-stage “AI” fails against drift and interpretation demand. Their moat is historical custody; yours is reliable NL intelligence on top.',
+      'ENGIE-class operators: lead with bolt-on analytics and partnership where bill custody is locked—then expand scope at renewal, RFP, or when pilot-stage “AI” fails against drift and interpretation demand. Their moat is historical custody; yours is reliable natural-language intelligence on top.',
   },
   marketStructure:
-    'The market is consolidating around three poles. None has built the conversational, AI-native intelligence layer Clear Current is building. Incumbents are buying distribution (Tango + WatchWire, Arcadia + RPD/Urjanet), not deepening intelligence — which is the window.',
+    'The market is consolidating around three poles. None has built the conversational, AI-native intelligence layer Clear Current is building. Incumbents are buying distribution (Tango + WatchWire, Arcadia + Urjanet), not deepening intelligence — which is the window. Enterprise ESG stacks are also adding agentic AI (e.g. Schneider Resource Advisor+ / Sera, early 2026) — that raises the bar for “AI” language without closing bill-level tariff truth + PUC monitoring in one product.',
   tldrBullets: [
     'Three poles: enterprise ESMP, AI-native data infra, services outsourcers — each optimizing distribution, not invoice intelligence depth.',
-    'M&A stacks custody and routes; it does not close the NL “what does this bill mean in dollars?” gap.',
-    'Position CC as outside-the-meter truth for finance and procurement — complementary to BAS / analytics stacks.',
+    'M&A stacks custody and routes; it does not close the natural-language “what does this bill mean in dollars?” gap.',
+    'Position CC as outside-the-meter truth for finance and procurement — complementary to BAS / analytics stacks (BrainBox/Trane = HVAC ops AI, not bill intelligence).',
+    'Deck hygiene: Arcadia means arcadia.com (utility data), not arcadia.io (healthcare). Urjanet is inside Arcadia — not a separate current peer.',
     'Silent incumbent is often consultants + spreadsheets + bill processors before any SaaS logo “wins.”',
   ],
   poles: [
     {
       id: 'esmp',
       name: 'Enterprise ESMP platforms',
-      examples: 'EnergyCAP, WatchWire',
+      examples: 'EnergyCAP, WatchWire (Tango), Schneider Resource Advisor+',
       thesis:
-        'Built for large portfolios. Sticky due to chargebacks and contracts. Users describe them as “glorified spreadsheets.”',
+        'Built for large portfolios. Sticky due to chargebacks and contracts. EnergyCAP remains the documented higher-ed bill-accounting incumbent; others skew CRE/ESG or global F500. Users still describe legacy UX as spreadsheet-era — even as vendors add AI marketing.',
     },
     {
       id: 'ai-native',
       name: 'AI-native data infrastructure',
-      examples: 'Arcadia',
+      examples: 'Arcadia (Arc / Urjanet)',
       thesis:
-        'Fortune 500 procurement and reporting. Data API, not intelligence layer. Cox Enterprises built their own dashboard on top.',
+        'Fortune 500 procurement and reporting. Normalized bill + interval data and APIs — not a full conversational bill-intelligence or chargeback layer. Cox Enterprises built their own dashboard on top.',
     },
     {
       id: 'services',
@@ -44,38 +45,41 @@ export const D6 = {
   competitors: [
     {
       name: 'EnergyCAP',
-      primaryMarket: 'Higher ed, government, healthcare — large portfolios',
-      pricing: '≈$50–75K/year for 1,500 meters via reseller',
+      primaryMarket:
+        'Higher ed, K-12, government — strongest documented campus bill-accounting fit; healthcare secondary',
+      pricing:
+        'Meter-based enterprise SaaS + options (e.g. OCR, services); ≈$50–75K/yr for ~1,500 meters cited via Texas State / reseller context',
       strengths: [
-        '20+ years of Higher Ed relationships',
-        'Reseller channels',
-        'Institutional familiarity',
+        'System-of-record positioning: bill capture, accrual, chargeback/GHG, ENERGY STAR — named campuses (e.g. KU, UCSD, CMU scale in public stories)',
+        'SOC 2 Type II + FedRAMP Low — procurement-grade vs most challengers',
+        'Wattics → SmartAnalytics (2022): interval/M&V bolt-on; deep campus chargeback workflows where submeters exist',
       ],
       weaknesses: [
         '“Outdated,” “glorified spreadsheet” (132 G2/Capterra reviews)',
         'Chargebacks and splits “hard to understand” — stickiest and most complained-about feature',
-        'No NL interface; no LLM layer',
+        'Watts AI (2025+) is public, but materials read as reporting/Q&A assist on a bills-first tree UX — not documented: PUC docket monitoring, dollar-ranked proactive alerts, or mature NL bill copilot',
         'Own 2026 survey: 76% of customers reactive — indicts platform proactivity',
       ],
       winCondition:
-        'Better chargeback experience + NL interface + one documented university recovery case. Not lost to attrition — lost to frustration + compelling alternative.',
+        'Avoid head-on chargeback replacement in year one where EnergyCAP owns district-energy math. Lead NL Q&A, proactive dollar-ranked alerts, and PUC/tariff truth — prove value in 90 days; pair with one documented recovery. Win frustration + capability gap, not logo swap by default.',
       quote:
         '“Chargebacks and splits are hard to understand. I tried to use the help, but it is lacking details.” — EnergyCAP G2 review',
     },
     {
       name: 'Arcadia',
-      primaryMarket: 'Fortune 500 corporate, hyperscalers (enterprise pivot Jan 2025)',
+      primaryMarket:
+        'Fortune 500 / enterprise data layer — arcadia.com utility-data company (not arcadia.io healthcare analytics)',
       pricing: 'No public pricing. Enterprise contract + API usage (LOW confidence)',
       strengths: [
         '$649M raised, last $1.5B valuation',
-        '9,500+ utilities via Arc Plug API',
-        'Urjanet + RPD acquisitions',
+        'Urjanet (2022) inside Arc — normalized bill + interval data at scale; Arc APIs',
+        '9,500+ utilities via data network (Arc Plug / platform narrative)',
       ],
       weaknesses: [
-        'No NL interface — dashboard + API only',
-        'Zero documented Higher Ed customers after 14 months',
-        'Senior PM role primarily migrating legacy Urjanet — not new features',
-        'No campus chargeback; no PUC monitoring',
+        'AI enterprise messaging real; public record still thin for mature conversational bill Q&A vs data/platform story',
+        'Weak documented higher-ed facilities traction in utility-bill context vs EnergyCAP',
+        'Migration/integration load post-Urjanet — decks that treat Urjanet as standalone are stale',
+        'No campus chargeback workflow; no PUC docket monitoring in public product record reviewed',
         'Trustpilot 2.6/5 (1,159 reviews) — Perch spinout pending',
         'Practitioner quote (Walt Taylor · Panda): variance work is still download-the-bills, not conversational intelligence.',
       ],
@@ -87,35 +91,36 @@ export const D6 = {
     {
       name: 'WatchWire (Tango)',
       primaryMarket:
-        'Institutional CRE, 500+ customers, 140+ countries; Brookfield named',
+        'CRE / portfolio sustainability — Tango-owned (2023); reporting and compliance-led',
       pricing: 'Not disclosed in available sources',
       strengths: [
         'Berkshire-backed via Tango (2023 acquisition)',
-        'GRESB, CDP, GRI reporting',
+        'GRESB, CDP, GRI reporting; building performance standards workflows',
       ],
       weaknesses: [
-        'Data infrastructure dependent on Arcadia’s Arc Plug API — not proprietary',
-        'No campus chargeback; no NL interface',
-        'No documented Higher Ed vertical',
+        'Public differentiation is sustainability/reporting — easy to over-read as deep bill-intelligence',
+        'Integration-led data; not a documented tariff-truth or NL bill-Q&A leader',
+        'No campus chargeback; limited higher-ed proof vs EnergyCAP',
       ],
       winCondition:
-        'Not a direct Higher Ed competitor. CRE is a future expansion. A WatchWire dissatisfied buyer cannot solve it by moving to Arcadia — same pipeline.',
+        'Parallel CRE track — not the primary higher-ed swap. Win where buyer needs dollar-level bill truth and regulatory foresight, not ESG dashboard parity alone.',
       quote: 'Gap flag: no primary interviewee mentioned WatchWire by name.',
     },
     {
       name: 'ENGIE Impact',
       primaryMarket:
-        'Large enterprise / multi-site — restaurants, retailers, manufacturers',
+        'Large enterprise / multi-site — restaurants, retailers, manufacturers; services-led',
       pricing:
         'Calibrated to labor avoidance — 4–6 accounting headcount replaced (Goldstein / Panda)',
       strengths: [
         '20-year data moat at accounts like Panda',
-        'Outsourced bill payment creates dependency',
+        'Outsourced bill payment + managed workflows create dependency',
       ],
       weaknesses: [
+        'Value prop is often services + process — not a transparent product-led AI bill stack for evaluators',
         'Client-facing AI nonexistent by design',
         'Threshold-based anomaly detection misses baseline drift',
-        'Uses Arcadia Arc API for electronic bills — not proprietary',
+        'Uses Arcadia-class feeds for electronic bills — not proprietary bill intelligence',
         'OCR coverage ≈90% — 10% gap structural',
       ],
       winCondition:
@@ -125,14 +130,15 @@ export const D6 = {
     },
     {
       name: 'Energy Toolbase',
-      primaryMarket: 'Commercial/industrial engineers and consultants',
-      pricing: 'Not documented',
-      strengths: ['Named by Phil Combs for rate/tariff analysis'],
+      primaryMarket:
+        'C&I solar/storage developers — tariff modeling, ETB Developer/Monitor/Controller; not enterprise bill system-of-record',
+      pricing: 'Public pricing signals on parts of stack; enterprise nuance limited',
+      strengths: [
+        'Strongest public tariff/rate engine in the DER project stack — named by Phil Combs for rate work',
+      ],
       weaknesses: [
-        'No NL interface',
-        'No billing anomaly detection',
-        'No PUC monitoring',
-        'No portfolio management',
+        'Category mismatch if placed beside campus finance bill intelligence — built for project economics, not portfolio utility accounting',
+        'No enterprise bill Q&A, chargeback, or PUC monitoring narrative',
       ],
       winCondition:
         'On Rate Analyst head-to-head: lead with regulatory intelligence differentiator. Combs: “super powerful… saves somebody like me so much time.”',
@@ -141,11 +147,15 @@ export const D6 = {
     },
     {
       name: 'BrainBox AI (Trane)',
-      primaryMarket: 'Building operations — HVAC optimization',
+      primaryMarket:
+        'Building operations — HVAC/BMS optimization (Trane acquisition closed Jan 2025)',
       pricing: 'Not documented',
-      strengths: ['AI-based HVAC scheduling using real-time sensors'],
+      strengths: [
+        'Documented generative assistant (ARIA) for building ops — not bill chat',
+        'AI-based HVAC scheduling using real-time sensors',
+      ],
       weaknesses: [
-        'Does not analyze utility bills, tariffs, or portfolio billing anomalies',
+        'Does not analyze utility bills, tariffs, or portfolio billing anomalies — do not conflate “building AI” with bill intelligence',
       ],
       winCondition:
         'Not a competitor — a referral endpoint. When Clear Current finds HVAC-driven drift, Trane/BrainBox is the resolution pathway.',
@@ -156,17 +166,17 @@ export const D6 = {
   whiteSpace: [
     {
       n: 1,
-      name: 'AI-native NL interface for energy analysis',
+      name: 'AI-native natural language interface for energy analysis',
       confidence: 'STRONG (primary + secondary)',
       status: 'FITS CURRENT PRODUCT',
-      why: 'Every primary interviewee requested or described an NL interface. Cox built their own rather than use Arcadia’s dashboard. No competitor has a documented equivalent.',
+      why: 'Every primary interviewee requested or described a natural language interface. Cox built their own rather than use Arcadia’s dashboard. No competitor has a documented equivalent.',
     },
     {
       n: 2,
       name: 'Forward-looking regulatory intelligence (PUC monitoring)',
       confidence: 'STRONG (primary + secondary)',
       status: 'EXTENDS ROADMAP',
-      why: 'Zero competitors. Combs calls it “super powerful.” Ohio PUC 275-day timelines; PPL Pennsylvania decision date 7/1/2026 hits universities on day one of new fiscal year.',
+      why: 'No profiled bill platform documents native PUC docket → dollar impact in public materials; adjacent tools (e.g. Halcyon, Stateside-class monitoring) sell regulation separately. Combs calls it “super powerful.” Ohio PUC 275-day timelines; PPL Pennsylvania decision date 7/1/2026 hits universities on day one of new fiscal year.',
     },
     {
       n: 3,
@@ -229,7 +239,7 @@ export const D6 = {
       n: 1,
       claim: 'Arcadia already does this, and they have $649M and 9,500 utilities.',
       response:
-        'Cox Enterprises chose Arcadia as a data feed, not a platform. Cox built their own dashboard. 14 months into enterprise, zero documented Higher Ed customers. No NL, no PUC, no chargeback. We compete on intelligence, not data breadth.',
+        'Mean arcadia.com (utility data), not arcadia.io. Urjanet is inside Arcadia — a data-normalization layer, not a campus chargeback or PUC copilot. Cox Enterprises chose Arcadia as a feed and built their own UI. Weak documented higher-ed bill traction vs EnergyCAP. We compete on conversational intelligence + regulatory foresight, not API breadth alone.',
     },
     {
       n: 2,
@@ -241,7 +251,7 @@ export const D6 = {
       n: 3,
       claim: 'EnergyCAP has deep relationships in Higher Ed. Universities won’t switch.',
       response:
-        'We don’t ask them to rip it out year one. We start with what EnergyCAP cannot do — proactive anomaly surfacing, NL Q&A, PUC monitoring — and prove value in 90 days before the replacement conversation.',
+        'We don’t ask them to rip it out year one. We start with what EnergyCAP cannot do — proactive anomaly surfacing, natural language Q&A, PUC monitoring — and prove value in 90 days before the replacement conversation.',
     },
     {
       n: 4,

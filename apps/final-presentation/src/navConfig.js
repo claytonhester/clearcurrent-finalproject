@@ -1,12 +1,12 @@
 /**
- * Nine deliverable tabs — Decision Brief + D1–D8.
+ * Executive deliverable tabs — Decision Brief + D1–D8.
  * Each tab is a self-contained artifact for leadership, rendered from structured data.
  */
 
 /** Shell copy: portal reads as a confidential briefing to founders, not a researcher microsite. */
 export const PORTAL_SHELL = {
   brandEyebrow: 'Leadership briefing',
-  brandSubtitle: 'Nine executive deliverables',
+  brandSubtitle: 'Executive deliverables',
   appendixNavLabel: 'Evidence & diligence',
   defaultTopBarEyebrow: 'Clear Current · Leadership briefing',
 }
@@ -112,9 +112,9 @@ export const DELIVERABLES = [
     shortLabel: 'D8',
     label: 'GTM Strategy Playbook',
     title: 'GTM Strategy Playbook',
-    artifact: 'Land–expand–retain + 90 days',
-    eyebrow: 'D8 · How to get the first ten accounts',
-    oneLiner: 'ICPs, pricing, coalition, and a 90-day execution plan.',
+    artifact: 'ICPs · tracks · pricing · deal killers',
+    eyebrow: 'D8 · How to get the first accounts',
+    oneLiner: 'Beachhead ICPs, land–expand–retain tracks, pricing, and what kills deals.',
   },
 ]
 
@@ -130,6 +130,12 @@ export const APPENDIX_ITEMS = [
     label: 'Interview roster',
     path: '/appendix/interviews',
     eyebrow: 'Evidence & diligence · Primary interviews',
+  },
+  {
+    id: 'app-chat-prompts',
+    label: 'User chat prompt library',
+    path: '/appendix/chat-prompts',
+    eyebrow: 'Evidence & diligence · User chat prompt library',
   },
   {
     id: 'app-companies',
@@ -180,6 +186,7 @@ export function appendixEyebrow(id) {
     'app-quote-bank': 'Evidence & diligence · Quote bank',
     'app-industry-cards': 'Evidence & diligence · Company cards',
     'app-roster': 'Evidence & diligence · Interview roster',
+    'app-chat-prompts': 'Evidence & diligence · User chat prompt library',
     'app-sources': 'Evidence & diligence · Sources & citations',
   }
   return map[id] ?? 'Evidence & diligence'

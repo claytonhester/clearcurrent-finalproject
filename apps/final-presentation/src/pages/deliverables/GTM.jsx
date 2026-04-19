@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Target, ShieldAlert, Handshake, AlertTriangle } from 'lucide-react'
+import { Target, ShieldAlert, AlertTriangle } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
 import { D8 } from '../../content/deliverables/d8-gtm.js'
 
@@ -19,65 +19,13 @@ export function GTM() {
     <article className="pb-16">
       <DeliverableHero tagline={D8.tagline} tldrBullets={D8.tldrBullets} />
 
-      {/* EXECUTIVE SCAN */}
-      <section className="mb-10">
-        <SectionLead kicker="Executive scan" title="Four sentences leadership leads with">
-          Give this spine in two minutes — then drill into ICPs and tactics below.
-        </SectionLead>
-        <ol className="space-y-2">
-          {D8.executiveScan.map((s, i) => (
-            <li
-              key={i}
-              className="flex gap-4 rounded-lg border-l-4 border-cc-yellow bg-white p-4 shadow-sm"
-            >
-              <span className="text-[24px] font-bold leading-none text-cc-yellow">
-                {i + 1}
-              </span>
-              <p className="text-[13px] leading-relaxed text-cc-dark-text">{s}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section className="mb-10 grid gap-4 lg:grid-cols-2">
-        <div className="rounded-lg border border-cc-navy bg-cc-navy p-5 text-white shadow-sm">
-          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
-            <Handshake className="h-3.5 w-3.5" />
-            {D8.oemChannel.title}
-          </div>
-          <p className="mt-2 text-[13px] leading-relaxed text-white/95">
-            {D8.oemChannel.body}
-          </p>
-          <ul className="mt-3 space-y-1 text-[12px] text-white/90">
-            {D8.oemChannel.associations.map((a) => (
-              <li key={a}>· {a}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="rounded-lg border border-cc-border bg-white p-5 shadow-sm">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-cc-navy">
-            Buyer calibration (avoid the wrong room)
-          </div>
-          <ul className="mt-3 space-y-4">
-            {D8.buyerCalibration.map((row) => (
-              <li key={row.vertical}>
-                <div className="text-[11px] font-bold text-cc-amber">{row.vertical}</div>
-                <p className="mt-1 text-[12.5px] leading-relaxed text-cc-dark-text">
-                  {row.guidance}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       {/* ICP TABS */}
       <section className="mb-10">
         <SectionLead
           kicker="Ideal customer profiles"
           title="Three ICPs, ranked by beachhead fit"
         >
-          Select an ICP to see champions, triggers, disqualifiers, and pilot structure.
+          One page per ICP — who matters, what opens the door, and pilot shape.
         </SectionLead>
         <div className="mb-4 flex flex-wrap gap-2">
           {D8.icps.map((p, i) => (
@@ -168,8 +116,8 @@ export function GTM() {
 
       {/* SALES PROCESS */}
       <section className="mb-10">
-        <SectionLead kicker="Sales process" title="Five stages and four deal killers">
-          Three simultaneous conversations. Missing any one stalls the deal.
+        <SectionLead kicker="Sales motion" title="The room — then what kills deals">
+          Champion, finance, and IT in parallel. Below: the four recurring deal killers.
         </SectionLead>
         <div className="mb-5 rounded-lg border border-cc-navy bg-cc-navy p-5 text-white">
           <div className="mb-1 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
@@ -180,34 +128,6 @@ export function GTM() {
             {D8.salesProcess.room}
           </p>
         </div>
-        <ol className="mb-5 space-y-3">
-          {D8.salesProcess.stages.map((s, i) => (
-            <li
-              key={i}
-              className="flex gap-4 rounded-lg border border-cc-border bg-white p-4 shadow-sm"
-            >
-              <div className="flex flex-shrink-0 flex-col items-center">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-cc-navy text-[12px] font-bold text-cc-yellow">
-                  {i + 1}
-                </span>
-                <span className="mt-1 text-[9px] font-bold uppercase tracking-wider text-cc-mid-gray">
-                  Stage
-                </span>
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h4 className="text-[14px] font-bold text-cc-navy">{s.stage}</h4>
-                  <span className="rounded bg-cc-yellow-soft px-2 py-0.5 text-[10px] font-semibold text-cc-navy">
-                    {s.duration}
-                  </span>
-                </div>
-                <p className="mt-1 text-[12.5px] leading-relaxed text-cc-dark-text">
-                  {s.what}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
         <div className="rounded-lg border border-cc-red/30 bg-cc-red/5 p-4">
           <h4 className="mb-3 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-red">
             <ShieldAlert className="h-3.5 w-3.5" />
@@ -229,21 +149,9 @@ export function GTM() {
 
       {/* PRICING */}
       <section className="mb-10">
-        <SectionLead kicker="Pricing" title="Three tiers, anchored to benchmarks">
-          Below UtiliSave contingency. Above EnergyCAP per-meter. Pricing as % of spend.
+        <SectionLead kicker="Pricing" title="Three tiers">
+          Pilot contingency → annual subscription → enterprise expansion. Cap the Spieler trap.
         </SectionLead>
-        <div className="mb-5 rounded-lg border border-cc-border bg-cc-light-gray/50 p-4">
-          <h4 className="mb-2 text-[10px] font-bold uppercase tracking-wider text-cc-navy">
-            Market benchmarks
-          </h4>
-          <ul className="space-y-1.5">
-            {D8.pricing.benchmarks.map((b, i) => (
-              <li key={i} className="text-[12px] leading-relaxed text-cc-dark-text">
-                · {b}
-              </li>
-            ))}
-          </ul>
-        </div>
         <div className="grid gap-3 md:grid-cols-3">
           {D8.pricing.tiers.map((t, i) => (
             <div
@@ -276,143 +184,18 @@ export function GTM() {
       </section>
 
       {/* CHANNEL */}
-      <section className="mb-10">
-        <SectionLead
-          kicker="Channel strategy"
-          title="Direct for the first five — then measured"
-        >
-          Referrals and peer channels earn awareness. Direct closes what must close before
-          May.
+      <section>
+        <SectionLead kicker="Channel" title="Direct first — introductions second">
+          Peer groups and OEM relationships are for reach, not for carrying the quarter.
         </SectionLead>
-        <div className="mb-4 rounded-lg border border-cc-navy bg-cc-navy p-5 text-white">
-          <div className="mb-1 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
-            <Handshake className="h-3.5 w-3.5" />
-            Posture
-          </div>
-          <p className="text-[13px] leading-relaxed">{D8.channel.posture}</p>
-        </div>
-        <div className="mb-4 grid gap-3 md:grid-cols-3">
-          {D8.channel.partners.map((p, i) => (
-            <div
-              key={i}
-              className="rounded-lg border border-cc-border bg-white p-4 shadow-sm"
-            >
-              <h4 className="text-[13px] font-bold text-cc-navy">{p.name}</h4>
-              <p className="mt-1 text-[12px] leading-relaxed text-cc-dark-text">
-                {p.play}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="flex items-start gap-2 rounded border-l-4 border-cc-amber bg-cc-amber/5 p-3">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-cc-amber">
-            Risk ·
-          </span>
-          <p className="text-[12px] leading-relaxed text-cc-dark-text">
+        <div className="rounded-lg border border-cc-border bg-white p-5 shadow-sm">
+          <p className="text-[13px] leading-relaxed text-cc-dark-text">
+            {D8.channel.posture}
+          </p>
+          <p className="mt-3 border-t border-cc-border pt-3 text-[12px] leading-relaxed text-cc-mid-gray">
+            <span className="font-bold text-cc-amber">Risk · </span>
             {D8.channel.risk}
           </p>
-        </div>
-      </section>
-
-      {/* ONBOARDING */}
-      <section className="mb-10">
-        <SectionLead kicker="Onboarding" title="Five obstacles, five responses">
-          The first 30 days determine whether champions become advocates.
-        </SectionLead>
-        <ol className="grid gap-3 md:grid-cols-2">
-          {D8.onboarding.map((o) => (
-            <li
-              key={o.n}
-              className="rounded-lg border border-cc-border bg-white p-4 shadow-sm"
-            >
-              <div className="flex items-baseline gap-2">
-                <span className="text-[20px] font-bold leading-none text-cc-yellow">
-                  {o.n}
-                </span>
-                <h4 className="text-[13px] font-bold text-cc-navy">{o.obstacle}</h4>
-              </div>
-              <p className="mt-1.5 text-[12px] leading-relaxed text-cc-dark-text">
-                {o.response}
-              </p>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      {/* 90-DAY PLAN */}
-      <section className="mb-10">
-        <SectionLead kicker="90-day plan" title="Four sprints, one precondition">
-          Without the proof point, weeks 1–4 create interest but not pilots.
-        </SectionLead>
-        <div className="mb-5 rounded-lg border border-cc-red/40 bg-cc-red/5 p-5">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-cc-red">
-            Precondition
-          </div>
-          <p className="mt-1 text-[13px] leading-relaxed text-cc-dark-text">
-            {D8.ninetyDayPlan.precondition}
-          </p>
-        </div>
-        <ol className="space-y-4">
-          {D8.ninetyDayPlan.weeks.map((w, i) => (
-            <li
-              key={i}
-              className="rounded-lg border border-cc-border bg-white p-5 shadow-sm"
-            >
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h4 className="text-[14px] font-bold text-cc-navy">
-                  <span className="mr-2 rounded bg-cc-navy px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
-                    {w.range}
-                  </span>
-                  {w.name}
-                </h4>
-              </div>
-              <ul className="mt-3 space-y-1.5">
-                {w.tasks.map((t, j) => (
-                  <li
-                    key={j}
-                    className="flex gap-2 text-[12px] leading-relaxed text-cc-dark-text"
-                  >
-                    <span className="font-bold text-cc-yellow">›</span>
-                    <span>{t}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-3 rounded bg-cc-green/10 p-2.5 text-[11.5px] leading-relaxed text-cc-dark-text">
-                <span className="font-bold text-cc-green">Target · </span>
-                {w.target}
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      {/* METRICS */}
-      <section>
-        <SectionLead kicker="Metrics that matter" title="Seven leading indicators">
-          Each metric has a target and its leading signal — so a bad quarter is visible
-          before it closes.
-        </SectionLead>
-        <div className="overflow-hidden rounded-lg border border-cc-border bg-white shadow-sm">
-          <table className="w-full text-left text-[11.5px]">
-            <thead className="bg-cc-navy text-white">
-              <tr>
-                <Th>#</Th>
-                <Th>Metric</Th>
-                <Th>Target</Th>
-                <Th>Leading indicator</Th>
-              </tr>
-            </thead>
-            <tbody>
-              {D8.metrics.map((m) => (
-                <tr key={m.n} className="border-t border-cc-border/60 align-top">
-                  <Td bold>{m.n}</Td>
-                  <Td bold>{m.name}</Td>
-                  <Td muted>{m.target}</Td>
-                  <Td muted>{m.leading}</Td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </section>
     </article>
@@ -434,7 +217,7 @@ function IcpDetail({ icp }) {
       <div className="mt-5 grid gap-4 md:grid-cols-3">
         <Panel title="Champions" tone="navy">
           <ul className="space-y-1">
-            {icp.champions.map((c, i) => (
+            {icp.champions.slice(0, 4).map((c, i) => (
               <li key={i} className="text-[11.5px] leading-snug text-cc-dark-text">
                 · {c}
               </li>
@@ -443,7 +226,7 @@ function IcpDetail({ icp }) {
         </Panel>
         <Panel title="Triggers" tone="green">
           <ul className="space-y-1">
-            {icp.triggers.map((t, i) => (
+            {icp.triggers.slice(0, 4).map((t, i) => (
               <li key={i} className="text-[11.5px] leading-snug text-cc-dark-text">
                 · {t}
               </li>
@@ -452,7 +235,7 @@ function IcpDetail({ icp }) {
         </Panel>
         <Panel title="Disqualifiers" tone="red">
           <ul className="space-y-1">
-            {icp.disqualifiers.map((d, i) => (
+            {icp.disqualifiers.slice(0, 4).map((d, i) => (
               <li key={i} className="text-[11.5px] leading-snug text-cc-dark-text">
                 × {d}
               </li>
@@ -508,25 +291,5 @@ function PilotRow({ label, value, wide }) {
       </dt>
       <dd className="mt-0.5 text-cc-dark-text">{value}</dd>
     </div>
-  )
-}
-
-function Th({ children }) {
-  return (
-    <th className="px-3 py-2 text-[10px] font-bold uppercase tracking-wider">
-      {children}
-    </th>
-  )
-}
-
-function Td({ children, bold, muted }) {
-  return (
-    <td
-      className={`px-3 py-3 text-[11.5px] leading-snug ${
-        bold ? 'font-bold text-cc-navy' : ''
-      } ${muted ? 'text-cc-mid-gray' : ''}`}
-    >
-      {children}
-    </td>
   )
 }

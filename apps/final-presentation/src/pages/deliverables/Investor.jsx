@@ -1,13 +1,5 @@
-import { AlertTriangle, ShieldCheck } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
 import { D7 } from '../../content/deliverables/d7-investor.js'
-
-const PRIORITY_COLORS = {
-  CRITICAL: 'bg-cc-red text-white',
-  HIGH: 'bg-cc-amber text-white',
-  MEDIUM: 'bg-cc-yellow text-cc-navy',
-  LOW: 'bg-cc-light-gray text-cc-mid-gray',
-}
 
 export function Investor() {
   return (
@@ -47,7 +39,7 @@ export function Investor() {
       {/* MARKET MATH */}
       <section className="mb-10">
         <SectionLead kicker="Market math" title="TAM / SAM / SOM — tiered, defensible">
-          Bottom-up build, government-sourced headline, and do-not-use list.
+          Bottom-up build and government-sourced headline.
         </SectionLead>
         <div className="mb-5 rounded-lg border border-cc-navy bg-cc-navy p-6 text-white shadow-sm">
           <div className="text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
@@ -127,24 +119,6 @@ export function Investor() {
               </table>
             </div>
           </div>
-        </div>
-
-        {/* DO NOT USE */}
-        <div className="mt-5 rounded-lg border border-cc-red/30 bg-cc-red/5 p-5">
-          <h4 className="mb-3 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-red">
-            <AlertTriangle className="h-3.5 w-3.5" />
-            Do-not-use claims
-          </h4>
-          <ul className="space-y-2 text-[12.5px] leading-relaxed text-cc-dark-text">
-            {D7.market.doNotUse.map((d, i) => (
-              <li key={i}>
-                <div className="font-semibold italic text-cc-red">
-                  &ldquo;{d.claim}&rdquo;
-                </div>
-                <div className="text-cc-mid-gray">Why · {d.why}</div>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
@@ -269,45 +243,6 @@ export function Investor() {
         </div>
       </section>
 
-      {/* OBJECTIONS */}
-      <section className="mb-10">
-        <SectionLead
-          kicker="Objection handling"
-          title="Seven likely pushbacks and honest responses"
-        >
-          Each answer names its own unresolved thread rather than pretending it doesn't
-          exist.
-        </SectionLead>
-        <ol className="space-y-3">
-          {D7.objections.map((o) => (
-            <li
-              key={o.n}
-              className="rounded-lg border border-cc-border bg-white p-5 shadow-sm"
-            >
-              <div className="flex items-start gap-4">
-                <span className="mt-0.5 inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-cc-navy text-sm font-bold text-cc-yellow">
-                  {o.n}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <blockquote className="text-[13.5px] italic leading-snug text-cc-red">
-                    Q · {o.q}
-                  </blockquote>
-                  <p className="mt-2 text-[13px] leading-relaxed text-cc-dark-text">
-                    <span className="font-semibold text-cc-navy">A · </span>
-                    {o.a}
-                  </p>
-                  {o.unresolved ? (
-                    <p className="mt-2 text-[11.5px] italic leading-relaxed text-cc-amber">
-                      Unresolved · {o.unresolved}
-                    </p>
-                  ) : null}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
-
       {/* MOAT */}
       <section className="mb-10">
         <SectionLead
@@ -335,52 +270,6 @@ export function Investor() {
             </div>
           ))}
         </div>
-      </section>
-
-      {/* GAPS */}
-      <section>
-        <SectionLead
-          kicker="Pre-raise gaps"
-          title="What to close before May — with owner and ask"
-        >
-          A punch list. Priority shown first.
-        </SectionLead>
-        <ul className="space-y-3">
-          {D7.gaps.map((g, i) => (
-            <li
-              key={i}
-              className="flex flex-col gap-3 rounded-lg border border-cc-border bg-white p-5 shadow-sm md:flex-row md:items-start"
-            >
-              <div className="flex items-center gap-2 md:flex-shrink-0">
-                <span
-                  className={`rounded px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
-                    PRIORITY_COLORS[g.priority] ?? ''
-                  }`}
-                >
-                  {g.priority}
-                </span>
-                <ShieldCheck className="h-4 w-4 text-cc-mid-gray" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <h4 className="text-[14px] font-bold text-cc-navy">{g.title}</h4>
-                <div className="mt-1 grid gap-x-4 gap-y-1 text-[11.5px] md:grid-cols-2">
-                  <div>
-                    <span className="font-semibold text-cc-mid-gray">Owner · </span>
-                    {g.owner}
-                  </div>
-                  <div>
-                    <span className="font-semibold text-cc-mid-gray">Timeline · </span>
-                    {g.timeline}
-                  </div>
-                </div>
-                <p className="mt-1.5 text-[12px] leading-relaxed text-cc-dark-text">
-                  <span className="font-semibold">Ask · </span>
-                  {g.ask}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
       </section>
     </article>
   )
