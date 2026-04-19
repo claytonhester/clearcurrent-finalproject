@@ -82,7 +82,7 @@ export function Calendar() {
                 {w.why}
               </p>
               <div className="mt-3 inline-flex rounded bg-cc-navy px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-cc-yellow">
-                Lead module · {w.module}
+                CC Product · {w.module}
               </div>
             </div>
           ))}
@@ -199,7 +199,7 @@ function MonthCell({ month }) {
       </ul>
       <div className="mt-3 rounded bg-cc-navy/5 px-2 py-1.5 text-[11px]">
         <div className="text-[9px] font-bold uppercase tracking-wider text-cc-navy">
-          Lead module
+          CC Product
         </div>
         <div className="font-semibold text-cc-navy">{month.leadModule}</div>
       </div>

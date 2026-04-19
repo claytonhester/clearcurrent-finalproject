@@ -123,7 +123,7 @@ export function Market() {
       <section className="mb-10">
         <SectionLead
           kicker="Module × vertical fit"
-          title="Which product surface maps to which buyer"
+          title="Which CC product maps to which buyer"
         >
           Columns show where each module has strongest pull (1 = weak, 5 = strong).
         </SectionLead>
@@ -160,7 +160,7 @@ export function Market() {
       {/* PERSONAS */}
       <section className="mb-10">
         <SectionLead kicker="Personas" title="Who signs, who champions, who vetoes">
-          Five personas with entry posture and surface mapping.
+          Five personas with entry posture and CC product mapping.
         </SectionLead>
         <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {D5.personas.map((p) => (
@@ -179,7 +179,7 @@ export function Market() {
               </div>
               <dl className="mt-2 space-y-1 text-[11.5px]">
                 <Meta label="Trigger" value={p.trigger} />
-                <Meta label="Surface" value={p.surface} />
+                <Meta label="CC Product" value={p.surface} />
               </dl>
               {p.quote ? (
                 <blockquote className="mt-2 border-l-2 border-cc-yellow bg-cc-yellow-soft/40 px-2 py-1.5 text-[11.5px] italic leading-snug text-cc-dark-text">

@@ -3,9 +3,9 @@ export const D3 = {
   tagline:
     'Five reactive workflows where late discovery, manual multi-source investigation, and brittle resolution leave teams flying blind until dollars and credibility are already lost.',
   openingProblem:
-    'Each map is built from primary interviews first and secondary research second, with product stages naming Clear Current surfaces (Rate Analyst, Energy HQ, Deal Center) and tiers (Dashboard push, Chat). The recurring pattern is backward-looking, threshold-based detection that misses baseline drift, expertise concentrated in people who may leave, and resolution that is political, slow, and often partial — while CC’s honest position is spot-and-assist with human-in-the-loop completion.',
+    'Each map is built from primary interviews first and secondary research second, with product stages naming Clear Current products (Rate Analyst, Energy HQ, Deal Center) and tiers (Dashboard push, Chat). The recurring pattern is backward-looking, threshold-based detection that misses baseline drift, expertise concentrated in people who may leave, and resolution that is political, slow, and often partial — while CC’s honest position is spot-and-assist with human-in-the-loop completion.',
   tldrBullets: [
-    'Built interviews-first: stages name real CC surfaces (Rate Analyst, Energy HQ, Deal Center) and push vs chat tiers.',
+    'Built interviews-first: stages name real CC products (Rate Analyst, Energy HQ, Deal Center) and push vs chat tiers.',
     'Status quo is backward-looking, threshold-based detection — easy to miss baseline drift until money is already gone.',
     'Investigation is multi-source and expert-heavy; resolution is often political, slow, and partial.',
     'Honest CC posture: spot-and-assist with human-in-the-loop completion — not autonomous recovery promises.',
@@ -44,7 +44,7 @@ export const D3 = {
       ],
       stagesWithCC: [
         {
-          name: 'CC surface: Rate Analyst — Dashboard + Chat',
+          name: 'CC Product: Rate Analyst — Dashboard + Chat',
           capability:
             'Ingest and associate invoices to sites/meters; push ranked anomalies; NL investigation with baselines and annotated history; generate an evidence package for disputes.',
           bounds:
@@ -88,7 +88,7 @@ export const D3 = {
       ],
       stagesWithCC: [
         {
-          name: 'CC surface: Energy HQ + Rate Analyst — Dashboard primary, Chat for triage',
+          name: 'CC Product: Energy HQ + Rate Analyst — Dashboard primary, Chat for triage',
           capability:
             'Portfolio anomaly alerts prioritized by dollar impact. NL triage and annotated history. Evidence packaging and financial framing for escalation.',
           bounds:
@@ -132,7 +132,7 @@ export const D3 = {
       ],
       stagesWithCC: [
         {
-          name: 'CC surface: Rate Analyst + Energy HQ — Dashboard + Chat',
+          name: 'CC Product: Rate Analyst + Energy HQ — Dashboard + Chat',
           capability:
             'Stronger meter-to-building association, validation, anomaly flags, building-level consumption and cost views, and role-shaped NL queries from one dataset.',
           bounds:
@@ -176,7 +176,7 @@ export const D3 = {
       ],
       stagesWithCC: [
         {
-          name: 'CC surface: Rate Analyst — Dashboard + Chat',
+          name: 'CC Product: Rate Analyst — Dashboard + Chat',
           capability:
             'Vision in the map: docket-aware alerts with portfolio impact, instant scenario Q&A, and CFO-ready variance memos tied to tariff logic.',
           bounds:
@@ -220,7 +220,7 @@ export const D3 = {
       ],
       stagesWithCC: [
         {
-          name: 'CC surface: Rate Analyst + Deal Center — Dashboard + Chat',
+          name: 'CC Product: Rate Analyst + Deal Center — Dashboard + Chat',
           capability:
             'Budget-open briefings from monitored portfolio context; NL scenario modeling for finance and ops; gas/strip context alongside consumption via Deal Center; documented assumptions for CFO questions.',
           bounds:

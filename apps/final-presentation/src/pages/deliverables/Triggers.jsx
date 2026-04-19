@@ -210,7 +210,6 @@ function TriggerCard({ trigger }) {
           >
             {trigger.type}
           </span>
-          <span className="font-mono text-[10px] text-cc-mid-gray">{trigger.id}</span>
         </div>
         <div className="flex items-center gap-1">
           <UrgencyPill urgency={trigger.urgency} />
@@ -234,7 +233,7 @@ function TriggerCard({ trigger }) {
       </p>
       <dl className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1 border-t border-cc-border/60 pt-2 text-[11px]">
         <Meta label="Seasonality" value={trigger.seasonality} />
-        <Meta label="CC surface" value={trigger.ccSurface} />
+        <Meta label="CC Product" value={trigger.ccSurface} />
         <Meta
           label="Verticals"
           value={trigger.verticals.map((v) => VERTICAL_LABELS[v] ?? v).join(' · ')}
