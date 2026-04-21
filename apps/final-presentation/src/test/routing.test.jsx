@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
 import { FiltersProvider } from '../context/FiltersContext.jsx'
-import { DELIVERABLES, APPENDIX_ITEMS } from '../navConfig.js'
+import { DELIVERABLES, APPENDIX_ITEMS, RESEARCH_ASSISTANT } from '../navConfig.js'
 
 const LAZY = {
   '/': lazy(() =>
@@ -36,6 +36,9 @@ const LAZY = {
   ),
   '/gtm': lazy(() =>
     import('../pages/deliverables/GTM.jsx').then((m) => ({ default: m.GTM })),
+  ),
+  [RESEARCH_ASSISTANT.path]: lazy(() =>
+    import('../pages/ChatPage.jsx').then((m) => ({ default: m.ChatPage })),
   ),
   '/appendix/quotes': lazy(() =>
     import('../pages/appendix/QuoteBank.jsx').then((m) => ({ default: m.QuoteBank })),
@@ -76,7 +79,11 @@ function Harness({ path }) {
 }
 
 describe('routing smoke test', () => {
-  const paths = [...DELIVERABLES.map((d) => d.path), ...APPENDIX_ITEMS.map((a) => a.path)]
+  const paths = [
+    ...DELIVERABLES.map((d) => d.path),
+    RESEARCH_ASSISTANT.path,
+    ...APPENDIX_ITEMS.map((a) => a.path),
+  ]
 
   it.each(paths)('renders %s without throwing', async (path) => {
     const { container, findByText } = render(<Harness path={path} />)

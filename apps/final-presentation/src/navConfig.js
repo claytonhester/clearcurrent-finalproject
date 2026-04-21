@@ -118,6 +118,17 @@ export const DELIVERABLES = [
   },
 ]
 
+/** Shown in the main deliverables list directly under D8 — full-page research chat (not a deliverable doc). */
+export const RESEARCH_ASSISTANT = {
+  id: 'research-assistant',
+  path: '/chat',
+  shortLabel: 'RA',
+  label: 'Research Assistant',
+  title: 'Research Assistant',
+  eyebrow: 'Research Assistant · Full page',
+  oneLiner: 'Ask the AI assistant about any deliverable, interview, or research file.',
+}
+
 export const APPENDIX_ITEMS = [
   {
     id: 'app-quotes',
@@ -162,6 +173,31 @@ export function getDeliverableNeighbors(pathname) {
   }
 }
 
+/**
+ * Like getDeliverableNeighbors, but the walk continues from D8 → full-page Research Assistant (/chat), and
+ * /chat has previous = D8. Appendix routes still get no walk footer (current: null).
+ */
+export function getWalkNavNeighbors(pathname) {
+  const idx = DELIVERABLES.findIndex((d) => d.path === pathname)
+  if (idx !== -1) {
+    const current = DELIVERABLES[idx]
+    const prev = idx > 0 ? DELIVERABLES[idx - 1] : null
+    const next =
+      idx < DELIVERABLES.length - 1
+        ? DELIVERABLES[idx + 1]
+        : RESEARCH_ASSISTANT
+    return { prev, next, current }
+  }
+  if (pathname === RESEARCH_ASSISTANT.path) {
+    return {
+      prev: DELIVERABLES[DELIVERABLES.length - 1] ?? null,
+      next: null,
+      current: RESEARCH_ASSISTANT,
+    }
+  }
+  return { prev: null, next: null, current: null }
+}
+
 export function getDeliverableByPath(pathname) {
   return DELIVERABLES.find((d) => d.path === pathname) ?? null
 }
@@ -171,6 +207,7 @@ export function getDocumentTitle(pathname) {
   const brand = 'Clear Current'
   const d = DELIVERABLES.find((x) => x.path === pathname)
   if (d) return `${d.title} · ${brand}`
+  if (pathname === RESEARCH_ASSISTANT.path) return `${RESEARCH_ASSISTANT.title} · ${brand}`
   const a = APPENDIX_ITEMS.find((x) => x.path === pathname)
   if (a) return `${a.label} · ${brand}`
   return `${brand} · Leadership briefing`

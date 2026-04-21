@@ -59,5 +59,16 @@ export default tseslint.config(
       ],
     },
   },
+  {
+    // Node-runtime files: serverless functions + build scripts
+    files: ['api/**/*.js', 'scripts/**/*.{js,mjs}', 'vite-plugin-*.{js,mjs}'],
+    languageOptions: {
+      globals: { ...globals.node },
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+    },
+  },
   prettier,
 )

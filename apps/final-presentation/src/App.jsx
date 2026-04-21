@@ -56,6 +56,9 @@ const AppendixCompanies = lazy(() =>
 const AppendixSources = lazy(() =>
   import('./pages/appendix/Sources.jsx').then((m) => ({ default: m.Sources })),
 )
+const ChatPage = lazy(() =>
+  import('./pages/ChatPage.jsx').then((m) => ({ default: m.ChatPage })),
+)
 
 function PageFallback() {
   return (
@@ -98,6 +101,7 @@ export default function App() {
               />
               <Route path="d7-investor" element={<Navigate to="/investor" replace />} />
               <Route path="d8-gtm" element={<Navigate to="/gtm" replace />} />
+              <Route path="chat" element={<ChatPage />} />
               <Route path="appendix">
                 <Route path="quotes" element={<AppendixQuotes />} />
                 <Route path="interviews" element={<AppendixInterviews />} />

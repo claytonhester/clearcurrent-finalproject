@@ -35,3 +35,6 @@ out
 # Python
 __pycache__/
 *.py[cod]
+
+# Generated chat retrieval index (rebuilt on deploy / by `npm run build:research-index`)
+apps/final-presentation/api/_data/research-index.json

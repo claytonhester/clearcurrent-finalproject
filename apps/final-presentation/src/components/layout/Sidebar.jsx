@@ -1,5 +1,10 @@
 import { NavLink } from 'react-router-dom'
-import { APPENDIX_ITEMS, DELIVERABLES, PORTAL_SHELL } from '../../navConfig.js'
+import {
+  APPENDIX_ITEMS,
+  DELIVERABLES,
+  PORTAL_SHELL,
+  RESEARCH_ASSISTANT,
+} from '../../navConfig.js'
 
 export function Sidebar() {
   return (
@@ -25,6 +30,9 @@ export function Sidebar() {
                 <DeliverableLink item={d} />
               </li>
             ))}
+            <li key={RESEARCH_ASSISTANT.id}>
+              <DeliverableLink item={RESEARCH_ASSISTANT} />
+            </li>
           </ul>
         </div>
         <AppendixSection items={APPENDIX_ITEMS} />
@@ -55,13 +63,15 @@ function DeliverableLink({ item }) {
           </span>
           <span className="min-w-0 flex-1 leading-snug">
             <span className="block font-semibold">{item.label}</span>
-            <span
-              className={`block text-[11px] leading-snug ${
-                isActive ? 'text-white/70' : 'text-cc-mid-gray'
-              }`}
-            >
-              {item.artifact}
-            </span>
+            {item.artifact ? (
+              <span
+                className={`block text-[11px] leading-snug ${
+                  isActive ? 'text-white/70' : 'text-cc-mid-gray'
+                }`}
+              >
+                {item.artifact}
+              </span>
+            ) : null}
           </span>
         </>
       )}

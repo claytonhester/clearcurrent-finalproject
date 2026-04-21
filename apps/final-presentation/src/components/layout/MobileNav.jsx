@@ -1,6 +1,11 @@
 import { NavLink } from 'react-router-dom'
 import { X } from 'lucide-react'
-import { APPENDIX_ITEMS, DELIVERABLES, PORTAL_SHELL } from '../../navConfig.js'
+import {
+  APPENDIX_ITEMS,
+  DELIVERABLES,
+  PORTAL_SHELL,
+  RESEARCH_ASSISTANT,
+} from '../../navConfig.js'
 
 export function MobileNav({ open, onClose }) {
   if (!open) return null
@@ -34,7 +39,7 @@ export function MobileNav({ open, onClose }) {
               Deliverables
             </div>
             <ul className="space-y-0.5">
-              {DELIVERABLES.map((item) => (
+              {[...DELIVERABLES, RESEARCH_ASSISTANT].map((item) => (
                 <li key={item.id}>
                   <NavLink
                     to={item.path}
@@ -61,13 +66,15 @@ export function MobileNav({ open, onClose }) {
                         </span>
                         <span className="min-w-0 flex-1 leading-snug">
                           <span className="block font-semibold">{item.label}</span>
-                          <span
-                            className={`block text-[11px] ${
-                              isActive ? 'text-white/70' : 'text-cc-mid-gray'
-                            }`}
-                          >
-                            {item.artifact}
-                          </span>
+                          {item.artifact ? (
+                            <span
+                              className={`block text-[11px] ${
+                                isActive ? 'text-white/70' : 'text-cc-mid-gray'
+                              }`}
+                            >
+                              {item.artifact}
+                            </span>
+                          ) : null}
                         </span>
                       </>
                     )}

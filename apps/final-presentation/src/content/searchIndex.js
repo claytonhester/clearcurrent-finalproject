@@ -1,4 +1,4 @@
-import { APPENDIX_ITEMS, DELIVERABLES } from '../navConfig.js'
+import { APPENDIX_ITEMS, DELIVERABLES, RESEARCH_ASSISTANT } from '../navConfig.js'
 
 export const SEARCH_INDEX = [
   {
@@ -118,6 +118,23 @@ export const SEARCH_INDEX = [
     keywords: ['d8', 'gtm', 'playbook', 'icp', 'pilot', 'sales', '/gtm'],
   },
   {
+    path: RESEARCH_ASSISTANT.path,
+    label: 'Research Assistant (full page)',
+    description:
+      'AI chat over the same research as the portal—deliverables, interviews, and secondary data',
+    keywords: [
+      'assistant',
+      'ai',
+      'llm',
+      'chat',
+      'questions',
+      'research',
+      'rag',
+      'corpus',
+      '/chat',
+    ],
+  },
+  {
     path: '/appendix/quotes',
     label: 'Evidence & diligence · Quote bank',
     description: 'Verbatim named quotes from primary interviews',
@@ -191,6 +208,12 @@ export function getSearchCatalog() {
       keywords: [],
     })
   }
+  byPath.set(RESEARCH_ASSISTANT.path, {
+    path: RESEARCH_ASSISTANT.path,
+    label: RESEARCH_ASSISTANT.label,
+    kind: 'deliverable',
+    keywords: [],
+  })
   for (const a of APPENDIX_ITEMS) {
     byPath.set(a.path, {
       path: a.path,
@@ -215,6 +238,7 @@ export function getSearchCatalog() {
 
   const order = [
     ...DELIVERABLES.map((d) => d.path),
+    RESEARCH_ASSISTANT.path,
     ...APPENDIX_ITEMS.map((a) => a.path),
   ]
   return order.map((p) => byPath.get(p)).filter(Boolean)

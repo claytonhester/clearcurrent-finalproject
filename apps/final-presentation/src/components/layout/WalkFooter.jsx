@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { getDeliverableNeighbors } from '../../navConfig.js'
+import { getWalkNavNeighbors } from '../../navConfig.js'
 
 export function WalkFooter() {
   const { pathname } = useLocation()
-  const { prev, next, current } = getDeliverableNeighbors(pathname)
+  const { prev, next, current } = getWalkNavNeighbors(pathname)
   if (!current) return null
 
   return (

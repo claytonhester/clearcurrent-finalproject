@@ -1,20 +1,31 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Printer, Search, Menu } from 'lucide-react'
-import { getAppendixByPath, getDeliverableByPath, PORTAL_SHELL } from '../../navConfig.js'
+import {
+  getAppendixByPath,
+  getDeliverableByPath,
+  PORTAL_SHELL,
+  RESEARCH_ASSISTANT,
+} from '../../navConfig.js'
 import { SiteSearch } from '../shared/SiteSearch.jsx'
 import { MobileNav } from './MobileNav.jsx'
+import { useFullPageChatContext } from '../../context/FullPageChatContext.jsx'
 
 export function TopBar() {
   const { pathname } = useLocation()
+  const { fullPageChatControls } = useFullPageChatContext()
   const [searchOpen, setSearchOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const deliverable = getDeliverableByPath(pathname)
   const appendix = getAppendixByPath(pathname)
-  const eyebrow =
-    deliverable?.eyebrow ?? appendix?.eyebrow ?? PORTAL_SHELL.defaultTopBarEyebrow
-  const label = deliverable?.label ?? appendix?.label ?? 'Portal'
+  const isChatPage = pathname === RESEARCH_ASSISTANT.path
+  const eyebrow = isChatPage
+    ? RESEARCH_ASSISTANT.eyebrow
+    : (deliverable?.eyebrow ?? appendix?.eyebrow ?? PORTAL_SHELL.defaultTopBarEyebrow)
+  const label = isChatPage
+    ? RESEARCH_ASSISTANT.label
+    : (deliverable?.label ?? appendix?.label ?? 'Portal')
 
   useEffect(() => {
     function onKey(e) {
@@ -43,7 +54,24 @@ export function TopBar() {
           <div className="truncate text-[10px] font-bold uppercase tracking-wider text-cc-mid-gray">
             {eyebrow}
           </div>
-          <div className="truncate text-[13px] font-semibold text-cc-navy">{label}</div>
+          <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+            <div className="min-w-0 truncate text-[13px] font-semibold text-cc-navy">{label}</div>
+            {isChatPage && fullPageChatControls ? (
+              <>
+                <span className="inline-flex max-w-full shrink-0 items-center gap-1.5 rounded-full bg-cc-yellow-soft px-2 py-0.5 text-xs font-medium text-cc-navy">
+                  <span className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-cc-yellow" />
+                  <span className="truncate">{fullPageChatControls.topicLabel}</span>
+                </span>
+                <button
+                  type="button"
+                  onClick={fullPageChatControls.onSwitchTopic}
+                  className="shrink-0 text-xs text-cc-mid-gray underline-offset-2 hover:text-cc-navy hover:underline"
+                >
+                  Switch topic
+                </button>
+              </>
+            ) : null}
+          </div>
         </div>
 
         <button
