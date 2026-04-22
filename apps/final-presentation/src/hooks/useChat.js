@@ -156,10 +156,12 @@ export function useChat({ topicId, persistenceKey = null }) {
         role: 'assistant',
         content: '',
         model: null,
+        requestId: null,
+        retrievalFailed: null,
         retrieved: [],
       }
 
-      const history = messages.map((m) => ({ role: m.role, content: m.content }))
+      const history = messagesRef.current.map((m) => ({ role: m.role, content: m.content }))
       setMessages((prev) => [...prev, userMsg, assistantMsg])
       setIsStreaming(true)
 
@@ -219,6 +221,8 @@ export function useChat({ topicId, persistenceKey = null }) {
                   next[next.length - 1] = {
                     ...last,
                     model: payload.model,
+                    requestId: payload.requestId ?? null,
+                    retrievalFailed: payload.retrievalFailed ?? null,
                     retrieved: payload.retrieved || [],
                   }
                 }
@@ -264,7 +268,7 @@ export function useChat({ topicId, persistenceKey = null }) {
         setIsStreaming(false)
       }
     },
-    [isStreaming, messages, topicId],
+    [isStreaming, topicId],
   )
 
   const stop = useCallback(() => {

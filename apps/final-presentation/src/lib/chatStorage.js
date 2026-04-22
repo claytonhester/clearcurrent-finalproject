@@ -26,6 +26,8 @@ function serializeMessagesForStorage(messages) {
     role: m.role,
     content: m.content,
     ...(m.model != null && { model: m.model }),
+    ...(m.requestId != null && { requestId: m.requestId }),
+    ...(m.retrievalFailed != null && { retrievalFailed: m.retrievalFailed }),
     ...(Array.isArray(m.retrieved) && m.retrieved.length
       ? { retrieved: m.retrieved }
       : {}),

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { safeExternalLinkHref } from '../../lib/safeUrl.js'
 
 /**
  * MessageList — scrolling transcript of chat messages with streaming.
@@ -133,16 +134,22 @@ function ChatMarkdown({ isUser, children }) {
             </ol>
           ),
           li: ({ children: c }) => <li className="leading-snug">{c}</li>,
-          a: ({ href, children: c }) => (
-            <a
-              href={href}
-              className={isUser ? 'text-cc-yellow' : 'text-cc-navy'}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {c}
-            </a>
-          ),
+          a: ({ href, children: c }) => {
+            const safe = safeExternalLinkHref(href)
+            if (!safe) {
+              return <span className="underline decoration-dotted">{c}</span>
+            }
+            return (
+              <a
+                href={safe}
+                className={isUser ? 'text-cc-yellow' : 'text-cc-navy'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {c}
+              </a>
+            )
+          },
           code: ({ className, children: c, ...props }) => {
             const isBlock = /language-/.test(String(className || ''))
             if (isBlock) {

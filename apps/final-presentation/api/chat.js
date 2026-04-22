@@ -13,7 +13,7 @@
  * }
  *
  * Streams a Claude response as Server-Sent Events:
- *   event: meta   data: { model, retrieved: [{label, sourceId}, ...] }
+ *   event: meta   data: { requestId, model, retrievalFailed, retrieved: [{...}, ...] }
  *   event: token  data: { text }  (when output hits max length, a final token may
  *   carry a short “ask a follow-up” note)
  *   event: done   data: {}
@@ -35,13 +35,31 @@ import { buildSystemPrompt, formatContext } from './_lib/prompts.js'
 const rateBuckets = new Map()
 const RATE_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 const RATE_MAX = 60 // 60 messages per IP per hour (generous)
+const RATE_MAX_TRACKED_IPS = 5000
+
+/** Vercel sets this to the real client; prefer over raw X-Forwarded-For. */
+function clientIp(req) {
+  const v = req.headers['x-vercel-forwarded-for']?.split(',')[0]?.trim()
+  if (v) return v
+  return (
+    req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
+    req.headers['x-real-ip'] ||
+    req.socket?.remoteAddress ||
+    'unknown'
+  )
+}
 
 function rateLimit(ip) {
+  if (rateBuckets.size > RATE_MAX_TRACKED_IPS) {
+    const first = rateBuckets.keys().next().value
+    if (first !== undefined) rateBuckets.delete(first)
+  }
   const now = Date.now()
   const bucket = rateBuckets.get(ip) || []
   const recent = bucket.filter((t) => now - t < RATE_WINDOW_MS)
   if (recent.length >= RATE_MAX) return false
   recent.push(now)
+  if (rateBuckets.has(ip)) rateBuckets.delete(ip)
   rateBuckets.set(ip, recent)
   return true
 }
@@ -64,13 +82,13 @@ function userFacingAnthropicError(err) {
   const blob = `${raw} ${type} ${JSON.stringify(errObj).slice(0, 400)}`.toLowerCase()
 
   if (status === 401) {
-    return 'Anthropic rejected the API key. Create a new key in the Anthropic Console and set ANTHROPIC_API_KEY (local .env in apps/final-presentation/ or Vercel env).'
+    return 'The chat service could not authenticate with the model provider. Check the API key in the deployment environment and try again.'
   }
   if (status === 403) {
     return 'This API key is not allowed to use that model or API. Check organization access in the Anthropic Console.'
   }
   if (status === 404) {
-    return 'The model was not found for this request. The configured model name may be wrong or not enabled for your account—check api/_lib/routing.js and the Console.'
+    return 'The requested model is not available for this API key. Check your Anthropic project settings and the model name configured for this app.'
   }
   if (status === 429) {
     return 'Anthropic rate-limited the request. Wait a minute, or check rate limits in the Console.'
@@ -95,8 +113,11 @@ function userFacingAnthropicError(err) {
   if (raw && raw.length < 220) {
     return raw
   }
-  return 'The model request failed. Check your Anthropic API key, account billing, and network, then try again.'
+  return 'The model request could not be completed. If this continues, check billing, API access, and try again in a few minutes.'
 }
+
+const MAX_RAW_BODY_CHARS = 320_000
+const MAX_HISTORY_ITEMS = 80
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -113,19 +134,18 @@ export default async function handler(req, res) {
     return
   }
 
-  const ip =
-    req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
-    req.headers['x-real-ip'] ||
-    req.socket?.remoteAddress ||
-    'unknown'
-
-  if (!rateLimit(ip)) {
-    res.status(429).json({ error: 'Rate limit reached. Try again later.' })
+  const cl = req.headers['content-length']
+  if (cl && Number(cl) > MAX_RAW_BODY_CHARS) {
+    res.status(413).json({ error: 'Request body too large' })
     return
   }
 
   let body = req.body
   if (typeof body === 'string') {
+    if (body.length > MAX_RAW_BODY_CHARS) {
+      res.status(413).json({ error: 'Request body too large' })
+      return
+    }
     try {
       body = JSON.parse(body)
     } catch {
@@ -136,12 +156,35 @@ export default async function handler(req, res) {
   body = body || {}
   const { message, history = [], topicId = 'all' } = body
 
+  if (Array.isArray(history) && history.length > MAX_HISTORY_ITEMS) {
+    res.status(400).json({ error: 'Too many history items' })
+    return
+  }
+  let historyChars = 0
+  if (Array.isArray(history)) {
+    for (const m of history) {
+      if (m && typeof m.content === 'string') {
+        historyChars += m.content.length
+        if (historyChars > 150_000) {
+          res.status(400).json({ error: 'History payload is too large' })
+          return
+        }
+      }
+    }
+  }
+
   if (!message || typeof message !== 'string' || message.trim().length === 0) {
     res.status(400).json({ error: 'Missing or empty `message`' })
     return
   }
   if (message.length > 4000) {
     res.status(400).json({ error: 'Message too long (max 4000 characters)' })
+    return
+  }
+
+  const ip = clientIp(req)
+  if (!rateLimit(ip)) {
+    res.status(429).json({ error: 'Rate limit reached. Try again later.' })
     return
   }
 
@@ -223,7 +266,9 @@ export default async function handler(req, res) {
 
   res.write(
     sseLine('meta', {
+      requestId,
       model,
+      retrievalFailed: Boolean(retrievalError),
       retrieved: retrieved.map((r) => ({
         sourceId: r.sourceId,
         sourceLabel: r.sourceLabel,
@@ -232,6 +277,16 @@ export default async function handler(req, res) {
     }),
   )
 
+  const abortCtrl = new AbortController()
+  const onRequestClose = () => {
+    try {
+      if (!res.writableEnded) abortCtrl.abort()
+    } catch {
+      /* ignore */
+    }
+  }
+  req.on('close', onRequestClose)
+
   const client = new Anthropic({ apiKey })
   const streamStartedAt = Date.now()
 
@@ -239,13 +294,16 @@ export default async function handler(req, res) {
     // Anthropic Messages API accepts `system` as a plain string OR an array of
     // text blocks. We use the plain string form because it's the canonical
     // shape and avoids any chance of a malformed text block reaching the API.
-    const stream = await client.messages.create({
-      model,
-      max_tokens: maxOutputTokens,
-      system: systemPrompt,
-      messages,
-      stream: true,
-    })
+    const stream = await client.messages.create(
+      {
+        model,
+        max_tokens: maxOutputTokens,
+        system: systemPrompt,
+        messages,
+        stream: true,
+      },
+      { signal: abortCtrl.signal },
+    )
 
     let outChars = 0
     let lastStopReason = null
@@ -288,21 +346,36 @@ export default async function handler(req, res) {
       }),
     )
   } catch (err) {
-    console.error(
-      JSON.stringify({
-        event: 'chat_anthropic_error',
-        ...logBase,
-        retrieved: retrieved.length,
-        totalRequestMs: Date.now() - tRequestStart,
-        err: (err && err.message) || String(err),
-      }),
-    )
-    res.write(
-      sseLine('error', {
-        message: userFacingAnthropicError(err),
-      }),
-    )
+    const isAbort = err?.name === 'AbortError' || err?.cause?.name === 'AbortError'
+    if (isAbort) {
+      console.log(
+        JSON.stringify({
+          event: 'chat_request_aborted',
+          requestId,
+          topicId: topic.id,
+          totalRequestMs: Date.now() - tRequestStart,
+        }),
+      )
+    } else {
+      console.error(
+        JSON.stringify({
+          event: 'chat_anthropic_error',
+          ...logBase,
+          retrieved: retrieved.length,
+          totalRequestMs: Date.now() - tRequestStart,
+          err: (err && err.message) || String(err),
+        }),
+      )
+      if (!res.writableEnded) {
+        res.write(
+          sseLine('error', {
+            message: userFacingAnthropicError(err),
+          }),
+        )
+      }
+    }
   } finally {
+    req.off('close', onRequestClose)
     res.end()
   }
 }
