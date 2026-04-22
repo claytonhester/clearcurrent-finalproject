@@ -77,12 +77,8 @@ async function main() {
     const resp = await client.messages.create({
       model: 'claude-haiku-4-5',
       max_tokens: 400,
-      system: [
-        {
-          type: 'text',
-          text: 'You write sharp, specific starter questions for a research chat assistant. Questions should sound like things a busy founder, investor, or strategy leader would actually ask. Avoid generic "tell me about X" phrasings.',
-        },
-      ],
+      system:
+        'You write sharp, specific starter questions for a research chat assistant. Questions should sound like things a busy founder, investor, or strategy leader would actually ask. Avoid generic "tell me about X" phrasings.',
       messages: [
         {
           role: 'user',

@@ -179,10 +179,27 @@ export default async function handler(req, res) {
     console.error(`[chat:api] retrieval failed requestId=${requestId}`, err)
   }
 
-  const systemPrompt = buildSystemPrompt({ topicLabel: topic.label })
-  // API expects `system` as a list of text blocks, not a raw string.
-  const systemBlocks = [{ type: 'text', text: systemPrompt }]
+  let systemPrompt = buildSystemPrompt({ topicLabel: topic.label })
+  // Defensive: under no circumstances should `system` reach the API as anything
+  // other than a non-empty string. We've seen production-only failures where the
+  // API rejected `system.0.text: Input should be a valid string`, so coerce here
+  // and log a structured diagnostic if anything ever looks off.
+  if (typeof systemPrompt !== 'string' || systemPrompt.length === 0) {
+    console.error(
+      JSON.stringify({
+        event: 'chat_system_prompt_invalid',
+        requestId,
+        topicId: topic.id,
+        systemPromptType: typeof systemPrompt,
+        systemPromptValue: systemPrompt === null ? 'null' : String(systemPrompt).slice(0, 80),
+      }),
+    )
+    systemPrompt =
+      'You are the Clear Current Research Assistant. Answer using only the supplied <context> passages and clearly stated public knowledge. If unsure, say so.'
+  }
+  systemPrompt = String(systemPrompt)
   const contextBlock = formatContext(retrieved)
+  logBase.systemPromptLen = systemPrompt.length
   logBase.modelPlanned = model
   logBase.topK = topK
   logBase.maxOutputTokens = maxOutputTokens
@@ -219,10 +236,13 @@ export default async function handler(req, res) {
   const streamStartedAt = Date.now()
 
   try {
+    // Anthropic Messages API accepts `system` as a plain string OR an array of
+    // text blocks. We use the plain string form because it's the canonical
+    // shape and avoids any chance of a malformed text block reaching the API.
     const stream = await client.messages.create({
       model,
       max_tokens: maxOutputTokens,
-      system: systemBlocks,
+      system: systemPrompt,
       messages,
       stream: true,
     })
