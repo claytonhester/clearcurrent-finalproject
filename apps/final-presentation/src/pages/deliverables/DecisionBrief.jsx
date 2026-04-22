@@ -1,9 +1,30 @@
 import { AlertTriangle, CheckCircle2, HelpCircle, Target } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { StatusGrid } from '../../components/print/charts/StatusGrid.jsx'
 import { BRIEF } from '../../content/deliverables/brief.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D0 = DELIVERABLES.find((d) => d.id === 'brief')
 
 export function DecisionBrief() {
   return (
+    <PrintReport
+      deliverable={D0}
+      leadStatement={BRIEF.leadStatement}
+      tldrBullets={BRIEF.tldrBullets}
+      cover={{
+        docNumber: 'D0',
+        eyebrow: 'Decision Brief',
+        actionTitle:
+          'Higher ed first. Regulatory intel as the first engineering wedge. One documented dollar of recovery before May.',
+        summary:
+          'A two-page CEO/CPO read of what the research aligned on, what is still open, and what changes if any of the calls is wrong.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={BRIEF.tagline}
@@ -146,6 +167,53 @@ export function DecisionBrief() {
         </ul>
       </section>
 
+      {/* DECISION SURFACE — print only. Single editorial exhibit that
+          consolidates the five proofs, three open questions, and contingency
+          risks into one at-a-glance status grid. */}
+      <section className="hidden print:block mb-10">
+        <PrintSectionOpener
+          kicker="Decision surface"
+          title="What we know, what is still open, and what shifts the calls"
+          dek="Green = research independently confirmed. Amber = open question to close before May. Navy = contingency to monitor."
+        />
+        <PrintExhibit
+          number="1"
+          caption="Decision surface · proofs, open questions, contingency risks"
+          source="Synthesis of D0 Decision Brief: five proofs, three open questions, four contingency risks."
+        >
+          <StatusGrid
+            columns={2}
+            items={[
+              ...BRIEF.proofs.map((p) => ({
+                status: 'green',
+                label: `Proof ${p.n} · ${p.headline}`,
+                note: p.oneLiner,
+              })),
+              ...BRIEF.openQuestions.map((q) => ({
+                status: 'amber',
+                label: `Open Q${q.n} · ${q.headline}`,
+                note: q.howToClose,
+              })),
+              ...BRIEF.whatChangesIfWrong.map((w, i) => ({
+                status: 'navy',
+                label: `Contingency ${i + 1}`,
+                note: w,
+              })),
+            ]}
+          />
+        </PrintExhibit>
+      </section>
+
+      {/* PROMOTED MOMENT — print-only pull quote. Frames why regulatory
+          intelligence is the first engineering wedge. */}
+      <PullQuote
+        attribution="Phil Combs"
+        role="Trane Technologies"
+      >
+        The regulatory intelligence piece is super powerful. I don&rsquo;t know
+        anything else that does that.
+      </PullQuote>
+
       {/* CAVEATS */}
       <section>
         <SectionLead kicker="Editorial policy" title="What we will not say and why">
@@ -166,6 +234,7 @@ export function DecisionBrief() {
         </div>
       </section>
     </article>
+    </PrintReport>
   )
 }
 

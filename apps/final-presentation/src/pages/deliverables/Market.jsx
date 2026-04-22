@@ -1,6 +1,15 @@
 import { Info } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { HeatGrid } from '../../components/print/charts/HeatGrid.jsx'
+import { MiniBarChart } from '../../components/print/charts/MiniBarChart.jsx'
 import { D5 } from '../../content/deliverables/d5-market.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D5_META = DELIVERABLES.find((d) => d.id === 'market')
 
 const DIMENSIONS = [
   { key: 'problem', label: 'Problem severity' },
@@ -20,6 +29,18 @@ const MODULE_KEYS = [
 
 export function Market() {
   return (
+    <PrintReport
+      deliverable={D5_META}
+      tldrBullets={D5.tldrBullets}
+      cover={{
+        docNumber: 'D5',
+        eyebrow: 'Market Opportunity Heatmap',
+        actionTitle:
+          'Higher ed first. Retail and QSR in parallel. Healthcare is the long-term enterprise prize.',
+        summary:
+          'Five verticals scored across problem severity, buyer readiness, deal economics, competitive opening, and data availability. Higher ed leads the GTM scorecard today; documented recovery proof is still the largest pre-raise gap.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero tagline={D5.tagline} tldrBullets={D5.tldrBullets} />
 
@@ -53,8 +74,9 @@ export function Market() {
         </div>
       </section>
 
-      {/* SCORECARD HEATMAP */}
-      <section className="mb-10">
+      {/* SCORECARD HEATMAP — screen only. The colored heatmap doesn't add
+          value on paper; the print view below uses a clean numeric table. */}
+      <section className="mb-10 print:hidden">
         <SectionLead kicker="Vertical scorecard" title="Five dimensions, scored 1–5">
           Each cell shows the composite case: darker = stronger fit. Total column is out
           of 25.
@@ -122,8 +144,91 @@ export function Market() {
         </div>
       </section>
 
-      {/* MODULE FIT MATRIX */}
-      <section className="mb-10">
+      {/* SCORECARD — print only. Replaced by editorial exhibits: a
+          navy-tint HeatGrid for the per-dimension scores, plus a MiniBarChart
+          ranking verticals by total score with the beachhead in gold. */}
+      <section className="hidden print:block mb-8">
+        <PrintSectionOpener
+          kicker="Vertical scorecard"
+          title="Higher ed leads on every dimension that matters today"
+          dek="Five dimensions scored 1–5; total out of 25. Darker = stronger fit. The gold-bordered cells mark the dimensions that put higher ed at the front of the GTM line: problem severity, buyer readiness, and deal economics."
+        />
+        <PrintExhibit
+          number="1"
+          caption="Vertical × dimension fit"
+          source="Clear Current research synthesis (D5 Market Opportunity Heatmap, vertical scorecard)."
+        >
+          <HeatGrid
+            rows={D5.verticals.map((v) => v.vertical)}
+            columns={DIMENSIONS.map((d) => d.label)}
+            data={D5.verticals.map((v) => DIMENSIONS.map((d) => v.scores[d.key]))}
+            scale={5}
+            highlightCells={[
+              [0, 0], // higher ed × problem
+              [0, 1], // higher ed × readiness
+              [0, 2], // higher ed × deal economics
+            ]}
+          />
+        </PrintExhibit>
+
+        <PrintExhibit
+          number="2"
+          caption="Total composite score, by vertical (out of 25)"
+          source="Sum of the five scorecard dimensions above."
+        >
+          <MiniBarChart
+            max={25}
+            data={D5.verticals.map((v) => ({
+              label: v.vertical,
+              value: v.total,
+              displayValue: `${v.total} · ${v.stage}`,
+              highlight: v.vertical === 'Higher Education',
+            }))}
+          />
+        </PrintExhibit>
+      </section>
+
+      {/* VERTICAL VERDICTS — print only. Each vertical gets its own
+          self-contained block (verdict + evidence list) in a 2-column flow. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead kicker="Vertical verdicts" title="Recommended posture per vertical">
+          What we should do in each vertical and the evidence underneath it.
+        </SectionLead>
+        <div className="print-cols-2">
+          {D5.verticals.map((v) => (
+            <div
+              key={v.vertical}
+              className="print-keep"
+              style={{ marginBottom: '10pt' }}
+            >
+              <h4 style={{ marginBottom: '2pt' }}>
+                {v.vertical} <span style={{ color: '#6b7280', fontWeight: 500 }}>· {v.stage}</span>
+              </h4>
+              <p style={{ fontSize: '8.75pt', lineHeight: 1.4, margin: '0 0 4pt 0' }}>
+                {v.verdict}
+              </p>
+              <ul
+                style={{
+                  listStyle: 'disc',
+                  paddingLeft: '14pt',
+                  margin: 0,
+                  fontSize: '8.5pt',
+                  color: '#374151',
+                }}
+              >
+                {v.keyEvidence.map((e, i) => (
+                  <li key={i} style={{ margin: '0 0 2pt 0', lineHeight: 1.35 }}>
+                    {e}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* MODULE FIT MATRIX — screen view (heatmap). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Module × vertical fit"
           title="Which CC product maps to which buyer"
@@ -162,6 +267,51 @@ export function Market() {
         </div>
       </section>
 
+      {/* MODULE FIT MATRIX — print only. Numeric. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Module × vertical fit"
+          title="Which CC product maps to which buyer"
+        >
+          1 = weak fit, 5 = strong fit.
+        </SectionLead>
+        <table className="print-data-table" style={{ tableLayout: 'fixed' }}>
+          <colgroup>
+            <col style={{ width: '20%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '10%' }} />
+            <col style={{ width: '30%' }} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Module</th>
+              {MODULE_KEYS.map((m) => (
+                <th key={m.key} className="center">
+                  {m.label}
+                </th>
+              ))}
+              <th>Evidence strength</th>
+            </tr>
+          </thead>
+          <tbody>
+            {D5.moduleFit.map((m) => (
+              <tr key={m.module}>
+                <td className="strong">{m.module}</td>
+                {MODULE_KEYS.map((k) => (
+                  <td key={k.key} className="num">
+                    {m[k.key]}
+                  </td>
+                ))}
+                <td>{m.evidence}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
       {/* PERSONAS */}
       <section className="mb-10">
         <SectionLead kicker="Personas" title="Who signs, who champions, who vetoes">
@@ -196,6 +346,15 @@ export function Market() {
         </div>
       </section>
 
+      {/* PROMOTED MOMENT — print-only pull quote that frames the buyer's voice
+          on why this market opening is open right now. */}
+      <PullQuote
+        attribution="Phil Combs"
+        role="Trane / channel partner interview"
+      >
+        Most energy analysis is still done in Excel.
+      </PullQuote>
+
       {/* MOAT */}
       <section>
         <SectionLead kicker="Moat" title="Three compounding advantages">
@@ -220,6 +379,7 @@ export function Market() {
         </div>
       </section>
     </article>
+    </PrintReport>
   )
 }
 

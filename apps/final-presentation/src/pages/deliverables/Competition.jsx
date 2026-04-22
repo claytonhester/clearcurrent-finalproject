@@ -1,19 +1,44 @@
 import { useState } from 'react'
 import { AlertTriangle, Check, X } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { StatusGrid } from '../../components/print/charts/StatusGrid.jsx'
 import { D6 } from '../../content/deliverables/d6-competition.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D6_META = DELIVERABLES.find((d) => d.id === 'competition')
 
 export function Competition() {
   const [activeName, setActiveName] = useState(D6.competitors[0].name)
   const active = D6.competitors.find((c) => c.name === activeName) ?? D6.competitors[0]
 
   return (
+    <PrintReport
+      deliverable={D6_META}
+      leadStatement={D6.marketStructure}
+      tldrBullets={D6.tldrBullets}
+      cover={{
+        docNumber: 'D6',
+        eyebrow: 'Competitive Intelligence Brief',
+        actionTitle:
+          'Three poles of competitors are buying distribution. Nobody is building the conversational bill-intelligence layer.',
+        summary:
+          'Enterprise ESMP, AI-native data infrastructure, and services outsourcers are each consolidating around custody and routing. The natural-language tariff and PUC layer is the open window.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={D6.tagline}
         leadStatement={D6.marketStructure}
         tldrBullets={D6.tldrBullets}
       />
+
+      {/* CAPABILITY MATRIX — print-only StatusGrid summarizing each pole vs
+          the natural-language bill intelligence layer. */}
+      <PrintCapabilityMatrixExhibit />
 
       <section className="mb-10 grid gap-4 md:grid-cols-3">
         <div className="rounded-lg border border-cc-border bg-white p-4 shadow-sm md:col-span-2">
@@ -69,8 +94,8 @@ export function Competition() {
         </div>
       </section>
 
-      {/* COMPETITOR TABS */}
-      <section className="mb-10">
+      {/* COMPETITOR TABS — interactive (screen). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Competitor profiles"
           title="Strengths, weaknesses, and win conditions"
@@ -94,6 +119,25 @@ export function Competition() {
           ))}
         </div>
         <CompetitorCard c={active} />
+      </section>
+
+      {/* COMPETITOR PROFILES — print only. All competitors expanded,
+          one per page so each profile gets its own clean page. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Competitor profiles"
+          title="Strengths, weaknesses, and win conditions"
+        >
+          One profile per page. Strengths and weaknesses on top; win
+          condition pulled out below.
+        </SectionLead>
+        {D6.competitors.map((c, i) => (
+          <PrintCompetitorProfile
+            key={c.name}
+            c={c}
+            breakBefore={i > 0}
+          />
+        ))}
       </section>
 
       {/* WHITE SPACE */}
@@ -223,7 +267,67 @@ export function Competition() {
           ))}
         </ol>
       </section>
+
+      {/* PROMOTED MOMENT — print-only pull quote that names the
+          channel-partner reality on incumbent ENGIE-class operators. */}
+      <PullQuote attribution="Walt Taylor" role="Panda Restaurant Group">
+        ENGIE has 20 years of our data. They are paid to find errors. They miss
+        slow drift.
+      </PullQuote>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintCapabilityMatrixExhibit() {
+  // Capability vs. each pole. Status semantics:
+  //   green  = pole has this capability today
+  //   amber  = partial / marketing-only / in build
+  //   red    = pole is structurally unable / unwilling to build it
+  //   gold   = Clear Current's wedge
+  const items = [
+    {
+      label: 'Enterprise ESMP (EnergyCAP, WatchWire, Schneider RA+)',
+      status: 'amber',
+      note: 'Custody and chargebacks are sticky; legacy UX still spreadsheet-era. AI is being added in marketing copy faster than in delivery.',
+    },
+    {
+      label: 'AI-native data infra (Arcadia / Urjanet)',
+      status: 'amber',
+      note: 'Normalized bills + APIs for Fortune 500 procurement; no full conversational tariff intelligence or chargeback layer.',
+    },
+    {
+      label: 'Services outsourcers (ENGIE Impact)',
+      status: 'red',
+      note: 'Software is a retention wrapper around human consulting. Client-facing AI cannibalizes the consulting line and is structurally avoided.',
+    },
+    {
+      label: 'Silent incumbent (consultants + bill processors + spreadsheets)',
+      status: 'navy',
+      note: 'Real "today" baseline in most large portfolios. Custody pre-dates any SaaS logo.',
+    },
+    {
+      label: 'Clear Current · natural-language bill + tariff intelligence',
+      status: 'gold',
+      note: 'Open seat: the conversational, AI-native layer no pole has built yet. Position as outside-the-meter truth complementary to BAS / HVAC analytics.',
+    },
+  ]
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Capability matrix"
+        title="The conversational bill-intelligence layer is the open seat"
+        dek="Each row is a competitor pole or position; the marker shows whether they own the natural-language tariff and PUC layer today. Gold marks the seat Clear Current occupies."
+      />
+      <PrintExhibit
+        number="1"
+        caption="Competitor poles vs. natural-language bill intelligence"
+        source="D6 Competitive Intelligence Brief · three-pole structure + leadership framing."
+      >
+        <StatusGrid columns={1} items={items} />
+      </PrintExhibit>
+    </section>
   )
 }
 
@@ -279,6 +383,69 @@ function CompetitorCard({ c }) {
             &ldquo;{c.quote}&rdquo;
           </blockquote>
         </figure>
+      ) : null}
+    </div>
+  )
+}
+
+function PrintCompetitorProfile({ c, breakBefore }) {
+  return (
+    <div
+      className={`print-keep ${breakBefore ? 'print-page-break' : ''}`}
+      style={{ marginBottom: '14pt' }}
+    >
+      <h3 style={{ marginTop: 0, borderTop: 0, paddingTop: 0 }}>{c.name}</h3>
+
+      <table
+        className="print-data-table"
+        style={{ tableLayout: 'fixed', margin: '2pt 0 6pt 0' }}
+      >
+        <colgroup>
+          <col style={{ width: '20%' }} />
+          <col style={{ width: '80%' }} />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td className="label">Primary market</td>
+            <td>{c.primaryMarket}</td>
+          </tr>
+          <tr>
+            <td className="label">Pricing</td>
+            <td>{c.pricing}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div className="print-cols-2">
+        <div className="print-keep">
+          <h4>Strengths</h4>
+          <ul style={{ listStyle: 'disc', paddingLeft: '14pt', margin: 0 }}>
+            {c.strengths.map((s, i) => (
+              <li key={i} style={{ fontSize: '8.75pt', lineHeight: 1.35 }}>
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="print-keep">
+          <h4>Weaknesses</h4>
+          <ul style={{ listStyle: 'disc', paddingLeft: '14pt', margin: 0 }}>
+            {c.weaknesses.map((s, i) => (
+              <li key={i} style={{ fontSize: '8.75pt', lineHeight: 1.35 }}>
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="print-keep" style={{ marginTop: '6pt' }}>
+        <h4>Win condition</h4>
+        <p style={{ margin: 0 }}>{c.winCondition}</p>
+      </div>
+
+      {c.quote ? (
+        <blockquote style={{ marginTop: '6pt' }}>&ldquo;{c.quote}&rdquo;</blockquote>
       ) : null}
     </div>
   )

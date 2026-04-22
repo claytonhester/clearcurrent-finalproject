@@ -1,7 +1,15 @@
 import { useState } from 'react'
 import { Target, ShieldAlert, AlertTriangle } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { MilestoneTimeline } from '../../components/print/charts/MilestoneTimeline.jsx'
 import { D8 } from '../../content/deliverables/d8-gtm.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D8_META = DELIVERABLES.find((d) => d.id === 'gtm')
 
 const TRACK_COLORS = [
   'bg-cc-yellow text-cc-navy',
@@ -16,11 +24,27 @@ export function GTM() {
   const currentTrack = D8.tracks[track]
 
   return (
+    <PrintReport
+      deliverable={D8_META}
+      tldrBullets={D8.tldrBullets}
+      cover={{
+        docNumber: 'D8',
+        eyebrow: 'GTM Strategy Playbook',
+        actionTitle:
+          'Land on documented dollars. Expand on alerts that earn the interruption. Retain on regulatory memory no incumbent owns.',
+        summary:
+          'A three-track motion (Land \u2192 Expand \u2192 Retain) sequenced against three ICPs. Each track converts on a different evidence class — recovered cash, ranked alerts, and PUC-grounded budget defense.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero tagline={D8.tagline} tldrBullets={D8.tldrBullets} />
 
-      {/* ICP TABS */}
-      <section className="mb-10">
+      {/* THREE-TRACK ROADMAP — print-only timeline that frames Land / Expand
+          / Retain as a phased motion with a single named conversion proof. */}
+      <PrintLandExpandRetainExhibit />
+
+      {/* ICP TABS — interactive (screen). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Ideal customer profiles"
           title="Three ICPs, ranked by beachhead fit"
@@ -54,8 +78,21 @@ export function GTM() {
         <IcpDetail icp={currentIcp} />
       </section>
 
-      {/* THREE TRACKS */}
-      <section className="mb-10">
+      {/* ICPs — print only. All three expanded, one per page. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Ideal customer profiles"
+          title="Three ICPs, ranked by beachhead fit"
+        >
+          One ICP per page — who matters, what opens the door, and pilot shape.
+        </SectionLead>
+        {D8.icps.map((p, i) => (
+          <PrintIcpProfile key={p.n} icp={p} breakBefore={i > 0} />
+        ))}
+      </section>
+
+      {/* THREE TRACKS — interactive (screen). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Land / expand / retain"
           title="Three message tracks, one per phase of the relationship"
@@ -112,6 +149,19 @@ export function GTM() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* TRACKS — print only. All three expanded, each on its own page. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Land / expand / retain"
+          title="Three message tracks · one per phase of the relationship"
+        >
+          Each track has its own pitch, quotes, and hard rule.
+        </SectionLead>
+        {D8.tracks.map((t, i) => (
+          <PrintTrackProfile key={t.n} track={t} breakBefore={i > 0} />
+        ))}
       </section>
 
       {/* SALES PROCESS */}
@@ -198,7 +248,71 @@ export function GTM() {
           </p>
         </div>
       </section>
+
+      {/* PROMOTED MOMENT — print-only pull quote that sets the magnitude
+          floor for the Land pitch ($1M/yr in vacated-site payments). */}
+      <PullQuote
+        attribution="Scott Czubkowski"
+        role="Medxcel / Ascension"
+      >
+        Over $1M per year in payments for vacated sites.
+      </PullQuote>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintLandExpandRetainExhibit() {
+  // Three GTM tracks framed as a phased motion. The proof bullet on each
+  // phase is the single sentence that tells the buyer "you've moved" — i.e.
+  // why this phase converts. Land is active because that is the immediate
+  // sales motion; Expand and Retain unlock from there.
+  const phases = [
+    {
+      label: 'Track 1',
+      title: 'Land \u2014 billing error audit ROI',
+      milestones: [
+        'FERC + state PUC audit findings, not vendor claims',
+        '30-day "do you have errors" answer, no software purchase',
+        'Texas State 10\u00d7 water multiplier; Ascension $1M+/yr vacated-site pay',
+      ],
+      active: true,
+    },
+    {
+      label: 'Track 2',
+      title: 'Expand \u2014 anomaly alerting',
+      milestones: [
+        'Catch the March bill in February interval data',
+        'Every alert carries dollar magnitude or it doesn\u2019t fire',
+        'UT Austin: rank problems for me; Panda: baseline-drift case',
+      ],
+    },
+    {
+      label: 'Track 3',
+      title: 'Retain \u2014 regulatory intelligence',
+      milestones: [
+        'PUC rate cases flagged before the budget cycle closes',
+        'Two-scenario dollar model the CFO can defend in March',
+        'Zero competitive offer \u2014 EnergyCAP, Arcadia, WatchWire don\u2019t do this',
+      ],
+    },
+  ]
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Land \u2192 Expand \u2192 Retain"
+        title="Three sales motions, one institutional memory loop"
+        dek="Each track converts on a different evidence class. Land is paid discovery on documented dollars; Expand is alerts that earn the interruption; Retain is regulatory memory no incumbent owns."
+      />
+      <PrintExhibit
+        number="1"
+        caption="Three-track GTM motion sequenced against the buyer\u2019s calendar"
+        source="D8 GTM Strategy Playbook \u00b7 tracks 1\u20133 (Land / Expand / Retain) with primary proofs."
+      >
+        <MilestoneTimeline phases={phases} />
+      </PrintExhibit>
+    </section>
   )
 }
 
@@ -256,6 +370,153 @@ function IcpDetail({ icp }) {
           <PilotRow label="Conversion event" value={icp.pilot.conversionEvent} wide />
         </dl>
       </div>
+    </div>
+  )
+}
+
+function PrintIcpProfile({ icp, breakBefore }) {
+  return (
+    <div
+      className={`print-keep ${breakBefore ? 'print-page-break' : ''}`}
+      style={{ marginBottom: '14pt' }}
+    >
+      <div
+        style={{
+          fontSize: '7.5pt',
+          fontWeight: 700,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          color: '#6b7280',
+          marginBottom: '2pt',
+        }}
+      >
+        ICP {icp.n}
+      </div>
+      <h3 style={{ marginTop: 0, borderTop: 0, paddingTop: 0 }}>{icp.name}</h3>
+      <p style={{ margin: '0 0 6pt 0' }}>{icp.description}</p>
+
+      <div className="print-cols-3">
+        <div className="print-keep">
+          <h4>Champions</h4>
+          <ul style={{ listStyle: 'disc', paddingLeft: '14pt', margin: 0 }}>
+            {icp.champions.map((c, i) => (
+              <li key={i} style={{ fontSize: '8.5pt', lineHeight: 1.32 }}>
+                {c}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="print-keep">
+          <h4>Triggers</h4>
+          <ul style={{ listStyle: 'disc', paddingLeft: '14pt', margin: 0 }}>
+            {icp.triggers.map((t, i) => (
+              <li key={i} style={{ fontSize: '8.5pt', lineHeight: 1.32 }}>
+                {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="print-keep">
+          <h4>Disqualifiers</h4>
+          <ul style={{ listStyle: 'disc', paddingLeft: '14pt', margin: 0 }}>
+            {icp.disqualifiers.map((d, i) => (
+              <li key={i} style={{ fontSize: '8.5pt', lineHeight: 1.32 }}>
+                {d}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="print-keep" style={{ marginTop: '6pt' }}>
+        <h4>Pilot structure</h4>
+        <table
+          className="print-data-table"
+          style={{ tableLayout: 'fixed', margin: '2pt 0 0 0' }}
+        >
+          <colgroup>
+            <col style={{ width: '22%' }} />
+            <col style={{ width: '78%' }} />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td className="label">Duration</td>
+              <td>{icp.pilot.duration}</td>
+            </tr>
+            <tr>
+              <td className="label">Scope</td>
+              <td>{icp.pilot.scope}</td>
+            </tr>
+            <tr>
+              <td className="label">Day 30</td>
+              <td>{icp.pilot.day30}</td>
+            </tr>
+            <tr>
+              <td className="label">Day 60/90</td>
+              <td>{icp.pilot.day90}</td>
+            </tr>
+            <tr>
+              <td className="label">Fee</td>
+              <td>{icp.pilot.fee}</td>
+            </tr>
+            <tr>
+              <td className="label">Conversion event</td>
+              <td>{icp.pilot.conversionEvent}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+
+function PrintTrackProfile({ track: t, breakBefore }) {
+  return (
+    <div
+      className={`print-keep ${breakBefore ? 'print-page-break' : ''}`}
+      style={{ marginBottom: '14pt' }}
+    >
+      <div
+        style={{
+          fontSize: '7.5pt',
+          fontWeight: 700,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          color: '#6b7280',
+          marginBottom: '2pt',
+        }}
+      >
+        Track {t.n}
+      </div>
+      <h3 style={{ marginTop: 0, borderTop: 0, paddingTop: 0 }}>{t.name}</h3>
+      <blockquote style={{ margin: '0 0 6pt 0' }}>
+        &ldquo;{t.message}&rdquo;
+      </blockquote>
+
+      <h4>Supporting quotes</h4>
+      {t.quotes.map((q, i) => (
+        <div key={i} className="print-keep" style={{ marginBottom: '4pt' }}>
+          <blockquote style={{ margin: '0 0 2pt 0' }}>{q.text}</blockquote>
+          <div style={{ fontSize: '8pt', color: '#4b5563', paddingLeft: '14pt' }}>
+            — {q.speaker}
+            {q.context ? ` · ${q.context}` : ''}
+          </div>
+        </div>
+      ))}
+
+      <p
+        className="print-keep"
+        style={{
+          marginTop: '6pt',
+          paddingTop: '4pt',
+          borderTop: '0.5pt solid #0a1628',
+        }}
+      >
+        <span style={{ fontWeight: 700 }}>
+          {t.hardStop ? 'Hard stop · ' : 'Rule · '}
+        </span>
+        {t.hardStop ?? t.rule}
+      </p>
     </div>
   )
 }

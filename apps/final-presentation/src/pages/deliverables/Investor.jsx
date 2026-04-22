@@ -1,10 +1,35 @@
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { MiniBarChart } from '../../components/print/charts/MiniBarChart.jsx'
 import { D7 } from '../../content/deliverables/d7-investor.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D7_META = DELIVERABLES.find((d) => d.id === 'investor')
 
 export function Investor() {
   return (
+    <PrintReport
+      deliverable={D7_META}
+      tldrBullets={D7.tldrBullets}
+      cover={{
+        docNumber: 'D7',
+        eyebrow: 'Investor Narrative',
+        actionTitle:
+          'A small, paid SOM today. A large, defensible TAM behind documented recovery.',
+        summary:
+          'Tiered TAM / SAM / SOM build, six-beat investor arc, and the evidence that survives diligence. The unlock between SOM and SAM is one documented dollar of recovered cash.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero tagline={D7.tagline} tldrBullets={D7.tldrBullets} />
+
+      {/* MARKET MATH — print-only editorial exhibit. The on-screen TAM card
+          + table stays unchanged; this exhibit gives a single visual ranking
+          of TAM → SAM (high) → SOM (24-month) for the PDF. */}
+      <PrintMarketMathExhibit />
 
       {/* SIX-BEAT ARC */}
       <section className="mb-10">
@@ -271,7 +296,67 @@ export function Investor() {
           ))}
         </div>
       </section>
+
+      {/* PROMOTED MOMENT — print-only pull quote that captures the diligence
+          frame an investor will run on Clear Current. */}
+      <PullQuote
+        attribution="Phil Combs"
+        role="M&V / Digital Services, Trane Technologies"
+      >
+        The regulatory intelligence piece I think is super powerful. Knowing
+        what&rsquo;s happening at the state PUC level &mdash; what rates are
+        changing and when &mdash; I don&rsquo;t know anything else that does
+        that.
+      </PullQuote>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintMarketMathExhibit() {
+  // 24-month SOM by segment (high end of each range). TAM ($241B) is left as
+  // the on-screen card reference; this exhibit zooms in on the bookings the
+  // company has to write between now and Series A. The total row is gold
+  // because it is the single number the investor remembers.
+  const data = [
+    {
+      label: 'Higher ed (10\u201315 accts)',
+      value: 1.1,
+      displayValue: '$300K\u2013$1.1M',
+    },
+    {
+      label: 'Healthcare (3\u20135 systems)',
+      value: 0.75,
+      displayValue: '$225K\u2013$750K',
+    },
+    {
+      label: 'ERCOT multi-site (5\u201310)',
+      value: 0.5,
+      displayValue: '$125K\u2013$500K',
+    },
+    {
+      label: 'Total SOM (24-month)',
+      value: 2.4,
+      displayValue: '$650K\u2013$2.4M',
+      highlight: true,
+    },
+  ]
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Market math"
+        title="The 24-month booking envelope under a $241B TAM"
+        dek="TAM is on the on-screen card. This exhibit shows what Clear Current can credibly book by segment between now and a Series A. Total SOM is in gold."
+      />
+      <PrintExhibit
+        number="1"
+        caption="24-month SOM by segment, high end of range ($M)"
+        source="D7 Investor Narrative \u00b7 SOM table (10\u201315 higher-ed, 3\u20135 healthcare, 5\u201310 ERCOT multi-site)."
+      >
+        <MiniBarChart data={data} />
+      </PrintExhibit>
+    </section>
   )
 }
 

@@ -42,12 +42,19 @@ export function Sidebar() {
 }
 
 function DeliverableLink({ item }) {
+  // Single-line items (no artifact subtitle, e.g. Research Assistant) center
+  // the pill against the label. Two-line items keep top alignment so the pill
+  // sits next to the title rather than between the two lines.
+  const hasArtifact = !!item.artifact
+  const alignClass = hasArtifact ? 'items-start' : 'items-center'
+  const pillMarginClass = hasArtifact ? 'mt-[2px]' : ''
+
   return (
     <NavLink
       to={item.path}
       end={item.path === '/'}
       className={({ isActive }) =>
-        `flex items-start gap-2 rounded px-2 py-1.5 text-[13px] ${
+        `flex ${alignClass} gap-2 rounded px-2 py-1.5 text-[13px] ${
           isActive ? 'bg-cc-navy text-white' : 'text-cc-dark-text hover:bg-cc-light-gray'
         }`
       }
@@ -55,7 +62,7 @@ function DeliverableLink({ item }) {
       {({ isActive }) => (
         <>
           <span
-            className={`mt-[2px] inline-flex h-5 min-w-[2rem] flex-shrink-0 items-center justify-center rounded text-[10px] font-bold ${
+            className={`${pillMarginClass} inline-flex h-5 min-w-[2rem] flex-shrink-0 items-center justify-center rounded text-[10px] font-bold ${
               isActive ? 'bg-cc-yellow text-cc-navy' : 'bg-cc-navy/90 text-white'
             }`}
           >

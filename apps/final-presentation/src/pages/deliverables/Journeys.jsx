@@ -5,13 +5,34 @@ import {
   ProductTag,
   SectionLead,
 } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { JourneySwimlane } from '../../components/print/charts/JourneySwimlane.jsx'
 import { D3 } from '../../content/deliverables/d3-journeys.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D3_META = DELIVERABLES.find((d) => d.id === 'journeys')
 
 export function Journeys() {
   const [activeId, setActiveId] = useState(D3.journeys[0].id)
   const active = D3.journeys.find((j) => j.id === activeId) ?? D3.journeys[0]
 
   return (
+    <PrintReport
+      deliverable={D3_META}
+      leadStatement={D3.openingProblem}
+      tldrBullets={D3.tldrBullets}
+      cover={{
+        docNumber: 'D3',
+        eyebrow: 'Customer Journey Maps',
+        actionTitle:
+          'Status quo is reactive, expert-heavy, and politically slow. Clear Current is spot-and-assist, never autonomous resolution.',
+        summary:
+          'Six interview-grounded journeys compare today\u2019s workflow to the Clear Current intervention, with honest bounds on what ships now and what does not.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={D3.tagline}
@@ -19,8 +40,14 @@ export function Journeys() {
         tldrBullets={D3.tldrBullets}
       />
 
-      {/* JOURNEY TABS */}
-      <section className="mb-10">
+      {/* SIGNATURE JOURNEY — print-only editorial swimlane. The detailed
+          per-journey print pages remain below; this exhibit promotes the
+          monthly bill review journey to the front because every other journey
+          inherits its structure. */}
+      <PrintSignatureJourneyExhibit journey={D3.journeys[0]} />
+
+      {/* JOURNEY TABS — screen */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Select a journey"
           title="Six workflows, before and after Clear Current"
@@ -50,6 +77,25 @@ export function Journeys() {
         <JourneyDetail journey={active} />
       </section>
 
+      {/* JOURNEY TABS — print: every journey expanded, one per page */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="All six journeys"
+          title="Each workflow before and after Clear Current"
+        >
+          Reactive status quo vs the product intervention, with honest bounds — one
+          journey per spread.
+        </SectionLead>
+        {D3.journeys.map((j, i) => (
+          <div
+            key={j.id}
+            className={i === 0 ? 'mb-8' : 'mb-8 print-break-before'}
+          >
+            <JourneyDetail journey={j} />
+          </div>
+        ))}
+      </section>
+
       {/* CROSS-MAP FINDINGS */}
       <section className="mb-10">
         <SectionLead
@@ -74,6 +120,14 @@ export function Journeys() {
         </ol>
       </section>
 
+      {/* PROMOTED MOMENT — print-only pull quote that anchors the
+          spot-and-assist posture in the buyer's own words. */}
+      <PullQuote attribution="Texas State University" role="Andee Chamberlain">
+        We had a weird multiplier happen in one of our bills. They listed
+        35,000 gallons instead of 3,500&nbsp;&mdash; a 10&times; error in a pattern that
+        should have been obvious.
+      </PullQuote>
+
       {/* HONESTY */}
       <section>
         <SectionLead
@@ -95,6 +149,45 @@ export function Journeys() {
         </div>
       </section>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintSignatureJourneyExhibit({ journey }) {
+  if (!journey) return null
+
+  // Map the without/with stages onto the swimlane columns. We keep the
+  // names short for column headers; the body text comes from the stage
+  // summary (status quo) and capability (with CC).
+  const stages = journey.stagesWithoutCC.map((s) => s.name)
+  const statusQuo = journey.stagesWithoutCC.map((s) => s.painPoint || s.summary)
+  const withCC = journey.stagesWithCC.map(
+    (s) => s.bounds || s.capability || ''
+  )
+  // Pad the With-CC row to match column count (the with-CC list is often a
+  // single consolidated capability; we anchor it under "Investigation").
+  const padded = stages.map((_, i) => withCC[i] || withCC[0] || '')
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Signature journey"
+        title="Monthly bill review · before and after Clear Current"
+        dek="Status quo is multi-system, expert-heavy, and politically slow. The intervention is a single ranked surface that turns each invoice into an assisted decision, not an autonomous resolution."
+      />
+      <PrintExhibit
+        number="1"
+        caption="Monthly bill review · status quo vs. with Clear Current"
+        source="D3 Customer Journey Maps · Journey J1 (Texas State, Houston Methodist, AdventHealth, Medxcel, Bon Secours, Panda, Hyatt)."
+      >
+        <JourneySwimlane
+          stages={stages}
+          statusQuo={statusQuo}
+          withCC={padded}
+          bounds="Clear Current does not autonomously file disputes or guarantee credits. Resolution timeline and utility dynamics stay human."
+        />
+      </PrintExhibit>
+    </section>
   )
 }
 
@@ -110,7 +203,9 @@ function JourneyDetail({ journey }) {
             </span>
             <ProductTag tag={journey.productTag} />
           </div>
-          <JourneyEvidenceLauncher journey={journey} />
+          <span className="print:hidden">
+            <JourneyEvidenceLauncher journey={journey} />
+          </span>
         </div>
         <h3 className="mt-2 text-xl font-bold text-cc-navy">{journey.name}</h3>
         <div className="mt-2 grid gap-2 text-[12.5px] md:grid-cols-2">

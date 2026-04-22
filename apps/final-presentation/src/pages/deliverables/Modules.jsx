@@ -5,8 +5,17 @@ import {
   ProductTag,
   SectionLead,
 } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { MilestoneTimeline } from '../../components/print/charts/MilestoneTimeline.jsx'
+import { StatusGrid } from '../../components/print/charts/StatusGrid.jsx'
 import { D4 } from '../../content/deliverables/d4-modules.js'
+import { DELIVERABLES } from '../../navConfig.js'
 import { formatInlineBold } from '../../utils/formatInlineBold.jsx'
+
+const D4_META = DELIVERABLES.find((d) => d.id === 'modules')
 
 const PHASE_COLORS = {
   'Phase 1': 'bg-cc-green text-white',
@@ -21,12 +30,30 @@ export function Modules() {
   const active = D4.modules.find((m) => m.id === activeId) ?? D4.modules[0]
 
   return (
+    <PrintReport
+      deliverable={D4_META}
+      leadStatement={D4.ceoScan}
+      tldrBullets={D4.tldrBullets}
+      cover={{
+        docNumber: 'D4',
+        eyebrow: 'Product Module Recommendations',
+        actionTitle:
+          'Five build tracks. Site & coverage integrity is now its own product, not a footnote.',
+        summary:
+          'Phased product roadmap derived from the interview base. Phase 1 ships coverage truth and push anomalies; Phase 1.5 unifies tariff intelligence; Phase 2 lands regulatory and chargeback; Phase 3 is natural-language access on top of the same outputs.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={D4.tagline}
         leadStatement={D4.ceoScan}
         tldrBullets={D4.tldrBullets}
       />
+
+      {/* PRINT-ONLY ROADMAP — phased build sequence as an editorial timeline,
+          followed by a status grid that names what's missing today vs what
+          ships in Phase 1. */}
+      <PrintModulesRoadmapExhibit />
 
       <section className="decision-strip mb-10 rounded-sm">
         <button
@@ -123,8 +150,8 @@ export function Modules() {
         </div>
       </section>
 
-      {/* RANKED MODULE CARDS */}
-      <section className="mb-10">
+      {/* RANKED MODULE CARDS — interactive (screen). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Five modules, ranked"
           title="What to build next — on the current engine"
@@ -185,6 +212,27 @@ export function Modules() {
         <ModuleDetail module={active} />
       </section>
 
+      {/* RANKED MODULES — print only. All five modules in priority order,
+          each on its own page so headers always sit at top. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Five modules, ranked"
+          title="What to build next — on the current engine"
+        >
+          Modules in priority rank order. Each profile fits one page.
+        </SectionLead>
+        {D4.modules
+          .slice()
+          .sort((a, b) => a.rank - b.rank)
+          .map((m, i) => (
+            <PrintModuleProfile
+              key={m.id}
+              module={m}
+              breakBefore={i > 0}
+            />
+          ))}
+      </section>
+
       <section className="mb-10">
         <SectionLead
           kicker="Maturity snapshot"
@@ -228,6 +276,13 @@ export function Modules() {
         </div>
       </section>
 
+      {/* PROMOTED MOMENT — print-only pull quote that captures the CEO scan
+          insight: coverage truth must come before analytics. */}
+      <PullQuote attribution="AdventHealth" role="customer interview">
+        Bills are not always matching the addresses of our sites. Bills for one
+        hospital campus are being paid by another.
+      </PullQuote>
+
       {/* PRIORITY RATIONALE */}
       <section className="mb-10">
         <SectionLead kicker="Rationale" title="Why this order and not another">
@@ -248,6 +303,71 @@ export function Modules() {
         </ol>
       </section>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintModulesRoadmapExhibit() {
+  // Map the 4-phase build sequence into a horizontal timeline. The active
+  // phase = Phase 1 (where we are today; coverage + push anomalies).
+  const phaseTitles = {
+    'Phase 1': 'Coverage truth + push anomalies',
+    'Phase 1.5': 'Tariff intelligence (one shipment)',
+    'Phase 2': 'Regulatory + chargeback (moat)',
+    'Phase 3': 'Natural-language access layer',
+  }
+  const phases = D4.buildSequence.map((p) => {
+    const moduleNames = (p.modules || [])
+      .map((id) => D4.modules.find((m) => m.id === id)?.name)
+      .filter(Boolean)
+    const milestones = moduleNames.length
+      ? moduleNames
+      : ['Plain-language Rate Analyst across all five modules.']
+    return {
+      label: p.phase,
+      title: phaseTitles[p.phase] || '',
+      milestones,
+      active: p.phase === 'Phase 1',
+    }
+  })
+
+  // Five-module status pulse: maturity gap today vs Phase 1 target.
+  const ranks = [...D4.modules].sort((a, b) => (a.rank || 0) - (b.rank || 0))
+  const statusByPhase = {
+    'Phase 1': 'amber',
+    'Phase 1.5': 'navy',
+    'Phase 2': 'navy',
+    'Phase 3': 'navy',
+  }
+  const statusItems = ranks.map((m) => ({
+    label: `Rank ${m.rank} · ${m.name}`,
+    status: statusByPhase[m.phase] || 'navy',
+    note: `${m.phase} · ${stripBoldMarkers(m.oneLiner)}`,
+  }))
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Phased build sequence"
+        title="Coverage truth ships first; tariff and moat layers stack behind it"
+        dek="The roadmap stages five modules across four phases. Phase 1 is where the team is now; everything downstream depends on the coverage and signal quality that lands here."
+      />
+      <PrintExhibit
+        number="1"
+        caption="Build sequence · five modules across four phases"
+        source="D4 Product Module Recommendations · build sequence + module ranking."
+      >
+        <MilestoneTimeline phases={phases} />
+      </PrintExhibit>
+
+      <PrintExhibit
+        number="2"
+        caption="Module pulse · which phase carries each ranked module"
+        source="D4 Product Module Recommendations · module roster (rank order)."
+      >
+        <StatusGrid columns={1} items={statusItems} />
+      </PrintExhibit>
+    </section>
   )
 }
 
@@ -347,6 +467,150 @@ function Cell({ title, children, tone, span }) {
       <div className="text-[12.5px] leading-relaxed text-cc-dark-text">{children}</div>
     </div>
   )
+}
+
+function PrintModuleProfile({ module: m, breakBefore }) {
+  return (
+    <div
+      className={`print-keep ${breakBefore ? 'print-page-break' : ''}`}
+      style={{ marginBottom: '14pt' }}
+    >
+      <div
+        style={{
+          fontSize: '7.5pt',
+          fontWeight: 700,
+          letterSpacing: '0.14em',
+          textTransform: 'uppercase',
+          color: '#6b7280',
+          marginBottom: '2pt',
+        }}
+      >
+        Module {m.rank} · {m.phase} · {m.productTag}
+      </div>
+      <h3 style={{ marginTop: 0, borderTop: 0, paddingTop: 0 }}>{m.name}</h3>
+      <p
+        style={{
+          fontSize: '9.75pt',
+          lineHeight: 1.4,
+          fontStyle: 'italic',
+          margin: '0 0 6pt 0',
+        }}
+      >
+        {stripBoldMarkers(m.oneLiner)}
+      </p>
+      {m.buildsOn ? (
+        <p
+          style={{
+            fontSize: '8.5pt',
+            color: '#4b5563',
+            margin: '0 0 6pt 0',
+          }}
+        >
+          <span style={{ fontWeight: 700, color: '#0a1628' }}>
+            On today’s stack ·{' '}
+          </span>
+          {stripBoldMarkers(m.buildsOn)}
+        </p>
+      ) : null}
+
+      <div className="print-cols-2">
+        <div className="print-keep" style={{ marginBottom: '6pt' }}>
+          <h4>Problem</h4>
+          <p style={{ margin: 0 }}>{stripBoldMarkers(m.problem)}</p>
+        </div>
+        <div className="print-keep" style={{ marginBottom: '6pt' }}>
+          <h4>Persona</h4>
+          <p style={{ margin: 0 }}>{stripBoldMarkers(m.persona)}</p>
+        </div>
+        <div className="print-keep" style={{ marginBottom: '6pt' }}>
+          <h4>MVP scope (ships)</h4>
+          <ul
+            style={{
+              listStyle: 'disc',
+              paddingLeft: '14pt',
+              margin: 0,
+            }}
+          >
+            {m.mvpScope.map((s, i) => (
+              <li key={i} style={{ fontSize: '8.75pt', lineHeight: 1.35 }}>
+                {stripBoldMarkers(s)}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="print-keep" style={{ marginBottom: '6pt' }}>
+          <h4>Not in MVP</h4>
+          <ul
+            style={{
+              listStyle: 'disc',
+              paddingLeft: '14pt',
+              margin: 0,
+            }}
+          >
+            {m.notInMvp.map((s, i) => (
+              <li key={i} style={{ fontSize: '8.75pt', lineHeight: 1.35 }}>
+                {stripBoldMarkers(s)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="print-keep" style={{ marginTop: '4pt' }}>
+        <h4>Evidence</h4>
+        <ul
+          style={{
+            listStyle: 'disc',
+            paddingLeft: '14pt',
+            margin: 0,
+          }}
+        >
+          {m.evidence.map((e, i) => (
+            <li key={i} style={{ fontSize: '8.75pt', lineHeight: 1.35 }}>
+              {stripBoldMarkers(e)}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="print-keep" style={{ marginTop: '6pt' }}>
+        <h4>AI delivery tiers</h4>
+        <table
+          className="print-data-table"
+          style={{ tableLayout: 'fixed', margin: '2pt 0 0 0' }}
+        >
+          <colgroup>
+            <col style={{ width: '14%' }} />
+            <col style={{ width: '86%' }} />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td className="label">Push</td>
+              <td>{stripBoldMarkers(m.aiTiers.push)}</td>
+            </tr>
+            <tr>
+              <td className="label">Chat</td>
+              <td>{stripBoldMarkers(m.aiTiers.chat)}</td>
+            </tr>
+            <tr>
+              <td className="label">Auto</td>
+              <td>{stripBoldMarkers(m.aiTiers.autonomous)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="print-keep" style={{ marginTop: '6pt' }}>
+        <h4>Competitive edge</h4>
+        <p style={{ margin: 0 }}>{stripBoldMarkers(m.competitive)}</p>
+      </div>
+    </div>
+  )
+}
+
+function stripBoldMarkers(text) {
+  if (typeof text !== 'string') return text
+  return text.replace(/\*\*(.*?)\*\*/g, '$1')
 }
 
 function AiTier({ icon: Icon, name, body }) {

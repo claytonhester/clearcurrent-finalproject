@@ -54,46 +54,1228 @@
     @apply my-2;
   }
 
+  /* Print-only helpers used by <PrintReport>. Hidden on screen by default. */
+  .print-lead,
+  .print-takeaways,
+  .print-sources,
+  .print-only-block {
+    display: none;
+  }
+
   @media print {
+    /* ─────────────────────────────────────────────────────────────
+       PAGE
+       Running header / footer come from <PrintReport>'s injected
+       per-deliverable @page margin boxes. The default sizing here
+       is just a fallback for routes that don't render <PrintReport>.
+       ─────────────────────────────────────────────────────────── */
     @page {
       size: letter portrait;
-      margin: 0.5in;
+      margin: 0.95in 0.7in 0.85in 0.7in;
     }
 
+    /* ─────────────────────────────────────────────────────────────
+       DOCUMENT BASELINE — black ink, white paper, dense body type
+       ─────────────────────────────────────────────────────────── */
+    html,
     body {
-      background: #fff !important;
+      background: #ffffff !important;
+      color: #0a1628 !important;
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif !important;
+      font-size: 9.75pt !important;
+      line-height: 1.4 !important;
+      font-feature-settings: 'ss01', 'cv11', 'tnum' !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
     }
 
     #main-content {
       overflow: visible !important;
-      background: #fff !important;
+      background: #ffffff !important;
+      padding: 0 !important;
     }
 
-    .print\:hidden {
+    main,
+    #main-content > div {
+      max-width: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    article {
+      padding-bottom: 0 !important;
+    }
+
+    /* Hide app chrome — sticky bar, sidebar, walk footer, generic nav */
+    .print\:hidden,
+    header.sticky,
+    aside,
+    nav,
+    [role='banner'],
+    [data-walk-footer],
+    [data-site-footer] {
       display: none !important;
     }
 
+    /* Generic show/hide helpers */
     .print\:block {
       display: block !important;
     }
-
-    .rounded-xl,
-    .rounded-lg,
-    .rounded-md {
-      break-inside: avoid;
+    .print-only-block {
+      display: block !important;
+    }
+    .screen-only {
+      display: none !important;
     }
 
-    h2,
+    /* Hide the layout's redundant default page-title <h1> on routes
+       wrapped in <PrintReport>. The header bar carries the doc identity. */
+    body.has-print-report #main-content > div > h1:first-of-type {
+      display: none !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       AGGRESSIVE NEUTRALIZATION
+       The on-screen UI is rich and decorative. For paper we strip
+       backgrounds, shadows, rounded corners, and decorative icons so
+       it reads like a McKinsey-style brief, not a print of a webpage.
+       ─────────────────────────────────────────────────────────── */
+
+    /* Drop all decorative SVG icons (lucide-react). We don't draw charts
+       in SVG anywhere in the deliverables, so this is safe and dramatic. */
+    svg {
+      display: none !important;
+    }
+
+    /* Strip rounded corners and shadows everywhere. */
+    [class*='rounded'] {
+      border-radius: 0 !important;
+    }
+    [class*='shadow'] {
+      box-shadow: none !important;
+    }
+
+    /* Strip every brand background so the page is white.
+       Specific elements that need ink (KEY TAKEAWAYS arrows, blockquote rule)
+       are restored further down by their own selectors. */
+    [class*='bg-cc-navy'],
+    [class*='bg-cc-navy-light'],
+    [class*='bg-cc-yellow'],
+    [class*='bg-cc-yellow-soft'],
+    [class*='bg-cc-green'],
+    [class*='bg-cc-amber'],
+    [class*='bg-cc-red'],
+    [class*='bg-cc-light-gray'],
+    [class*='bg-white'] {
+      background-color: transparent !important;
+    }
+
+    /* And reset their text color to black ink (the navy fills used white text). */
+    [class*='bg-cc-navy'],
+    [class*='bg-cc-navy'] *,
+    [class*='bg-cc-red'],
+    [class*='bg-cc-red'] *,
+    [class*='bg-cc-amber'],
+    [class*='bg-cc-amber'] *,
+    [class*='bg-cc-green'],
+    [class*='bg-cc-green'] * {
+      color: #0a1628 !important;
+    }
+
+    /* Drop borders that were carrying decorative color (red/amber/green/yellow rails).
+       Plain default border (cc-border) is replaced with a single hairline rule below. */
+    [class*='border-cc-red'],
+    [class*='border-cc-amber'],
+    [class*='border-cc-green'],
+    [class*='border-cc-yellow'],
+    [class*='border-cc-navy'] {
+      border-color: transparent !important;
+    }
+    [class*='border-l-'],
+    [class*='border-r-'],
+    [class*='border-t-'],
+    [class*='border-b-'] {
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+    }
+
+    /* Card-like containers: convert "rounded-lg border bg-white shadow-sm p-5"
+       into plain blocks separated by a top hairline. */
+    .border,
+    .border-cc-border {
+      border-color: transparent !important;
+    }
+
+    /* Restore a hairline TOP rule on bordered/padded cards so cards still feel
+       like discrete units. Targets common Tailwind padding sizes used in the
+       deliverables (.p-3 .p-4 .p-5). */
+    .border.p-3,
+    .border.p-4,
+    .border.p-5,
+    .border.p-6,
+    [class*='border'][class*='p-3'],
+    [class*='border'][class*='p-4'],
+    [class*='border'][class*='p-5'],
+    [class*='border'][class*='p-6'] {
+      border: 0 !important;
+      border-top: 0.5pt solid #cdd1d9 !important;
+      padding: 8pt 0 6pt 0 !important;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    /* Decorative pills / chips / badges (urgency, type, phase, ProductTag).
+       Strip background + border, render as small uppercase text in [brackets]
+       so they still convey meaning but don't break the document feel. */
+    .inline-flex {
+      background: transparent !important;
+      border: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Numeric "circle" badges (e.g. proof number, beat number) — flatten to a
+       compact inline number prefix. */
+    [class*='rounded-full'] {
+      background: transparent !important;
+      border: 0 !important;
+      width: auto !important;
+      height: auto !important;
+      min-width: 0 !important;
+      min-height: 0 !important;
+      padding: 0 6pt 0 0 !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       TYPOGRAPHY
+       ─────────────────────────────────────────────────────────── */
+    h1 {
+      font-size: 15pt !important;
+      line-height: 1.18 !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+      margin: 0 0 6pt 0 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    h2 {
+      font-size: 12pt !important;
+      line-height: 1.22 !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+      margin: 16pt 0 5pt 0 !important;
+      padding-top: 7pt !important;
+      border-top: 0.6pt solid #0a1628 !important;
+      letter-spacing: 0 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    /* The very first H2 on a page sits flush, no top rule needed
+       (the page header already provides the top edge). */
+    article > section:first-of-type h2:first-child,
+    article > div > section:first-of-type h2:first-child,
+    .print-takeaways + section h2:first-child {
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
     h3 {
-      break-after: avoid;
+      font-size: 10.25pt !important;
+      line-height: 1.25 !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+      margin: 10pt 0 3pt 0 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    h4 {
+      font-size: 9.5pt !important;
+      line-height: 1.25 !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.04em !important;
+      color: #0a1628 !important;
+      margin: 7pt 0 2pt 0 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    p {
+      margin: 0 0 5pt 0 !important;
+      color: #0a1628 !important;
+    }
+    p,
+    li {
+      orphans: 4;
+      widows: 4;
     }
 
+    /* Section spacing — the <section> elements in deliverables use mb-*.
+       Tight enough to feel intentional, loose enough to breathe. */
+    article > section,
+    article > div > section {
+      margin: 0 0 12pt 0 !important;
+    }
+
+    /* Keep the first content block (paragraph, list, table, blockquote) glued
+       to the heading that introduces it, so headings never orphan at page bottom. */
+    h2 + *,
+    h3 + *,
+    h4 + * {
+      page-break-before: avoid !important;
+      break-before: avoid !important;
+    }
+
+    /* Sections marked with `print-page-break` (or `print-break-before`) start fresh */
+    .print-page-break {
+      break-before: page !important;
+      page-break-before: always !important;
+    }
+
+    /* SectionLead block (kicker + title + description): kill its flex/circle
+       chrome and let the title behave like an h2. */
+    article .text-cc-yellow,
+    article .text-cc-mid-gray {
+      color: #6b7280 !important;
+    }
+
+    /* Kickers (small uppercase labels above section titles): preserve them
+       as a true small-caps style, but ungap them from the title. */
+    .uppercase {
+      letter-spacing: 0.1em !important;
+      font-weight: 700 !important;
+      color: #6b7280 !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       LEAD PARAGRAPH (before KEY TAKEAWAYS)
+       ─────────────────────────────────────────────────────────── */
+    .print-lead {
+      display: block !important;
+      margin: 0 0 12pt 0 !important;
+    }
+    .print-lead p {
+      font-size: 10.5pt !important;
+      line-height: 1.45 !important;
+      margin: 0 0 6pt 0 !important;
+      color: #0a1628 !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       KEY TAKEAWAYS (matches the existing PDFs)
+         KEY TAKEAWAYS
+         → bullet 1
+         → bullet 2
+       ─────────────────────────────────────────────────────────── */
+    .print-takeaways {
+      display: block !important;
+      margin: 0 0 16pt 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      border: 0 !important;
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+    }
+    .print-takeaways-label {
+      font-size: 9pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.18em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      margin: 0 0 4pt 0 !important;
+    }
+    .print-takeaways-list {
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .print-takeaways-list li {
+      position: relative;
+      padding-left: 14pt !important;
+      margin: 0 0 3pt 0 !important;
+      font-size: 10pt !important;
+      line-height: 1.4 !important;
+      color: #0a1628 !important;
+    }
+    .print-takeaways-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #b8860b !important; /* dark gold — readable in greyscale, brand-adjacent in color */
+      font-weight: 700;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       BLOCKQUOTES — italic pull quotes with em-dash attribution
+       ─────────────────────────────────────────────────────────── */
+    blockquote {
+      font-style: italic !important;
+      font-size: 10pt !important;
+      line-height: 1.4 !important;
+      color: #1a1a2e !important;
+      margin: 6pt 0 4pt 0 !important;
+      padding: 0 0 0 14pt !important;
+      border: 0 !important;
+      border-left: 1.5pt solid #6b7280 !important;
+      background: transparent !important;
+    }
+    figure {
+      margin: 6pt 0 8pt 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      border: 0 !important;
+    }
+    figcaption {
+      font-style: normal !important;
+      font-size: 9.5pt !important;
+      color: #4b5563 !important;
+      margin-top: 2pt !important;
+      padding-left: 14pt !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       TABLES — clean classic borders, repeating header
+       ─────────────────────────────────────────────────────────── */
     table {
-      break-inside: auto;
+      width: 100% !important;
+      border-collapse: collapse !important;
+      font-size: 9.25pt !important;
+      margin: 6pt 0 8pt 0 !important;
+      break-inside: auto !important;
+    }
+    thead {
+      display: table-header-group !important;
+    }
+    tr {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+    th {
+      font-size: 7.75pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      background: transparent !important;
+      padding: 4pt 6pt !important;
+      border-top: 0.75pt solid #0a1628 !important;
+      border-bottom: 0.5pt solid #0a1628 !important;
+      text-align: left !important;
+      vertical-align: bottom !important;
+    }
+    td {
+      padding: 4pt 6pt !important;
+      border-bottom: 0.5pt solid #d8dbe2 !important;
+      vertical-align: top !important;
+      color: #0a1628 !important;
+    }
+    /* Last row gets a heavier closing rule like the reference PDFs. */
+    tbody tr:last-child td {
+      border-bottom: 0.75pt solid #0a1628 !important;
     }
 
-    tr {
-      break-inside: avoid;
+    /* ─────────────────────────────────────────────────────────────
+       LISTS
+       ─────────────────────────────────────────────────────────── */
+    ul,
+    ol {
+      margin: 4pt 0 8pt 0 !important;
+      padding-left: 16pt !important;
+    }
+    li {
+      margin: 0 0 2pt 0 !important;
+      font-size: 10pt !important;
+      line-height: 1.4 !important;
+      color: #0a1628 !important;
+    }
+    /* Default bullets to plain disc / decimal markers in ink color. */
+    ul {
+      list-style: disc !important;
+    }
+    ol {
+      list-style: decimal !important;
+    }
+    li::marker {
+      color: #0a1628 !important;
+    }
+
+    /* Tailwind decorative grids: by default flatten to a single column.
+       Pages can opt into multi-column flow by adding `print-cols-2` /
+       `print-cols-3` to the grid container. */
+    .grid {
+      display: block !important;
+    }
+
+    /* Multi-column print utilities — opt-in. Use on grids of small,
+       similar-length items (lists, short cards, evidence bullets). */
+    .print-cols-2 {
+      display: block !important;
+      column-count: 2 !important;
+      column-gap: 16pt !important;
+      column-fill: balance !important;
+    }
+    .print-cols-3 {
+      display: block !important;
+      column-count: 3 !important;
+      column-gap: 14pt !important;
+      column-fill: balance !important;
+    }
+    .print-cols-2 > *,
+    .print-cols-3 > * {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+      margin-top: 0 !important;
+    }
+
+    /* Page-break helpers (deliverable pages can opt in) */
+    .print-break-before {
+      break-before: page !important;
+      page-break-before: always !important;
+    }
+    .print-break-after {
+      break-after: page !important;
+      page-break-after: always !important;
+    }
+    .print-keep {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       PRINT-ONLY DATA TABLES
+       Used by D1 (triggers), D2 (calendar), D5 (heatmap), D6, D7.
+       Rendered with class `print-data-table`.
+       ─────────────────────────────────────────────────────────── */
+    .print-data-table {
+      width: 100% !important;
+      border-collapse: collapse !important;
+      font-size: 8.75pt !important;
+      line-height: 1.32 !important;
+      margin: 4pt 0 6pt 0 !important;
+      table-layout: fixed !important;
+    }
+    .print-data-table thead {
+      display: table-header-group !important;
+    }
+    .print-data-table th {
+      font-size: 7.25pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      background: transparent !important;
+      padding: 4pt 5pt !important;
+      border-top: 0.75pt solid #0a1628 !important;
+      border-bottom: 0.5pt solid #0a1628 !important;
+      text-align: left !important;
+      vertical-align: bottom !important;
+    }
+    .print-data-table td {
+      padding: 4pt 5pt !important;
+      border-bottom: 0.4pt solid #d8dbe2 !important;
+      vertical-align: top !important;
+      color: #0a1628 !important;
+    }
+    .print-data-table tbody tr:last-child td {
+      border-bottom: 0.75pt solid #0a1628 !important;
+    }
+    .print-data-table .num,
+    .print-data-table .pct {
+      text-align: right !important;
+      font-variant-numeric: tabular-nums !important;
+      white-space: nowrap !important;
+    }
+    .print-data-table .center {
+      text-align: center !important;
+    }
+    .print-data-table .id {
+      font-variant-numeric: tabular-nums !important;
+      letter-spacing: 0.04em !important;
+      white-space: nowrap !important;
+      color: #4b5563 !important;
+    }
+    .print-data-table .label {
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.08em !important;
+      font-size: 7.5pt !important;
+      color: #0a1628 !important;
+    }
+    .print-data-table .strong {
+      font-weight: 700 !important;
+    }
+    .print-data-table caption {
+      caption-side: top !important;
+      text-align: left !important;
+      font-size: 7.5pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      padding: 0 0 4pt 0 !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       SOURCES APPENDIX
+       ─────────────────────────────────────────────────────────── */
+    .print-sources {
+      display: block !important;
+      break-before: page !important;
+      page-break-before: always !important;
+      margin: 0 !important;
+    }
+    .print-sources-title {
+      font-size: 13pt !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+      margin: 0 0 8pt 0 !important;
+      padding-bottom: 4pt !important;
+      border-bottom: 0.75pt solid #0a1628 !important;
+    }
+    .print-sources-list {
+      list-style: decimal !important;
+      padding-left: 18pt !important;
+      margin: 0 !important;
+    }
+    .print-sources-list li {
+      font-size: 9pt !important;
+      line-height: 1.4 !important;
+      margin: 0 0 4pt 0 !important;
+      color: #1a1a2e !important;
+    }
+    .print-source-title {
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+    }
+
+    /* ─────────────────────────────────────────────────────────────
+       EDITORIAL PRIMITIVES — opt-in (medium-editorial PDF redesign)
+       The default print stylesheet above is aggressive about
+       stripping color, shadow, and SVG. The selectors below are
+       net-new opt-in classes that re-enable color and graphics
+       only inside elements explicitly marked as covers, exhibits,
+       pull quotes, or charts. Nothing on existing pages changes
+       behavior unless these classes are added.
+       ─────────────────────────────────────────────────────────── */
+
+    /* Re-enable SVG inside opted-in containers (cover / chart / quote). */
+    .print-cover svg,
+    .print-chart svg,
+    .print-exhibit svg,
+    .print-quote svg {
+      display: inline-block !important;
+    }
+
+    /* Opt-in colored backgrounds. Use sparingly per the gold rules. */
+    .print-color-bg-navy {
+      background: #0a1628 !important;
+      color: #ffffff !important;
+    }
+    .print-color-bg-gold {
+      background: #f5c518 !important;
+      color: #0a1628 !important;
+    }
+    .print-color-bg-yellow-soft {
+      background: #fff4cc !important;
+      color: #0a1628 !important;
+    }
+    .print-color-bg-green {
+      background: #0f766e !important;
+      color: #ffffff !important;
+    }
+    .print-color-bg-amber {
+      background: #b45309 !important;
+      color: #ffffff !important;
+    }
+    .print-color-bg-red {
+      background: #b91c1c !important;
+      color: #ffffff !important;
+    }
+    .print-color-bg-light {
+      background: #f4f5f7 !important;
+      color: #0a1628 !important;
+    }
+
+    /* Opt-in colored text. */
+    .print-color-fg-navy {
+      color: #0a1628 !important;
+    }
+    .print-color-fg-gold {
+      color: #b8860b !important;
+    } /* dark gold — readable in greyscale */
+    .print-color-fg-green {
+      color: #0f766e !important;
+    }
+    .print-color-fg-amber {
+      color: #b45309 !important;
+    }
+    .print-color-fg-red {
+      color: #b91c1c !important;
+    }
+    .print-color-fg-mid {
+      color: #6b7280 !important;
+    }
+
+    /* Heatmap navy-tint scale (0 = lightest, 4 = full navy). */
+    .print-tint-0 {
+      background: #f4f5f7 !important;
+      color: #0a1628 !important;
+    }
+    .print-tint-1 {
+      background: #d6dde6 !important;
+      color: #0a1628 !important;
+    }
+    .print-tint-2 {
+      background: #8a98ad !important;
+      color: #ffffff !important;
+    }
+    .print-tint-3 {
+      background: #3a4a66 !important;
+      color: #ffffff !important;
+    }
+    .print-tint-4 {
+      background: #0a1628 !important;
+      color: #ffffff !important;
+    }
+
+    /* ─── COVER PAGE ─────────────────────────────────────────── */
+    .print-cover-page {
+      break-after: page !important;
+      page-break-after: always !important;
+      min-height: calc(11in - 1.8in);
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      padding: 0 !important;
+    }
+    .print-cover-page .print-cover-docnumber {
+      font-size: 64pt !important;
+      font-weight: 800 !important;
+      line-height: 1 !important;
+      letter-spacing: -0.04em !important;
+      color: #0a1628 !important;
+      margin: 0 0 4pt 0 !important;
+    }
+    .print-cover-page .print-cover-eyebrow {
+      font-size: 8.5pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.18em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      margin: 0 0 36pt 0 !important;
+    }
+    .print-cover-page .print-cover-title {
+      font-size: 26pt !important;
+      font-weight: 700 !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.015em !important;
+      color: #0a1628 !important;
+      margin: 0 0 14pt 0 !important;
+      max-width: 6.4in;
+    }
+    .print-cover-page .print-cover-summary {
+      font-size: 12pt !important;
+      line-height: 1.45 !important;
+      color: #1a1a2e !important;
+      margin: 0 0 24pt 0 !important;
+      max-width: 6.2in;
+    }
+    .print-cover-page .print-cover-rule {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0 !important;
+      margin: 0 0 16pt 0 !important;
+    }
+    .print-cover-page .print-cover-rule-navy {
+      flex: 1 !important;
+      height: 0.75pt !important;
+      background: #0a1628 !important;
+    }
+    .print-cover-page .print-cover-rule-gold {
+      width: 36pt !important;
+      height: 2.5pt !important;
+      background: #f5c518 !important;
+      margin-left: 0 !important;
+    }
+    .print-cover-page .print-cover-meta {
+      font-size: 7.75pt !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.16em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      margin-top: auto !important;
+    }
+    .print-cover-page .print-cover-meta strong {
+      color: #0a1628 !important;
+      font-weight: 700 !important;
+    }
+
+    /* ─── SECTION OPENER ──────────────────────────────────────── */
+    /* When a section uses .print-section-opener, it provides its own
+       editorial opener treatment and overrides the generic h2 top rule. */
+    .print-section-opener {
+      margin: 14pt 0 8pt 0 !important;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    .print-section-opener .print-section-kicker {
+      display: inline-block !important;
+      font-size: 7.75pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.18em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      padding-bottom: 3pt !important;
+      border-bottom: 0.6pt solid #f5c518 !important;
+      margin: 0 0 4pt 0 !important;
+    }
+    .print-section-opener .print-section-title {
+      font-size: 14pt !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      color: #0a1628 !important;
+      margin: 4pt 0 0 0 !important;
+      border: 0 !important;
+      padding: 0 !important;
+      letter-spacing: -0.005em !important;
+    }
+    .print-section-opener .print-section-dek {
+      font-size: 9.5pt !important;
+      line-height: 1.4 !important;
+      color: #6b7280 !important;
+      margin: 3pt 0 0 0 !important;
+      max-width: 6.2in;
+    }
+    /* Suppress the generic h2 top hairline when the opener is present. */
+    .print-section-opener + * h2,
+    .print-section-opener h2 {
+      border-top: 0 !important;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    /* ─── EXHIBIT WRAPPER ─────────────────────────────────────── */
+    .print-exhibit {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+      margin: 8pt 0 12pt 0 !important;
+    }
+    .print-exhibit-caption {
+      font-size: 7.75pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.16em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      margin: 0 0 4pt 0 !important;
+      padding-bottom: 3pt !important;
+      border-bottom: 0.4pt solid #0a1628 !important;
+    }
+    .print-exhibit-caption .print-exhibit-number {
+      color: #b8860b !important;
+      margin-right: 6pt !important;
+    }
+    .print-exhibit-body {
+      margin: 6pt 0 4pt 0 !important;
+    }
+    .print-exhibit-source {
+      font-size: 7pt !important;
+      font-style: italic !important;
+      color: #6b7280 !important;
+      margin: 4pt 0 0 0 !important;
+      letter-spacing: 0.01em !important;
+    }
+
+    /* ─── PULL QUOTE ──────────────────────────────────────────── */
+    .print-quote {
+      font-size: 15pt !important;
+      line-height: 1.35 !important;
+      font-style: italic !important;
+      color: #0a1628 !important;
+      padding: 8pt 0 4pt 0 !important;
+      margin: 12pt 0 8pt 0 !important;
+      border-top: 0.6pt solid #f5c518 !important;
+      border-left: 0 !important;
+      background: transparent !important;
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+      max-width: 6.4in;
+    }
+    .print-quote-attribution {
+      font-style: normal !important;
+      font-size: 9pt !important;
+      font-weight: 600 !important;
+      color: #6b7280 !important;
+      letter-spacing: 0.04em !important;
+      margin-top: 6pt !important;
+      display: block !important;
+    }
+
+    /* ─── CHART PRIMITIVES ────────────────────────────────────── */
+    .print-chart {
+      break-inside: avoid !important;
+      page-break-inside: avoid !important;
+      margin: 4pt 0 !important;
+    }
+
+    /* StatusGrid */
+    .print-statusgrid {
+      display: grid !important;
+      gap: 4pt !important;
+      width: 100% !important;
+    }
+    .print-statusgrid-item {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 6pt !important;
+      padding: 5pt 7pt !important;
+      border: 0.4pt solid #d8dbe2 !important;
+      background: #ffffff !important;
+      font-size: 9pt !important;
+      line-height: 1.32 !important;
+      color: #0a1628 !important;
+    }
+    .print-statusgrid-marker {
+      flex-shrink: 0 !important;
+      display: inline-block !important;
+      width: 7pt !important;
+      height: 7pt !important;
+      margin-top: 3pt !important;
+      border-radius: 0 !important;
+    }
+    /* Greyscale safety. In luminance, green (#0f766e) and amber (#b45309)
+       collapse to nearly identical mid-greys. Patterns disambiguate so the
+       PDF still reads when printed monochrome:
+         green = solid fill
+         amber = solid fill + diagonal stripe overlay
+         red   = solid fill + thin white inset ring
+         navy  = solid fill (very dark, distinct)
+         gold  = solid fill + dark navy outline (light value, needs edge)
+         empty = white + grey outline
+    */
+    .print-statusgrid-marker.green {
+      background: #0f766e !important;
+    }
+    .print-statusgrid-marker.amber {
+      background-color: #b45309 !important;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.55) 0,
+        rgba(255, 255, 255, 0.55) 0.6pt,
+        transparent 0.6pt,
+        transparent 1.6pt
+      ) !important;
+    }
+    .print-statusgrid-marker.red {
+      background: #b91c1c !important;
+      box-shadow: inset 0 0 0 0.4pt #ffffff !important;
+    }
+    .print-statusgrid-marker.navy {
+      background: #0a1628 !important;
+    }
+    .print-statusgrid-marker.gold {
+      background: #f5c518 !important;
+      box-shadow: inset 0 0 0 0.4pt #0a1628 !important;
+    }
+    .print-statusgrid-marker.empty {
+      background: #ffffff !important;
+      border: 0.5pt solid #6b7280 !important;
+    }
+    .print-statusgrid-label {
+      font-weight: 600 !important;
+      display: block !important;
+    }
+    .print-statusgrid-note {
+      display: block !important;
+      font-size: 8pt !important;
+      font-weight: 400 !important;
+      color: #6b7280 !important;
+      margin-top: 2pt !important;
+    }
+
+    /* HeatGrid (HTML table). */
+    table.print-heatgrid {
+      width: 100% !important;
+      border-collapse: collapse !important;
+      font-size: 9pt !important;
+      table-layout: fixed !important;
+    }
+    table.print-heatgrid th {
+      font-size: 7.25pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      background: transparent !important;
+      padding: 3pt 4pt !important;
+      border: 0 !important;
+      text-align: center !important;
+      vertical-align: bottom !important;
+    }
+    table.print-heatgrid th.print-heatgrid-rowhead {
+      text-align: left !important;
+    }
+    table.print-heatgrid td {
+      padding: 0 !important;
+      border: 0.4pt solid #ffffff !important;
+      text-align: center !important;
+      vertical-align: middle !important;
+      height: 24pt !important;
+      font-weight: 700 !important;
+      font-size: 9.5pt !important;
+    }
+    table.print-heatgrid td.print-heatgrid-rowlabel {
+      background: transparent !important;
+      color: #0a1628 !important;
+      font-weight: 600 !important;
+      text-align: left !important;
+      padding: 0 6pt 0 0 !important;
+      border: 0 !important;
+      width: 22% !important;
+    }
+    table.print-heatgrid td.highlight {
+      box-shadow: inset 0 0 0 1.25pt #f5c518 !important;
+    }
+
+    /* CalendarStrip */
+    .print-calstrip {
+      display: grid !important;
+      grid-template-columns: repeat(12, 1fr) !important;
+      gap: 2pt !important;
+      align-items: end !important;
+      padding: 6pt 0 0 0 !important;
+      border-bottom: 0.5pt solid #0a1628 !important;
+      position: relative !important;
+    }
+    .print-calstrip-month {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      gap: 3pt !important;
+      position: relative !important;
+    }
+    .print-calstrip-bar {
+      width: 100% !important;
+      background: #0a1628 !important;
+    }
+    .print-calstrip-bar.peak {
+      height: 50pt !important;
+    }
+    .print-calstrip-bar.high {
+      height: 38pt !important;
+    }
+    .print-calstrip-bar.medium {
+      height: 24pt !important;
+    }
+    .print-calstrip-bar.low {
+      height: 12pt !important;
+      background: #8a98ad !important;
+    }
+    .print-calstrip-bar.window {
+      background: #f5c518 !important;
+    }
+    .print-calstrip-label {
+      font-size: 7.5pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.06em !important;
+      text-transform: uppercase !important;
+      color: #0a1628 !important;
+      margin-top: 3pt !important;
+    }
+    .print-calstrip-window-label {
+      margin-top: 4pt !important;
+      display: flex !important;
+      gap: 12pt !important;
+      font-size: 7.25pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+    }
+    .print-calstrip-window-label .swatch {
+      display: inline-block !important;
+      width: 8pt !important;
+      height: 8pt !important;
+      margin-right: 3pt !important;
+      vertical-align: middle !important;
+    }
+
+    /* MilestoneTimeline */
+    .print-timeline {
+      display: grid !important;
+      gap: 0 !important;
+      align-items: stretch !important;
+      border-top: 0.5pt solid #0a1628 !important;
+      border-bottom: 0.5pt solid #0a1628 !important;
+      margin: 4pt 0 !important;
+    }
+    .print-timeline-phase {
+      padding: 6pt 8pt 8pt 8pt !important;
+      border-right: 0.4pt solid #0a1628 !important;
+      background: #ffffff !important;
+      min-height: 70pt !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .print-timeline-phase:last-child {
+      border-right: 0 !important;
+    }
+    .print-timeline-phase.active {
+      background: #fff4cc !important;
+    }
+    .print-timeline-phase-label {
+      font-size: 7.25pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.16em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      margin-bottom: 3pt !important;
+    }
+    .print-timeline-phase.active .print-timeline-phase-label {
+      color: #b8860b !important;
+    }
+    .print-timeline-phase-title {
+      font-size: 10pt !important;
+      font-weight: 700 !important;
+      color: #0a1628 !important;
+      line-height: 1.2 !important;
+      margin-bottom: 5pt !important;
+    }
+    .print-timeline-milestone {
+      font-size: 8.5pt !important;
+      line-height: 1.3 !important;
+      color: #0a1628 !important;
+      padding-left: 8pt !important;
+      position: relative !important;
+      margin-bottom: 2pt !important;
+    }
+    .print-timeline-milestone::before {
+      content: '' !important;
+      position: absolute !important;
+      left: 0 !important;
+      top: 4pt !important;
+      width: 4pt !important;
+      height: 4pt !important;
+      background: #0a1628 !important;
+    }
+    .print-timeline-phase.active .print-timeline-milestone::before {
+      background: #b8860b !important;
+    }
+
+    /* MiniBarChart */
+    .print-minibar {
+      display: grid !important;
+      gap: 4pt !important;
+      align-items: center !important;
+      grid-template-columns: minmax(70pt, 1fr) 4fr auto !important;
+      font-size: 9pt !important;
+      color: #0a1628 !important;
+      width: 100% !important;
+    }
+    .print-minibar-row {
+      display: contents !important;
+    }
+    .print-minibar-label {
+      font-weight: 600 !important;
+      color: #0a1628 !important;
+      padding-right: 6pt !important;
+      text-align: right !important;
+      line-height: 1.2 !important;
+    }
+    .print-minibar-track {
+      height: 12pt !important;
+      background: transparent !important;
+      border-bottom: 0.4pt solid #d8dbe2 !important;
+      position: relative !important;
+    }
+    .print-minibar-bar {
+      height: 100% !important;
+      background: #0a1628 !important;
+      display: block !important;
+    }
+    .print-minibar-bar.highlight {
+      background: #f5c518 !important;
+    }
+    .print-minibar-value {
+      font-weight: 700 !important;
+      font-variant-numeric: tabular-nums !important;
+      color: #0a1628 !important;
+      padding-left: 6pt !important;
+      white-space: nowrap !important;
+    }
+    .print-minibar-value.highlight {
+      color: #b8860b !important;
+    }
+
+    /* JourneySwimlane */
+    .print-swimlane {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      gap: 4pt !important;
+      margin: 6pt 0 !important;
+    }
+    .print-swimlane-rowlabel {
+      grid-column: 1 / -1 !important;
+      font-size: 7pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.16em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      margin-top: 4pt !important;
+    }
+    .print-swimlane-stage {
+      padding: 6pt 8pt !important;
+      border: 0.4pt solid #0a1628 !important;
+      background: #ffffff !important;
+      font-size: 8.75pt !important;
+      line-height: 1.3 !important;
+      color: #0a1628 !important;
+      min-height: 36pt !important;
+      position: relative !important;
+    }
+    .print-swimlane-stage .print-swimlane-stagelabel {
+      font-size: 7pt !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.14em !important;
+      text-transform: uppercase !important;
+      color: #6b7280 !important;
+      display: block !important;
+      margin-bottom: 2pt !important;
+    }
+    .print-swimlane-stage.with-cc {
+      background: #fff4cc !important;
+      border-color: #b8860b !important;
+    }
+    .print-swimlane-stage.with-cc .print-swimlane-stagelabel {
+      color: #b8860b !important;
+    }
+    .print-swimlane-stage.empty {
+      background: transparent !important;
+      border: 0.4pt dashed #d8dbe2 !important;
+      color: #9aa0ac !important;
+      font-style: italic !important;
+    }
+    .print-swimlane-bounds {
+      grid-column: 1 / -1 !important;
+      margin-top: 4pt !important;
+      padding: 4pt 8pt !important;
+      border-left: 1.5pt solid #b8860b !important;
+      font-size: 8.25pt !important;
+      line-height: 1.35 !important;
+      color: #0a1628 !important;
+      background: transparent !important;
+    }
+    .print-swimlane-bounds strong {
+      font-weight: 700 !important;
+      color: #b8860b !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      font-size: 7pt !important;
+      margin-right: 4pt !important;
     }
   }
 }

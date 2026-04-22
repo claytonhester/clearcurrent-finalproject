@@ -95,17 +95,21 @@ export function TopBar() {
         </button>
       </div>
 
-      <div className="flex shrink-0 items-center gap-2">
-        <button
-          type="button"
-          onClick={() => window.print()}
-          className="inline-flex items-center gap-1.5 rounded-md border border-cc-navy bg-cc-navy px-2.5 py-1.5 text-[12px] font-semibold text-white hover:bg-cc-navy-light"
-        >
-          <Printer className="h-3.5 w-3.5" />
-          <span className="hidden sm:inline">Print</span>
-          <span className="sm:hidden">Print</span>
-        </button>
-      </div>
+      {/* Print is the deliverable PDF export path; the Research Assistant
+          chat has nothing meaningful to print, so the button is hidden there. */}
+      {!isChatPage ? (
+        <div className="flex shrink-0 items-center gap-2">
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="inline-flex items-center gap-1.5 rounded-md border border-cc-navy bg-cc-navy px-2.5 py-1.5 text-[12px] font-semibold text-white hover:bg-cc-navy-light"
+          >
+            <Printer className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Print</span>
+            <span className="sm:hidden">Print</span>
+          </button>
+        </div>
+      ) : null}
 
       <SiteSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
       <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />

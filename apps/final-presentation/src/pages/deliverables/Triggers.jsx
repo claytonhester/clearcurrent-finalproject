@@ -6,7 +6,15 @@ import {
   SectionLead,
   UrgencyPill,
 } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { HeatGrid } from '../../components/print/charts/HeatGrid.jsx'
 import { D1 } from '../../content/deliverables/d1-triggers.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D1_META = DELIVERABLES.find((d) => d.id === 'triggers')
 
 const TYPE_COLORS = {
   REACTIVE: 'bg-cc-red/10 text-cc-red border-cc-red/30',
@@ -56,6 +64,18 @@ export function Triggers() {
   }, [typeFilter, verticalFilter, query])
 
   return (
+    <PrintReport
+      deliverable={D1_META}
+      leadStatement={D1.openingProblem}
+      tldrBullets={D1.tldrBullets}
+      cover={{
+        docNumber: 'D1',
+        eyebrow: 'Engagement Trigger Map',
+        actionTitle:
+          'Meet the buyer in the forced-action moment, not in the dashboard.',
+        summary: `${D1.triggers.length} engagement triggers mapped across reactive, proactive, regulatory, and system-vendor categories. Clusters by vertical and season tell the product when to push and the sales team when to call.`,
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={D1.tagline}
@@ -63,8 +83,12 @@ export function Triggers() {
         tldrBullets={D1.tldrBullets}
       />
 
+      {/* TRIGGER CONCENTRATION HEAT — print only. Where (vertical x trigger
+          type) clusters of pain concentrate. Higher count = darker tint. */}
+      <PrintTriggerHeatExhibit triggers={D1.triggers} typeLabels={D1.typeLabels} />
+
       {/* FILTER BAR */}
-      <section className="mb-6 rounded-lg border border-cc-border bg-white p-4 shadow-sm">
+      <section className="mb-6 rounded-lg border border-cc-border bg-white p-4 shadow-sm print:hidden">
         <div className="mb-3 flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-cc-mid-gray">
           <Filter className="h-3 w-3" />
           Filter triggers
@@ -125,8 +149,8 @@ export function Triggers() {
         </div>
       </section>
 
-      {/* TRIGGER GRID */}
-      <section className="mb-12">
+      {/* TRIGGER GRID — screen */}
+      <section className="mb-12 print:hidden">
         <div className="grid gap-4 md:grid-cols-2">
           {filtered.map((t) => (
             <TriggerCard key={t.id} trigger={t} />
@@ -136,6 +160,107 @@ export function Triggers() {
               No triggers match these filters.
             </div>
           ) : null}
+        </div>
+      </section>
+
+      {/* TRIGGER TABLE — print only. A single dense semantic table that
+          mirrors the reference PDF: ID · Trigger · Type · When · Surface · Urgency. */}
+      <section className="hidden print:block mb-8">
+        <SectionLead
+          kicker="Complete trigger map"
+          title={`All ${D1.triggers.length} triggers · sorted by urgency`}
+        >
+          Filters and search from the live portal are not applied. Full
+          source quotes for each trigger appear in the appendix below.
+        </SectionLead>
+
+        <table className="print-data-table" style={{ tableLayout: 'fixed' }}>
+          <colgroup>
+            <col style={{ width: '7%' }} />
+            <col style={{ width: '38%' }} />
+            <col style={{ width: '12%' }} />
+            <col style={{ width: '17%' }} />
+            <col style={{ width: '14%' }} />
+            <col style={{ width: '12%' }} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Trigger</th>
+              <th>Type</th>
+              <th>When it fires</th>
+              <th>CC surface</th>
+              <th>Urgency</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[...D1.triggers]
+              .sort(
+                (a, b) =>
+                  (URGENCY_ORDER[a.urgency] ?? 9) -
+                  (URGENCY_ORDER[b.urgency] ?? 9),
+              )
+              .map((t) => (
+                <tr key={t.id}>
+                  <td className="id">{t.id}</td>
+                  <td className="strong">{t.name}</td>
+                  <td>
+                    {D1.typeLabels?.[t.type] ?? t.type}
+                  </td>
+                  <td>{t.seasonality}</td>
+                  <td>{t.ccSurface}</td>
+                  <td className="label">{t.urgency}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </section>
+
+      {/* TRIGGER EVIDENCE APPENDIX — print only. Each trigger's representative
+          quote and primary source, in a compact two-column flow. */}
+      <section className="hidden print:block mb-10 print-page-break">
+        <SectionLead
+          kicker="Trigger evidence"
+          title="Source quotes by trigger ID"
+        >
+          One representative quote per trigger from the primary research base.
+        </SectionLead>
+        <div className="print-cols-2">
+          {[...D1.triggers]
+            .sort(
+              (a, b) =>
+                (URGENCY_ORDER[a.urgency] ?? 9) -
+                (URGENCY_ORDER[b.urgency] ?? 9),
+            )
+            .filter((t) => t.quote)
+            .map((t) => (
+              <div key={t.id} className="print-keep" style={{ marginBottom: '10pt' }}>
+                <div
+                  style={{
+                    fontSize: '7.5pt',
+                    fontWeight: 700,
+                    letterSpacing: '0.1em',
+                    textTransform: 'uppercase',
+                    color: '#6b7280',
+                    marginBottom: '2pt',
+                  }}
+                >
+                  {t.id} · {t.name}
+                </div>
+                <blockquote style={{ margin: '0 0 2pt 0' }}>
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <div
+                  style={{
+                    fontSize: '8pt',
+                    color: '#4b5563',
+                    paddingLeft: '14pt',
+                  }}
+                >
+                  — {t.primarySource}
+                </div>
+              </div>
+            ))}
         </div>
       </section>
 
@@ -159,6 +284,12 @@ export function Triggers() {
         </ul>
       </section>
 
+      {/* PROMOTED MOMENT — print-only pull quote. Anchors the entire trigger
+          map to the channel partner's "still on Excel" frame. */}
+      <PullQuote attribution="Phil Combs" role="Trane Technologies">
+        Most energy analysis is still done in Excel.
+      </PullQuote>
+
       {/* SALES IMPLICATIONS */}
       <section>
         <SectionLead kicker="Sales implications" title="What this means for go-to-market">
@@ -176,6 +307,57 @@ export function Triggers() {
         </div>
       </section>
     </article>
+    </PrintReport>
+  )
+}
+
+function PrintTriggerHeatExhibit({ triggers, typeLabels }) {
+  // Build a vertical × type count matrix from the triggers list.
+  const types = ['REACTIVE', 'PROACTIVE', 'REGULATORY', 'SYSTEM']
+  const verticalKeys = Object.keys(VERTICAL_LABELS)
+
+  const data = verticalKeys.map((vk) =>
+    types.map(
+      (t) =>
+        triggers.filter(
+          (tr) => tr.type === t && tr.verticals?.includes(vk)
+        ).length
+    )
+  )
+
+  // Auto-pick the highest-count cell for the gold border highlight.
+  let maxVal = 0
+  let maxCell = [0, 0]
+  data.forEach((row, ri) =>
+    row.forEach((v, ci) => {
+      if (v > maxVal) {
+        maxVal = v
+        maxCell = [ri, ci]
+      }
+    })
+  )
+
+  return (
+    <section className="hidden print:block mb-8">
+      <PrintSectionOpener
+        kicker="Trigger concentration"
+        title="Reactive triggers cluster heaviest in higher ed and healthcare"
+        dek="Cell value = how many triggers in this map fire for this vertical and category. Darker = more concentrated pain. The gold-bordered cell marks the densest receptivity window."
+      />
+      <PrintExhibit
+        number="1"
+        caption="Trigger count · vertical × category"
+        source={`Tally of all ${triggers.length} engagement triggers in D1, mapped to verticals and trigger categories.`}
+      >
+        <HeatGrid
+          rows={verticalKeys.map((k) => VERTICAL_LABELS[k])}
+          columns={types.map((t) => typeLabels?.[t] ?? t)}
+          data={data}
+          scale={Math.max(maxVal, 1)}
+          highlightCells={[maxCell]}
+        />
+      </PrintExhibit>
+    </section>
   )
 }
 

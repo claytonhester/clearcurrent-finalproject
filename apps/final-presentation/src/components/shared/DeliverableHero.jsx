@@ -102,7 +102,7 @@ export function DeliverableHero({
   if (!d) return null
 
   return (
-    <section className="mb-10">
+    <section className="mb-10 print:hidden">
       <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cc-mid-gray">
         <span className="inline-flex h-5 min-w-[2.25rem] items-center justify-center rounded bg-cc-navy text-[10px] font-bold text-cc-yellow">
           {d.shortLabel}

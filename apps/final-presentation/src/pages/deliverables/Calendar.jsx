@@ -1,6 +1,14 @@
 import { Calendar as CalendarIcon, Flame, Snowflake } from 'lucide-react'
 import { DeliverableHero, SectionLead } from '../../components/shared/DeliverableHero.jsx'
+import { PrintReport } from '../../components/shared/PrintReport.jsx'
+import { PrintSectionOpener } from '../../components/print/PrintSectionOpener.jsx'
+import { PrintExhibit } from '../../components/print/PrintExhibit.jsx'
+import { PullQuote } from '../../components/print/PullQuote.jsx'
+import { CalendarStrip } from '../../components/print/charts/CalendarStrip.jsx'
 import { D2 } from '../../content/deliverables/d2-calendar.js'
+import { DELIVERABLES } from '../../navConfig.js'
+
+const D2_META = DELIVERABLES.find((d) => d.id === 'calendar')
 
 const INTENSITY = {
   peak: { bar: 'bg-cc-red', label: 'Peak', pill: 'bg-cc-red text-white' },
@@ -13,6 +21,19 @@ const INTENSITY_HEIGHT = { peak: 'h-16', high: 'h-12', medium: 'h-8', low: 'h-5'
 
 export function Calendar() {
   return (
+    <PrintReport
+      deliverable={D2_META}
+      leadStatement={D2.openingProblem}
+      tldrBullets={D2.tldrBullets}
+      cover={{
+        docNumber: 'D2',
+        eyebrow: 'Seasonal Energy Management Calendar',
+        actionTitle:
+          'Ride the calendar. Don\u2019t run flat outreach.',
+        summary:
+          'Twelve months of fiscal cliffs, demand peaks, and rate-case windows. The two priority windows mark when invoice intelligence and regulatory foresight close fastest.',
+      }}
+    >
     <article className="pb-16">
       <DeliverableHero
         tagline={D2.tagline}
@@ -20,8 +41,37 @@ export function Calendar() {
         tldrBullets={D2.tldrBullets}
       />
 
-      {/* HEATSTRIP */}
-      <section className="mb-10">
+      {/* CALENDAR STRIP — print-only editorial exhibit. The on-screen
+          heatstrip above this section is hidden in print; this strip
+          provides the visual rhythm in PDF form. */}
+      <section className="hidden print:block mb-8">
+        <PrintSectionOpener
+          kicker="Annual intensity map"
+          title="Two windows carry the year"
+          dek="Bar height encodes monthly engagement intensity. Gold marks the priority decision windows surfaced by the research."
+        />
+        <PrintExhibit
+          number="1"
+          caption="12-month engagement intensity · decision windows in gold"
+          source="D2 Seasonal Energy Management Calendar (months and priority windows)."
+        >
+          <CalendarStrip
+            months={D2.months.map((m) => ({
+              label: m.month,
+              intensity: m.intensity,
+            }))}
+            windowMonths={['Feb', 'Mar', 'Sep', 'Oct']}
+            legend={{
+              intensity: 'Monthly engagement intensity',
+              window: 'Priority decision window',
+            }}
+          />
+        </PrintExhibit>
+      </section>
+
+      {/* HEATSTRIP — screen only. The visualization doesn't translate to
+          paper; the print version below is a proper 12-month table. */}
+      <section className="mb-10 print:hidden">
         <SectionLead kicker="Annual intensity map" title="Where buyer attention spikes">
           Each bar's height and color shows the relative sales intensity of that month.
         </SectionLead>
@@ -89,8 +139,8 @@ export function Calendar() {
         </div>
       </section>
 
-      {/* MONTH-BY-MONTH */}
-      <section className="mb-10">
+      {/* MONTH-BY-MONTH — screen view (cards). */}
+      <section className="mb-10 print:hidden">
         <SectionLead
           kicker="Month by month"
           title="Fiscal cycles, weather, and rate-case timing"
@@ -105,6 +155,56 @@ export function Calendar() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* MONTH-BY-MONTH — print only. One semantic 12-row table that
+          maps to the reference PDF's '12-Month Activity Calendar'. */}
+      <section className="hidden print:block mb-10">
+        <SectionLead
+          kicker="Month by month"
+          title="12-month activity calendar"
+        >
+          Each row names what's happening, the lead Clear Current module, the
+          relative intensity, and the sales play that fits.
+        </SectionLead>
+
+        <table className="print-data-table" style={{ tableLayout: 'fixed' }}>
+          <colgroup>
+            <col style={{ width: '5%' }} />
+            <col style={{ width: '37%' }} />
+            <col style={{ width: '14%' }} />
+            <col style={{ width: '8%' }} />
+            <col style={{ width: '36%' }} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Mo.</th>
+              <th>Focus &amp; activities</th>
+              <th>Lead module</th>
+              <th>Level</th>
+              <th>Sales play</th>
+            </tr>
+          </thead>
+          <tbody>
+            {D2.months.map((m) => (
+              <tr key={m.month}>
+                <td className="strong">{m.month}</td>
+                <td>
+                  <span className="strong">{m.headline}</span>
+                  {m.activities && m.activities.length ? (
+                    <span style={{ color: '#4b5563' }}>
+                      {' · '}
+                      {m.activities.join(' · ')}
+                    </span>
+                  ) : null}
+                </td>
+                <td>{m.leadModule}</td>
+                <td className="label">{m.intensity}</td>
+                <td>{m.salesPlay}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </section>
 
       {/* FISCAL YEARS */}
@@ -149,6 +249,12 @@ export function Calendar() {
         </div>
       </section>
 
+      {/* PROMOTED MOMENT — print-only pull quote. Anchors why budget timing
+          is the structural wedge for the calendar play. */}
+      <PullQuote attribution="Andi Ault" role="UT Austin">
+        We submit the budget before the City of Austin rates are final.
+      </PullQuote>
+
       {/* BIG TAKEAWAYS */}
       <section>
         <SectionLead kicker="Takeaways" title="What this calendar says for GTM">
@@ -169,6 +275,7 @@ export function Calendar() {
         </ol>
       </section>
     </article>
+    </PrintReport>
   )
 }
 
