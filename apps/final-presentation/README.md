@@ -33,7 +33,7 @@ apps/final-presentation/
 │   ├── pages/                deliverable + appendix pages
 │   └── test/                 traceability, attribution, routing, banned-stats
 ├── vercel.json               SPA rewrites + security headers (Vercel)
-└── .env.example              VITE_SITE_URL, VITE_PLAUSIBLE_DOMAIN
+└── .env.example              VITE_PORTAL_ACCESS_CODE, VITE_SITE_URL, VITE_PLAUSIBLE_DOMAIN
 ```
 
 ## Site map (main + appendix)
@@ -74,7 +74,7 @@ Legacy paths like `/d2-calendar` **redirect** to the short slugs above.
 
 ## Deploy
 
-Vercel: set **Root Directory** to `apps/final-presentation`, framework **Vite**, output **`dist`**. Use [`vercel.json`](vercel.json) in this package. Optional: copy [`.env.example`](.env.example) to `.env.local` and set `VITE_SITE_URL` for production metadata.
+Vercel: set **Root Directory** to `apps/final-presentation`, framework **Vite**, output **`dist`**. Use [`vercel.json`](vercel.json) in this package. **Required for production:** set `VITE_PORTAL_ACCESS_CODE` in **Project → Environment Variables** (build time), then redeploy; without it, the app shows a configuration screen instead of the gate. Optional: `VITE_SITE_URL` for Open Graph and canonical metadata; copy [`.env.example`](.env.example) to `.env.local` for local dev.
 
 ## Research Assistant (chat)
 

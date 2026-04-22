@@ -6,22 +6,24 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:og": "node scripts/generate-og.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/dm-serif-display": "^5.1.1",
+    "@fontsource/geist": "^5.1.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
-    "framer-motion": "^11.15.0",
-    "lucide-react": "^0.468.0",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^2.6.0",
-    "@fontsource/dm-serif-display": "^5.1.1",
-    "@fontsource/geist": "^5.1.0"
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
     "@tailwindcss/vite": "^4.1.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.4",
     "vite": "^6.0.0"
   }

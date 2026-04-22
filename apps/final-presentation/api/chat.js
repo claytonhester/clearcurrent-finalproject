@@ -119,6 +119,18 @@ function userFacingAnthropicError(err) {
 const MAX_RAW_BODY_CHARS = 320_000
 const MAX_HISTORY_ITEMS = 80
 
+const chatDebug = () =>
+  process.env.CHAT_DEBUG === '1' ||
+  process.env.NODE_ENV === 'development' ||
+  process.env.VERCEL_ENV === 'development'
+
+function dbg(...args) {
+  if (chatDebug()) {
+    // eslint-disable-next-line no-console
+    console.log('[chat:api]', ...args)
+  }
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' })
@@ -127,12 +139,14 @@ export default async function handler(req, res) {
 
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) {
+    dbg('missing ANTHROPIC_API_KEY')
     res.status(500).json({
       error:
         'Chat assistant is not configured. Set ANTHROPIC_API_KEY in your Vercel environment.',
     })
     return
   }
+  dbg('key present', { keyLen: apiKey.length })
 
   const cl = req.headers['content-length']
   if (cl && Number(cl) > MAX_RAW_BODY_CHARS) {
@@ -212,11 +226,13 @@ export default async function handler(req, res) {
   let retrieved = []
   let retrievalError = null
   try {
+    const tR = Date.now()
     retrieved = await search(retrievalQuery, {
       topK,
       focusSourceId: topic.focusSourceId,
       focusSourceType: topic.focusSourceType,
     })
+    dbg('retrieval ok', { requestId, ms: Date.now() - tR, topK, hits: retrieved.length })
   } catch (err) {
     retrievalError = err
     console.error(`[chat:api] retrieval failed requestId=${requestId}`, err)
@@ -263,6 +279,11 @@ export default async function handler(req, res) {
     Connection: 'keep-alive',
     'X-Accel-Buffering': 'no',
   })
+  if (typeof res.flushHeaders === 'function') {
+    res.flushHeaders()
+  }
+
+  dbg('SSE headers + meta', { requestId, model })
 
   res.write(
     sseLine('meta', {
@@ -278,8 +299,19 @@ export default async function handler(req, res) {
   )
 
   const abortCtrl = new AbortController()
+  /** Fired when the model stream takes too long (stuck "thinking" in the browser). */
+  const STREAM_BUDGET_MS = Number(
+    process.env.CHAT_STREAM_BUDGET_MS || 120_000,
+  )
+  let abortedByClientDisconnect = false
+  let streamKillTimer = null
   const onRequestClose = () => {
+    if (streamKillTimer) {
+      clearTimeout(streamKillTimer)
+      streamKillTimer = null
+    }
     try {
+      abortedByClientDisconnect = true
       if (!res.writableEnded) abortCtrl.abort()
     } catch {
       /* ignore */
@@ -291,6 +323,14 @@ export default async function handler(req, res) {
   const streamStartedAt = Date.now()
 
   try {
+    // Covers both a hung `messages.create` and a stream that never finishes.
+    streamKillTimer = setTimeout(() => {
+      try {
+        if (!res.writableEnded) abortCtrl.abort()
+      } catch {
+        /* ignore */
+      }
+    }, STREAM_BUDGET_MS)
     // Anthropic Messages API accepts `system` as a plain string OR an array of
     // text blocks. We use the plain string form because it's the canonical
     // shape and avoids any chance of a malformed text block reaching the API.
@@ -308,6 +348,7 @@ export default async function handler(req, res) {
     let outChars = 0
     let lastStopReason = null
     let lastUsage = null
+    let loggedFirstToken = false
     for await (const event of stream) {
       if (event.type === 'message_delta') {
         if (event.delta?.stop_reason) {
@@ -320,6 +361,10 @@ export default async function handler(req, res) {
       if (event.type === 'content_block_delta' && event.delta?.type === 'text_delta') {
         const piece = event.delta.text || ''
         outChars += piece.length
+        if (!loggedFirstToken) {
+          loggedFirstToken = true
+          dbg('first model token out', { requestId, msSinceStream: Date.now() - streamStartedAt })
+        }
         res.write(sseLine('token', { text: piece }))
       }
     }
@@ -329,6 +374,10 @@ export default async function handler(req, res) {
           text: '\n\n*…This reply hit the length limit. Ask a follow-up to go deeper, or ask a narrower question.*',
         }),
       )
+    }
+    if (streamKillTimer) {
+      clearTimeout(streamKillTimer)
+      streamKillTimer = null
     }
     res.write(sseLine('done', {}))
     console.log(
@@ -346,16 +395,30 @@ export default async function handler(req, res) {
       }),
     )
   } catch (err) {
+    if (streamKillTimer) {
+      clearTimeout(streamKillTimer)
+      streamKillTimer = null
+    }
     const isAbort = err?.name === 'AbortError' || err?.cause?.name === 'AbortError'
+    const isTimeout = isAbort && !abortedByClientDisconnect
     if (isAbort) {
       console.log(
         JSON.stringify({
-          event: 'chat_request_aborted',
+          event: isTimeout ? 'chat_request_timeout' : 'chat_request_aborted',
           requestId,
           topicId: topic.id,
+          streamBudgetMs: STREAM_BUDGET_MS,
           totalRequestMs: Date.now() - tRequestStart,
         }),
       )
+      if (isTimeout && !res.writableEnded) {
+        res.write(
+          sseLine('error', {
+            message:
+              'The model took too long to respond and the request was stopped. Try a shorter or narrower question, or try again in a few minutes.',
+          }),
+        )
+      }
     } else {
       console.error(
         JSON.stringify({

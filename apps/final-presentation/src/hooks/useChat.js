@@ -5,6 +5,17 @@ import {
   saveCurrentMessages,
 } from '../lib/chatStorage.js'
 
+/** Browser: set `VITE_DEBUG_CHAT=1` in `.env.local` or use dev server — filter console by `[useChat]`. */
+const CHAT_DEBUG =
+  import.meta.env.DEV || import.meta.env.VITE_DEBUG_CHAT === '1'
+
+function chatLog(...args) {
+  if (CHAT_DEBUG) {
+    // eslint-disable-next-line no-console
+    console.log('[useChat]', ...args)
+  }
+}
+
 /**
  * When fetch fails before streaming, turn HTTP status (and any JSON body) into a clear message.
  */
@@ -64,6 +75,8 @@ export function useChat({ topicId, persistenceKey = null }) {
   const [isStreaming, setIsStreaming] = useState(false)
   const [error, setError] = useState(null)
   const abortRef = useRef(null)
+  /** True when `stop()` was used so we don't show an error for AbortError. */
+  const userStoppedRef = useRef(false)
   /** Always reflects latest `messages` for save flushes (tab close, topic change). */
   const messagesRef = useRef(messages)
   useLayoutEffect(() => {
@@ -151,6 +164,7 @@ export function useChat({ topicId, persistenceKey = null }) {
       if (!trimmed || isStreaming) return
 
       setError(null)
+      userStoppedRef.current = false
       const userMsg = { role: 'user', content: trimmed }
       const assistantMsg = {
         role: 'assistant',
@@ -167,8 +181,34 @@ export function useChat({ topicId, persistenceKey = null }) {
 
       const controller = new AbortController()
       abortRef.current = controller
+      /** Slightly above server `CHAT_STREAM_BUDGET_MS` (default 120s) so the server can emit an SSE error first. */
+      const REQUEST_BUDGET_MS = 130_000
+      const budgetTimer = setTimeout(() => {
+        controller.abort()
+      }, REQUEST_BUDGET_MS)
+
+      const stripEmptyAssistant = () => {
+        setMessages((prev) => {
+          const next = [...prev]
+          const last = next[next.length - 1]
+          if (last && last.role === 'assistant' && !last.content) {
+            next.pop()
+          }
+          return next
+        })
+      }
+
+      let receivedToken = false
+      let firstChunkAt = 0
+      let sseEventCounts = { meta: 0, token: 0, error: 0, done: 0, other: 0 }
+      const t0 = performance.now()
 
       try {
+        chatLog('send → POST /api/chat', {
+          topicId,
+          messageChars: trimmed.length,
+          historyTurns: history.length,
+        })
         const res = await fetch('/api/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -180,9 +220,21 @@ export function useChat({ topicId, persistenceKey = null }) {
           signal: controller.signal,
         })
 
+        const ct = res.headers.get('content-type') || ''
+        chatLog('response', {
+          status: res.status,
+          ok: res.ok,
+          contentType: ct.slice(0, 80),
+          ms: Math.round(performance.now() - t0),
+        })
+
         if (!res.ok) {
           const errBody = await res.json().catch(() => ({}))
           throw new Error(describeHttpError(res.status, errBody))
+        }
+
+        if (!res.body) {
+          throw new Error('Response has no body (cannot read SSE). Is /api/chat running?)')
         }
 
         const reader = res.body.getReader()
@@ -191,7 +243,19 @@ export function useChat({ topicId, persistenceKey = null }) {
 
         while (true) {
           const { done, value } = await reader.read()
-          if (done) break
+          if (done) {
+            chatLog('stream read done', {
+              receivedToken,
+              bufferRemainChars: buffer.length,
+              ms: Math.round(performance.now() - t0),
+              sseEventCounts,
+            })
+            break
+          }
+          if (firstChunkAt === 0) {
+            firstChunkAt = performance.now() - t0
+            chatLog('first byte from SSE body', { msAfterStart: Math.round(firstChunkAt) })
+          }
           buffer += decoder.decode(value, { stream: true })
 
           const events = buffer.split('\n\n')
@@ -210,10 +274,24 @@ export function useChat({ topicId, persistenceKey = null }) {
             let payload
             try {
               payload = JSON.parse(data)
-            } catch {
+            } catch (e) {
+              if (CHAT_DEBUG) {
+                // eslint-disable-next-line no-console
+                console.warn(
+                  '[useChat] non-JSON SSE data (skipping block):',
+                  data.slice(0, 240),
+                  e,
+                )
+              }
               continue
             }
             if (event === 'meta') {
+              sseEventCounts.meta += 1
+              chatLog('SSE meta', {
+                requestId: payload?.requestId,
+                model: payload?.model,
+                retrieved: (payload?.retrieved || []).length,
+              })
               setMessages((prev) => {
                 const next = [...prev]
                 const last = next[next.length - 1]
@@ -229,6 +307,11 @@ export function useChat({ topicId, persistenceKey = null }) {
                 return next
               })
             } else if (event === 'token') {
+              sseEventCounts.token += 1
+              if (sseEventCounts.token === 1) {
+                chatLog('SSE first token', { ms: Math.round(performance.now() - t0) })
+              }
+              receivedToken = true
               setMessages((prev) => {
                 const next = [...prev]
                 const last = next[next.length - 1]
@@ -241,29 +324,57 @@ export function useChat({ topicId, persistenceKey = null }) {
                 return next
               })
             } else if (event === 'error') {
+              sseEventCounts.error += 1
+              chatLog('SSE error event', payload)
               throw new Error(payload.message || 'Unknown error')
+            } else if (event === 'done') {
+              sseEventCounts.done += 1
+              chatLog('SSE done')
+            } else {
+              sseEventCounts.other += 1
+              if (CHAT_DEBUG) {
+                // eslint-disable-next-line no-console
+                console.log('[useChat] SSE other event', event, payload)
+              }
             }
           }
         }
+        if (!receivedToken) {
+          setError(
+            'The model did not return any text. Check `ANTHROPIC_API_KEY`, billing in the Anthropic Console, and your network, then try again.',
+          )
+          stripEmptyAssistant()
+        }
       } catch (err) {
-        if (err.name === 'AbortError') return
+        chatLog('catch', {
+          name: err?.name,
+          message: err?.message,
+          userStopped: userStoppedRef.current,
+          hadToken: receivedToken,
+          ms: Math.round(performance.now() - t0),
+        })
+        if (err.name === 'AbortError') {
+          if (userStoppedRef.current) {
+            if (!receivedToken) stripEmptyAssistant()
+            return
+          }
+          setError(
+            'The request took too long and was stopped. Check your network, set `ANTHROPIC_API_KEY` in the environment, then try a shorter or narrower question.',
+          )
+          stripEmptyAssistant()
+          return
+        }
         const networkFail =
           err?.message === 'Failed to fetch' ||
           err?.name === 'TypeError' ||
           String(err?.message || '').includes('NetworkError')
         const msg = networkFail
-          ? 'Could not reach the chat server. Start the app from apps/final-presentation with npm run dev (not opening the built files directly), check your network, and try again.'
+          ? 'Could not reach the chat server. For local dev, run from `apps/final-presentation` with `npm run dev` (port 5174) so `/api/chat` is available, or use the deployed site. `vite preview` does not include the local chat API.'
           : (err.message || 'Something went wrong')
         setError(msg)
-        setMessages((prev) => {
-          const next = [...prev]
-          const last = next[next.length - 1]
-          if (last && last.role === 'assistant' && !last.content) {
-            next.pop()
-          }
-          return next
-        })
+        stripEmptyAssistant()
       } finally {
+        clearTimeout(budgetTimer)
         abortRef.current = null
         setIsStreaming(false)
       }
@@ -272,6 +383,7 @@ export function useChat({ topicId, persistenceKey = null }) {
   )
 
   const stop = useCallback(() => {
+    userStoppedRef.current = true
     abortRef.current?.abort()
     abortRef.current = null
     setIsStreaming(false)

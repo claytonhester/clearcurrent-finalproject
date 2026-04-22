@@ -77,15 +77,30 @@ export function localChatApiPlugin() {
           } catch {
             body = {}
           }
+          const t0 = Date.now()
+          if (process.env.NODE_ENV === 'development') {
+            const msg = body?.message
+            console.log('[local-chat-api] POST /api/chat', {
+              topicId: body?.topicId,
+              messageChars: typeof msg === 'string' ? msg.length : 0,
+              history: Array.isArray(body?.history) ? body.history.length : 0,
+            })
+          }
           const { default: handler } = await import(handlerUrl)
           withVercelResponseShims(res)
-          const mockReq = {
-            method: 'POST',
-            body,
-            headers: req.headers,
-            socket: req.socket,
-          }
+          // Handlers use `req.on('close', …)` / `req.off`. A plain object breaks streaming.
+          const mockReq = new Proxy(req, {
+            get(target, prop) {
+              if (prop === 'body') return body
+              if (prop === 'method') return 'POST'
+              const v = Reflect.get(target, prop, target)
+              return typeof v === 'function' ? v.bind(target) : v
+            },
+          })
           await handler(mockReq, res)
+          if (process.env.NODE_ENV === 'development') {
+            console.log('[local-chat-api] handler finished', { ms: Date.now() - t0 })
+          }
         } catch (err) {
           console.error('[local-chat-api]', err)
           if (!res.headersSent) {
